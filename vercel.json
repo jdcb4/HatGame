@@ -4,7 +4,7 @@
   "outputDirectory": "client/dist",
   "functions": {
     "server/index.js": {
-      "runtime": "nodejs20.x"
+      "runtime": "@vercel/node@3.0.1"
     }
   },
   "rewrites": [
