@@ -23,7 +23,34 @@ export const GameProvider = ({ children }) => {
   // Initialize socket connection
   useEffect(() => {
     try {
-      const newSocket = io('http://localhost:3002');
+      // Dynamically determine the socket URL
+      // In production, connect to the same origin as the app
+      // In development, connect to localhost:3002
+      const socketUrl = process.env.NODE_ENV === 'production' 
+        ? window.location.origin 
+        : 'http://localhost:3002';
+      
+      console.log('Connecting to socket at:', socketUrl);
+      const newSocket = io(socketUrl, {
+        transports: ['websocket', 'polling'],
+        reconnection: true,
+        reconnectionAttempts: 5,
+        reconnectionDelay: 1000
+      });
+      
+      // Connection status logging
+      newSocket.on('connect', () => {
+        console.log('✅ Socket connected:', newSocket.id);
+      });
+      
+      newSocket.on('disconnect', (reason) => {
+        console.log('❌ Socket disconnected:', reason);
+      });
+      
+      newSocket.on('connect_error', (error) => {
+        console.error('Socket connection error:', error);
+      });
+      
       setSocket(newSocket);
 
       // Listen for game updates

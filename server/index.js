@@ -15,17 +15,20 @@ const app = express();
 const server = http.createServer(app);
 
 // Configure Socket.IO with CORS
-// Enable polling transport for better Vercel serverless compatibility
 const io = socketIo(server, {
   cors: {
     origin: process.env.CLIENT_URL || "http://localhost:5173",
     methods: ["GET", "POST"],
     credentials: true
   },
-  transports: ['polling', 'websocket'], // Prefer polling for serverless
-  pingTimeout: 60000, // Increase timeout for serverless cold starts
-  pingInterval: 25000,
-  connectTimeout: 45000
+  // For Railway, prefer WebSocket with polling fallback
+  transports: ['websocket', 'polling'],
+  // More aggressive connection settings for better real-time updates
+  pingTimeout: 30000,
+  pingInterval: 10000,
+  connectTimeout: 20000,
+  // Allow reconnection
+  allowEIO3: true
 });
 
 // Middleware
