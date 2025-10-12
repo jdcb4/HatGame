@@ -32,6 +32,13 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from client build in production
+const path = require('path');
+if (process.env.NODE_ENV === 'production') {
+  // Serve static files from the React app
+  app.use(express.static(path.join(__dirname, '../client/dist')));
+}
+
 // Connect to MongoDB
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/word-guesser';
 mongoose.connect(MONGODB_URI)
@@ -596,6 +603,13 @@ function shuffleArray(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
+}
+
+// Catch-all route to serve React app (must be after API routes)
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+  });
 }
 
 const PORT = process.env.PORT || 3001;
