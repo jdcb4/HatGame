@@ -10,6 +10,7 @@ const GameScreen = ({ playerId, playerName }) => {
   const [timeLeft, setTimeLeft] = useState(0);
   const [isDescriber, setIsDescriber] = useState(false);
   const [isCurrentTeam, setIsCurrentTeam] = useState(false);
+  const [isProcessingAction, setIsProcessingAction] = useState(false);
 
   useEffect(() => {
     if (gameId) {
@@ -82,14 +83,22 @@ const GameScreen = ({ playerId, playerName }) => {
   // Server handles turn initialization automatically
 
   const handleWordCorrect = () => {
-    if (game.currentTurn) {
+    // Prevent multiple rapid clicks by checking if we're already processing an action
+    if (game.currentTurn && !isProcessingAction) {
+      setIsProcessingAction(true);
       emitGameAction('word-correct', { word: game.currentTurn.word });
+      // Re-enable buttons after a short delay (500ms)
+      setTimeout(() => setIsProcessingAction(false), 500);
     }
   };
 
   const handleWordSkip = () => {
-    if (game.currentTurn) {
+    // Prevent multiple rapid clicks by checking if we're already processing an action
+    if (game.currentTurn && !isProcessingAction) {
+      setIsProcessingAction(true);
       emitGameAction('word-skip', { word: game.currentTurn.word });
+      // Re-enable buttons after a short delay (500ms)
+      setTimeout(() => setIsProcessingAction(false), 500);
     }
   };
 
@@ -98,12 +107,6 @@ const GameScreen = ({ playerId, playerName }) => {
     emitGameAction('end-turn', {});
     // Don't navigate immediately - let the game state update first
     // Navigation will happen in useEffect when currentPhase changes to 'ready'
-  };
-
-  const getHint = async () => {
-    // This would integrate with your AI hint system
-    // For now, just show a placeholder
-    alert('Hint feature coming soon!');
   };
 
   if (loading) {
@@ -202,26 +205,26 @@ const GameScreen = ({ playerId, playerName }) => {
   const currentTeam = game.teams[game.currentTeamIndex];
   
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-2 sm:p-4">
       <div className="w-full max-w-md">
-        <div className="bg-white p-6 rounded-2xl shadow-lg h-[80vh] max-h-[600px] flex flex-col">
+        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-lg h-[95vh] sm:h-[90vh] max-h-[700px] flex flex-col">
           {/* Header */}
-          <div className="flex justify-between items-start border-b pb-4 mb-4 relative">
+          <div className="flex justify-between items-start border-b pb-3 mb-3 relative">
             <div className="text-left">
-              <p className="font-bold text-xl text-slate-800">{currentTeam.name}</p>
-              <p className="text-sm text-slate-500">
+              <p className="font-bold text-lg sm:text-xl text-slate-800">{currentTeam.name}</p>
+              <p className="text-xs sm:text-sm text-slate-500">
                 Round {game.currentRound || 1} of {game.gameSettings?.totalRounds || 3}
               </p>
             </div>
-            <div className="flex flex-col items-end gap-2">
+            <div className="flex flex-col items-end gap-1">
               {/* End Turn Early Button - small icon (only for describer) */}
               {isDescriber && (
                 <button
                   onClick={handleEndTurn}
                   title="End Turn Early"
-                  className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors group"
+                  className="p-1 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors group"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3 h-3 sm:w-4 sm:h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                   <span className="absolute top-full right-0 mt-1 px-2 py-1 bg-slate-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
@@ -229,87 +232,79 @@ const GameScreen = ({ playerId, playerName }) => {
                   </span>
                 </button>
               )}
-              <div className="text-5xl font-bold text-indigo-600">{isNaN(timeLeft) ? 0 : timeLeft}</div>
+              <div className="text-4xl sm:text-5xl font-bold text-indigo-600">{isNaN(timeLeft) ? 0 : timeLeft}</div>
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="flex-grow flex flex-col items-center justify-center bg-slate-50 rounded-lg p-4">
+          <div className="flex-grow flex flex-col items-center justify-center bg-slate-50 rounded-lg p-4 sm:p-6 min-h-0">
             {isDescriber ? (
               // Describer view
               <>
-                <h2 className="font-bold text-slate-900 mb-2 break-all text-center text-4xl">
+                <h2 className="font-bold text-slate-900 mb-3 break-words text-center text-3xl sm:text-4xl md:text-5xl leading-tight px-2">
                   {game.currentTurn?.word || 'Loading...'}
                 </h2>
-                <p className="text-lg text-slate-500 font-medium mb-4">
+                <p className="text-lg sm:text-xl text-slate-500 font-medium">
                   {game.currentTurn?.category ? 
                     game.currentTurn.category.charAt(0).toUpperCase() + game.currentTurn.category.slice(1) : 
                     'Loading...'
                   }
                 </p>
-                
-                {/* Hint Button */}
-                <div className="mt-4 text-center">
-                  <button
-                    onClick={getHint}
-                    className="bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg text-sm hover:bg-sky-600 transition disabled:bg-slate-400"
-                  >
-                    Get Hint
-                  </button>
-                </div>
               </>
             ) : isCurrentTeam ? (
               // Same team guessing view
               <>
-                <h2 className="font-bold text-slate-900 mb-2 text-center text-2xl">
+                <h2 className="font-bold text-slate-900 mb-2 text-center text-xl sm:text-2xl">
                   Your team is guessing!
                 </h2>
-                <p className="text-lg text-slate-500 font-medium mb-4">
+                <p className="text-base sm:text-lg text-slate-500 font-medium mb-3">
                   Category: {game.currentTurn.category ? game.currentTurn.category.charAt(0).toUpperCase() + game.currentTurn.category.slice(1) : 'Loading...'}
                 </p>
-                <div className="text-center text-slate-600">
+                <div className="text-center text-slate-600 text-sm sm:text-base">
                   <p>Listen to your teammate describe the word</p>
-                  <p className="text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
+                  <p className="text-xs sm:text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
                 </div>
               </>
             ) : (
               // Opposing team waiting view
               <>
-                <h2 className="font-bold text-slate-900 mb-2 text-center text-2xl">
+                <h2 className="font-bold text-slate-900 mb-2 text-center text-xl sm:text-2xl">
                   Waiting for {currentTeam.name}
                 </h2>
-                <p className="text-lg text-slate-500 font-medium mb-4">
+                <p className="text-base sm:text-lg text-slate-500 font-medium mb-3">
                   Category: {game.currentTurn?.category ? 
                     game.currentTurn.category.charAt(0).toUpperCase() + game.currentTurn.category.slice(1) : 
                     'Loading...'
                   }
                 </p>
-                <div className="text-center text-slate-600">
+                <div className="text-center text-slate-600 text-sm sm:text-base">
                   <p>It's their turn to guess words</p>
-                  <p className="text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
+                  <p className="text-xs sm:text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
                 </div>
               </>
             )}
           </div>
 
           {/* Score and Controls */}
-          <div className="flex justify-between items-center mt-4 text-slate-600">
-            <p>Skips Remaining: <span className="font-bold">{game.currentTurn?.skipsRemaining ?? 0}</span></p>
-            <p>Turn Score: <span className="font-bold">{game.currentTurn?.turnScore ?? 0}</span></p>
+          <div className="flex justify-between items-center mt-3 text-slate-600 text-sm sm:text-base">
+            <p>Skips: <span className="font-bold">{game.currentTurn?.skipsRemaining ?? 0}</span></p>
+            <p>Score: <span className="font-bold">{game.currentTurn?.turnScore ?? 0}</span></p>
           </div>
 
           {/* Action Buttons (only for describer) */}
           {isDescriber && (
-            <div className="grid grid-cols-2 gap-4 mt-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-4 sm:mt-6">
               <button
                 onClick={handleWordSkip}
-                className="bg-amber-500 text-white font-bold py-4 rounded-lg text-lg transition-transform hover:scale-105"
+                disabled={isProcessingAction}
+                className="bg-amber-500 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 Skip
               </button>
               <button
                 onClick={handleWordCorrect}
-                className="bg-emerald-600 text-white font-bold py-4 rounded-lg text-lg transition-transform hover:scale-105"
+                disabled={isProcessingAction}
+                className="bg-emerald-600 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 Correct
               </button>

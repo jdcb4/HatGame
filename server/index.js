@@ -364,6 +364,20 @@ async function handleWordCorrect(game, { word }) {
     return game;
   }
   
+  // Prevent duplicate word registration if the same word was just submitted
+  // This fixes the issue where rapid clicking registers the same word multiple times
+  const turnWords = game.currentTurn.turnWords || [];
+  if (turnWords.length > 0) {
+    const lastWord = turnWords[turnWords.length - 1];
+    // Check if the last word submitted is the same as the current word
+    // and was submitted very recently (within 2 seconds)
+    const timeSinceLastWord = new Date() - new Date(lastWord.timestamp);
+    if (lastWord.word === word && timeSinceLastWord < 2000) {
+      console.log('Ignoring duplicate word submission:', word);
+      return game;
+    }
+  }
+  
   // Ensure turnScore is a valid number
   if (isNaN(game.currentTurn.turnScore) || game.currentTurn.turnScore === undefined) {
     game.currentTurn.turnScore = 0;
@@ -438,6 +452,20 @@ async function handleWordSkip(game, { word }) {
   if (!game.currentTurn || !game.currentTurn.category) {
     console.log('CurrentTurn not properly initialized, ignoring word-skip action');
     return game;
+  }
+  
+  // Prevent duplicate word registration if the same word was just submitted
+  // This fixes the issue where rapid clicking registers the same word multiple times
+  const turnWords = game.currentTurn.turnWords || [];
+  if (turnWords.length > 0) {
+    const lastWord = turnWords[turnWords.length - 1];
+    // Check if the last word submitted is the same as the current word
+    // and was submitted very recently (within 2 seconds)
+    const timeSinceLastWord = new Date() - new Date(lastWord.timestamp);
+    if (lastWord.word === word && timeSinceLastWord < 2000) {
+      console.log('Ignoring duplicate word skip:', word);
+      return game;
+    }
   }
   
   // Ensure turnScore is a valid number

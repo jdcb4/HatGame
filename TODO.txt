@@ -1,0 +1,39 @@
+BackEndTicky - TODO List
+========================
+Last Updated: October 16, 2025
+
+ACTIVE TASKS:
+-------------
+- Make sure that the game ends after both teams have had same number of turns
+
+
+COMPLETED TASKS:
+----------------
+[DONE - Oct 16, 2025] Add a longer word list and integrate with the app
+  → Converted 6 CSV files (5,029 words total) into words.js with 6 categories: actions, entertainment, food, hobbies, places, things
+
+[DONE - Oct 16, 2025] If someone clicks correct too fast it registers the same word multiple times, fix that
+  → Added server-side duplicate detection: checks if the same word was submitted within 2 seconds and ignores duplicates
+  → Added client-side debouncing: buttons disabled for 500ms after clicking to prevent rapid multiple clicks
+  → Applied fix to both "Correct" and "Skip" buttons
+
+[DONE - Oct 16, 2025] Remove the Get hint button
+  → Removed the getHint function and the "Get Hint" button from GameScreen.jsx
+  → Cleaned up unused code
+
+[DONE - Oct 16, 2025] Improve the UX of the app for use on mobile devices, particularly making it so most or all screens fit the screen and don't require scrolling
+  → Optimized GameScreen: reduced padding, made font sizes responsive (text-3xl sm:text-4xl md:text-5xl), increased viewport height to 95vh on mobile
+  → Optimized ReadyScreen: made all sections more compact, reduced spacing, added max-h-[98vh] with scroll for overflow
+  → Optimized TurnSummaryScreen: reduced padding and margins, made text responsive, added max-h-[98vh] with scroll
+  → All gameplay screens now use responsive breakpoints (sm:, md:) for better mobile experience
+  → Reduced button sizes on mobile (py-3 on mobile, py-4 on desktop)
+  → Changed "break-all" to "break-words" for better word wrapping
+  → Shortened labels ("Skips Remaining" → "Skips", "point(s)" → "pts") to save space
+
+
+NOTES:
+------
+- Add new tasks under "ACTIVE TASKS" section
+- Mark completed tasks with [DONE - DATE] and move to "COMPLETED TASKS" section
+- Use clear, specific descriptions for each task
+

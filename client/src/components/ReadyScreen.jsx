@@ -91,43 +91,43 @@ function ReadyScreen({ playerId, playerName }) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-indigo-100 to-purple-100">
+    <div className="min-h-screen flex items-center justify-center p-2 sm:p-4 bg-gradient-to-br from-indigo-100 to-purple-100">
       <div className="w-full max-w-2xl">
-        <div className="bg-white p-8 rounded-2xl shadow-lg">
+        <div className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg max-h-[98vh] overflow-y-auto">
           
           {/* Previous Turn Results (if available) */}
           {game.lastCompletedTurn && (
-            <div className="mb-8 pb-8 border-b border-slate-200">
-              <h2 className="text-2xl font-bold mb-4 text-center text-slate-900">
-                Last Turn Results
+            <div className="mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-slate-200">
+              <h2 className="text-xl sm:text-2xl font-bold mb-3 text-center text-slate-900">
+                Last Turn
               </h2>
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="flex justify-between items-center mb-4">
+              <div className="bg-slate-50 p-3 sm:p-4 rounded-lg">
+                <div className="flex justify-between items-center mb-3">
                   <div>
-                    <p className="text-lg font-semibold text-slate-800">
+                    <p className="text-base sm:text-lg font-semibold text-slate-800">
                       {game.lastCompletedTurn.teamName}
                     </p>
-                    <p className="text-sm text-slate-600">
-                      Describer: {game.lastCompletedTurn.describerPlayerName}
+                    <p className="text-xs sm:text-sm text-slate-600">
+                      {game.lastCompletedTurn.describerPlayerName}
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="text-3xl font-bold text-indigo-600">
+                    <p className="text-2xl sm:text-3xl font-bold text-indigo-600">
                       {game.lastCompletedTurn.score}
                     </p>
-                    <p className="text-sm text-slate-600">points</p>
+                    <p className="text-xs sm:text-sm text-slate-600">pts</p>
                   </div>
                 </div>
                 
                 {/* Words from last turn */}
                 {game.lastCompletedTurn.turnWords && game.lastCompletedTurn.turnWords.length > 0 && (
                   <div>
-                    <h3 className="font-semibold text-slate-700 mb-2 text-sm">Words:</h3>
-                    <div className="max-h-32 overflow-y-auto space-y-1">
+                    <h3 className="font-semibold text-slate-700 mb-1 text-xs sm:text-sm">Words:</h3>
+                    <div className="max-h-24 sm:max-h-32 overflow-y-auto space-y-0.5">
                       {game.lastCompletedTurn.turnWords.map((word, index) => (
-                        <div key={index} className="flex justify-between text-sm">
-                          <span>{word.word}</span>
-                          <span className={`font-semibold ${
+                        <div key={index} className="flex justify-between text-xs sm:text-sm">
+                          <span className="truncate mr-2">{word.word}</span>
+                          <span className={`font-semibold flex-shrink-0 ${
                             word.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
                           }`}>
                             {word.status === 'correct' ? '✓' : '⊘'}
@@ -140,16 +140,16 @@ function ReadyScreen({ playerId, playerName }) {
               </div>
 
               {/* Leaderboard */}
-              <div className="mt-6">
-                <h3 className="font-bold text-slate-700 mb-3 text-center">Leaderboard</h3>
-                <div className="space-y-2">
+              <div className="mt-3 sm:mt-4">
+                <h3 className="font-bold text-slate-700 mb-2 text-center text-sm sm:text-base">Leaderboard</h3>
+                <div className="space-y-1.5 sm:space-y-2">
                   {game.teams
                     .map((team, index) => ({ ...team, originalIndex: index }))
                     .sort((a, b) => b.score - a.score)
                     .map((team, displayIndex) => (
                       <div
                         key={team.originalIndex}
-                        className={`flex justify-between p-3 rounded-md ${
+                        className={`flex justify-between p-2 sm:p-3 rounded-md text-sm sm:text-base ${
                           displayIndex === 0 ? 'bg-yellow-100 border border-yellow-300' : 'bg-slate-100'
                         }`}
                       >
@@ -169,15 +169,15 @@ function ReadyScreen({ playerId, playerName }) {
             {game.status === 'finished' ? (
               // Game finished - show button to view final results
               <div>
-                <h2 className="text-3xl font-bold mb-4 text-slate-900">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-slate-900">
                   🎉 Game Complete! 🎉
                 </h2>
-                <p className="text-lg text-slate-600 mb-6">
-                  All rounds completed! Click below to see the final results.
+                <p className="text-base sm:text-lg text-slate-600 mb-4">
+                  All rounds completed!
                 </p>
                 <button
                   onClick={() => navigate(`/gameover/${gameId}`)}
-                  className="bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg w-full hover:bg-emerald-700 transition-transform hover:scale-105 shadow-lg"
+                  className="bg-emerald-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg w-full hover:bg-emerald-700 transition-transform hover:scale-105 shadow-lg text-base sm:text-lg"
                 >
                   View Final Results
                 </button>
@@ -185,25 +185,25 @@ function ReadyScreen({ playerId, playerName }) {
             ) : (
               // Game in progress - show next turn info
               <>
-                <h2 className="text-3xl font-bold mb-2 text-slate-900">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-slate-900">
                   {game.lastCompletedTurn ? 'Next Up' : 'First Turn'}
                 </h2>
-                <p className="text-2xl font-semibold text-indigo-600 mb-2">
+                <p className="text-xl sm:text-2xl font-semibold text-indigo-600 mb-1">
                   {currentTeam.name}
                 </p>
-                <p className="text-lg text-slate-600 mb-6">
+                <p className="text-base sm:text-lg text-slate-600 mb-4">
                   Describer: {describerPlayerName}
                 </p>
 
                 {/* Role-specific messages and actions */}
                 {isDescriber && (
                   <div>
-                    <p className="text-slate-600 mb-6">
-                      You're the describer! Click below to start your turn.
+                    <p className="text-slate-600 mb-4 text-sm sm:text-base">
+                      You're the describer! Click below to start.
                     </p>
                     <button
                       onClick={handleStartTurn}
-                      className="bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg w-full hover:bg-indigo-700 transition-transform hover:scale-105 shadow-lg"
+                      className="bg-indigo-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg w-full hover:bg-indigo-700 transition-transform hover:scale-105 shadow-lg text-base sm:text-lg"
                     >
                       Start Turn
                     </button>
@@ -212,28 +212,28 @@ function ReadyScreen({ playerId, playerName }) {
 
                 {isGuesser && (
                   <div>
-                    <p className="text-slate-600 mb-4">
-                      You're a guesser! Get ready to guess the words your describer will act out.
+                    <p className="text-slate-600 mb-3 text-sm sm:text-base">
+                      You're a guesser! Get ready.
                     </p>
-                    <p className="text-sm text-slate-500 mb-6">
-                      Waiting for {describerPlayerName} to start the turn...
+                    <p className="text-xs sm:text-sm text-slate-500 mb-4">
+                      Waiting for {describerPlayerName}...
                     </p>
-                    <div className="animate-pulse bg-indigo-100 h-16 rounded-lg flex items-center justify-center">
-                      <span className="text-indigo-600 font-semibold">Waiting...</span>
+                    <div className="animate-pulse bg-indigo-100 h-12 sm:h-14 rounded-lg flex items-center justify-center">
+                      <span className="text-indigo-600 font-semibold text-sm sm:text-base">Waiting...</span>
                     </div>
                   </div>
                 )}
 
                 {isSpectator && (
                   <div>
-                    <p className="text-slate-600 mb-6">
-                      Watch {currentTeam.name} play their turn!
+                    <p className="text-slate-600 mb-3 text-sm sm:text-base">
+                      Watch {currentTeam.name} play!
                     </p>
-                    <p className="text-sm text-slate-500 mb-6">
-                      Waiting for {describerPlayerName} to start the turn...
+                    <p className="text-xs sm:text-sm text-slate-500 mb-4">
+                      Waiting for {describerPlayerName}...
                     </p>
-                    <div className="animate-pulse bg-slate-100 h-16 rounded-lg flex items-center justify-center">
-                      <span className="text-slate-600 font-semibold">Waiting...</span>
+                    <div className="animate-pulse bg-slate-100 h-12 sm:h-14 rounded-lg flex items-center justify-center">
+                      <span className="text-slate-600 font-semibold text-sm sm:text-base">Waiting...</span>
                     </div>
                   </div>
                 )}
@@ -242,7 +242,7 @@ function ReadyScreen({ playerId, playerName }) {
           </div>
 
           {/* Game Info */}
-          <div className="mt-8 pt-6 border-t border-slate-200 text-center text-sm text-slate-500">
+          <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200 text-center text-xs sm:text-sm text-slate-500">
             <p>Round {game.currentRound} of {game.gameSettings?.totalRounds || 3}</p>
           </div>
         </div>
