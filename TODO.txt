@@ -34,6 +34,25 @@ COMPLETED TASKS:
 NOTES:
 ------
 - Add new tasks under "ACTIVE TASKS" section
+
+PERFORMANCE IMPROVEMENTS:
+--------------------------
+[DONE - Oct 16, 2025] Increased debounce times to handle network latency on deployed servers
+  → Client-side button debounce: 500ms → 1200ms
+  → Server-side duplicate window: 2s → 4s
+  → Addresses delay between clicking correct/skip and receiving next word on Railway deployment
+  → Future optimization: Consider client-side word preloading for instant feedback
+
+[DONE - Oct 16, 2025] Implemented full word preloading system with optimistic updates
+  → Server sends 15-word queue when turn starts (eliminates per-word round trips)
+  → Client shows next word INSTANTLY (0ms delay) using local queue
+  → Background server updates handle scoring and validation
+  → Automatic queue refill when 5 words remaining
+  → Button debounce reduced to 200ms (from 1200ms) since no server wait needed
+  → Server-side: Added wordQueue and queueIndex to currentTurn schema
+  → Server-side: Added handleRequestMoreWords for dynamic queue refilling
+  → Client-side: Optimistic state management with automatic sync
+  → Result: Game feels incredibly responsive, especially on slow connections
 - Mark completed tasks with [DONE - DATE] and move to "COMPLETED TASKS" section
 - Use clear, specific descriptions for each task
 

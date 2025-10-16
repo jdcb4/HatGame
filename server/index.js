@@ -103,6 +103,8 @@ io.on('connection', (socket) => {
       // Process the action based on type
       let updatedGame = game;
       
+      console.log(`📥 Processing action: "${action}"`, payload);
+      
       switch (action) {
         case 'join-team':
           updatedGame = await handleJoinTeam(game, payload);
@@ -120,6 +122,10 @@ io.on('connection', (socket) => {
         case 'word-skip':
           updatedGame = await handleWordSkip(game, payload);
           break;
+        case 'request-more-words':
+          console.log('🎯 MATCHED request-more-words case!');
+          updatedGame = await handleRequestMoreWords(game, payload);
+          break;
         case 'end-turn':
           updatedGame = await handleEndTurn(game);
           break;
@@ -127,6 +133,7 @@ io.on('connection', (socket) => {
           updatedGame = await handleNextTurn(game);
           break;
         default:
+          console.log(`❌ Unknown action received: "${action}"`);
           socket.emit('error', { message: 'Unknown action' });
           return;
       }
@@ -319,15 +326,24 @@ async function handleStartTurn(game) {
   
   const selectedCategory = availableCategories[Math.floor(Math.random() * availableCategories.length)];
   const words = game.wordsByCategoryForGame[selectedCategory];
-  const currentWord = words.pop();
+  
+  // Preload 15 words for client-side queue (optimistic updates)
+  const queueSize = Math.min(15, words.length);
+  const wordQueue = [];
+  for (let i = 0; i < queueSize; i++) {
+    wordQueue.push(words.pop());
+  }
   
   console.log('Selected category:', selectedCategory);
-  console.log('Current word:', currentWord.word);
+  console.log('Preloaded words in queue:', wordQueue.length);
+  console.log('First word:', wordQueue[0].word);
   console.log('Words remaining in category:', words.length);
   
   game.currentTurn = {
     category: selectedCategory,
-    word: currentWord.word,
+    word: wordQueue[0].word,
+    wordQueue: wordQueue.map(w => w.word),  // Send word strings to client
+    queueIndex: 0,  // Track position in queue
     startTime: new Date(),
     timeLeft: game.gameSettings.turnDuration,
     turnWords: [],
@@ -337,7 +353,7 @@ async function handleStartTurn(game) {
     describerPlayerName: describerPlayerName
   };
   
-  // Update the words array after popping
+  // Update the words array after taking queue
   game.wordsByCategoryForGame[selectedCategory] = words;
   
   // Mark the wordsByCategoryForGame field as modified for Mongoose
@@ -366,13 +382,14 @@ async function handleWordCorrect(game, { word }) {
   
   // Prevent duplicate word registration if the same word was just submitted
   // This fixes the issue where rapid clicking registers the same word multiple times
+  // Increased to 4 seconds to account for network latency on deployed servers
   const turnWords = game.currentTurn.turnWords || [];
   if (turnWords.length > 0) {
     const lastWord = turnWords[turnWords.length - 1];
     // Check if the last word submitted is the same as the current word
-    // and was submitted very recently (within 2 seconds)
+    // and was submitted very recently (within 4 seconds to handle server round-trip)
     const timeSinceLastWord = new Date() - new Date(lastWord.timestamp);
-    if (lastWord.word === word && timeSinceLastWord < 2000) {
+    if (lastWord.word === word && timeSinceLastWord < 4000) {
       console.log('Ignoring duplicate word submission:', word);
       return game;
     }
@@ -390,52 +407,16 @@ async function handleWordCorrect(game, { word }) {
     timestamp: new Date()
   });
   
-  // Get next word
-  const words = game.wordsByCategoryForGame[game.currentTurn.category];
-  console.log(`Getting next word for category: ${game.currentTurn.category}`);
-  console.log(`Words available: ${words ? words.length : 'undefined'}`);
-  console.log(`Words array:`, words ? words.map(w => w.word) : 'undefined');
-  console.log(`Array reference:`, words === game.wordsByCategoryForGame[game.currentTurn.category]);
-  console.log(`Game ID: ${game.id}, Turn ID: ${game.currentTurn._id || 'no-id'}`);
+  // With word preloading, client handles showing next word instantly
+  // Server just increments the queue index
+  game.currentTurn.queueIndex = (game.currentTurn.queueIndex || 0) + 1;
   
-  if (words && words.length > 0) {
-    const nextWord = words.pop();
-    console.log(`Next word: ${nextWord.word}`);
-    console.log(`Words remaining after pop: ${words.length}`);
-    console.log(`Array after pop:`, words.map(w => w.word));
-    game.currentTurn.word = nextWord.word;
-    game.wordsByCategoryForGame[game.currentTurn.category] = words;
-    console.log(`Updated game words array:`, game.wordsByCategoryForGame[game.currentTurn.category].map(w => w.word));
-    console.log(`Updated currentTurn.word:`, game.currentTurn.word);
-    
-    // Mark the wordsByCategoryForGame field as modified for Mongoose
-    game.markModified('wordsByCategoryForGame');
-  } else {
-    console.log('No more words available in category, reshuffling category');
-    // Reshuffle the current category and continue the turn
-    const wordsByCategory = require('./data/words');
-    const categoryWords = wordsByCategory[game.currentTurn.category];
-    
-    if (categoryWords && categoryWords.length > 0) {
-      const shuffledWords = [...categoryWords];
-      shuffleArray(shuffledWords);
-      game.wordsByCategoryForGame[game.currentTurn.category] = shuffledWords;
-      
-      // Mark the wordsByCategoryForGame field as modified for Mongoose
-      game.markModified('wordsByCategoryForGame');
-      
-      // Get the next word from the reshuffled category
-      const nextWord = game.wordsByCategoryForGame[game.currentTurn.category].pop();
-      game.currentTurn.word = nextWord.word;
-      game.wordsByCategoryForGame[game.currentTurn.category] = game.wordsByCategoryForGame[game.currentTurn.category];
-      
-      console.log(`Reshuffled category ${game.currentTurn.category}, next word: ${nextWord.word}`);
-      console.log(`Words remaining after reshuffle: ${game.wordsByCategoryForGame[game.currentTurn.category].length}`);
-    } else {
-      console.log('No words available in category data, ending turn');
-      return await handleEndTurn(game);
-    }
+  // Update the server's view of current word (for consistency)
+  if (game.currentTurn.wordQueue && game.currentTurn.queueIndex < game.currentTurn.wordQueue.length) {
+    game.currentTurn.word = game.currentTurn.wordQueue[game.currentTurn.queueIndex];
   }
+  
+  console.log(`Word marked correct. Queue index now: ${game.currentTurn.queueIndex}`)
   
   return await game.save();
 }
@@ -456,13 +437,14 @@ async function handleWordSkip(game, { word }) {
   
   // Prevent duplicate word registration if the same word was just submitted
   // This fixes the issue where rapid clicking registers the same word multiple times
+  // Increased to 4 seconds to account for network latency on deployed servers
   const turnWords = game.currentTurn.turnWords || [];
   if (turnWords.length > 0) {
     const lastWord = turnWords[turnWords.length - 1];
     // Check if the last word submitted is the same as the current word
-    // and was submitted very recently (within 2 seconds)
+    // and was submitted very recently (within 4 seconds to handle server round-trip)
     const timeSinceLastWord = new Date() - new Date(lastWord.timestamp);
-    if (lastWord.word === word && timeSinceLastWord < 2000) {
+    if (lastWord.word === word && timeSinceLastWord < 4000) {
       console.log('Ignoring duplicate word skip:', word);
       return game;
     }
@@ -485,50 +467,106 @@ async function handleWordSkip(game, { word }) {
     timestamp: new Date()
   });
   
-  // Get next word
-  const words = game.wordsByCategoryForGame[game.currentTurn.category];
-  console.log(`Getting next word for category: ${game.currentTurn.category}`);
-  console.log(`Words available: ${words ? words.length : 'undefined'}`);
-  console.log(`Words array:`, words ? words.map(w => w.word) : 'undefined');
-  console.log(`Game ID: ${game.id}, Turn ID: ${game.currentTurn._id || 'no-id'}`);
+  // With word preloading, client handles showing next word instantly
+  // Server just increments the queue index
+  game.currentTurn.queueIndex = (game.currentTurn.queueIndex || 0) + 1;
   
-  if (words && words.length > 0) {
-    const nextWord = words.pop();
-    console.log(`Next word: ${nextWord.word}`);
-    console.log(`Words remaining after pop: ${words.length}`);
-    game.currentTurn.word = nextWord.word;
-    game.wordsByCategoryForGame[game.currentTurn.category] = words;
-    
-    // Mark the wordsByCategoryForGame field as modified for Mongoose
-    game.markModified('wordsByCategoryForGame');
-  } else {
-    console.log('No more words available in category, reshuffling category');
-    // Reshuffle the current category and continue the turn
-    const wordsByCategory = require('./data/words');
-    const categoryWords = wordsByCategory[game.currentTurn.category];
-    
-    if (categoryWords && categoryWords.length > 0) {
-      const shuffledWords = [...categoryWords];
-      shuffleArray(shuffledWords);
-      game.wordsByCategoryForGame[game.currentTurn.category] = shuffledWords;
-      
-      // Mark the wordsByCategoryForGame field as modified for Mongoose
-      game.markModified('wordsByCategoryForGame');
-      
-      // Get the next word from the reshuffled category
-      const nextWord = game.wordsByCategoryForGame[game.currentTurn.category].pop();
-      game.currentTurn.word = nextWord.word;
-      game.wordsByCategoryForGame[game.currentTurn.category] = game.wordsByCategoryForGame[game.currentTurn.category];
-      
-      console.log(`Reshuffled category ${game.currentTurn.category}, next word: ${nextWord.word}`);
-      console.log(`Words remaining after reshuffle: ${game.wordsByCategoryForGame[game.currentTurn.category].length}`);
-    } else {
-      console.log('No words available in category data, ending turn');
-      return await handleEndTurn(game);
-    }
+  // Update the server's view of current word (for consistency)
+  if (game.currentTurn.wordQueue && game.currentTurn.queueIndex < game.currentTurn.wordQueue.length) {
+    game.currentTurn.word = game.currentTurn.wordQueue[game.currentTurn.queueIndex];
   }
   
+  console.log(`Word skipped. Queue index now: ${game.currentTurn.queueIndex}`)
+  
   return await game.save();
+}
+
+async function handleRequestMoreWords(game, { count = 10 }) {
+  console.log('🔄 handleRequestMoreWords called:', { 
+    gameId: game.id, 
+    category: game.currentTurn?.category,
+    currentQueueLength: game.currentTurn?.wordQueue?.length,
+    currentQueueIndex: game.currentTurn?.queueIndex,
+    requestedCount: count
+  });
+  
+  // Use atomic update to avoid version conflicts with concurrent word-correct/skip operations
+  // This is crucial because word-correct and request-more-words happen simultaneously
+  const Game = require('./models/Game');
+  
+  try {
+    // Reload the game to get the latest version
+    const latestGame = await Game.findOne({ id: game.id });
+    
+    if (!latestGame || !latestGame.currentTurn || !latestGame.currentTurn.category) {
+      console.log('❌ CurrentTurn not properly initialized, ignoring request-more-words action');
+      return game;
+    }
+    
+    const words = latestGame.wordsByCategoryForGame[latestGame.currentTurn.category];
+    console.log(`📦 Words available in category "${latestGame.currentTurn.category}": ${words ? words.length : 'undefined'}`);
+    
+    if (!words || words.length === 0) {
+      console.log('⚠️ No more words available in category');
+      return latestGame;
+    }
+    
+    // Get more words (up to requested count or remaining words)
+    const additionalCount = Math.min(count, words.length);
+    const additionalWords = [];
+    for (let i = 0; i < additionalCount; i++) {
+      additionalWords.push(words.pop());
+    }
+    
+    const oldQueueLength = latestGame.currentTurn.wordQueue.length;
+    console.log(`➕ Adding ${additionalWords.length} words to queue (old length: ${oldQueueLength})`);
+    console.log(`   New words:`, additionalWords.map(w => w.word));
+    
+    // Append to existing queue
+    const newQueue = latestGame.currentTurn.wordQueue.concat(additionalWords.map(w => w.word));
+    
+    // Update the words array
+    latestGame.wordsByCategoryForGame[latestGame.currentTurn.category] = words;
+    
+    // Mark both fields as modified for Mongoose
+    latestGame.markModified('wordsByCategoryForGame');
+    latestGame.currentTurn.wordQueue = newQueue;
+    latestGame.markModified('currentTurn.wordQueue');
+    
+    console.log(`✅ New queue length: ${newQueue.length} (added ${newQueue.length - oldQueueLength} words)`);
+    console.log(`   Queue now has:`, newQueue.slice(-5)); // Show last 5 words
+    
+    // Save with retry on version conflict
+    let retries = 3;
+    while (retries > 0) {
+      try {
+        const savedGame = await latestGame.save();
+        console.log(`💾 Successfully saved game with new queue (${savedGame.currentTurn.wordQueue.length} words)`);
+        return savedGame;
+      } catch (err) {
+        if (err.name === 'VersionError' && retries > 1) {
+          console.log(`⚠️ Version conflict, retrying... (${retries - 1} attempts left)`);
+          retries--;
+          // Reload and try again
+          const retryGame = await Game.findOne({ id: game.id });
+          if (retryGame) {
+            retryGame.currentTurn.wordQueue = newQueue;
+            retryGame.wordsByCategoryForGame[retryGame.currentTurn.category] = words;
+            retryGame.markModified('wordsByCategoryForGame');
+            retryGame.markModified('currentTurn.wordQueue');
+            Object.assign(latestGame, retryGame);
+          }
+        } else {
+          throw err;
+        }
+      }
+    }
+    
+    return latestGame;
+  } catch (error) {
+    console.error('❌ Error in handleRequestMoreWords:', error);
+    return game; // Return original game on error
+  }
 }
 
 async function handleEndTurn(game) {

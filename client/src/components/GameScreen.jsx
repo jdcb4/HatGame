@@ -11,12 +11,78 @@ const GameScreen = ({ playerId, playerName }) => {
   const [isDescriber, setIsDescriber] = useState(false);
   const [isCurrentTeam, setIsCurrentTeam] = useState(false);
   const [isProcessingAction, setIsProcessingAction] = useState(false);
+  
+  // Local word queue for optimistic updates (instant feedback)
+  const [localWordQueue, setLocalWordQueue] = useState([]);
+  const [localWordIndex, setLocalWordIndex] = useState(0);
 
   useEffect(() => {
     if (gameId) {
       fetchGame(gameId);
     }
   }, [gameId]);
+  
+  // Initialize word queue when turn starts
+  useEffect(() => {
+    if (game?.currentTurn?.wordQueue && game?.currentTurn?.startTime) {
+      console.log('Initializing word queue:', {
+        queueLength: game.currentTurn.wordQueue.length,
+        serverIndex: game.currentTurn.queueIndex || 0,
+        firstWord: game.currentTurn.wordQueue[0]
+      });
+      setLocalWordQueue(game.currentTurn.wordQueue);
+      setLocalWordIndex(game.currentTurn.queueIndex || 0);
+    }
+  }, [game?.currentTurn?.startTime]); // Only reinitialize when a new turn starts
+  
+  // Request more words when queue is running low (8 words left - request earlier!)
+  // Use a ref to track if we've already requested to avoid multiple requests
+  const hasRequestedMore = React.useRef(false);
+  
+  useEffect(() => {
+    if (localWordQueue.length > 0 && localWordIndex >= 0) {
+      const wordsRemaining = localWordQueue.length - localWordIndex;
+      console.log(`📊 Queue status: index=${localWordIndex}, total=${localWordQueue.length}, remaining=${wordsRemaining}`);
+      
+      // Request earlier (at 8 words) to give time for server round-trip
+      if (wordsRemaining <= 8 && wordsRemaining > 0 && !hasRequestedMore.current) {
+        console.log(`⚠️ Only ${wordsRemaining} words left in queue, requesting more...`);
+        emitGameAction('request-more-words', { count: 10 });
+        hasRequestedMore.current = true;
+      }
+      
+      // Reset flag when we have plenty of words again (more than 12)
+      if (wordsRemaining > 12) {
+        hasRequestedMore.current = false;
+      }
+    }
+  }, [localWordIndex, localWordQueue.length]);
+  
+  // Update local queue when server sends more words
+  useEffect(() => {
+    if (game?.currentTurn?.wordQueue && Array.isArray(game.currentTurn.wordQueue)) {
+      const serverQueueLength = game.currentTurn.wordQueue.length;
+      const localQueueLength = localWordQueue.length;
+      
+      console.log('🔍 Checking queue sync:', {
+        serverLength: serverQueueLength,
+        localLength: localQueueLength,
+        localIndex: localWordIndex,
+        serverQueuePreview: game.currentTurn.wordQueue.slice(0, 3),
+        localQueuePreview: localWordQueue.slice(0, 3)
+      });
+      
+      // Update if server has more words OR if local queue is empty
+      if (serverQueueLength > localQueueLength || localQueueLength === 0) {
+        console.log('✅ Server has more words! Updating local queue from', localQueueLength, 'to', serverQueueLength);
+        setLocalWordQueue([...game.currentTurn.wordQueue]); // Create new array to trigger re-render
+        // Reset the request flag since we got new words
+        hasRequestedMore.current = false;
+      } else {
+        console.log('   No update needed (server:', serverQueueLength, 'local:', localQueueLength, ')');
+      }
+    }
+  }, [game?.currentTurn?.wordQueue, game?.currentTurn]); // Watch the whole wordQueue object
 
   // Navigate to ready screen when phase changes to 'ready'
   useEffect(() => {
@@ -83,22 +149,76 @@ const GameScreen = ({ playerId, playerName }) => {
   // Server handles turn initialization automatically
 
   const handleWordCorrect = () => {
-    // Prevent multiple rapid clicks by checking if we're already processing an action
-    if (game.currentTurn && !isProcessingAction) {
+    // Optimistic update: show next word instantly!
+    if (game.currentTurn && !isProcessingAction && localWordQueue.length > 0) {
+      // Safety check: don't go past the end of the queue
+      if (localWordIndex >= localWordQueue.length) {
+        console.warn('⚠️ Already at end of word queue, cannot advance');
+        return;
+      }
+      
       setIsProcessingAction(true);
-      emitGameAction('word-correct', { word: game.currentTurn.word });
-      // Re-enable buttons after a short delay (500ms)
-      setTimeout(() => setIsProcessingAction(false), 500);
+      
+      const currentWord = localWordQueue[localWordIndex] || game.currentTurn.word;
+      const nextIndex = localWordIndex + 1;
+      
+      // INSTANT: Move to next word locally (0ms delay!)
+      setLocalWordIndex(nextIndex);
+      
+      // Background: Send action to server for scoring/validation
+      emitGameAction('word-correct', { 
+        word: currentWord,
+        queueIndex: localWordIndex 
+      });
+      
+      // Re-enable buttons quickly (200ms) since we don't wait for server
+      setTimeout(() => setIsProcessingAction(false), 200);
+      
+      console.log('✅ Optimistic correct:', { 
+        word: currentWord, 
+        oldIndex: localWordIndex,
+        newIndex: nextIndex,
+        nextWord: localWordQueue[nextIndex],
+        queueLength: localWordQueue.length,
+        remaining: localWordQueue.length - nextIndex
+      });
     }
   };
 
   const handleWordSkip = () => {
-    // Prevent multiple rapid clicks by checking if we're already processing an action
-    if (game.currentTurn && !isProcessingAction) {
+    // Optimistic update: show next word instantly!
+    if (game.currentTurn && !isProcessingAction && localWordQueue.length > 0) {
+      // Safety check: don't go past the end of the queue
+      if (localWordIndex >= localWordQueue.length) {
+        console.warn('⚠️ Already at end of word queue, cannot advance');
+        return;
+      }
+      
       setIsProcessingAction(true);
-      emitGameAction('word-skip', { word: game.currentTurn.word });
-      // Re-enable buttons after a short delay (500ms)
-      setTimeout(() => setIsProcessingAction(false), 500);
+      
+      const currentWord = localWordQueue[localWordIndex] || game.currentTurn.word;
+      const nextIndex = localWordIndex + 1;
+      
+      // INSTANT: Move to next word locally (0ms delay!)
+      setLocalWordIndex(nextIndex);
+      
+      // Background: Send action to server for scoring/validation
+      emitGameAction('word-skip', { 
+        word: currentWord,
+        queueIndex: localWordIndex 
+      });
+      
+      // Re-enable buttons quickly (200ms) since we don't wait for server
+      setTimeout(() => setIsProcessingAction(false), 200);
+      
+      console.log('⏭️ Optimistic skip:', { 
+        word: currentWord, 
+        oldIndex: localWordIndex,
+        newIndex: nextIndex,
+        nextWord: localWordQueue[nextIndex],
+        queueLength: localWordQueue.length,
+        remaining: localWordQueue.length - nextIndex
+      });
     }
   };
 
@@ -242,7 +362,7 @@ const GameScreen = ({ playerId, playerName }) => {
               // Describer view
               <>
                 <h2 className="font-bold text-slate-900 mb-3 break-words text-center text-3xl sm:text-4xl md:text-5xl leading-tight px-2">
-                  {game.currentTurn?.word || 'Loading...'}
+                  {localWordQueue[localWordIndex] || game.currentTurn?.word || 'Loading...'}
                 </h2>
                 <p className="text-lg sm:text-xl text-slate-500 font-medium">
                   {game.currentTurn?.category ? 
@@ -250,6 +370,12 @@ const GameScreen = ({ playerId, playerName }) => {
                     'Loading...'
                   }
                 </p>
+                {/* Debug info - show remaining words */}
+                {localWordQueue.length > 0 && (
+                  <p className="text-xs text-slate-400 mt-2">
+                    {localWordQueue.length - localWordIndex} words remaining
+                  </p>
+                )}
               </>
             ) : isCurrentTeam ? (
               // Same team guessing view

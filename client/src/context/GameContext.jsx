@@ -55,13 +55,15 @@ export const GameProvider = ({ children }) => {
 
       // Listen for game updates
       newSocket.on('game-updated', (updatedGame) => {
-        console.log('Game updated received:', {
+        console.log('📨 Game updated received:', {
           status: updatedGame.status,
           currentPhase: updatedGame.currentPhase,
           currentTurn: updatedGame.currentTurn ? {
             category: updatedGame.currentTurn.category,
             word: updatedGame.currentTurn.word,
-            turnScore: updatedGame.currentTurn.turnScore
+            turnScore: updatedGame.currentTurn.turnScore,
+            wordQueueLength: updatedGame.currentTurn.wordQueue?.length,
+            queueIndex: updatedGame.currentTurn.queueIndex
           } : null,
           hasLastCompletedTurn: !!updatedGame.lastCompletedTurn
         });
@@ -211,16 +213,17 @@ export const GameProvider = ({ children }) => {
 
   // Socket actions
   const emitGameAction = (action, payload) => {
-    console.log('emitGameAction called:', { action, payload, socket: !!socket, game: !!game });
+    console.log(`🚀 emitGameAction called:`, { action, payload, hasSocket: !!socket, hasGame: !!game, gameId: game?.id });
     if (socket && game) {
-      console.log('Emitting game action:', { gameId: game.id, action, payload });
-      socket.emit('game-action', {
+      const actionData = {
         gameId: game.id,
         action,
         payload
-      });
+      };
+      console.log(`📤 Emitting "${action}" to server:`, actionData);
+      socket.emit('game-action', actionData);
     } else {
-      console.log('Cannot emit game action - socket or game not ready');
+      console.error('❌ Cannot emit game action - socket or game not ready', { socket: !!socket, game: !!game });
     }
   };
 

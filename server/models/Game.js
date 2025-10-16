@@ -74,6 +74,11 @@ const gameSchema = new mongoose.Schema({
   currentTurn: {
     category: String,
     word: String,
+    wordQueue: [String],  // Preloaded words for optimistic client updates
+    queueIndex: {         // Current position in word queue
+      type: Number,
+      default: 0
+    },
     startTime: Date,
     timeLeft: Number,
     turnWords: [{
