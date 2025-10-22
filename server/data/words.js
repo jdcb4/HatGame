@@ -1,20134 +1,12528 @@
 // Word data structure generated from CSV files
-// Generated on: 16/10/2025, 8:59:49 pm
-// Total categories: 6
+// Generated on: 22/10/2025, 9:43:22 pm
+// Total categories: 3
 
 const wordsByCategory = {
-  "actions": [
+  "What": [
     {
-      "word": "WORD",
-      "difficulty": "easy"
+      "word": "ASTROLABE",
+      "hint": "Ancient instrument for measuring celestial body positions"
     },
     {
-      "word": "EAT",
-      "difficulty": "easy"
+      "word": "SLIDE RULE",
+      "hint": "A mechanical analog computer"
     },
     {
-      "word": "SLEEP",
-      "difficulty": "easy"
+      "word": "MILLING MACHINE",
+      "hint": "A machine tool that rotates a circular tool with several cutting edges"
     },
     {
-      "word": "WALK",
-      "difficulty": "easy"
+      "word": "DRILL PRESS",
+      "hint": "A machine tool for drilling holes, set on a fixed stand"
     },
     {
-      "word": "DRINK",
-      "difficulty": "easy"
+      "word": "BAND SAW",
+      "hint": "A power saw with a long, sharp blade consisting of a continuous band of toothed metal stretched"
     },
     {
-      "word": "WASH",
-      "difficulty": "easy"
+      "word": "KILN",
+      "hint": "A furnace for firing pottery"
     },
     {
-      "word": "SIT",
-      "difficulty": "easy"
+      "word": "SPINNING WHEEL",
+      "hint": "A device for spinning thread or yarn"
     },
     {
-      "word": "STAND",
-      "difficulty": "easy"
+      "word": "SEXTANT",
+      "hint": "Navigational instrument for measuring angles"
     },
     {
-      "word": "LISTEN",
-      "difficulty": "easy"
+      "word": "ZEPPELIN",
+      "hint": "A large German airship of the early 20th century"
     },
     {
-      "word": "READ",
-      "difficulty": "easy"
+      "word": "UNICYCLE",
+      "hint": "A single-wheeled vehicle on which the rider sits and pedals"
     },
     {
-      "word": "WRITE",
-      "difficulty": "easy"
+      "word": "CLAVICHORD",
+      "hint": "A small, quiet keyboard instrument whose strings are struck by brass wedges"
     },
     {
-      "word": "CLEAN",
-      "difficulty": "easy"
+      "word": "HOVERCRAFT",
+      "hint": "Vehicle"
     },
     {
-      "word": "COOK",
-      "difficulty": "easy"
+      "word": "BATTERING RAM",
+      "hint": "A heavy object swung or rammed against a door or wall to break it down"
     },
     {
-      "word": "DRESS",
-      "difficulty": "easy"
+      "word": "3D PRINTER",
+      "hint": "Tool for creating objects out of filament"
     },
     {
-      "word": "DRIVE",
-      "difficulty": "easy"
+      "word": "TRIANGLE (INSTRUMENT)",
+      "hint": "Musical instrument"
     },
     {
-      "word": "SHOP",
-      "difficulty": "easy"
+      "word": "MICROSCOPE",
+      "hint": "Makes very small objects look larger"
     },
     {
-      "word": "WORK",
-      "difficulty": "easy"
+      "word": "ACCORDION",
+      "hint": "Bellows-driven free-reed instrument"
     },
     {
-      "word": "PLAY",
-      "difficulty": "easy"
+      "word": "DIDGERIDOO",
+      "hint": "Australian Aboriginal wind instrument"
     },
     {
-      "word": "TALK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCH TV",
-      "difficulty": "easy"
-    },
-    {
-      "word": "USE PHONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRUSH HAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPEN DOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOSE DOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAKE UP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMB HAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GET UP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIE DOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMILE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAUGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNEEZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YAWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRETCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THROW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PULL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAWL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEDAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRESTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAY BALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXERCISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WARM UP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOL DOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRACTICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPETE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHISPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEXT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPLAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AGREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISAGREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUESTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANSWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISCUSS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLIRT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAY MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUILD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERFORM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKETCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTTERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCULPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOLD CLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAKE ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHECK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSEMBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORGANIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRESENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEGOTIATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADVERTISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROMOTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUPERVISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALCULATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COPY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TYPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HELP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KISS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INVITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEARN FROM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OBSERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEARN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STUDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REMEMBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORGET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMAGINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FEEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPERIMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPLORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISCOVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEARCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNDERSTAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRINKLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREEZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MELT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEASON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREPARE FOOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SET TABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLEAR TABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIMB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOUCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOOK AT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LISTEN TO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GATHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECYCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPOST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROTECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLEAN UP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOLVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SELECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARRANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTRAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEIGH OPTIONS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSIDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REFLECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DROP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIGGLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FROWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TWIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SQUEEZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WANDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GALLOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIPTOE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TWIRL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STUMBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DODGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PADDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRUISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAUNTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOBBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MURMUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANNOUNCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXCLAIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHUCKLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIDGET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIGGLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRAMBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCURRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOPPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BALANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOUNCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STROKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASSAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VACUUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARVEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCATTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSTRUCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECORATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROJECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREPARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEASURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMBINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CYCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOSS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CATAPULT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLINGSHOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNFASTEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FASTEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SECURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIGHTEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOOSEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRUSH TEETH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GET DRESSED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREPARE MEAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER PLANTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAKE BED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELAX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROCERY SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLEAN HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOW LAWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWEEP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRON CLOTHES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WASH DISHES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECLUTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAY BILLS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATTEND MEETING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUN ERRANDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHECK MAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRIBBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TACKLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCHERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYMNASTICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEIGHTLIFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PILATES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAI CHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARTIAL ARTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESCRIBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUGGEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPLAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEBATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LECTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERVIEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRANSLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERPRET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROADCAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUBLISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VLOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PODCAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESPOND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVERSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMUNICATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDICATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOREOGRAPH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CERAMICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLASSBLOWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOODWORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METALWORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INVEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FINANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUDGET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACCOUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AUDIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MENTOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEVELOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INNOVATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESEARCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOLVE PROBLEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOSE SALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMFORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUPPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENCOURAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRITICIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADVISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORGIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APOLOGIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REASSURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENTERTAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLABORATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOPERATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEFEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHALLENGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONFRONT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERSUADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVINCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOTIVATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSPIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEFRIEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANALYZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EVALUATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HYPOTHESIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEDUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INFER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMORIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAINSTORM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCENTRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REASON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOGIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PONDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTEMPLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEDITATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INVESTIGATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHISK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNEAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARINATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARNISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FERMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JULIENNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLD IN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRESS SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREHEAT OVEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAVIGATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FARM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULTIVATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIRDWATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARGAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEACHCOMB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAIN CLIMB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KAYAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANOE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNOWBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRIORITIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELEGATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPROVISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIAGNOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROUBLESHOOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSESS RISK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRATEGIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEVELOP PLAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELIBERATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSPECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXAMINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRUTINIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURVEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOCUMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NARRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECOUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ILLUSTRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEMONSTRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXHIBIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REVEAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISCLOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROCLAIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECLARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AFFIRM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONFIRM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VERIFY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VALIDATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESTIMATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAUGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUANTIFY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEIGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMULATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPLICATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPRODUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMITATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIMIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUPLICATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FABRICATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GENERATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRODUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INVENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COORDINATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORCHESTRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIRECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OVERSEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REGULATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTROL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOVERN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNSEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSTRUCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EDUCATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUTOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLARIFY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMPLIFY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUMMARIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARAPHRASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADAPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODIFY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRANSFORM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADJUST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REFINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERFECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPTIMIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENHANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPROVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UPGRADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESTORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RENEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REJUVENATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALVAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECOVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESCUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIBERATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELEASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DETACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISCONNECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEPARATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIVIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPLIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MERGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHURN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENGRAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ETCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSCRIBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMBOSS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADORN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMBELLISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOURISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIMMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLISTEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPARKLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TWINKLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLICKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IGNITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KINDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAUT??",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRIZZLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMPTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNLOAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNPACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRANSPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECEIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACCEPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REJECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECLINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERMIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORBID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIMIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONFINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENCLOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENVELOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATTACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSAULT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRIKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUNCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHATTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHRED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISASSEMBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECONSTRUCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISMANTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXTRACT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EJECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISPERSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSOLIDATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXTEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTRACT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OSCILLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIBRATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PULSATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESONATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ECHO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REVERBERATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLUCTUATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALTERNATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROTATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REVOLVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIVOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRIFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASCEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESCEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAND",
-      "difficulty": "easy"
-    }
-  ],
-  "entertainment": [
-    {
-      "word": "WORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TITANIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAR WARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AVATAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JURASSIC PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE GODFATHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAWS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCKY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORREST GUMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOY STORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUPERMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE AVENGERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRON MAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACK PANTHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARRY POTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE MATRIX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INCEPTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FINDING NEMO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FROZEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHREK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESPICABLE ME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASABLANCA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERMINATOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIE HARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PULP FICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIENDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SIMPSONS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAKING BAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEINFELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE OFFICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURVIVOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIG BROTHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTH PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEXTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAMILY GUY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BACHELOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASTERCHEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE VOICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE CROWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BEATLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELVIS PRESLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MADONNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUEEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLLING STONES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NIRVANA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LED ZEPPELIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PINK FLOYD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEYONCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAYLOR SWIFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIHANNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUSTIN BIEBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KATY PERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMINEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRITNEY SPEARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLDPLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METALLICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELTON JOHN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAVID BOWIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOB MARLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADELE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LINKIN PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LADY GAGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRUNO MARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ED SHEERAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMILTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CATS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WICKED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICAGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAMMA MIA!",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISS SAIGON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JERSEY BOYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EVITA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWEENEY TODD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAIRSPRAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEWSIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPANY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLIVER!",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIPPIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABARET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIDE SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINECRAFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORTNITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TETRIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HALO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OVERWATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STREET FIGHTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POKEMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMCITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MADDEN NFL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCKET LEAGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPLATOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DONKEY KONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNCHARTED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BORDERLANDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIOSHOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIABLO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPRAH WINFREY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIM KARDASHIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KANYE WEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAD PITT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOM CRUISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILL SMITH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DWAYNE JOHNSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILEY CYRUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOHNNY DEPP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEORGE CLOONEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MORGAN FREEMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MERYL STREEP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMMA WATSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAL GADOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHAKIRA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOM HANKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JULIA ROBERTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDRA BULLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUGH JACKMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEANU REEVES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEVE CARELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMY POEHLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOBY DICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE HOBBIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANIMAL FARM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JANE EYRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE ALCHEMIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LITTLE WOMEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE ODYSSEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACBETH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SHINING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE OUTSIDERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATILDA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAVE CHAPPELLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEVIN HART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHRIS ROCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMY SCHUMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JERRY SEINFELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JIM CARREY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROBIN WILLIAMS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICKY GERVAIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOUIS C.K.",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TINA FEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEVE MARTIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BILL BURR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOHN MULANEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALI WONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WANDA SYKES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PATTON OSWALT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARGARET CHO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EDDIE MURPHY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROSEANNE BARR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRACY MORGAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NORM MACDONALD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARTIN SHORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JO KOY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAVID SPADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEORGE CARLIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MITCH HEDBERG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MICKEY MOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUGS BUNNY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DONALD DUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAFFY DUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BETTY BOOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POPEYE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE JETSONS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOONEY TUNES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAVITY FALLS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANIMANIACS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIM POSSIBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUGRATS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARTHUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SMURFS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUCKTALES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DARKWING DUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARGOYLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMURAI JACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINX CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOUTUBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FACEBOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TWITTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSTAGRAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIKTOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNAPCHAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REDDIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUMBLR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NETFLIX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HULU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOTIFY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TWITCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISCORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PINTEREST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MYSPACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUZZFEED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HASHTAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INFLUENCER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIRAL VIDEO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMOJI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REACTION GIF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SELFIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNBOXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STREAMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VLOGGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAN ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COSPLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PODCAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVESTREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FANDOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OSCARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAMMYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMMYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TONYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOLDEN GLOBES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAFTA AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BET AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESPY AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DORIAN AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEBBY AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIT AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NME AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CMA AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEABODY AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOVIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMEDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARTOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CIRCUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPORTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUIZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERFORMANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TELEVISION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TALENT SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGIC SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKETCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSICAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPROV",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABARET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECITAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYMPHONY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BALLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUPPET SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMEDY CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK CONCERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POP CONCERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAZZ CONCERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLK MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTRY MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE PARTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KARAOKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPEN MIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POETRY READING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART EXHIBIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSEUM VISIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAIRGROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGIC ACT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VARIETY SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUIZ SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REALITY TV",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SITCOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAMA SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEWS PROGRAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOKING SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVEL SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATURE SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TALK SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSIC VIDEO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORT FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FEATURE FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANIMATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARTOON SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEB SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PODCAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIO DRAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVE STREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAGEANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLASH MOB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOD FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOK READING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORYTELLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCERT TOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIO QUIZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TALENT SEARCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUPPET THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLK FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTRY FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMEDY ROAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPROV NIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLAM POETRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARNIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMIC CON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOK FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAFT FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM SCREENING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAZZ FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUES FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POP FESTIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIVIA NIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KARAOKE NIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE BATTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAP BATTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TALENT CONTEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEAUTY PAGEANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPROV SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKETCH COMEDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIO SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERNET SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEBISODE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VLOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TALK RADIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME JAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REALITY SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SILENT FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOCKBUSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REMAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEQUEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREQUEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REBOOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAN FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINISERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TELETHON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DJ SET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESCAPE ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGIC WORKSHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE WORKSHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART WORKSHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM WORKSHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOKING CLASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLADE RUNNER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIGHT CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESERVOIR DOGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOODFELLAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE DEPARTED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMENTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE PRESTIGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACK SWAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE REVENANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIRDMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE EXORCIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE THING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALIENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROBOCOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREDATOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FARGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE PIANIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMADEUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAN TORINO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOTLIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE FIGHTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHUTTER ISLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERSTELLAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUNKIRK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOGAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEADPOOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE IRISHMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIN CITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOULIN ROUGE!",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE AVIATOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SOPRANOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAD MEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE WIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TWIN PEAKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OZARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIKINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WESTWORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHERNOBYL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACK MIRROR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BOYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUCCESSION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOCTOR WHO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHERLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUTHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEAKY BLINDERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMUNITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MR. ROBOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIREFLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOLLHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRINGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE EXPANSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE LEFTOVERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE OA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE MAGICIANS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUANTICO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BLACKLIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE ORIGINALS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANGEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROSWELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHARMED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE FLASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARROW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOTHAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAREDEVIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUKE CAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRON FIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE PUNISHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRANGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KINGDOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABOO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UTOPIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE PRISONER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOCTOR FOSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOODLINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE RETURNED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOMORRAH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE DOORS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE WHO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEARL JAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUNDGARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOO FIGHTERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREEN DAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OASIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE CURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOY DIVISION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEW ORDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEEP PURPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BON JOVI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEF LEPPARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRON MAIDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEGADETH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLAYER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANTERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE STROKES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCTIC MONKEYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCADE FIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE XX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAME IMPALA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BECK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LORDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOZIER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAM SMITH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARIAH CAREY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CELINE DION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALICIA KEYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "USHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTKAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISSY ELLIOTT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIL WAYNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NICKI MINAJ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARDI B",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POST MALONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVIS SCOTT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIGOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KENDRICK LAMAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNOOP DOGG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DR. DRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE CUBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASAP ROCKY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUSHA T",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEASTIE BOYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUPAC SHAKUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIZ KHALIFA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "J. COLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAC MILLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAFT PUNK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUSTICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOBY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AVENUE Q",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE PRODUCERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANNIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DREAMGIRLS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIDA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALLEGIANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOTLOOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URINETOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAITRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KINKY BOOTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSASSINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASSION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FALSETTOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMELOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OKLAHOMA!",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTH PACIFIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANYTHING GOES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYPSY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUNNY GIRL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE WIZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLLIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAROUSEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LITTLE ME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WONDERFUL TOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAGTIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOW BOAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CINDERELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEUSSICAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWEET CHARITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHUFFLE ALONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORTAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASS EFFECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKYRIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARCRAFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIABLO II",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATTLEFIELD V",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPLINTER CELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAYONETTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METROID PRIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HITMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTROL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALAN WAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUANTUM BREAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCH DOGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAYS GONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOURNEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIMBO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FEZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARDEW VALLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNDERTALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUPHEAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOLLOW KNIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CELESTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RYAN REYNOLDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHRIS PRATT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOE SALDANA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARGOT ROBBIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JASON MOMOA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IDRIS ELBA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEN AFFLECK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATT DAMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARK RUFFALO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAUL RUDD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SETH ROGEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANNA KENDRICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHANNING TATUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIAM HEMSWORTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMMA STONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RYAN GOSLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEGAN FOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIE LARSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZAC EFRON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUA LIPA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BILLIE EILISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARRY STYLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIZZO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOJA CAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIGI HADID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BELLA HADID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KENDALL JENNER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAILEY BIEBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JADEN SMITH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILLOW SMITH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FKA TWIGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SZA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROSAMUND PIKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TILDA SWINTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADAM DRIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TESSA THOMPSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REGINA KING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOHN BOYEGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANIEL KALUUYA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAOIRSE RONAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLORENCE PUGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZENDAYA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMU LIU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAMI MALEK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMILY BLUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KRISTEN WIIG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINDY KALING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RACHEL MCADAMS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KATE WINSLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NICOLE RICHIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARIS HILTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FERGIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TONI BRAXTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DON QUIXOTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ULYSSES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE ILIAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEOWULF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BELOVED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOLITA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MRS DALLOWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITE TEETH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATONEMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE ROAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE STAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE GOLDFINCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOOD OMENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEVERWHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARDUST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SANDMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCHMEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERSEPOLIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "I ROBOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOUNDATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEUROMANCER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNOW CRASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE MARTIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE GIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITE NOISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIDDLESEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIDDHARTHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEPPENWOLF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOOD MERIDIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORTLANDIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE LEAGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUNK HISTORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KROLL SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REVIEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLEABAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEEP SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXTRAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LITTLE BRITAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TASKMASTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARIA BAMFORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIG NOTARO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROBIN INCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARC MARON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEWIS BLACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EDDIE IZZARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BILL HICKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JIMMY CARR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOHN OLIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMANTHA BEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAVE ATTELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEORGE LOPEZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIAN REGAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JIM GAFFIGAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BO BURNHAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TODD BARRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIM HEIDECKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARY GULMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOUG STANHOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANA GOULD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUSSELL PETERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NICK SWARDSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARI SHAFFIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOUG BENSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LARRY DAVID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JO BRAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIRANDA HART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROSIE JONES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MO AMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUTURAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIG MOUTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DARIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLONE HIGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAWN TOGETHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROBOT CHICKEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISENCHANTMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASTLEVANIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRIMAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARLEY QUINN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THUNDERCATS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REGULAR SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOHNNY BRAVO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEGAS XLR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIME SQUAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMP LAZLO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHALKZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "T.U.F.F. PUPPY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNCLE GRANDPA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLARENCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HILDA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICKROLLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROLLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVE STREAMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLICKBAIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROWDFUNDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBTWEET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIF REACTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILTER BUBBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEEPFAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EASTER EGG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPAM MAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHISHING SCAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVE TWEET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNAPSTREAKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SELFIE STICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FACETIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOOM CALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REACTION VIDEO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAKE NEWS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOT ACCOUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FANDOM WARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROWDSOURCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIRAL PRANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REDDIT AMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLICK FARM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIRAL HASHTAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERNET FAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEB SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRENDING TOPIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOTHAM AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANNIE AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AACTA AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARIEL AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOYA AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CESAR AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAMAS AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATURN AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IIFA AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUNO AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MERCURY PRIZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TCA AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORTY AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STREAMY AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRACIE AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRISM AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIPTV AWARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MTV WOODIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PREMIOS GARDEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIOPIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INFOMERCIAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOCUDRAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MELODRAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BURLESQUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANTOMIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HYPERREALISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CYBERPUNK FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARODY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RERUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETROSPECTIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM NOIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEO?NOIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOCKBUSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROAD MOVIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REVUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VAUDEVILLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIVIA SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVELOGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCERT FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOKEN WORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PODCAST SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVE PODCAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACHINIMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORY SLAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "META?FICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLASHFORWARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIEGETIC SOUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUNDSCAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUND DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEITMOTIF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTERPOINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACOUSMATIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FARCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVESTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLYPHONY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHRONOTOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FABULATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMULACRUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERIPETEIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARALLAX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAUVISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUBISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DADAISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPRESSIONISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KINETIC ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLUXUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAPPENINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERMEDIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIOART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NET ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CYBERFORMANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLAM BATTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM SYMPOSIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMMERSIVE ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTICHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABARET REVUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKETCH SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONE?MAN SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGIC SPECIAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHADOW THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETRO CONCERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SILENT DISCO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE?OFF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSIC BATTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VJING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT SHOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAP CYPHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PSYCHODRAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RITUAL THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIEGESIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METALEPSIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASYNDETON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIASMUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EPISTROPHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROLEPSIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTICLIMAX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATHOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KENOSIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APOTHEOSIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERIPHRASIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYNECDOCHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METONYMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MALAPROPISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOONERISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PATTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANTILLATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECITATIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARIOSO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OSTINATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RHAPSODY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SONATA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCERTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYMPHONIC POEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OVERTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERLUDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIOPUNK FILM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIESELPUNK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOLARPUNK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEMOSCENE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NETCULTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEME CULTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVESTREAM ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VR PERFORMANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AR GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CODE POETRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEURAL ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "E.T. THE EXTRA-TERRESTRIAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDIANA JONES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACK TO THE FUTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE LION KING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPIDER-MAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIRATES OF THE CARIBBEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAPTAIN AMERICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE INCREDIBLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE WIZARD OF OZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SINGIN' IN THE RAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GONE WITH THE WIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SOUND OF MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SHAWSHANK REDEMPTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE SILENCE OF THE LAMBS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUARDIANS OF THE GALAXY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME OF THRONES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRANGER THINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATURDAY NIGHT LIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAW & ORDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BIG BANG THEORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODERN FAMILY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREY'S ANATOMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOW I MET YOUR MOTHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE WALKING DEAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMERICAN IDOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NCIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CSI: CRIME SCENE INVESTIGATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE X-FILES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BACHELORETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUPAUL'S DRAG RACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BETTER CALL SAUL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE AMAZING RACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MICHAEL JACKSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "U2",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAROON 5",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONE DIRECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ABBA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AC/DC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITNEY HOUSTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAY-Z",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMAGINE DRAGONS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LES MISERABLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE PHANTOM OF THE OPERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRING AWAKENING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "A CHORUS LINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THE BOOK OF MORMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEAR EVAN HANSEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATILDA THE MUSICAL",
-      "difficulty": "easy"
-    }
-  ],
-  "food": [
-    {
-      "word": "WORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANANA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRAWBERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERMELON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PINEAPPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUEBERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RASPBERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIWI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAPEFRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TANGERINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACKBERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPAYA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUCUMBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOMATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARROT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LETTUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPINACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROCCOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAULIFLOWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWEET POTATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREEN BEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZUCCHINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGGPLANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BELL PEPPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICKEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAMB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TURKEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAUSAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEATBALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT DOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHRIMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOBSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TILAPIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACKEREL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLAMS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSSELS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCALLOPS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OYSTERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALAMARI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VENISON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIBS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BURGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEATLOAF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEPPERONI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGURT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUR CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COTTAGE CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOZZARELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEDDAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWISS CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRAMBLED EGGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOILED EGGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIED EGGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OMELETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUICHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUDDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEFIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUTTERMILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GHEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREAM CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICOTTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARMESAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMEMBERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FETA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONDENSED MILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGGNOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGURT PARFAIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOTTED CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOODLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEREAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OATMEAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANCAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAFFLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUFFIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAGEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BISCUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROISSANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDWICH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIZZA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMBURGER BUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRETZEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TORTILLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAPATI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PITA BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRACKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOKIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOUGHNUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIOCHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAGUETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENGLISH MUFFIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORNBREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRANOLA BAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLATBREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APPLE PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROWNIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUPCAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESECAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DONUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUDGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARAMEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOLLIPOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POPSICLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SORBET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GELATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MERINGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICE PUDDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANANA SPLIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILKSHAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APPLE CRUMBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEMON TART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BERRY TART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ECLAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACARON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROWNIE SUNDAE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANANA BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARFAIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIFLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEMONADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORANGE JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APPLE JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOMATO JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICED TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMOOTHIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SODA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOT BEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GINGER ALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT PUNCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPORTS DRINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENERGY DRINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERBAL TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT CHOCOLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLUB SODA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TONIC WATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT CIDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VODKA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHISKEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEQUILA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAMPAGNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CIDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RED WINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITE WINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPARKLING WINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COCKTAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANGRIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARTINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARGARITA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOJITO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PILSNER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRANDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCOTCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOURBON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIMOSA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAIQUIRI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOODY MARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCREWDRIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRISH COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT TODDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VERMOUTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTATO CHIPS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRETZELS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POPCORN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NACHOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TORTILLA CHIPS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRACKERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE STICKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICKEN WINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRING ROLLS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAUSAGE ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMOSA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONION RINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RANCH DIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALSA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUACAMOLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUMMUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEANUTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASHEWS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALMONDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIL MIX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT SNACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICE CAKES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORN CHIPS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEEF JERKY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE PUFFS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRETZEL STICKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VEGGIE STICKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PITA CHIPS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE CURDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KETCHUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAYONNAISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARBECUE SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOY SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALAD DRESSING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RANCH DRESSING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINEGAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLIVE OIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEPPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUGAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARLIC POWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONION POWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPRIKA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CINNAMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NUTMEG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OREGANO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARSLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THYME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROSEMARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHILI POWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURRY POWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEMON JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIME JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HONEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOLASSES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEAK SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PESTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUSHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TACO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BURRITO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEBAB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIM SUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAMEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUMPLINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCHNITZEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYROS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIEROGI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOULASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BORSCHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUESADILLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENCHILADA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISO SOUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIBIMBAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABBOULEH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHAWARMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEVICHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FONDUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUTTER CHICKEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANH MI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIMICHANGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADOBO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUMPIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RENDANG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROTI CANAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TORTILLA WRAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIED CHICKEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORN DOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TATER TOTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORN FRITTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISH SANDWICH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUNNEL CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELOTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISH TACO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIED OKRA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLOPPY JOE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT POCKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEATBALL SUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STROMBOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOASTED HOAGIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESPRESSO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAPPUCCINO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOCHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICED COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACK TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREEN TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECAF COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACCHIATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLAT WHITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRAPPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATCHA LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILK TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORTADO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RISTRETTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LONG BLACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AFFOGATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICED LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VANILLA LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARAMEL LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREWED TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA INFUSION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COFFEE BEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COFFEE GROUNDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COFFEE BLEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANTALOUPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APRICOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COCONUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AVOCADO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARLIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABBAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHILI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LENTIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICKPEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSHROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASPARAGUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARTICHOKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OKRA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRANOLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORNFLAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMBURGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SARDINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANCHOVY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OYSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCALLOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSSEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOCOLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JELLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYRUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAD ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CIABATTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOCACCIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICE CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEREAL BAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTATO CHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TORTILLA CHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARMALADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEANUT BUTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARMITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEITAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOFU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPEH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EDAMAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOY MILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALMOND MILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHERBET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUSSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUFFLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRUSCHETTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RISOTTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTA SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACARONI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LASAGNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPAGHETTI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAVIOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TORTELLINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GNOCCHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUMPLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRING ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SASHIMI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPURA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UDON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRITTATA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POPOVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRUDEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROFITEROLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COBBLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACAI BOWL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOOD ORANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHERIMOYA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAGON FRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUAVA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JACKFRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KUMQUAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LYCHEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANDARIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MULBERRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NECTARINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASSIONFRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERSIMMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POMELO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUINCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAMBUTAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARFRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UGLI FRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YUZU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOK CHOY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAYOTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLARD GREENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENDIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENNEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GINGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HORSERADISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JICAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KOHLRABI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEEKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARSNIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUTABAGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHALLOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TURNIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERCRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARUGULA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEETROOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEAN SPROUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEA SHOOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUMPKIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWISS CHARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEAWEED SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MICROGREENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADICCHIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SORREL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CELERIAC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER CHESTNUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BITTER GOURD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRISKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIBEYE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TENDERLOIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIRLOIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILET MIGNON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORK CHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPARE RIBS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VEAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALAMI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHORIZO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIELBASA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRATWURST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOOD SAUSAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORNED BEEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICKEN NUGGET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICKEN WING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUCK CONFIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARPACCIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERRINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOIE GRAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEAFOOD STEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLAM CHOWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAB CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CIOPPINO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUMBO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAMBALAYA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOUILLABAISSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOBSTER BISQUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEA BASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RED SNAPPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CATFISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SQUID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMOKED SALMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESCARGOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUTTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOUDIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEAT PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEEF STEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAMB SHANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OXTAIL STEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMOKED TURKEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAM HOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEPPER STEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORK BELLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRISPY CHICKEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASCARPONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROVOLONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOUDA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STILTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUE CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRUYERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LABNEH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURD CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOUBLE CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POACHED EGGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGG SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEVILED EGGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FROZEN YOGURT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICOTTA TOAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUSTARD TART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANNA COTTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUFFLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKED BRIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE FONDUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RACLETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOURSIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLBY JACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIMBURGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WENSLEYDALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RED LEICESTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGGS BENEDICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILK CUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANEER TIKKA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MALAI KOFTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KULFI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FROZEN CUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAHI PURI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE SOUFFLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE STRAWS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OAT MILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASHEW CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOAT CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REQUESON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LABNEH DIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RYE BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PITA POCKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FETTUCCINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LINGUINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PILAF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUINOA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUSCOUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARLEY SOUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLENTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRITS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BISCUIT DOUGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUFF PASTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANISH PASTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACAROON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BISCOTTI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORTBREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRETZEL ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIOCHE BUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CINNAMON ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STICKY BUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROWNIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POUND CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIFFON CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT TART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUSTARD PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAD PUDDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORN MUFFIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZUCCHINI BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORTUNE COOKIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATCHA COOKIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAVA CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MADELEINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNICKERDOODLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GINGERBREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARATHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INJERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROTI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AREPA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATZO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIRAMISU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANNOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREME BRULEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKLAVA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPERA CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHOOPIE PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARBLE CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MERINGUE PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREAM PUFF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUGAR COOKIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUDGE BROWNIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUM CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT COBBLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALMOND TART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLUM PUDDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PECAN PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUMPKIN PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKED CUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT TARTLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAI LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT SODA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GINGER BEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANGO SMOOTHIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIWI JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINT LEMONADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BERRY FRAPPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICED MOCHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANGO LASSI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HORCHATA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUAVA JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEAR JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROPICAL PUNCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORANGEADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHISKEY SOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLD FASHIONED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEGRONI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIDECAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINT JULEP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIMLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOSCOW MULE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAIPIRINHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAI TAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOM COLLINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APEROL SPRITZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BELLINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIR ROYALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUM PUNCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRISH MULE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUBA LIBRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOURBON SMASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITE RUSSIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACK RUSSIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUSTY NAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLARET CUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAIPIROSKA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOMBIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUM RUNNER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUE HAWAIIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAMBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOVER CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DERBY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JACK ROSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOULEVARDIER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAZERAC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIEUX CARRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIN FIZZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENICILLIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILLIONAIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUE LAGOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEA BREEZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAY BREEZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUZZY NAVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUM SWIZZLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONKEY GLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RED RUSSIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUXEDO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALGONQUIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NACHO PLATTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOADED FRIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTATO SKINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE PLATTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMOSA CHAAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMPANADAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINI SLIDERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIED PICKLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONION BHAJI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAKORA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPURA SHRIMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINI QUICHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POUTINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHICKEN SATAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEBAB SKEWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FALAFEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARANCINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUFFALO WINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAQUITOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRETZEL BITES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARLIC BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOADED NACHOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARBECUE WINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROSTINI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHRIMP TEMPURA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPINACH DIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FALAFEL WRAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARLIC KNOTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SRIRACHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERIYAKI SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOISIN SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISH SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLUM SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIMICHURRI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TARTAR SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COCKTAIL SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REMOULADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALSA VERDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PESTO SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARISSA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOLE SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINT CHUTNEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANGO CHUTNEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARBECUE GLAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARLIC AIOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSTARD SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAPER SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BALSAMIC GLAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERIYAKI GLAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GINGER SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISO GLAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOISIN GLAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SESAME OIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROWN MUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIJON MUSTARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIPOTLE SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUFFLE OIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUMAC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURRY PASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAMARIND SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADOBO SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROUX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHRIMP PASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANCHOVY PASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SESAME PASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENNEL POLLEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIMBAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POKE BOWL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YAKITORI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPURA UDON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISO RAMEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURRYWURST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINDALOO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAAG PANEER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAL MAKHANI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BHEL PURI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANI PURI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IDLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMBHAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VADA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KATSU CURRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNAGI DON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIMBAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAPCHAE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BULGOGI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIMCHI STEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMGYEOPSAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT POT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAPO TOFU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONGEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAKSA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NASI GORENG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEEF RENDANG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATAY SKEWERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUSSAKA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEKING DUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUMPLING SOUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KHAO SOI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOM TAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LARB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAD THAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREEN CURRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATAY SAUCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOLLOF RICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGUSI SOUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUFU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGUSI STEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANKU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KENKEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAAKYE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AKARA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DORO WAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KITFO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMBUSA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIPHON COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TURKISH COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUBAN COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RED EYE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINT TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEPPERMINT TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JASMINE TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OOLONG TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUERH TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOIBOS TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIRTY CHAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHIPPED COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOCHA FRAPPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASCARA LATTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA COOLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COFFEE FRAPPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARTISAN COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GINGER TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TURMERIC TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARLEY TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWEET TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMPANADA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAPAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYRO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAUERKRAUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIMCHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOWDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAMALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BENTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERIYAKI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIRYANI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KORMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASALA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAHL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAMBAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYOZA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHUMAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOONCAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOCHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOBA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUBBLE TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRACCIATELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUINDIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIGADEIRO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAVLOVA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HALVA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNAFEH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEDOVIK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STROOPWAFEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROQUEMBOUCHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLAFOUTIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAZPACHO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINESTRONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOLOGNESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARBONARA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALFREDO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARINARA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAGU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RATATOUILLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESCABECHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TARTARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAVAROIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANETTONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STOLLEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KOUIGN?AMANN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BABA GANOUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FATTOUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUJADARA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FALOODA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CENDOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREMOLATA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROMESCO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINAIGRETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COULIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REDUCTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSOMM??",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BISQUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOW MEIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LO MEIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUN CHA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANH XEO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COM TAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAO LAU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MI QUANG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DURIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANGOSTEEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LONGAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAR FRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASSION FRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POMEGRANATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACAI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FARRO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BULGUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SORGHUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPELT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RYE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMARANTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEFF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREEKEH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ETOUFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEIGNET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROQUETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NIGIRI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIRASHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TONKATSU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAKOYAKI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOBA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MISO PASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANMITSU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAIYAKI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAIFUKU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASTELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAWANMUSHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ODEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUKIYAKI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TONJIRU",
-      "difficulty": "easy"
-    }
-  ],
-  "hobbies": [
-    {
-      "word": "WORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOCCER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASKETBALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASEBALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TENNIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOLF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWIMMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUNNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CYCLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VOLLEYBALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BADMINTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRISBEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATEBOARDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKIING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNOWBOARDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURFING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIMBING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KAYAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANOEING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUGBY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRICKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCHERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOGGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOCCER BALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TENNIS RACKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASEBALL GLOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLE TENNIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCULPTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNITTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROCHET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRAPBOOKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORIGAMI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STITCHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLORING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOODLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTTERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALLIGRAPHY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRINTMAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMBROIDERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUILLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPER CUTTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECOUPAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOSAIC ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLASS PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARD MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPER CRAFTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STENCILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERCOLOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OIL PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKETCHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRBRUSHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOOD CARVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEEDLEPOINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DYEING FABRIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOODLING ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SINGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUITAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIANO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUMS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIOLIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUMPET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAXOPHONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CELLO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KARAOKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAZZ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POP MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSICAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BALLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUM SET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORCHESTRA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SINGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARMONICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UKULELE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEYBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VOICE LESSON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAP DANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGE PLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLK SINGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHECKERS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONOPOLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRABBLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROSSWORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUDOKU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JIGSAW PUZZLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARD GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOARD GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOMINOES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BINGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIVIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOLITAIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HANGMAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAZE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORD SEARCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUZZLE CUBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLE PLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCADE GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPUTER GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUMMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLACKJACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAHJONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKGAMMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOMINO GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMORY GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRATEGY GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUZZLE GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME NIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO PUZZLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRILLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRYING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEAMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROASTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAUTEING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOPPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPICING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEASONING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARINATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIMMERING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOASTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLENDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNEADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLICING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEELING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHISKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKING COOKIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIE MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALAD TOSSING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOKIE BAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRILL MARKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OVEN MITTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUTTING BOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINTING ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIXING SHELF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNITTING SCARF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAFTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOODWORKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDENING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECORATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UPCYCLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEWING BUTTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLISHING WOOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASSEMBLING TOY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REFINISHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRILLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCREWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLUING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIXING LEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORGANIZING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECLUTTERING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAFT FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIY KIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHELF BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINYL RECORDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMIC BOOKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOY COLLECTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRADING CARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUE VASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLD BOOKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RARE COINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINTAGE TOYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESTATE SALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EPHEMERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODEL TRAINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART PRINTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMIC ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUE LAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETRO RADIOS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "READING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POETRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOURNALING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORT STORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOGGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMIC WRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAN FICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCRIPTWRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOK CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESSAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LETTER WRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORYTELLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NONFICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RHYME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VERSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAIKU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SONNET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMOIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOG POST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEWS ARTICLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYWRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORY DRAFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NARRATIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENNED VERSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORDSMITHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANUSCRIPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEEDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEEDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRUNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MULCHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARVESTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPOSTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPROUTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT CARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERB GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOWER BED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOOMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTTED PLANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN FORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROWEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN HOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOIL MIXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEED SOWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YARD WORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAWN MOWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN GLOVES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT POT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN WEEDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT POTTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANDSCAPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTOGRAPHY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEOGRAPHY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNAPSHOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SELFIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIPOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM CAMERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORTRAIT PHOTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO SHOOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO SHOOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO ALBUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM ROLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACTION SHOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICTURE FRAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO EDITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO EDITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOOM LENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMERA FLASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO BOOTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO FRAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO FILTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VLOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DSLR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIMELAPSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MACRO PHOTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANORAMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVELING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIGHTSEEING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROAD TRIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICNIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIKING TRIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY TOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSEUM VISIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCAL MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEACH DAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIN RIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUS TOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIR TRAVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUGGAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAP READING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASSPORT CHECK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULTURAL FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOD TOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCENIC DRIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOAT RIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATIONAL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HISTORIC SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVEL BLOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY GUIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVEL PHOTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DINING OUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIP PLANNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEDITATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRETCHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WALKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELAXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREATHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAI CHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PILATES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZUMBA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AEROBICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINDFULNESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLEEPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAPPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELAXATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIND CALM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEEP BREATHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BODY BALANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOL DOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT EXERCISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALM TIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WELLNESS WALK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGA CLASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BODY STRETCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUZZLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIRDWATCHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROCHETING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUILTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO GAMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOARD GAMES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUZZLE SOLVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEOCACHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODEL BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK CLIMBING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE SKATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLLER SKATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOFTBALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOWLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARTIAL ARTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KARATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAEKWONDO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUDO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRESTLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALSA DANCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAKDANCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAP DANCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYING GUITAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYING PIANO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYING DRUMS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYING VIOLIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYING FLUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCHING TV",
-      "difficulty": "easy"
-    },
-    {
-      "word": "READING COMICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRITING POETRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRITING NOVELS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANDLE MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOAP MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CERAMICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUGGLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARD TRICKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIY PROJECTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKPACKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROAD TRIPPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STARGAZING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASTRONOMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VLOGGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PODCASTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAPHIC DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANIMATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEB DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROBOTICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCK PICKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCUBA DIVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNORKELING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE FISHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUNTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DARTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BILLIARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINI GOLF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLLERBLADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LINE DANCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZUMBA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QIGONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SONGWRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPOSING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DJING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUPPETRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIL RUNNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER SKIING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARAGLIDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUNGEE JUMPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZIP LINING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATE PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIELD HOCKEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HANDBALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOCCER CLEATS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUNNING SPIKES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRESTLING MAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOXING GLOVES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENCING SWORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRICKET BAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LACROSSE STICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIELD EVENTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRACK CYCLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROSS COUNTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRINT RUNNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROLLER DERBY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAKEBOARDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIVING BOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOBSLEDDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIND SURFING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAINEERING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RALLY RACING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AUTO RACING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKI JUMPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE HOCKEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIELD SPRINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARATHON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIATHLON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECATHLON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENTATHLON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIATHLON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOCCER COACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOCKEY STICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURLING STONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RACING BICYCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRINT RELAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPEED SKATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KAYAK TOURING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANOE POLO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MURAL PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPER MACHE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SILK SCREENING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMBOSSING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TATTOO DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FABRIC DYEING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATIK PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OIL PASTEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTEL ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ABSTRACT ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKETCHBOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART NOUVEAU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIXED MEDIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UPCYCLED ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STENCIL ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOSAIC TILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRBRUSH ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEEDLE FELTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIBER ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPER QUILLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECOUPAGE ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAND ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAX SCULPTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ETCHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATIK FABRIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER MARBLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAUX FINISHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEAD WEAVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTEL DRAWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLAGRAPH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIBER DYEING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUND MIXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSIC THEORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUM SOLO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYMPHONY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGE ACTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LYRIC WRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK BAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLK MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUEGRASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTRY MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SITAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANJO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANDOLIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUM MACHINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEATBOXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DJ MIXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGE LIGHTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SET DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANTOMIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VOCAL COACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAP BATTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUND CHECK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODERN BALLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK OPERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWING DANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRING QUARTET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOLK DANCING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGE MAKEUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHORUS LINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYNTHESIZER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUM PAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELECTRIC BASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUNDBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESCAPE ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOGIC PUZZLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAINTEASER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RPG CAMPAIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLATFORM GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETRO GAMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPEEDRUNNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDBOX GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME STREAMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUZZLE BOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MYSTERY GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIDDLE SOLVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUZZLE HUNT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDIE GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DICE ROLLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEVEL DESIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME THEORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME MOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VR HEADSET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIVIA NIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETRO ARCADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME PATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME LORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTRY CHEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLOW COOKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRENCH CUISINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THAI CURRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKING OVEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKING PASTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KITCHEN SCALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPICE RACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROASTING PAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOD PROCESSOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUFFLE DISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAD PROOFING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKING SHEET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOUGH RISING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIXOLOGY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAS STOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KITCHEN TIMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASTING BRUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRENCH PASTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUS VIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTRY BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRIDDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECIPE BOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKING CONTEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULINARY ARTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DINNER PARTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARNISHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPICE BLEND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOURMET BURGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMOKED MEAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEW COOKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTRY CRUST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEAT CARVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEF KNIFE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGGNOG MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATTER MIXING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER DRILLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WALLPAPERING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOOR STAINING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINDOW SEALING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENCE BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURTAIN SEWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASONRY WORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER SANDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOOR HANGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOOR TILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIY INSULATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATTIC CLEANING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLASTER REPAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TILE CUTTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEAK DETECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEST PROOFING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROWN MOLDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKYARD PATIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOME EXTENSION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TILE GROUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOOR PLAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIY BLUEPRINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOME STAGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NUMISMATICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHILATELY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESTATE AUCTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMIC CON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUE CLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLASSIC ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLECTOR CAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUE MAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RARE BOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLD POSTCARDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RARE COMIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETRO BICYCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELIC HUNTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLASSIC RADIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUE TIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HISTORIC COIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUE BRASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINTAGE WATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLOT TWIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRITING PROMPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POETIC METER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREE VERSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORY ARC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RHYME SCHEME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLASH FICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOVELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAMA SCRIPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAY READING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LYRICAL PROSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EPIC POEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHARACTER ARC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROSE POETRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORYBOARDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN FICTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMOIR WRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SATIRE SKETCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FABLE CREATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EDITING SUITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RHYME WRITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLOT OUTLINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PSEUDONYM USE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORY EDITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREATIVE PROSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPOST BIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRUNING SHEARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUCCULENT CARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROPAGATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOIL AERATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN TRELLIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEST CONTROL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN EDGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOWER PRUNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOIL TESTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN LAYOUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORCHID CARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN BENCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERMACULTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERB DRYING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "XERISCAPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TREE PRUNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEED SAVING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN WEEDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT ROTATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPOST TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORGANIC MULCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN PATHWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOIL MOISTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT METER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHUTTER SPEED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOKEH EFFECT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLOR GRADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DSLR CAMERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LENS FILTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO MONTAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILM EDITING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO BACKUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO BLOGGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOTION CAPTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOCUS STACKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STUDIO SETUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISHEYE LENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO CODEC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DYNAMIC RANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORTRAIT LENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLOW SHUTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DSLR SETTINGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRAME RATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOTION BLUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LENS APERTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIME EXPOSURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHTING SETUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCENE LIGHTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITE BALANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO FRAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMERA RIG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORLD HERITAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY HOPPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUDGET TRAVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOLO TRAVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUXURY CRUISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCAL CUISINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ECO TOURISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCENIC RAILWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ISLAND HOPPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OFFBEAT TRAVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY LANDMARKS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVEL AGENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVEL PACKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAIL TRAVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCENIC ROUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANDMARK TOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULTURAL GUIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAVEL MEMOIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER YOGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZUMBA CLASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARDIO SESSION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRESS RELIEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUIDED YOGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOGGING CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CYCLING TOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWIMMING LAPS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AQUA AEROBICS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIND TRAINING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FITNESS CLASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREATH CONTROL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BODY TONING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGA RETREAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRETCH CLASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGA PRACTICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BODY DETOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALM BREATHING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BODY ALIGNMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIGITAL ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRONE RACING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RC BOATING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GENEALOGY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CODING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUPPET MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VENTRILOQUISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREESTYLE RAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILMMAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOMEBREWING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINE TASTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEER TASTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEXTILE DYEING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATIK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOCK PRINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAXIDERMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTIQUING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEATHERWORKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METALWORKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOSAIC MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOOD TURNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTARSIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIOLIN MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUTHIERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOCKMAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCHMAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHITTLING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZINE MAKING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COIN GRADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAMP GRADING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOSSIL HUNTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK HOUNDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEM CUTTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAPIDARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE CLIMBING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANYONING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIVERBOARDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AQUASCAPING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN FARMING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISTILLATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE AGING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICKLING ART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERBALISM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA BLENDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAKE SCULPTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUGAR ART",
-      "difficulty": "easy"
-    }
-  ],
-  "places": [
-    {
-      "word": "WORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCHOOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ISLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOREST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOODS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PATH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STREET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EARTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURFACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EDGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORNER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VALLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OCEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIRECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NORTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRONT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOTTOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EVERYWHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOMEWHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOWHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ABROAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAPITAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VILLAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FARM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RANCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GULF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIDGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIFF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUNGLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GALAXY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNIVERSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEMISPHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EQUATOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LATITUDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LONGITUDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALTITUDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEPTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEILING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINDOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FENCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BORDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SQUARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CIRCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIANGLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRUCTURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OFFICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOTEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESTAURANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAFE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CINEMA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSEUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GALLERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIBRARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLEGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNIVERSITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOSPITAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHURCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOSQUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYNAGOGUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAYGROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STADIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARENA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COURT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCREEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHELF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOWL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNIFE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOUCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FEEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SENSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IDEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THOUGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYMBOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NUMBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LETTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CODE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MESSAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TASK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EVENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MORNING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EVENING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIDNIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MINUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SECOND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEEK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEASON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSTANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERIOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "END",
-      "difficulty": "easy"
-    },
-    {
-      "word": "START",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIDDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHOLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOTAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIECE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLLECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SERIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SYSTEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROCESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METHOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANNER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TYPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXAMPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSTANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FACT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SADNESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIFE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEATH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIRTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEGIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANSWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEARN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEACH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STUDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "READ",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LISTEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNDERSTAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BELIEVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOUBT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REMEMBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORGET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEEP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TURN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUILD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESTROY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BECOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APPEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOUNG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EARLY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EASY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEAVY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WARM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOUD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUIET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMOOTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROUGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHARP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DULL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIRTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FULL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMPTY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAPPY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANGRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUSY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOSED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUBLIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRIVATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "USUAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NORMAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEIRD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRONG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEFT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRAIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEEP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHALLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NARROW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLEAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOUDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUNNY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAINY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STORMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNOWY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUMMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AUTUMN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPRING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOUD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIRT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANDSCAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FACTORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RURAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBURBS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTRYSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOCAL AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOBAL REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLAR ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROPICAL ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPERATE ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COASTAL REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAINOUS AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESERT REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ISLAND REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INLAND AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOMESTIC REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOREIGN LAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOME COUNTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATIVE LAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BORDER REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CENTRAL LOCATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EASTERN PART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WESTERN SECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NORTHERN TERRITORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTHERN ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUS STOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIN STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBWAY ENTRANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARKING LOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARKING GARAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESTROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAITING ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOBBY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HALLWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELEVATOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAIRCASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENTRANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POST OFFICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUPERMARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAKERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DINER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREWERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROCERY STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHARMACY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVENIENCE STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAS STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAUNDROMAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBWAY STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FERRY TERMINAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOTEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOSTEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMPGROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REST AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOPPING CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMUNITY CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLICE STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIRE STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COURTHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMBASSY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSULATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART GALLERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXHIBITION HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVENTION CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPORTS CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARINA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARBOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ACADEMY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSTITUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OBSERVATORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANETARIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOTANICAL GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSERVATORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMPHITHEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AUDITORIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANQUET HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAFETERIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOD COURT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIZZERIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUTCHER SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISH MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FARMERS MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARDWARE STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELECTRONICS STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOTHING STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOE STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOKSHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOY STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PET SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARDEN CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOWER SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JEWELRY STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTLET STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THRIFT STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECORD STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSIC SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIDEO STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPUTER STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELECTRONICS MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAZAAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLEA MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AUCTION HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREDIT UNION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSIGNMENT SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAR DEALERSHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPAIR SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIRE SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AUTO SHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIN DEPOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUS DEPOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRPORT TERMINAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAILWAY STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METRO STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAXI STAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUCK STOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SERVICE STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUARRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAREHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISTRIBUTION CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOADING DOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESEARCH LAB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WORKSHOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STUDIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART STUDIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE STUDIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECORDING STUDIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIO STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOVIE THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OPERA HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONCERT HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYMNASIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWIMMING POOL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATING RINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOWLING ALLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMUSEMENT PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAIRGROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARNIVAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARADE GROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAZA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AVENUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOULEVARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIGHWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FREEWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXPRESSWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUNNEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OVERPASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERSECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROUNDABOUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARKWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRIVEWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKYARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRONT YARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PATIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BALCONY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERRACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VERANDA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GREENHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOOKOUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHTHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOARDWALK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROMENADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESPLANADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIVERBANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAKESIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEASIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENINSULA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERFALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEADOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORCHARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINEYARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBURB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTPOST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SETTLEMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERRITORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROVINCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTINENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MERIDIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAYOU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUFF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANYON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHANNEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREEK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DALE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIVIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOWNLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESTUARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FJORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOTHILLS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GORGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEADLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIGHLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOLLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ISTHMUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNOLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAGOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEVEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OASIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLATEAU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRAIRIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROMONTORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAVINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIDGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAVANNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEPPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUMMIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SWAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TUNDRA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UPLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERSHED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WETLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCHIPELAGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATOLL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARRIER REEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTINENTAL DIVIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORAL REEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELTA PLAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOODPLAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLACIAL VALLEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE CAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MESA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAIN PASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OXBOW LAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAINFOREST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIVER BASIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIDAL FLAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VOLCANIC CRATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WETLANDS RESERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AGRICULTURAL LAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMERCIAL DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDUSTRIAL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESIDENTIAL AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOURIST DESTINATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUSINESS PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONSERVATION AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ECONOMIC ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HISTORICAL LANDMARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATURE PRESERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROTECTED AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECREATIONAL AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESEARCH FACILITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TECHNOLOGICAL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THEME PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN SPRAWL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VANTAGE POINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIEWPOINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VISTA POINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDLIFE REFUGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDERNESS AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMUSEMENT ARCADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AQUARIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERITAGE CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUBLIC GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECREATION CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCIENCE MUSEUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VISITOR CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDLIFE PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOUTH CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ABANDONED BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANCIENT RUINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCHAEOLOGICAL SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATTLEFIELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BURIAL GROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASTLE RUINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEMETARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GHOST TOWN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HISTORIC DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEGALITHIC SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONUMENT SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SACRED GROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIPWRECK SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOMB SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAR MEMORIAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATTLEGROUND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOMB SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRASH SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISASTER AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMERGENCY ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EVACUATION ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FALLOUT ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIRE ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOOD ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAZARD ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IMPACT ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUARANTINE ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECOVERY ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESTRICTED ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEARCH AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SECURITY ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGING AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TARGET ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEST SITE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOXIC ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIAGE CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUFFER ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXCLUSION ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INNER CITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTER SUBURBS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERIPHERAL AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RURAL HINTERLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN FRINGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDERNESS OUTPOST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YACHT BASIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZEN GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALPINE MEADOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCTIC CIRCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COASTAL PLAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTINENTAL SHELF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRASSLAND BIOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE FIELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAIN BIOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OCEANIC ABYSS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBARCTIC TUNDRA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROPICAL SAVANNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERSHED DIVIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOODLAND ECOSYSTEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOUTH HOSTEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOOLOGICAL GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADVENTURE PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIRD SANCTUARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARNIVAL GROUNDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CIRCUS ARENA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUNTY FAIRGROUNDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DANCE HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME RESERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HERITAGE PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE RINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAZZ CLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIVING MUSEUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATIONAL FOREST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PUBLIC SQUARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RACE TRACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKI RESORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STATE PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THEME RESTAURANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN PARKLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VAUDEVILLE THEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINTER GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGA STUDIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLACIER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICEBERG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VOLCANO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEATH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUSHLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WOODLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COPSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THICKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLEARING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRAIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REEF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEAK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIFFSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAKESHORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEASHORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OCEANFRONT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COASTLINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HORIZON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATMOSPHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIMATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEATHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BIOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ECOSYSTEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HABITAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDLIFE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLORA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAUNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERRAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOPOGRAPHY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEOGRAPHY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEOLOGY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENVIRONMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDERNESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTBACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKCOUNTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUSHVELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAMPAS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CERRADO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAIGA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APARTMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKYSCRAPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANSION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUNGALOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COTTAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHALET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VILLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONDOMINIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENTHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUPLEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOWNHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERRACE HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DETACHED HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROW HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPLEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESTATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRECINCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "QUARTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRESCENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOTORWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WALKWAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNDERPASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUNCTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CROSSING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLYOVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIADUCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AQUEDUCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULVERT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHARF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TERMINAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HELIPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUS STATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER PLANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REFINERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FACTORY COMPLEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDUSTRIAL ESTATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WAREHOUSE DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TECHNOLOGY PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOPPING MALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEPARTMENT STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOUTIQUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARKET HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NIGHTCLUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXHIBITION CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONFERENCE CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LECTURE HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEMINAR ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLASSROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LABORATORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLINIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SURGERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GOVERNMENT BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARLIAMENT BUILDING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOWN HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULTURAL CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INFORMATION CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESEARCH CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSEUM COMPLEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIBRARY SYSTEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCHOOL CAMPUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UNIVERSITY GROUNDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOSPITAL WING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEDICAL CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NURSING HOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETIREMENT HOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORPHANAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONASTERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEMINARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CATHEDRAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAPEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPLE COMPLEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHRINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAUSOLEUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOMB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEMETERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAVEYARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMORIAL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPORTS COMPLEX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATHLETIC FIELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STADIUM ARENA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYMNASIUM HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FITNESS CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARKLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATURE RESERVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDLIFE SANCTUARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPERATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EQUATORIAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTINENTAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COASTAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALPINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCTIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ANTARCTIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEDITERRANEAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROPICAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBTROPICAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HUMID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOREAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRASSLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAPARRAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DECIDUOUS FOREST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONIFEROUS FOREST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONTANE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIPARIAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LITTORAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PELAGIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ABYSSAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RURAL AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBURBIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXURBIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOWNTOWN AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UPTOWN DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESIDENTIAL ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMERCIAL ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDUSTRIAL ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINE COUNTRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BEACH RESORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAIN RETREAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ISLAND PARADISE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CULTURAL REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POLITICAL REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIME ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIMATE ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VEGETATION ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEOGRAPHIC ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOPOGRAPHIC REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEMOGRAPHIC REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LINGUISTIC REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ETHNIC ENCLAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RELIGIOUS REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRONTIER REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKCOUNTRY AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WILDERNESS ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NATIONAL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REGIONAL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANCTUARY ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESIGNATED AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRANSITION ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERIPHERAL REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CENTRAL HIGHLANDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COASTAL PLAINS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INTERIOR LOWLANDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUNTAIN RANGES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIVER VALLEYS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERSHED AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAINAGE BASIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOODPLAIN ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DELTA REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ESTUARY AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENINSULA AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ISLAND GROUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAINLAND REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OFFSHORE ZONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANDLOCKED REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REMOTE AREA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEGACITY REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOBAL SOUTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOBAL NORTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEVELOPING WORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIRST WORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THIRD WORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WESTERN HEMISPHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EASTERN HEMISPHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NORTHERN HEMISPHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTHERN HEMISPHERE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OLD WORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEW WORLD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAR EAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIDDLE EAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEAR EAST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTHEAST ASIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CENTRAL AMERICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTH AMERICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NORTH AFRICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EASTERN EUROPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WESTERN EUROPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CENTRAL ASIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EAST ASIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUTH ASIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PACIFIC RIM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARIBBEAN REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BALKAN PENINSULA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INDIAN SUBCONTINENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEVANT REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MALAY ARCHIPELAGO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRITISH ISLES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EQUATORIAL REGION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COURTYARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOFTOP GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMUNITY GARDEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FESTIVAL GROUNDS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATE PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOG PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITY PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "URBAN PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOWN SQUARE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VILLAGE GREEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARKETPLACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOPPING ARCADE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOPPING PRECINCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RETAIL PARK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOKSTORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FURNITURE STORE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANK BRANCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INFORMATION KIOSK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORPHANAGE PLAYROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONASTERY CLOISTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONVENT CHAPEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEMINARY HALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CATHEDRAL NAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAPEL AISLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEMPLE PRECINCT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHRINE ALTAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAUSOLEUM CHAMBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOMB ENTRANCE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEMETERY PLOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAVEYARD SECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GYMNASIUM FLOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZOO ENCLOSURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AQUARIUM TANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARKLAND TRAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BISTRO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRATTORIA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA ROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAPAS BAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPEAKEASY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LOUNGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRASSERIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANTINA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMPORIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OUTLET MALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABARET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PARLIAMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CRAFT FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ART FAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARCHIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARBORETUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COLUMBARIUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMORIAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONUMENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORTRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CITADEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PALACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MANOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHATEAU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LODGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOARDING HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DORMITORY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRATERNITY HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SORORITY HOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ABBEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASILICA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAGODA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ASHRAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RESEARCH INSTITUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TECHNICAL INSTITUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RACETRACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RACECOURSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRSTRIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HELIPAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPACEPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAUNCHPAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OBSERVATORY DOME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOUNDRY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILING CABINET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHREDDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOCKYARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIPYARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOATHOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FOOD MARKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEIGHBORHOOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOWNSHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REPUBLIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KINGDOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EMPIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FEDERATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMMUNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUNICIPALITY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "METROPOLIS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENCLAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOROUGH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRIP MALL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PORT DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRANSIT HUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUS TERMINAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIN TERMINAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRANSPORT CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRADE CENTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSEUM DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ARTS DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FINANCIAL DISTRICT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATERFRONT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RIVERFRONT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEAFRONT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HILLSIDE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GROTTO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAVERN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOT SPRING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GEYSER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARRIER ISLAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDBAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUNE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLADE",
-      "difficulty": "easy"
-    }
-  ],
-  "things": [
-    {
-      "word": "THING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPOON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KNIFE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOTTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OVEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIDGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MICROWAVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOASTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLENDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KETTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SINK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT BULB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MIRROR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICTURE FRAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINTING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TV",
-      "difficulty": "easy"
-    },
-    {
-      "word": "REMOTE CONTROL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAPTOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPUTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEYBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEADPHONES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPEAKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PRINTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMERA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAGAZINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEWSPAPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PENCIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ERASER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RULER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCISSORS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPERCLIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOTEBOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKPACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WALLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PURSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "KEYCHAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DOOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINDOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURTAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLIND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARPET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PILLOW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLANKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHEET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATTRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WARDROBE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAWER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOSET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HANGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIRT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PANTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHORTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRESS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKIRT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JACKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOVES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCARF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BELT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "UMBRELLA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUNGLASSES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUITCASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRACELET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NECKLACE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EARRING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOOTHBRUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOOTHPASTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHAMPOO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONDITIONER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOWEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAIRBRUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RAZOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DEODORANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PERFUME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAIL POLISH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAKEUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COTTON SWAB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOILET PAPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TISSUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLUNGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRASH CAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VACUUM CLEANER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DUSTPAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUCKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPONGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DETERGENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "IRON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIR CONDITIONER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TELEVISION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RADIO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ALARM CLOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CALENDAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENVELOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAILBOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BICYCLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HELMET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCOOTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOTORBIKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRPLANE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUBMARINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SKATEBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHEELCHAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LADDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMMER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAIL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCREW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRENCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCREWDRIVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAPE MEASURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEVEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINTBRUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINT ROLLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDPAPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLUE GUN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOLT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NUT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRING",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ELASTIC BAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUBBER BAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NEEDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUTTON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ZIPPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FABRIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CLOTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHELF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRAWER HANDLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHT SWITCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOCKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLUG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EXTENSION CORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATTERY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHARGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER BANK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FUSE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOLAR PANEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOYSTICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME CONTROLLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME CONSOLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DISC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "USB DRIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARD DRIVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROUTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MODEM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WI-FI ANTENNA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROJECTOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCREEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONITOR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MOUSE PAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WEBCAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIPOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MICROPHONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AMPLIFIER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VINYL RECORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DVD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CASSETTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLASHLIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TORCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANTERN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANDLE HOLDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIRE EXTINGUISHER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SMOKE ALARM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIRST AID KIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANDAGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "THERMOMETER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MASK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GLOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEDICINE BOTTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INJECTION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STETHOSCOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHEEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIRE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEDAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STEERING WHEEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEATBELT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DASHBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEADLIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HORN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WINDSHIELD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WIPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LICENSE PLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENGINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOF RACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUNK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BONNET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEAT COVER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "AIRBAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAR MAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHOPPING CART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BASKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECEIPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CREDIT CARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ATM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TICKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASSPORT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ID CARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COMPASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LUGGAGE TAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOARDING PASS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TENT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SLEEPING BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLASHLIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMP STOVE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANTEEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LANTERN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MATCHES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WHISTLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FISHING ROD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BINOCULARS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BACKPACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HIKING BOOTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUNSCREEN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INSECT SPRAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMPING CHAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICNIC BLANKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BARBECUE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRILL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SPATULA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TONGS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APRON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUTTING BOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOTTLE OPENER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAN OPENER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALT SHAKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEPPER GRINDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NAPKIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRAY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLECLOTH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COASTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VASE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOWER POT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLANT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TREE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEAF",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BRANCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ROOT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SEED",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRUIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VEGETABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARROT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "APPLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BANANA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ORANGE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAPES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TOMATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POTATO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ONION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GARLIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PEPPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LEMON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUCUMBER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROCCOLI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSHROOM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CORN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "EGG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHEESE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BREAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BUTTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HONEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MILK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JUICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WATER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SODA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COFFEE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TEA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUGAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLOUR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RICE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PASTA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CEREAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAKE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOKIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SANDWICH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BURGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIZZA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOTDOG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TACO",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SUSHI",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SALAD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRIES",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ICE CREAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHOCOLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CANDY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POPCORN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NUTS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "YOGURT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JAR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TIN CAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PACKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CONTAINER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "WRAPPER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STRAW",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUP LID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ENVELOPE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BILLBOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SIGN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LABEL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STICKER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RECEIPT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MENU",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BROCHURE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAMPHLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BLUEPRINT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLAN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIAGRAM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHART",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRAPH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TABLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FORM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TICKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COUPON",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "INVITATION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POSTCARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CERTIFICATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "NOTEBOOK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "JOURNAL",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DIARY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SCHEDULE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHECKLIST",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAPLER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HOLE PUNCH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BINDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPER STACK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "RUBBER STAMP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "OFFICE CHAIR",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DESK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABINET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FILE HOLDER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LAPTOP STAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER CORD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABLE TIE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "ADAPTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POWER STRIP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MONITOR STAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMERA LENS",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMORY CARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIPOD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MICROPHONE STAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SOUND MIXER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HEADSET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DJ DECK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MUSIC STAND",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SHEET MUSIC",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GUITAR PICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "DRUMSTICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PIANO KEY",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FLUTE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "VIOLIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRUMPET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TROMBONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SAXOPHONE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HARP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TRIANGLE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TAMBOURINE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARACA",
-      "difficulty": "easy"
-    },
-    {
-      "word": "STAGE LIGHT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CURTAIN",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TICKET STUB",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PROGRAM BOOKLET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CAMERA FLASH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LENS CAP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BATTERY CHARGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MEMORY STICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARD READER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CABLE ORGANIZER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PHOTO ALBUM",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FRAME",
-      "difficulty": "easy"
-    },
-    {
-      "word": "POSTER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAINTING",
-      "difficulty": "easy"
+      "word": "BOOMERANG",
+      "hint": "A thrown tool that can return to the thrower"
     },
     {
       "word": "SCULPTURE",
-      "difficulty": "easy"
+      "hint": "A three-dimensional work of art"
     },
     {
-      "word": "MODEL",
-      "difficulty": "easy"
+      "word": "LOOM",
+      "hint": "An apparatus for making fabric by weaving"
     },
     {
-      "word": "TOY",
-      "difficulty": "easy"
+      "word": "THIMBLE",
+      "hint": "Protects the finger when sewing"
     },
     {
-      "word": "BALL",
-      "difficulty": "easy"
+      "word": "GEODE",
+      "hint": "A rock containing a cavity lined with crystals"
     },
     {
-      "word": "BAT",
-      "difficulty": "easy"
+      "word": "PERISCOPE",
+      "hint": "Used in submarines to see above the water"
     },
     {
-      "word": "RACKET",
-      "difficulty": "easy"
+      "word": "MONOCLE",
+      "hint": "A single eyeglass"
     },
     {
-      "word": "NET",
-      "difficulty": "easy"
+      "word": "BELLOWS",
+      "hint": "A device for producing a strong current of air"
     },
     {
-      "word": "HELMET",
-      "difficulty": "easy"
+      "word": "TREBUCHET",
+      "hint": "A type of catapult used in the medieval period"
     },
     {
-      "word": "GLOVE",
-      "difficulty": "easy"
+      "word": "GUILLOTINE",
+      "hint": "A machine for beheading people"
     },
     {
-      "word": "JERSEY",
-      "difficulty": "easy"
+      "word": "HARPSICHORD",
+      "hint": "A keyboard instrument similar to a piano"
     },
     {
-      "word": "GOALPOST",
-      "difficulty": "easy"
+      "word": "ZITHER",
+      "hint": "A stringed instrument with strings stretched across a frame"
     },
     {
-      "word": "WHISTLE",
-      "difficulty": "easy"
+      "word": "THEREMIN",
+      "hint": "An electronic musical instrument controlled without physical contact"
     },
     {
-      "word": "SCOREBOARD",
-      "difficulty": "easy"
+      "word": "SYNTHESIZER",
+      "hint": "An electronic keyboard that can generate various sounds"
     },
     {
-      "word": "TROPHY",
-      "difficulty": "easy"
+      "word": "TUNING FORK",
+      "hint": "A two-pronged steel device used to tune instruments"
     },
     {
-      "word": "MEDAL",
-      "difficulty": "easy"
+      "word": "PAPYRUS",
+      "hint": "A material prepared in ancient Egypt from a water plant"
     },
     {
-      "word": "STOPWATCH",
-      "difficulty": "easy"
+      "word": "VELLUM",
+      "hint": "Fine parchment made from the skin of a calf"
     },
     {
-      "word": "FLAG",
-      "difficulty": "easy"
+      "word": "CHISEL",
+      "hint": "A long-bladed hand tool with a beveled cutting edge"
     },
     {
-      "word": "BANNER",
-      "difficulty": "easy"
+      "word": "GAVEL",
+      "hint": "A small mallet with which an auctioneer, judge, or chairperson hits a surface to call for attention or order"
     },
     {
-      "word": "BENCH",
-      "difficulty": "easy"
+      "word": "STIRRUP",
+      "hint": "A pair of devices attached to each side of a horse's saddle, in the form of a loop with a flat base to support the rider's foot"
     },
     {
-      "word": "WATER BOTTLE",
-      "difficulty": "easy"
+      "word": "HORSESHOE",
+      "hint": "A U-shaped plate nailed to a horse's hoof"
     },
     {
-      "word": "ICE PACK",
-      "difficulty": "easy"
+      "word": "SPUR",
+      "hint": "A device with a small spike or a spiked wheel that is worn on a rider's heel for urging a horse forward"
     },
     {
-      "word": "CONE",
-      "difficulty": "easy"
+      "word": "CROSSBOW",
+      "hint": "A medieval weapon consisting of a bow fixed across a wooden stock"
     },
     {
-      "word": "CLIPBOARD",
-      "difficulty": "easy"
+      "word": "MUSKET",
+      "hint": "An infantryman's light gun with a long barrel, typically smooth-bored, muzzle-loading, and fired from the shoulder"
     },
     {
-      "word": "PODIUM",
-      "difficulty": "easy"
+      "word": "BAYONET",
+      "hint": "A blade that may be fixed to the muzzle of a rifle and used to stab an opponent in hand-to-hand fighting"
     },
     {
-      "word": "PROJECTOR",
-      "difficulty": "easy"
+      "word": "NIGHT-VISION GOGGLES",
+      "hint": "Goggles that allow the user to see in the dark"
     },
     {
-      "word": "STAGE LIGHT",
-      "difficulty": "easy"
+      "word": "TELEGRAPH",
+      "hint": "A system for transmitting messages from a distance along a wire, especially one creating signals by making and breaking an electrical connection"
     },
     {
-      "word": "BACKDROP",
-      "difficulty": "easy"
+      "word": "SEMAPHORE",
+      "hint": "A system of sending messages by holding the arms or two flags or poles in certain positions according to an alphabetic code"
     },
     {
-      "word": "CURTAIN",
-      "difficulty": "easy"
+      "word": "GLIDER",
+      "hint": "A light aircraft that is designed to fly for long periods without using an engine"
     },
     {
-      "word": "STAGE",
-      "difficulty": "easy"
+      "word": "BLIMP",
+      "hint": "A large airship without a rigid frame"
     },
     {
-      "word": "TRIPOD LIGHT",
-      "difficulty": "easy"
+      "word": "HARMONICA",
+      "hint": "A small rectangular wind instrument with a row of metal reeds that produce different notes"
     },
     {
-      "word": "SPEAKER STAND",
-      "difficulty": "easy"
+      "word": "PIPE ORGAN",
+      "hint": "A large musical instrument having rows of pipes supplied with air from bellows, and played with keyboards and pedals"
     },
     {
-      "word": "TOOLBOX",
-      "difficulty": "easy"
+      "word": "CELLO",
+      "hint": "A bass instrument of the violin family, held between the knees to play"
     },
     {
-      "word": "WRENCH SET",
-      "difficulty": "easy"
+      "word": "DOUBLE BASS",
+      "hint": "The largest and lowest-pitched bowed string instrument in the modern symphony orchestra"
     },
     {
-      "word": "SANDER",
-      "difficulty": "easy"
+      "word": "CLARINET",
+      "hint": "A woodwind instrument with a single-reed mouthpiece, a cylindrical tube with a flared end, and holes stopped by keys"
     },
     {
-      "word": "PAINT CAN",
-      "difficulty": "easy"
+      "word": "OBOE",
+      "hint": "A woodwind instrument with a double-reed mouthpiece, a slender tube, and a flared end"
     },
     {
-      "word": "DROP SHEET",
-      "difficulty": "easy"
+      "word": "BASSOON",
+      "hint": "A bass instrument of the oboe family with a double reed"
     },
     {
-      "word": "SAFETY GLASSES",
-      "difficulty": "easy"
+      "word": "VIBRAPHONE",
+      "hint": "A musical percussion instrument with a double row of tuned metal bars, each above a tubular resonator containing a motor-driven revolving vane"
     },
     {
-      "word": "DUST MASK",
-      "difficulty": "easy"
+      "word": "GLOCKENSPIEL",
+      "hint": "A percussion instrument composed of a set of tuned keys arranged in the fashion of the keyboard of a piano"
     },
     {
-      "word": "SAW BLADE",
-      "difficulty": "easy"
+      "word": "CELESTA",
+      "hint": "A small keyboard instrument in which felt-covered hammers strike a series of steel plates"
     },
     {
-      "word": "DRILL BIT",
-      "difficulty": "easy"
+      "word": "MOOG SYNTHESIZER",
+      "hint": "An analog synthesizer developed by the American engineer Robert Moog"
     },
     {
-      "word": "SPIRIT LEVEL",
-      "difficulty": "easy"
+      "word": "WHITE CANE",
+      "hint": "A long cane used by blind people to help them navigate"
     },
     {
-      "word": "PENCIL",
-      "difficulty": "easy"
+      "word": "T-SQUARE",
+      "hint": "A T-shaped instrument for drawing or testing right angles"
     },
     {
-      "word": "BLUEPRINT",
-      "difficulty": "easy"
+      "word": "MICROMETER",
+      "hint": "A gauge which measures small distances or thicknesses between its two faces, one of which can be moved away from or toward the other by turning a screw with a fine thread"
     },
     {
-      "word": "WORKBENCH",
-      "difficulty": "easy"
+      "word": "ALGAE",
+      "hint": "Plant"
     },
     {
-      "word": "CLAMP",
-      "difficulty": "easy"
+      "word": "BEEHIVE",
+      "hint": "Animal habitat"
     },
     {
-      "word": "VICE",
-      "difficulty": "easy"
+      "word": "BLIZZARD",
+      "hint": "Natural phenomenon"
     },
     {
-      "word": "RAG",
-      "difficulty": "easy"
+      "word": "BOMBER",
+      "hint": "Aircraft"
     },
     {
-      "word": "BRUSH",
-      "difficulty": "easy"
+      "word": "BRAIN",
+      "hint": "Body part"
     },
     {
-      "word": "SPATULA",
-      "difficulty": "easy"
+      "word": "BRIEFCASE",
+      "hint": "Container"
     },
     {
-      "word": "SEALANT",
-      "difficulty": "easy"
+      "word": "BUBBLE",
+      "hint": "Toy"
     },
     {
-      "word": "TILE CUTTER",
-      "difficulty": "easy"
+      "word": "BUFFALO",
+      "hint": "Animal"
     },
     {
-      "word": "PUTTY KNIFE",
-      "difficulty": "easy"
+      "word": "CASTLE",
+      "hint": "Building"
     },
     {
-      "word": "TROWEL",
-      "difficulty": "easy"
+      "word": "CATHEDRAL",
+      "hint": "Building"
     },
     {
-      "word": "CEMENT BAG",
-      "difficulty": "easy"
+      "word": "CAVE",
+      "hint": "Natural feature"
     },
     {
-      "word": "WHEELBARROW",
-      "difficulty": "easy"
+      "word": "CHAMELEON",
+      "hint": "Animal"
     },
     {
-      "word": "HOSE",
-      "difficulty": "easy"
+      "word": "CHERRY BLOSSOM",
+      "hint": "Plant"
     },
     {
-      "word": "SPRINKLER",
-      "difficulty": "easy"
+      "word": "CLOWNFISH",
+      "hint": "Animal"
     },
     {
-      "word": "WATERING CAN",
-      "difficulty": "easy"
+      "word": "CORAL REEF",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "COWBOY HAT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "CRUSTACEAN",
+      "hint": "Animal"
+    },
+    {
+      "word": "CRYSTAL BALL",
+      "hint": "Fortune-telling object"
+    },
+    {
+      "word": "EARTHQUAKE",
+      "hint": "Natural phenomenon"
+    },
+    {
+      "word": "GAS MASK",
+      "hint": "Safety equipment"
+    },
+    {
+      "word": "GEMSTONE",
+      "hint": "Jewelry material"
+    },
+    {
+      "word": "GLUE GUN",
+      "hint": "Tool"
+    },
+    {
+      "word": "GUNPOWDER",
+      "hint": "Explosive substance"
+    },
+    {
+      "word": "HANG GLIDER",
+      "hint": "Aircraft"
+    },
+    {
+      "word": "HONEYCOMB",
+      "hint": "Animal product"
+    },
+    {
+      "word": "HORSE CARRIAGE",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "HOUSEBOAT",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "IGLOO",
+      "hint": "Building"
+    },
+    {
+      "word": "IVORY",
+      "hint": "Material"
+    },
+    {
+      "word": "JET SKI",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "LASER",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "LICENSE",
+      "hint": "Permit"
+    },
+    {
+      "word": "LIFE JACKET",
+      "hint": "Safety gear"
+    },
+    {
+      "word": "LILY",
+      "hint": "Plant"
+    },
+    {
+      "word": "LUNAR ROVER",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "MAZE",
+      "hint": "Puzzle"
+    },
+    {
+      "word": "MISSILE",
+      "hint": "Weapon"
+    },
+    {
+      "word": "MOAI",
+      "hint": "Monument"
+    },
+    {
+      "word": "MODEM",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "OASIS",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "PEACOCK",
+      "hint": "Animal"
+    },
+    {
+      "word": "PERFUME",
+      "hint": "Fragrance"
+    },
+    {
+      "word": "PICKAXE",
+      "hint": "Tool"
+    },
+    {
+      "word": "PING PONG TABLE",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "PLANETARIUM",
+      "hint": "Science facility"
+    },
+    {
+      "word": "PLOUGH",
+      "hint": "Tool"
+    },
+    {
+      "word": "POLAROID CAMERA",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "PRAIRIE",
+      "hint": "Natural area"
+    },
+    {
+      "word": "RADAR",
+      "hint": "Navigation tool"
+    },
+    {
+      "word": "ROSETTA STONE",
+      "hint": "Ancient artifact"
+    },
+    {
+      "word": "SAPPHIRE",
+      "hint": "Gemstone"
+    },
+    {
+      "word": "SEAHORSE",
+      "hint": "Animal"
+    },
+    {
+      "word": "SEGWAY",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "SHIPWRECK",
+      "hint": "Historical object"
+    },
+    {
+      "word": "SHOTGUN",
+      "hint": "Weapon"
+    },
+    {
+      "word": "SKELETON",
+      "hint": "Anatomical model"
+    },
+    {
+      "word": "SLINGSHOT",
+      "hint": "Weapon"
+    },
+    {
+      "word": "SPARK PLUG",
+      "hint": "Engine part"
+    },
+    {
+      "word": "TANK (VEHICLE)",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "TEMPLE",
+      "hint": "Building"
+    },
+    {
+      "word": "THUNDER",
+      "hint": "Natural phenomenon"
+    },
+    {
+      "word": "TOASTER",
+      "hint": "Browns slices of bread"
+    },
+    {
+      "word": "KETTLE",
+      "hint": "Boils water for tea or coffee"
+    },
+    {
+      "word": "GUITAR",
+      "hint": "Six-stringed musical instrument"
+    },
+    {
+      "word": "HAMMER",
+      "hint": "Used for hitting nails"
+    },
+    {
+      "word": "CAR",
+      "hint": "Four-wheeled road vehicle"
+    },
+    {
+      "word": "BOOK",
+      "hint": "A set of written or printed pages"
+    },
+    {
+      "word": "TELEPHONE",
+      "hint": "Device for talking to someone far away"
+    },
+    {
+      "word": "SCISSORS",
+      "hint": "Used for cutting paper or fabric"
+    },
+    {
+      "word": "WATCH",
+      "hint": "Tells you the time, worn on a wrist"
+    },
+    {
+      "word": "CAMERA",
+      "hint": "Takes photographs or videos"
+    },
+    {
+      "word": "BICYCLE",
+      "hint": "Two-wheeled vehicle powered by pedals"
+    },
+    {
+      "word": "TELEVISION",
+      "hint": "Displays broadcast programs"
+    },
+    {
+      "word": "COMPUTER",
+      "hint": "Electronic device for processing data"
+    },
+    {
+      "word": "PIANO",
+      "hint": "Musical instrument with black and white keys"
+    },
+    {
+      "word": "BACKPACK",
+      "hint": "A bag carried on the shoulders"
+    },
+    {
+      "word": "UMBRELLA",
+      "hint": "Protects from rain or sun"
+    },
+    {
+      "word": "GLASSES",
+      "hint": "Worn to correct vision"
+    },
+    {
+      "word": "SCREWDRIVER",
+      "hint": "Tool for turning screws"
+    },
+    {
+      "word": "WRENCH",
+      "hint": "Used to grip and turn nuts and bolts"
+    },
+    {
+      "word": "SAW",
+      "hint": "Tool for cutting wood"
+    },
+    {
+      "word": "DRILL",
+      "hint": "Makes holes in walls or wood"
     },
     {
       "word": "SHOVEL",
-      "difficulty": "easy"
+      "hint": "Used for digging or moving loose material"
     },
     {
-      "word": "RAKE",
-      "difficulty": "easy"
+      "word": "LADDER",
+      "hint": "Used for climbing up or down"
     },
     {
-      "word": "HOE",
-      "difficulty": "easy"
+      "word": "VIOLIN",
+      "hint": "Four-stringed instrument played with a bow"
     },
     {
-      "word": "GARDEN FORK",
-      "difficulty": "easy"
+      "word": "DRUMS",
+      "hint": "Percussion instrument played with sticks"
     },
     {
-      "word": "PRUNER",
-      "difficulty": "easy"
+      "word": "TRUMPET",
+      "hint": "Brass instrument with three valves"
     },
     {
-      "word": "SHEARS",
-      "difficulty": "easy"
+      "word": "FLUTE",
+      "hint": "Woodwind instrument held horizontally"
     },
     {
-      "word": "LAWN MOWER",
-      "difficulty": "easy"
+      "word": "SAXOPHONE",
+      "hint": "Curved brass instrument with a reed"
     },
     {
-      "word": "HEDGE TRIMMER",
-      "difficulty": "easy"
+      "word": "HARP",
+      "hint": "Large triangular stringed instrument"
     },
     {
-      "word": "COMPOST BIN",
-      "difficulty": "easy"
+      "word": "BANJO",
+      "hint": "Stringed instrument with a round body"
     },
     {
-      "word": "FERTILIZER",
-      "difficulty": "easy"
+      "word": "UKULELE",
+      "hint": "Small four-stringed Hawaiian guitar"
     },
     {
-      "word": "SEED PACKET",
-      "difficulty": "easy"
+      "word": "BAGPIPES",
+      "hint": "Scottish instrument with a bag and pipes"
     },
     {
-      "word": "PLANT POT",
-      "difficulty": "easy"
+      "word": "MICROPHONE",
+      "hint": "Converts sound into an electrical signal"
     },
     {
-      "word": "TRELLIS",
-      "difficulty": "easy"
+      "word": "HEADPHONES",
+      "hint": "Worn over the ears to listen to audio"
     },
     {
-      "word": "WATER HOSE",
-      "difficulty": "easy"
+      "word": "SPEAKER",
+      "hint": "Converts electrical audio signals into sound"
     },
     {
-      "word": "SPRAY BOTTLE",
-      "difficulty": "easy"
+      "word": "KEYBOARD",
+      "hint": "Used for typing on a computer"
     },
     {
-      "word": "GARDEN GLOVES",
-      "difficulty": "easy"
+      "word": "MOUSE",
+      "hint": "Hand-held device to control a computer cursor"
     },
     {
-      "word": "FENCE POST",
-      "difficulty": "easy"
+      "word": "PRINTER",
+      "hint": "Produces a hard copy of a digital document"
     },
     {
-      "word": "GATE LATCH",
-      "difficulty": "easy"
+      "word": "LAPTOP",
+      "hint": "A portable computer"
     },
     {
-      "word": "MAILBOX",
-      "difficulty": "easy"
+      "word": "SMARTPHONE",
+      "hint": "A mobile phone with advanced capabilities"
     },
     {
-      "word": "BIRD FEEDER",
-      "difficulty": "easy"
+      "word": "TABLET",
+      "hint": "A portable touchscreen computer"
     },
     {
-      "word": "BIRD BATH",
-      "difficulty": "easy"
+      "word": "DRONE",
+      "hint": "Unmanned aerial vehicle"
     },
     {
-      "word": "WIND CHIME",
-      "difficulty": "easy"
+      "word": "SMARTWATCH",
+      "hint": "A computerized wristwatch"
     },
     {
-      "word": "GARDEN LIGHT",
-      "difficulty": "easy"
+      "word": "USB DRIVE",
+      "hint": "Small portable data storage device"
     },
     {
-      "word": "PATIO CHAIR",
-      "difficulty": "easy"
+      "word": "LEGO",
+      "hint": "Interlocking plastic construction bricks"
     },
     {
-      "word": "TABLE UMBRELLA",
-      "difficulty": "easy"
+      "word": "JIGSAW PUZZLE",
+      "hint": "Tiling puzzle requiring assembly of pieces"
     },
     {
-      "word": "DECK CHAIR",
-      "difficulty": "easy"
+      "word": "CHESSBOARD",
+      "hint": "Board for a strategic two-player game"
     },
     {
-      "word": "SUN LOUNGER",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CUSHION",
-      "difficulty": "easy"
-    },
-    {
-      "word": "HAMMOCK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "TARP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "COOLER BOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "BBQ LID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GRILL BRUSH",
-      "difficulty": "easy"
-    },
-    {
-      "word": "FIREPIT",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CHARCOAL BAG",
-      "difficulty": "easy"
-    },
-    {
-      "word": "LIGHTER FLUID",
-      "difficulty": "easy"
-    },
-    {
-      "word": "MARSHMALLOW STICK",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PICNIC BASKET",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PAPER PLATE",
-      "difficulty": "easy"
-    },
-    {
-      "word": "PLASTIC CUP",
-      "difficulty": "easy"
-    },
-    {
-      "word": "SNACK BOX",
-      "difficulty": "easy"
-    },
-    {
-      "word": "GAME BOARD",
-      "difficulty": "easy"
-    },
-    {
-      "word": "CARD DECK",
-      "difficulty": "easy"
+      "word": "PLAYING CARDS",
+      "hint": "A deck of 52 for games"
     },
     {
       "word": "DICE",
-      "difficulty": "easy"
+      "hint": "Small cubes with numbered sides"
     },
     {
-      "word": "PIECE",
-      "difficulty": "easy"
+      "word": "MONOPOLY",
+      "hint": "Property trading board game"
     },
     {
-      "word": "PAWN",
-      "difficulty": "easy"
+      "word": "SCRABBLE",
+      "hint": "Word game played on a board"
     },
     {
-      "word": "TOKEN",
-      "difficulty": "easy"
+      "word": "RUBIK'S CUBE",
+      "hint": "3D combination puzzle"
     },
     {
-      "word": "SPINNER",
-      "difficulty": "easy"
+      "word": "YO-YO",
+      "hint": "Toy which spins on a string"
     },
     {
-      "word": "TIMER",
-      "difficulty": "easy"
+      "word": "FRISBEE",
+      "hint": "A flying disc"
     },
     {
-      "word": "SCORE SHEET",
-      "difficulty": "easy"
+      "word": "TRAMPOLINE",
+      "hint": "A taut sheet for bouncing on"
     },
     {
-      "word": "RULE BOOK",
-      "difficulty": "easy"
+      "word": "FOOTBALL",
+      "hint": "Ball used in a popular winter sport"
     },
     {
-      "word": "TROPHY",
-      "difficulty": "easy"
+      "word": "BASKETBALL",
+      "hint": "Bounced and thrown through a hoop"
     },
     {
-      "word": "RIBBON",
-      "difficulty": "easy"
+      "word": "TENNIS RACKET",
+      "hint": "Used to hit a ball over a net"
     },
     {
-      "word": "GIFT",
-      "difficulty": "easy"
+      "word": "GOLF CLUB",
+      "hint": "Used to hit a small ball into a hole"
     },
     {
-      "word": "WRAPPING PAPER",
-      "difficulty": "easy"
+      "word": "CRICKET BAT",
+      "hint": "Used by a batter to hit a ball"
     },
     {
-      "word": "BALLOON",
-      "difficulty": "easy"
+      "word": "BASEBALL BAT",
+      "hint": "A smooth wooden or metal club"
+    },
+    {
+      "word": "HOCKEY STICK",
+      "hint": "Used to hit a puck or ball"
+    },
+    {
+      "word": "SKIS",
+      "hint": "Used for gliding over snow"
+    },
+    {
+      "word": "SNOWBOARD",
+      "hint": "A board for riding on snow"
+    },
+    {
+      "word": "SURFBOARD",
+      "hint": "Ridden on the crest of a wave"
+    },
+    {
+      "word": "KAYAK",
+      "hint": "A small, narrow watercraft"
+    },
+    {
+      "word": "CANOE",
+      "hint": "A lightweight, open-topped boat"
+    },
+    {
+      "word": "DUMBBELL",
+      "hint": "A short bar with weights at each end"
+    },
+    {
+      "word": "BARBELL",
+      "hint": "A long bar with weights on each end"
+    },
+    {
+      "word": "YOGA MAT",
+      "hint": "Used for practicing stretches and poses"
+    },
+    {
+      "word": "BOXING GLOVES",
+      "hint": "Padded protection for fists"
+    },
+    {
+      "word": "HELMET",
+      "hint": "Protective headgear"
+    },
+    {
+      "word": "CHAIR",
+      "hint": "A seat for one person"
+    },
+    {
+      "word": "SOFA",
+      "hint": "A long upholstered seat with a back and arms"
+    },
+    {
+      "word": "BED",
+      "hint": "A piece of furniture used for sleeping"
+    },
+    {
+      "word": "DESK",
+      "hint": "A piece of furniture with a writing surface"
+    },
+    {
+      "word": "BOOKSHELF",
+      "hint": "A set of shelves for holding books"
+    },
+    {
+      "word": "CABINET",
+      "hint": "A cupboard with shelves or drawers"
+    },
+    {
+      "word": "DRESSER",
+      "hint": "A chest of drawers, often with a mirror"
+    },
+    {
+      "word": "WARDROBE",
+      "hint": "A tall cupboard for hanging clothes"
+    },
+    {
+      "word": "LAMP",
+      "hint": "A device for giving light"
+    },
+    {
+      "word": "LIGHTBULB",
+      "hint": "An electric glass bulb that gives light"
+    },
+    {
+      "word": "BATTERY",
+      "hint": "A device containing electric cells"
     },
     {
       "word": "CANDLE",
-      "difficulty": "easy"
+      "hint": "A stick of wax with a wick for lighting"
     },
     {
-      "word": "CAKE",
-      "difficulty": "easy"
+      "word": "MIRROR",
+      "hint": "A reflective surface"
     },
     {
-      "word": "CONFETTI",
-      "difficulty": "easy"
+      "word": "CLOCK",
+      "hint": "A device for measuring and indicating time"
     },
     {
-      "word": "STREAMERS",
-      "difficulty": "easy"
+      "word": "RADIO",
+      "hint": "Receives broadcast audio signals"
     },
     {
-      "word": "HAT",
-      "difficulty": "easy"
+      "word": "NEWSPAPER",
+      "hint": "A printed publication of current events"
     },
     {
-      "word": "PARTY POPPER",
-      "difficulty": "easy"
+      "word": "MAGAZINE",
+      "hint": "A periodical publication with articles and images"
     },
     {
-      "word": "CUPCAKE",
-      "difficulty": "easy"
+      "word": "PEN",
+      "hint": "An instrument for writing with ink"
     },
     {
-      "word": "PRESENT BOX",
-      "difficulty": "easy"
+      "word": "PENCIL",
+      "hint": "An instrument for writing with graphite"
     },
     {
-      "word": "TAPE",
-      "difficulty": "easy"
+      "word": "CRAYON",
+      "hint": "A stick of colored wax for drawing"
     },
     {
-      "word": "GLUE STICK",
-      "difficulty": "easy"
+      "word": "PAINTBRUSH",
+      "hint": "A brush for applying paint"
     },
     {
-      "word": "PENCIL CASE",
-      "difficulty": "easy"
+      "word": "CANVAS",
+      "hint": "A strong, coarse cloth for painting on"
     },
     {
-      "word": "RULER",
-      "difficulty": "easy"
+      "word": "EASEL",
+      "hint": "A stand for holding an artist's work"
     },
     {
-      "word": "PAPER SHEET",
-      "difficulty": "easy"
+      "word": "POTTERY",
+      "hint": "Pots and other articles made from clay"
     },
     {
-      "word": "CLIPBOARD",
-      "difficulty": "easy"
+      "word": "SEWING MACHINE",
+      "hint": "A machine for stitching cloth"
     },
     {
-      "word": "FILE FOLDER",
-      "difficulty": "easy"
+      "word": "THREAD",
+      "hint": "A long, thin strand of cotton or silk"
     },
     {
-      "word": "DOCUMENT",
-      "difficulty": "easy"
+      "word": "BUTTON",
+      "hint": "A small disc sewn onto a garment"
     },
     {
-      "word": "POSTER",
-      "difficulty": "easy"
+      "word": "SAFETY PIN",
+      "hint": "A pin with a guarded point"
+    },
+    {
+      "word": "DUCT TAPE",
+      "hint": "A strong, silver-colored adhesive tape"
+    },
+    {
+      "word": "GLUE",
+      "hint": "An adhesive substance"
+    },
+    {
+      "word": "STAPLER",
+      "hint": "A device for fastening papers together"
+    },
+    {
+      "word": "PAPERCLIP",
+      "hint": "A piece of bent wire for holding papers"
+    },
+    {
+      "word": "ENVELOPE",
+      "hint": "A flat paper container for a letter"
+    },
+    {
+      "word": "STAMP",
+      "hint": "Affixed to a letter to pay for postage"
+    },
+    {
+      "word": "POSTCARD",
+      "hint": "A card for sending a message by mail"
+    },
+    {
+      "word": "BINOCULARS",
+      "hint": "Magnifies distant objects for both eyes"
+    },
+    {
+      "word": "TELESCOPE",
+      "hint": "An optical instrument for observing distant objects"
+    },
+    {
+      "word": "COMPASS",
+      "hint": "Shows direction relative to geographic points"
     },
     {
       "word": "MAP",
-      "difficulty": "easy"
+      "hint": "A diagrammatic representation of an area"
+    },
+    {
+      "word": "GLOBE",
+      "hint": "A spherical model of the Earth"
+    },
+    {
+      "word": "ABACUS",
+      "hint": "A counting frame with beads"
+    },
+    {
+      "word": "TYPEWRITER",
+      "hint": "A machine for typing characters"
+    },
+    {
+      "word": "GRAMOPHONE",
+      "hint": "An old-fashioned record player"
+    },
+    {
+      "word": "SUNDIAL",
+      "hint": "Tells the time by the position of the sun"
+    },
+    {
+      "word": "BAROMETER",
+      "hint": "Measures atmospheric pressure"
+    },
+    {
+      "word": "THERMOMETER",
+      "hint": "Measures temperature"
+    },
+    {
+      "word": "STETHOSCOPE",
+      "hint": "Used by doctors to listen to the heart or lungs"
+    },
+    {
+      "word": "SYRINGE",
+      "hint": "A tube with a nozzle and piston for injection"
+    },
+    {
+      "word": "SCALPEL",
+      "hint": "A knife with a small, sharp blade"
+    },
+    {
+      "word": "BANDAGE",
+      "hint": "A strip of material for binding a wound"
+    },
+    {
+      "word": "CRUTCHES",
+      "hint": "Supports used by an injured person to walk"
+    },
+    {
+      "word": "WHEELCHAIR",
+      "hint": "A chair with wheels for a person unable to walk"
+    },
+    {
+      "word": "TRACTOR",
+      "hint": "A powerful motor vehicle for hauling equipment"
+    },
+    {
+      "word": "FORKLIFT",
+      "hint": "A vehicle with a pronged device for lifting"
+    },
+    {
+      "word": "CRANE",
+      "hint": "A machine for lifting and moving heavy objects"
+    },
+    {
+      "word": "BULLDOZER",
+      "hint": "A powerful tractor with a broad blade"
+    },
+    {
+      "word": "SUBMARINE",
+      "hint": "A watercraft capable of independent underwater operation"
+    },
+    {
+      "word": "HELICOPTER",
+      "hint": "An aircraft with rotating blades"
+    },
+    {
+      "word": "AEROPLANE",
+      "hint": "A powered flying vehicle with fixed wings"
+    },
+    {
+      "word": "HOT AIR BALLOON",
+      "hint": "An aircraft consisting of a bag filled with heated air"
+    },
+    {
+      "word": "SPACESHIP",
+      "hint": "A vehicle designed to travel in outer space"
+    },
+    {
+      "word": "SATELLITE",
+      "hint": "An artificial body placed in orbit"
+    },
+    {
+      "word": "FOSSIL",
+      "hint": "The remains of a prehistoric organism"
+    },
+    {
+      "word": "CRYSTAL",
+      "hint": "A solid material with a repeating atomic structure"
+    },
+    {
+      "word": "METEORITE",
+      "hint": "A piece of rock from outer space that has hit the Earth"
+    },
+    {
+      "word": "KALEIDOSCOPE",
+      "hint": "A toy with mirrors and colored glass"
+    },
+    {
+      "word": "POCKET WATCH",
+      "hint": "A timepiece carried in a pocket"
+    },
+    {
+      "word": "ANVIL",
+      "hint": "A heavy iron block for hammering metal"
+    },
+    {
+      "word": "MORTAR AND PESTLE",
+      "hint": "Used for crushing and grinding substances"
+    },
+    {
+      "word": "CAULDRON",
+      "hint": "A large metal pot for cooking over a fire"
+    },
+    {
+      "word": "CATAPULT",
+      "hint": "A device for hurling projectiles"
+    },
+    {
+      "word": "CHARIOT",
+      "hint": "A two-wheeled horse-drawn vehicle from ancient times"
+    },
+    {
+      "word": "METRONOME",
+      "hint": "A device that produces a steady beat"
+    },
+    {
+      "word": "SPATULA",
+      "hint": "A kitchen utensil with a broad, flat blade"
+    },
+    {
+      "word": "WHISK",
+      "hint": "A utensil for whipping eggs or cream"
+    },
+    {
+      "word": "LADLE",
+      "hint": "A large, long-handled spoon"
+    },
+    {
+      "word": "COLANDER",
+      "hint": "A bowl-shaped utensil for draining food"
+    },
+    {
+      "word": "GRATER",
+      "hint": "A kitchen utensil for grating food"
+    },
+    {
+      "word": "ROLLING PIN",
+      "hint": "A cylinder for flattening dough"
+    },
+    {
+      "word": "CAN OPENER",
+      "hint": "A device for opening tin cans"
+    },
+    {
+      "word": "CORKSCREW",
+      "hint": "A tool for drawing corks from bottles"
+    },
+    {
+      "word": "PEELER",
+      "hint": "A tool for removing the outer layer of vegetables"
+    },
+    {
+      "word": "TONGS",
+      "hint": "An instrument with two movable arms for picking things up"
+    },
+    {
+      "word": "WOK",
+      "hint": "A bowl-shaped frying pan"
+    },
+    {
+      "word": "CLEAVER",
+      "hint": "A large, heavy knife"
+    },
+    {
+      "word": "COFFEE MAKER",
+      "hint": "An appliance for brewing coffee"
+    },
+    {
+      "word": "MICROWAVE",
+      "hint": "An oven that heats food with specific radiation"
+    },
+    {
+      "word": "REFRIGERATOR",
+      "hint": "An appliance that keeps food cold"
+    },
+    {
+      "word": "FREEZER",
+      "hint": "An appliance for storing food at freezing temperatures"
+    },
+    {
+      "word": "DISHWASHER",
+      "hint": "A machine for washing dishes automatically"
+    },
+    {
+      "word": "WASHING MACHINE",
+      "hint": "An appliance for washing clothes"
+    },
+    {
+      "word": "CLOTHES DRYER",
+      "hint": "An appliance for drying clothes"
+    },
+    {
+      "word": "IRON",
+      "hint": "A heated tool for pressing clothes"
+    },
+    {
+      "word": "IRONING BOARD",
+      "hint": "A long, narrow board for pressing clothes on"
+    },
+    {
+      "word": "VACUUM CLEANER",
+      "hint": "A device that uses suction to clean floors"
+    },
+    {
+      "word": "BROOM",
+      "hint": "A long-handled brush for sweeping"
+    },
+    {
+      "word": "MOP",
+      "hint": "A tool with a sponge or cloth for cleaning floors"
+    },
+    {
+      "word": "BUCKET",
+      "hint": "A cylindrical open container with a handle"
+    },
+    {
+      "word": "FEATHER DUSTER",
+      "hint": "A tool for cleaning delicate surfaces"
+    },
+    {
+      "word": "FIRE EXTINGUISHER",
+      "hint": "A device for putting out small fires"
+    },
+    {
+      "word": "SMOKE DETECTOR",
+      "hint": "An alarm that detects smoke"
+    },
+    {
+      "word": "FIREPLACE",
+      "hint": "A structure for containing a fire in a house"
+    },
+    {
+      "word": "CHIMNEY",
+      "hint": "A vertical channel that conducts smoke from a fire"
+    },
+    {
+      "word": "DOORBELL",
+      "hint": "A bell on a door that a visitor rings"
+    },
+    {
+      "word": "MAILBOX",
+      "hint": "A box for receiving mail"
+    },
+    {
+      "word": "KEY",
+      "hint": "A small piece of shaped metal for operating a lock"
+    },
+    {
+      "word": "HINGE",
+      "hint": "A movable joint on which a door or lid swings"
+    },
+    {
+      "word": "NAIL",
+      "hint": "A small metal spike driven into wood"
+    },
+    {
+      "word": "SCREW",
+      "hint": "A pointed metal pin with a spiral thread"
+    },
+    {
+      "word": "BOLT",
+      "hint": "A metal pin with a head and a thread for a nut"
+    },
+    {
+      "word": "NUT",
+      "hint": "A small block with a threaded hole for a bolt"
+    },
+    {
+      "word": "WASHER",
+      "hint": "A flat ring placed under a nut or bolt head"
+    },
+    {
+      "word": "CHAINSAW",
+      "hint": "A power-driven saw with teeth on a chain"
+    },
+    {
+      "word": "AXE",
+      "hint": "A tool for chopping wood"
+    },
+    {
+      "word": "HEDGE TRIMMERS",
+      "hint": "A tool for cutting hedges"
+    },
+    {
+      "word": "LAWN MOWER",
+      "hint": "A machine for cutting grass"
+    },
+    {
+      "word": "WATERING CAN",
+      "hint": "A container with a spout for watering plants"
+    },
+    {
+      "word": "HOSE",
+      "hint": "A flexible tube for conveying water"
+    },
+    {
+      "word": "SPRINKLER",
+      "hint": "A device that sprays water over a lawn"
+    },
+    {
+      "word": "RAKE",
+      "hint": "A long-handled tool for gathering leaves"
+    },
+    {
+      "word": "WHEELBARROW",
+      "hint": "A small cart with one wheel for carrying loads"
+    },
+    {
+      "word": "GNOME",
+      "hint": "A small ornamental garden statue"
+    },
+    {
+      "word": "HAMMOCK",
+      "hint": "A sling of fabric or netting suspended between two points"
+    },
+    {
+      "word": "DECKCHAIR",
+      "hint": "A folding chair for use outdoors"
+    },
+    {
+      "word": "TENT",
+      "hint": "A portable shelter of canvas or other material"
+    },
+    {
+      "word": "SLEEPING BAG",
+      "hint": "A warm, padded bag to sleep in outdoors"
+    },
+    {
+      "word": "CAMPFIRE",
+      "hint": "An open-air fire in a camp"
+    },
+    {
+      "word": "TORCH",
+      "hint": "A portable battery-powered electric lamp"
+    },
+    {
+      "word": "LANTERN",
+      "hint": "A lamp with a transparent case protecting the flame"
+    },
+    {
+      "word": "BACKGAMMON",
+      "hint": "A board game for two players with counters and dice"
+    },
+    {
+      "word": "CHECKERS",
+      "hint": "A board game for two players also known as draughts"
+    },
+    {
+      "word": "DOMINOES",
+      "hint": "Small rectangular blocks marked with spots"
+    },
+    {
+      "word": "MARBLES",
+      "hint": "Small spherical toys usually made of glass"
+    },
+    {
+      "word": "SLINKY",
+      "hint": "A pre-compressed helical spring toy"
+    },
+    {
+      "word": "ETCH A SKETCH",
+      "hint": "A mechanical drawing toy"
+    },
+    {
+      "word": "VIEW-MASTER",
+      "hint": "A device for viewing stereoscopic 3D images"
+    },
+    {
+      "word": "CUCKOO CLOCK",
+      "hint": "A clock that strikes the hours with a cuckoo call"
+    },
+    {
+      "word": "GRANDFATHER CLOCK",
+      "hint": "A tall, freestanding, weight-driven pendulum clock"
+    },
+    {
+      "word": "HOURGLASS",
+      "hint": "A device with two glass bulbs connected by a narrow neck"
+    },
+    {
+      "word": "QUILL",
+      "hint": "A writing tool made from a bird's feather"
+    },
+    {
+      "word": "SCROLL",
+      "hint": "A roll of parchment or paper for writing on"
+    },
+    {
+      "word": "HIGHLIGHTER",
+      "hint": "A felt-tip pen for marking text"
+    },
+    {
+      "word": "CHALK",
+      "hint": "A soft white limestone for writing on a blackboard"
+    },
+    {
+      "word": "BLACKBOARD",
+      "hint": "A dark surface for writing on with chalk"
+    },
+    {
+      "word": "WHITEBOARD",
+      "hint": "A glossy white surface for non-permanent markings"
+    },
+    {
+      "word": "PROJECTOR",
+      "hint": "A device for projecting slides or film onto a screen"
+    },
+    {
+      "word": "CASH REGISTER",
+      "hint": "A machine used in places of business for regulating money transactions with customers"
+    },
+    {
+      "word": "VENDING MACHINE",
+      "hint": "A machine that dispenses small articles when a coin is inserted"
+    },
+    {
+      "word": "ATM",
+      "hint": "Automated Teller Machine"
+    },
+    {
+      "word": "PARKING METER",
+      "hint": "A machine that collects money in exchange for the right to park a vehicle in a particular place"
+    },
+    {
+      "word": "TRAFFIC LIGHT",
+      "hint": "A set of automatically operated colored lights for controlling traffic"
+    },
+    {
+      "word": "STREETLIGHT",
+      "hint": "A light illuminating a road at night"
+    },
+    {
+      "word": "FIRE HYDRANT",
+      "hint": "A connection point for firefighters to tap into a water supply"
+    },
+    {
+      "word": "MANHOLE COVER",
+      "hint": "A removable plate forming the lid over the opening of a manhole"
+    },
+    {
+      "word": "BILLBOARD",
+      "hint": "A large outdoor board for displaying advertisements"
+    },
+    {
+      "word": "WINDMILL",
+      "hint": "A structure with vanes that are turned by the wind to generate power"
+    },
+    {
+      "word": "WATER WHEEL",
+      "hint": "A large wheel driven by flowing water"
+    },
+    {
+      "word": "DAM",
+      "hint": "A barrier constructed to hold back water"
+    },
+    {
+      "word": "BRIDGE",
+      "hint": "A structure carrying a road or railway across a river or obstacle"
+    },
+    {
+      "word": "TUNNEL",
+      "hint": "An artificial underground passage"
+    },
+    {
+      "word": "FERRIS WHEEL",
+      "hint": "An amusement ride consisting of a rotating upright wheel with passenger cars"
+    },
+    {
+      "word": "ROLLER COASTER",
+      "hint": "An amusement ride with a railroad track that has tight turns and steep slopes"
+    },
+    {
+      "word": "CAROUSEL",
+      "hint": "An amusement ride with revolving seats, often in the form of horses"
+    },
+    {
+      "word": "SWING",
+      "hint": "A seat suspended by ropes or chains on which someone may swing"
+    },
+    {
+      "word": "SLIDE",
+      "hint": "A structure with a smooth sloping surface for children to slide down"
+    },
+    {
+      "word": "SEE-SAW",
+      "hint": "A long plank balanced in the middle on which children ride"
+    },
+    {
+      "word": "CLIMBING FRAME",
+      "hint": "A structure for children to climb on"
+    },
+    {
+      "word": "SANDPIT",
+      "hint": "A shallow pit of sand for children to play in"
+    },
+    {
+      "word": "PADDLING POOL",
+      "hint": "A shallow artificial pool for children to play in"
+    },
+    {
+      "word": "AQUARIUM",
+      "hint": "A transparent tank of water in which fish and other water creatures are kept"
+    },
+    {
+      "word": "TERRARIUM",
+      "hint": "A sealed transparent globe or similar container in which plants are grown"
+    },
+    {
+      "word": "BONSAI TREE",
+      "hint": "An ornamental tree or shrub grown in a pot and artificially prevented from reaching its normal size"
+    },
+    {
+      "word": "ORIGAMI",
+      "hint": "The Japanese art of folding paper into decorative shapes"
+    },
+    {
+      "word": "CALLIGRAPHY",
+      "hint": "The art of producing decorative handwriting"
+    },
+    {
+      "word": "TAPESTRY",
+      "hint": "A piece of thick textile fabric with pictures or designs formed by weaving"
+    },
+    {
+      "word": "MOSAIC",
+      "hint": "A picture or pattern produced by arranging together small colored pieces of hard material"
+    },
+    {
+      "word": "STAINED GLASS",
+      "hint": "Colored glass used to form decorative windows"
+    },
+    {
+      "word": "FRESCO",
+      "hint": "A painting done rapidly in watercolor on wet plaster on a wall or ceiling"
+    },
+    {
+      "word": "PALETTE",
+      "hint": "A thin board or slab on which an artist lays and mixes colors"
+    },
+    {
+      "word": "CLAY",
+      "hint": "A stiff, sticky fine-grained earth that can be molded when wet"
+    },
+    {
+      "word": "MALLET",
+      "hint": "A hammer with a large, usually wooden, head"
+    },
+    {
+      "word": "SADDLE",
+      "hint": "A seat for a rider on the back of a horse"
+    },
+    {
+      "word": "REINS",
+      "hint": "A long, narrow strap attached to a horse's bit, used to guide or check a horse"
+    },
+    {
+      "word": "WHIP",
+      "hint": "A lash with a handle, used for urging on an animal"
+    },
+    {
+      "word": "LASSO",
+      "hint": "A rope with a noose at one end, used for catching cattle"
+    },
+    {
+      "word": "SPEAR",
+      "hint": "A weapon with a long shaft and a pointed tip"
+    },
+    {
+      "word": "SHIELD",
+      "hint": "A broad piece of metal or another suitable material, held by straps or a handle attached on one side, used as a protection against blows or missiles"
+    },
+    {
+      "word": "BOW AND ARROW",
+      "hint": "A weapon for shooting arrows, consisting of a curved piece of wood with a cord connecting the two ends"
+    },
+    {
+      "word": "SWORD",
+      "hint": "A weapon with a long metal blade and a hilt with a hand guard"
+    },
+    {
+      "word": "DAGGER",
+      "hint": "A short, pointed knife, used as a weapon"
+    },
+    {
+      "word": "ARMOR",
+      "hint": "Protective clothing made of metal, leather, or other material"
+    },
+    {
+      "word": "CANNON",
+      "hint": "A large, heavy piece of artillery, typically mounted on wheels, formerly used in warfare"
+    },
+    {
+      "word": "GRENADE",
+      "hint": "A small bomb thrown by hand or launched mechanically"
+    },
+    {
+      "word": "WALKIE-TALKIE",
+      "hint": "A portable two-way radio"
+    },
+    {
+      "word": "MORSE CODE",
+      "hint": "An alphabet or code in which letters are represented by combinations of long and short signals of light or sound"
+    },
+    {
+      "word": "LIGHTHOUSE",
+      "hint": "A tower containing a beacon light to warn or guide ships at sea"
+    },
+    {
+      "word": "BUOY",
+      "hint": "An anchored float serving as a navigation mark, to show reefs or other hazards, or for mooring"
+    },
+    {
+      "word": "ANCHOR",
+      "hint": "A heavy object attached to a cable or chain and used to moor a ship to the sea bottom"
+    },
+    {
+      "word": "SAIL",
+      "hint": "A piece of material extended on a mast to catch the wind and propel a boat or ship"
+    },
+    {
+      "word": "RUDDER",
+      "hint": "A flat piece hinged vertically near the stern of a boat or ship for steering"
+    },
+    {
+      "word": "OAR",
+      "hint": "A pole with a flat blade, used to row or steer a boat through the water"
+    },
+    {
+      "word": "PROPELLER",
+      "hint": "A mechanical device with rotating blades that is used to propel a ship or aircraft"
+    },
+    {
+      "word": "JET ENGINE",
+      "hint": "An engine that generates a powerful thrust in a jet of fluid, especially of hot gases"
+    },
+    {
+      "word": "ROCKET",
+      "hint": "A spacecraft propelled by a rocket engine"
+    },
+    {
+      "word": "PARACHUTE",
+      "hint": "A cloth canopy which fills with air and allows a person or heavy object to descend slowly when dropped from an aircraft"
+    },
+    {
+      "word": "TANDEM BICYCLE",
+      "hint": "A bicycle with seats and pedals for two riders, one behind the other"
+    },
+    {
+      "word": "TRICYCLE",
+      "hint": "A vehicle similar to a bicycle, but having three wheels"
+    },
+    {
+      "word": "SKATEBOARD",
+      "hint": "A short board with two small wheels at each end, on which a person can ride"
+    },
+    {
+      "word": "ROLLER SKATES",
+      "hint": "Boots with wheels fixed to them, for riding on a hard surface"
+    },
+    {
+      "word": "ICE SKATES",
+      "hint": "Boots with blades attached to the bottom, used for skating on ice"
+    },
+    {
+      "word": "POGO STICK",
+      "hint": "A toy for jumping about on, consisting of a pole with a spring at the bottom and a handle and footrests at the top"
+    },
+    {
+      "word": "HULA HOOP",
+      "hint": "A large hoop that is twirled around the waist, limbs or neck"
+    },
+    {
+      "word": "JUMP ROPE",
+      "hint": "A rope used in the game of skipping"
+    },
+    {
+      "word": "MARACAS",
+      "hint": "A pair of hollow club-like gourd or gourd-shaped containers filled with beans, pebbles, or similar objects, shaken as a percussion instrument"
+    },
+    {
+      "word": "TAMBOURINE",
+      "hint": "A percussion instrument resembling a shallow drum with metal jingles fixed in the frame"
+    },
+    {
+      "word": "CASTANETS",
+      "hint": "A pair of small concave pieces of wood, ivory, or plastic, joined in pairs by a cord and clicked together by the fingers as a rhythmic accompaniment to dancing"
+    },
+    {
+      "word": "TRIANGLE",
+      "hint": "A percussion instrument consisting of a steel rod bent into a triangle, open at one corner"
+    },
+    {
+      "word": "GONG",
+      "hint": "A metal disc with a turned rim, giving a resonant note when struck"
+    },
+    {
+      "word": "CYMBAL",
+      "hint": "A percussion instrument consisting of a circular flat or concave metal plate that is struck with a drumstick or used in pairs struck together"
+    },
+    {
+      "word": "ELECTRIC GUITAR",
+      "hint": "A guitar with a built-in pickup or pickups that convert the vibrations of its strings into electrical signals"
+    },
+    {
+      "word": "BASS GUITAR",
+      "hint": "An electric guitar with four or five strings, playing in the bass range"
+    },
+    {
+      "word": "FRENCH HORN",
+      "hint": "A brass instrument with a coiled tube, valves, and a wide bell"
+    },
+    {
+      "word": "TROMBONE",
+      "hint": "A large brass wind instrument with a sliding tube"
+    },
+    {
+      "word": "TUBA",
+      "hint": "A large brass wind instrument of bass pitch, with three to six valves and a broad bell"
+    },
+    {
+      "word": "XYLOPHONE",
+      "hint": "A musical instrument played by striking a row of wooden bars of graduated length with one or more small mallets"
+    },
+    {
+      "word": "CHIMES",
+      "hint": "A set of tuned bells, or a percussion instrument consisting of a set of tuned metal tubes of different lengths"
+    },
+    {
+      "word": "TURNTABLE",
+      "hint": "A circular revolving platform on which a phonograph record is played"
+    },
+    {
+      "word": "CASSETTE TAPE",
+      "hint": "A cassette for magnetic tape, used for recording or playing back sound or video"
+    },
+    {
+      "word": "CD PLAYER",
+      "hint": "A device for playing compact discs"
+    },
+    {
+      "word": "MP3 PLAYER",
+      "hint": "A portable electronic device for playing digital audio files"
+    },
+    {
+      "word": "E-READER",
+      "hint": "A portable electronic device for reading books in digital form"
+    },
+    {
+      "word": "GPS",
+      "hint": "A global positioning system"
+    },
+    {
+      "word": "CALCULATOR",
+      "hint": "A small electronic device used for making calculations"
+    },
+    {
+      "word": "SLIDE PROJECTOR",
+      "hint": "An opto-mechanical device for showing photographic slides"
+    },
+    {
+      "word": "OVERHEAD PROJECTOR",
+      "hint": "A device that projects an image of a transparent sheet onto a screen"
+    },
+    {
+      "word": "FILM PROJECTOR",
+      "hint": "A device for projecting a moving picture onto a screen"
+    },
+    {
+      "word": "MOVIE CAMERA",
+      "hint": "A camera for recording motion pictures"
+    },
+    {
+      "word": "TRIPOD",
+      "hint": "A three-legged stand for supporting a camera or other apparatus"
+    },
+    {
+      "word": "MEGAPHONE",
+      "hint": "A large funnel-shaped device for amplifying and directing the voice"
+    },
+    {
+      "word": "HEARING AID",
+      "hint": "A small device that fits in or on the ear, worn by a partially deaf person to amplify sound"
+    },
+    {
+      "word": "PACEMAKER",
+      "hint": "An artificial device for stimulating the heart muscle and regulating its contractions"
+    },
+    {
+      "word": "DEFIBRILLATOR",
+      "hint": "An apparatus used to control heart fibrillation by application of an electric current to the chest wall or heart"
+    },
+    {
+      "word": "PROSTHETIC LIMB",
+      "hint": "An artificial body part"
+    },
+    {
+      "word": "X-RAY MACHINE",
+      "hint": "A machine that uses X-rays to produce images of the internal structures of a body"
+    },
+    {
+      "word": "MRI MACHINE",
+      "hint": "A medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body"
+    },
+    {
+      "word": "ULTRASOUND MACHINE",
+      "hint": "A machine that uses sound waves to create images of organs and structures inside the body"
+    },
+    {
+      "word": "EKG MACHINE",
+      "hint": "A machine that records the electrical activity of the heart"
+    },
+    {
+      "word": "IV DRIP",
+      "hint": "A method of slowly administering fluid into a vein"
+    },
+    {
+      "word": "SLING",
+      "hint": "A flexible strap or belt used in the form of a loop to support or raise a weight"
+    },
+    {
+      "word": "SPLINT",
+      "hint": "A strip of rigid material used for supporting and immobilizing a broken bone when it has been set"
+    },
+    {
+      "word": "CAST",
+      "hint": "A rigid dressing used for immobilizing a broken bone"
+    },
+    {
+      "word": "STRETCHER",
+      "hint": "A framework of two poles with a long piece of canvas slung between them, used for carrying sick, injured, or dead people"
+    },
+    {
+      "word": "GURNEY",
+      "hint": "A wheeled stretcher used for transporting hospital patients"
+    },
+    {
+      "word": "WALKER",
+      "hint": "A frame used by disabled or infirm people for support while walking"
+    },
+    {
+      "word": "BRAILLE",
+      "hint": "A form of written language for blind people, in which characters are represented by patterns of raised dots that are felt with the fingertips"
+    },
+    {
+      "word": "PROTRACTOR",
+      "hint": "An instrument for measuring angles, typically in the form of a flat semicircle marked with degrees along the curved edge"
+    },
+    {
+      "word": "SET SQUARE",
+      "hint": "A right-angled triangular plate of wood or plastic, for use in drawing"
+    },
+    {
+      "word": "FRENCH CURVE",
+      "hint": "A template used for drawing curved lines"
+    },
+    {
+      "word": "CALIPERS",
+      "hint": "An instrument for measuring external or internal dimensions, having two hinged legs"
+    },
+    {
+      "word": "LEVEL",
+      "hint": "A device for establishing a horizontal plane"
+    },
+    {
+      "word": "PLUMB BOB",
+      "hint": "A weight, usually with a pointed tip on the bottom, suspended from a string and used as a vertical reference line"
+    },
+    {
+      "word": "CHALK LINE",
+      "hint": "A tool for marking long, straight lines on relatively flat surfaces"
+    },
+    {
+      "word": "WHETSTONE",
+      "hint": "A fine-grained stone used for sharpening cutting tools"
+    },
+    {
+      "word": "GRINDSTONE",
+      "hint": "A revolving disc of stone, used for sharpening tools or grinding metal"
+    },
+    {
+      "word": "LATHE",
+      "hint": "A machine for shaping wood, metal, or other material by means of a rotating drive which turns the piece being worked on against changeable cutting tools"
+    },
+    {
+      "word": "AMBULANCE",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "AMPLIFIER",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "ANT",
+      "hint": "Animal"
+    },
+    {
+      "word": "ANTENNA",
+      "hint": "Item"
+    },
+    {
+      "word": "APE",
+      "hint": "Animal"
+    },
+    {
+      "word": "APPLE",
+      "hint": "Food"
+    },
+    {
+      "word": "APRON",
+      "hint": "Household item"
+    },
+    {
+      "word": "ARMCHAIR",
+      "hint": "Furniture"
+    },
+    {
+      "word": "ARROW",
+      "hint": "Weapon"
+    },
+    {
+      "word": "ASHTRAY",
+      "hint": "Household item"
+    },
+    {
+      "word": "ASTRONAUT",
+      "hint": "Space traveler"
+    },
+    {
+      "word": "ATLAS",
+      "hint": "Book of maps"
+    },
+    {
+      "word": "AVOCADO",
+      "hint": "Food"
+    },
+    {
+      "word": "BABOON",
+      "hint": "Animal"
+    },
+    {
+      "word": "BADGER",
+      "hint": "Animal"
+    },
+    {
+      "word": "BALLOON",
+      "hint": "Toy"
+    },
+    {
+      "word": "BARBER",
+      "hint": "Profession"
+    },
+    {
+      "word": "BARN",
+      "hint": "Building"
+    },
+    {
+      "word": "BARREL",
+      "hint": "Container"
+    },
+    {
+      "word": "BEACH",
+      "hint": "Natural place"
+    },
+    {
+      "word": "BEAR",
+      "hint": "Animal"
+    },
+    {
+      "word": "BEE",
+      "hint": "Animal"
+    },
+    {
+      "word": "BELL",
+      "hint": "Musical instrument"
+    },
+    {
+      "word": "BIKINI",
+      "hint": "Clothing"
+    },
+    {
+      "word": "BIN",
+      "hint": "Container"
+    },
+    {
+      "word": "BLENDER",
+      "hint": "Household item"
+    },
+    {
+      "word": "BLOOD",
+      "hint": "Body fluid"
+    },
+    {
+      "word": "BLUEBERRY",
+      "hint": "Food"
+    },
+    {
+      "word": "BOAT",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "BONE",
+      "hint": "Body part"
+    },
+    {
+      "word": "BOOKMARK",
+      "hint": "Page marker"
+    },
+    {
+      "word": "BOOTS",
+      "hint": "Clothing"
+    },
+    {
+      "word": "BOWLING BALL",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "BOX",
+      "hint": "Container"
+    },
+    {
+      "word": "BRACELET",
+      "hint": "Clothing"
+    },
+    {
+      "word": "BREAD",
+      "hint": "Food"
+    },
+    {
+      "word": "BROCCOLI",
+      "hint": "Food"
+    },
+    {
+      "word": "BRUSH",
+      "hint": "Household item"
+    },
+    {
+      "word": "BUTTER",
+      "hint": "Food"
+    },
+    {
+      "word": "BUTTERFLY",
+      "hint": "Animal"
+    },
+    {
+      "word": "CABIN",
+      "hint": "Building"
+    },
+    {
+      "word": "CACTUS",
+      "hint": "Plant"
+    },
+    {
+      "word": "CAKE",
+      "hint": "Food"
+    },
+    {
+      "word": "CAMEL",
+      "hint": "Animal"
+    },
+    {
+      "word": "CARAVAN",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "CARPET",
+      "hint": "Household item"
+    },
+    {
+      "word": "CARROT",
+      "hint": "Food"
+    },
+    {
+      "word": "CASINO",
+      "hint": "Entertainment venue"
+    },
+    {
+      "word": "CATERPILLAR",
+      "hint": "Animal"
+    },
+    {
+      "word": "CATTLE",
+      "hint": "Animals"
+    },
+    {
+      "word": "CAULIFLOWER",
+      "hint": "Food"
+    },
+    {
+      "word": "CD",
+      "hint": "Electronic media"
+    },
+    {
+      "word": "CELERY",
+      "hint": "Food"
+    },
+    {
+      "word": "CEMENT MIXER",
+      "hint": "Construction machine"
+    },
+    {
+      "word": "CHAMPAGNE",
+      "hint": "Drink"
+    },
+    {
+      "word": "CHANDELIER",
+      "hint": "Household item"
+    },
+    {
+      "word": "CHEESE",
+      "hint": "Food"
+    },
+    {
+      "word": "CHICKEN",
+      "hint": "Animal"
+    },
+    {
+      "word": "CHOCOLATE",
+      "hint": "Food"
+    },
+    {
+      "word": "CLOSET",
+      "hint": "Furniture"
+    },
+    {
+      "word": "COAT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "COCONUT",
+      "hint": "Food"
+    },
+    {
+      "word": "COFFEE",
+      "hint": "Food"
+    },
+    {
+      "word": "CONCERT",
+      "hint": "Event"
+    },
+    {
+      "word": "CONCRETE",
+      "hint": "Building material"
+    },
+    {
+      "word": "CONTROLLER",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "COOKBOOK",
+      "hint": "Reading material"
+    },
+    {
+      "word": "COOKIES",
+      "hint": "Food"
+    },
+    {
+      "word": "COUCH",
+      "hint": "Furniture"
+    },
+    {
+      "word": "COW",
+      "hint": "Animal"
+    },
+    {
+      "word": "CRAB",
+      "hint": "Animal"
+    },
+    {
+      "word": "CREDIT CARD",
+      "hint": "Payment card"
+    },
+    {
+      "word": "CROWN",
+      "hint": "Headpiece"
+    },
+    {
+      "word": "CRUISE SHIP",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "CUP",
+      "hint": "Household item"
+    },
+    {
+      "word": "CUTLERY",
+      "hint": "Dining utensils"
+    },
+    {
+      "word": "DAISY",
+      "hint": "Plant"
+    },
+    {
+      "word": "DALMATIAN",
+      "hint": "Animal"
+    },
+    {
+      "word": "DARTBOARD",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "DEER",
+      "hint": "Animal"
+    },
+    {
+      "word": "DIAMOND",
+      "hint": "Gemstone"
+    },
+    {
+      "word": "DICTIONARY",
+      "hint": "Book"
+    },
+    {
+      "word": "DINOSAUR",
+      "hint": "Animal"
+    },
+    {
+      "word": "DIVING BOARD",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "DOG",
+      "hint": "Animal"
+    },
+    {
+      "word": "DOLL",
+      "hint": "Toy/Game"
+    },
+    {
+      "word": "DOLPHIN",
+      "hint": "Animal"
+    },
+    {
+      "word": "DOME",
+      "hint": "Building feature"
+    },
+    {
+      "word": "DOOR",
+      "hint": "Household item"
+    },
+    {
+      "word": "DOUGHNUT",
+      "hint": "Food"
+    },
+    {
+      "word": "DUCK",
+      "hint": "Animal"
+    },
+    {
+      "word": "EAGLE",
+      "hint": "Animal"
+    },
+    {
+      "word": "EARTH",
+      "hint": "Planet"
+    },
+    {
+      "word": "EGG",
+      "hint": "Food"
+    },
+    {
+      "word": "EGGPLANT",
+      "hint": "Food"
+    },
+    {
+      "word": "EIFFEL TOWER",
+      "hint": "Landmark"
+    },
+    {
+      "word": "ELECTRICITY",
+      "hint": "Energy source"
+    },
+    {
+      "word": "ELEPHANT",
+      "hint": "Animal"
+    },
+    {
+      "word": "ELEVATOR",
+      "hint": "Building feature"
+    },
+    {
+      "word": "EMERALD",
+      "hint": "Gemstone"
+    },
+    {
+      "word": "ENGINE",
+      "hint": "Machine"
+    },
+    {
+      "word": "ERGONOMIC CHAIR",
+      "hint": "Furniture"
+    },
+    {
+      "word": "ESCALATOR",
+      "hint": "Building feature"
+    },
+    {
+      "word": "EUCALYPTUS TREE",
+      "hint": "Plant"
+    },
+    {
+      "word": "EXCAVATOR",
+      "hint": "Construction machine"
+    },
+    {
+      "word": "EYEGLASSES",
+      "hint": "Vision aid"
+    },
+    {
+      "word": "FABRIC",
+      "hint": "Material"
+    },
+    {
+      "word": "FAN",
+      "hint": "Household item"
+    },
+    {
+      "word": "FEATHER",
+      "hint": "Animal product"
+    },
+    {
+      "word": "FERRY",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "FESTIVAL",
+      "hint": "Event"
+    },
+    {
+      "word": "FIELD",
+      "hint": "Natural area"
+    },
+    {
+      "word": "FILM",
+      "hint": "Movie"
+    },
+    {
+      "word": "FIRE ENGINE",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "FIREFLY",
+      "hint": "Animal"
+    },
+    {
+      "word": "FIREWORKS",
+      "hint": "Pyrotechnics"
+    },
+    {
+      "word": "FISH",
+      "hint": "Animal"
+    },
+    {
+      "word": "FISHING ROD",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "FLAG",
+      "hint": "Symbol"
+    },
+    {
+      "word": "FLAMINGO",
+      "hint": "Animal"
+    },
+    {
+      "word": "FLASHLIGHT",
+      "hint": "Tool"
+    },
+    {
+      "word": "FLOWER",
+      "hint": "Plant"
+    },
+    {
+      "word": "FLY",
+      "hint": "Animal"
+    },
+    {
+      "word": "FOG",
+      "hint": "Natural phenomenon"
+    },
+    {
+      "word": "FORK",
+      "hint": "Utensil"
+    },
+    {
+      "word": "FORTRESS",
+      "hint": "Building"
+    },
+    {
+      "word": "FOUNTAIN",
+      "hint": "Water feature"
+    },
+    {
+      "word": "FOX",
+      "hint": "Animal"
+    },
+    {
+      "word": "FRIDGE",
+      "hint": "Household item"
+    },
+    {
+      "word": "FRUIT",
+      "hint": "Food"
+    },
+    {
+      "word": "FRYING PAN",
+      "hint": "Kitchen tool"
+    },
+    {
+      "word": "FUEL",
+      "hint": "Energy source"
+    },
+    {
+      "word": "GALAXY",
+      "hint": "Space object"
+    },
+    {
+      "word": "GARDEN",
+      "hint": "Natural area"
+    },
+    {
+      "word": "GARLIC",
+      "hint": "Food"
+    },
+    {
+      "word": "GAZELLE",
+      "hint": "Animal"
+    },
+    {
+      "word": "GECKO",
+      "hint": "Animal"
+    },
+    {
+      "word": "GEYSER",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "GIRAFFE",
+      "hint": "Animal"
+    },
+    {
+      "word": "GLASS",
+      "hint": "Material"
+    },
+    {
+      "word": "GOAT",
+      "hint": "Animal"
+    },
+    {
+      "word": "GOLD",
+      "hint": "Gemstone"
+    },
+    {
+      "word": "GORILLA",
+      "hint": "Animal"
+    },
+    {
+      "word": "GRAPES",
+      "hint": "Food"
+    },
+    {
+      "word": "GYMNAST",
+      "hint": "Person"
+    },
+    {
+      "word": "HAIR DRYER",
+      "hint": "Household item"
+    },
+    {
+      "word": "HARBOR",
+      "hint": "Port"
+    },
+    {
+      "word": "HARVEST",
+      "hint": "Natural event"
+    },
+    {
+      "word": "HAT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "HERB",
+      "hint": "Plant"
+    },
+    {
+      "word": "HIPPOPOTAMUS",
+      "hint": "Animal"
+    },
+    {
+      "word": "HONEY",
+      "hint": "Food"
+    },
+    {
+      "word": "HURRICANE",
+      "hint": "Natural phenomenon"
+    },
+    {
+      "word": "INSECT",
+      "hint": "Animal"
+    },
+    {
+      "word": "INTERNET",
+      "hint": "Network"
+    },
+    {
+      "word": "ISLAND",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "JACKET",
+      "hint": "Clothing"
+    },
+    {
+      "word": "JAGUAR",
+      "hint": "Animal"
+    },
+    {
+      "word": "JELLYFISH",
+      "hint": "Animal"
+    },
+    {
+      "word": "JOYSTICK",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "JUNGLE",
+      "hint": "Natural area"
+    },
+    {
+      "word": "KANGAROO",
+      "hint": "Animal"
+    },
+    {
+      "word": "KITE",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "KNIFE",
+      "hint": "Utensil"
+    },
+    {
+      "word": "KOALA",
+      "hint": "Animal"
+    },
+    {
+      "word": "LADYBUG",
+      "hint": "Animal"
+    },
+    {
+      "word": "LEAF",
+      "hint": "Plant"
+    },
+    {
+      "word": "LEMON",
+      "hint": "Food"
+    },
+    {
+      "word": "LEMONADE",
+      "hint": "Drink"
+    },
+    {
+      "word": "LEOPARD",
+      "hint": "Animal"
+    },
+    {
+      "word": "LIBRARY",
+      "hint": "Building"
+    },
+    {
+      "word": "LIGHTNING",
+      "hint": "Natural phenomenon"
+    },
+    {
+      "word": "LION",
+      "hint": "Animal"
+    },
+    {
+      "word": "LOBSTER",
+      "hint": "Animal"
+    },
+    {
+      "word": "LOCOMOTIVE",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "LOLLIPOP",
+      "hint": "Candy"
+    },
+    {
+      "word": "LOUDSPEAKER",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "LUGGAGE",
+      "hint": "Travel gear"
+    },
+    {
+      "word": "LUMBER",
+      "hint": "Wood material"
+    },
+    {
+      "word": "MAGNET",
+      "hint": "Tool"
+    },
+    {
+      "word": "MAGNIFYING GLASS",
+      "hint": "Tool"
+    },
+    {
+      "word": "MANGO",
+      "hint": "Food"
+    },
+    {
+      "word": "MARS",
+      "hint": "Planet"
+    },
+    {
+      "word": "MATCHES",
+      "hint": "Fire starter"
+    },
+    {
+      "word": "MATTRESS",
+      "hint": "Bedding"
+    },
+    {
+      "word": "MEAT",
+      "hint": "Food"
+    },
+    {
+      "word": "MEDICINE",
+      "hint": "Health product"
+    },
+    {
+      "word": "MILL",
+      "hint": "Building"
+    },
+    {
+      "word": "MITTENS",
+      "hint": "Clothing"
+    },
+    {
+      "word": "MOBILE PHONE",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "MONA LISA",
+      "hint": "Famous painting"
+    },
+    {
+      "word": "MONEY",
+      "hint": "Currency"
+    },
+    {
+      "word": "MOSQUITO",
+      "hint": "Animal"
+    },
+    {
+      "word": "MOSS",
+      "hint": "Plant"
+    },
+    {
+      "word": "MOTORCYCLE",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "MUSIC BOX",
+      "hint": "Musical device"
+    },
+    {
+      "word": "NETWORK",
+      "hint": "Connectivity system"
+    },
+    {
+      "word": "NIGHTLIGHT",
+      "hint": "Lighting device"
+    },
+    {
+      "word": "NOTEBOOK",
+      "hint": "Stationery"
+    },
+    {
+      "word": "OCEAN",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "OCTOPUS",
+      "hint": "Animal"
+    },
+    {
+      "word": "OIL",
+      "hint": "Resource"
+    },
+    {
+      "word": "ONION",
+      "hint": "Food"
+    },
+    {
+      "word": "OSTRICH",
+      "hint": "Animal"
+    },
+    {
+      "word": "OTTER",
+      "hint": "Animal"
+    },
+    {
+      "word": "OVEN",
+      "hint": "Kitchen appliance"
+    },
+    {
+      "word": "OWL",
+      "hint": "Animal"
+    },
+    {
+      "word": "OXYGEN",
+      "hint": "Gas"
+    },
+    {
+      "word": "OYSTER",
+      "hint": "Animal"
+    },
+    {
+      "word": "PAINT",
+      "hint": "Art supply"
+    },
+    {
+      "word": "PALACE",
+      "hint": "Building"
+    },
+    {
+      "word": "PANDA",
+      "hint": "Animal"
+    },
+    {
+      "word": "PANTS",
+      "hint": "Clothing"
+    },
+    {
+      "word": "PAPER",
+      "hint": "Stationery"
+    },
+    {
+      "word": "PARROT",
+      "hint": "Animal"
+    },
+    {
+      "word": "PASTA",
+      "hint": "Food"
+    },
+    {
+      "word": "PEAS",
+      "hint": "Food"
+    },
+    {
+      "word": "PENGUIN",
+      "hint": "Animal"
+    },
+    {
+      "word": "PETRI DISH",
+      "hint": "Laboratory item"
+    },
+    {
+      "word": "PICTURE FRAME",
+      "hint": "Household item"
+    },
+    {
+      "word": "PIG",
+      "hint": "Animal"
+    },
+    {
+      "word": "PIGEON",
+      "hint": "Animal"
+    },
+    {
+      "word": "PINEAPPLE",
+      "hint": "Food"
+    },
+    {
+      "word": "PLATE",
+      "hint": "Tableware"
+    },
+    {
+      "word": "POCKETKNIFE",
+      "hint": "Tool"
+    },
+    {
+      "word": "POLLEN",
+      "hint": "Plant powder"
+    },
+    {
+      "word": "POLO SHIRT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "PONY",
+      "hint": "Animal"
+    },
+    {
+      "word": "POPSICLE",
+      "hint": "Food"
+    },
+    {
+      "word": "POSTAGE STAMP",
+      "hint": "Postal item"
+    },
+    {
+      "word": "POT",
+      "hint": "Kitchen tool"
+    },
+    {
+      "word": "POTATO",
+      "hint": "Food"
+    },
+    {
+      "word": "POWER OUTLET",
+      "hint": "Electrical fixture"
+    },
+    {
+      "word": "PYRAMID",
+      "hint": "Monument"
+    },
+    {
+      "word": "QUEEN (CHESS)",
+      "hint": "Game piece"
+    },
+    {
+      "word": "RABBIT",
+      "hint": "Animal"
+    },
+    {
+      "word": "RADIATOR",
+      "hint": "Heating device"
+    },
+    {
+      "word": "RAINBOW",
+      "hint": "Natural phenomenon"
+    },
+    {
+      "word": "RAINCOAT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "RAM",
+      "hint": "Animal"
+    },
+    {
+      "word": "RASPBERRY",
+      "hint": "Food"
+    },
+    {
+      "word": "REMOTE CONTROL",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "RHINO",
+      "hint": "Animal"
+    },
+    {
+      "word": "RICE",
+      "hint": "Food"
+    },
+    {
+      "word": "RING",
+      "hint": "Jewelry"
+    },
+    {
+      "word": "RIVER",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "ROAD",
+      "hint": "Infrastructure"
+    },
+    {
+      "word": "ROBOT",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "ROCKING CHAIR",
+      "hint": "Furniture"
+    },
+    {
+      "word": "ROOF",
+      "hint": "Building part"
+    },
+    {
+      "word": "ROOSTER",
+      "hint": "Animal"
+    },
+    {
+      "word": "RUG",
+      "hint": "Household item"
+    },
+    {
+      "word": "RULER",
+      "hint": "Stationery"
+    },
+    {
+      "word": "SAFE (VAULT)",
+      "hint": "Security device"
+    },
+    {
+      "word": "SAILBOAT",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "SALAD",
+      "hint": "Food"
+    },
+    {
+      "word": "SALT",
+      "hint": "Food"
+    },
+    {
+      "word": "SAND",
+      "hint": "Natural material"
+    },
+    {
+      "word": "SANDALS",
+      "hint": "Clothing"
+    },
+    {
+      "word": "SANDCASTLE",
+      "hint": "Toy"
+    },
+    {
+      "word": "SANDWICH",
+      "hint": "Food"
+    },
+    {
+      "word": "SCARECROW",
+      "hint": "Farm figure"
+    },
+    {
+      "word": "SCARF",
+      "hint": "Clothing"
+    },
+    {
+      "word": "SCOOTER",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "SCORPION",
+      "hint": "Animal"
+    },
+    {
+      "word": "SCUBA GEAR",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "SEAGULL",
+      "hint": "Animal"
+    },
+    {
+      "word": "SEASHELL",
+      "hint": "Natural object"
+    },
+    {
+      "word": "SEAT",
+      "hint": "Furniture"
+    },
+    {
+      "word": "SHAMPOO",
+      "hint": "Toiletry"
+    },
+    {
+      "word": "SHARK",
+      "hint": "Animal"
+    },
+    {
+      "word": "SHEEP",
+      "hint": "Animal"
+    },
+    {
+      "word": "SHELF",
+      "hint": "Furniture"
+    },
+    {
+      "word": "SHIP",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "SHIRT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "SHOES",
+      "hint": "Clothing"
+    },
+    {
+      "word": "SHOPPING CART",
+      "hint": "Container"
+    },
+    {
+      "word": "SHRIMP",
+      "hint": "Animal"
+    },
+    {
+      "word": "SKULL",
+      "hint": "Anatomical part"
+    },
+    {
+      "word": "SKYSCRAPER",
+      "hint": "Building"
+    },
+    {
+      "word": "SMOG",
+      "hint": "Pollution"
+    },
+    {
+      "word": "SNAKE",
+      "hint": "Animal"
+    },
+    {
+      "word": "SNOWFLAKE",
+      "hint": "Natural object"
+    },
+    {
+      "word": "SNOWMAN",
+      "hint": "Winter figure"
+    },
+    {
+      "word": "SOAP",
+      "hint": "Toiletry"
+    },
+    {
+      "word": "SOCCER BALL",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "SOCKS",
+      "hint": "Clothing"
+    },
+    {
+      "word": "SOLAR PANEL",
+      "hint": "Energy device"
+    },
+    {
+      "word": "SPADE",
+      "hint": "Gardening tool"
+    },
+    {
+      "word": "SPAGHETTI",
+      "hint": "Food"
+    },
+    {
+      "word": "SPECTACLES",
+      "hint": "Vision aid"
+    },
+    {
+      "word": "SPHINX",
+      "hint": "Monument"
+    },
+    {
+      "word": "SPIDER",
+      "hint": "Animal"
+    },
+    {
+      "word": "SPICE",
+      "hint": "Food"
+    },
+    {
+      "word": "SPOON",
+      "hint": "Utensil"
+    },
+    {
+      "word": "SPOTLIGHT",
+      "hint": "Lighting device"
+    },
+    {
+      "word": "SPRING",
+      "hint": "Natural season"
+    },
+    {
+      "word": "SQUIRREL",
+      "hint": "Animal"
+    },
+    {
+      "word": "STADIUM",
+      "hint": "Venue"
+    },
+    {
+      "word": "STAFF (WAND)",
+      "hint": "Magical item"
+    },
+    {
+      "word": "STAIRS",
+      "hint": "Building feature"
+    },
+    {
+      "word": "STAR",
+      "hint": "Space object"
+    },
+    {
+      "word": "STARFISH",
+      "hint": "Animal"
+    },
+    {
+      "word": "STATUE",
+      "hint": "Monument"
+    },
+    {
+      "word": "STEAK",
+      "hint": "Food"
+    },
+    {
+      "word": "STEERING WHEEL",
+      "hint": "Car part"
+    },
+    {
+      "word": "STEGOSAURUS",
+      "hint": "Animal"
+    },
+    {
+      "word": "STOVE",
+      "hint": "Kitchen appliance"
+    },
+    {
+      "word": "STRAWBERRY",
+      "hint": "Food"
+    },
+    {
+      "word": "SUNFLOWER",
+      "hint": "Plant"
+    },
+    {
+      "word": "SUNGLASSES",
+      "hint": "Clothing"
+    },
+    {
+      "word": "SUSHI",
+      "hint": "Food"
+    },
+    {
+      "word": "SWIMSUIT",
+      "hint": "Clothing"
+    },
+    {
+      "word": "TABLET (DEVICE)",
+      "hint": "Electronic device"
+    },
+    {
+      "word": "TACO",
+      "hint": "Food"
+    },
+    {
+      "word": "TADPOLE",
+      "hint": "Animal"
+    },
+    {
+      "word": "TAILOR",
+      "hint": "Profession"
+    },
+    {
+      "word": "THRONE",
+      "hint": "Seat"
+    },
+    {
+      "word": "TIGER",
+      "hint": "Animal"
+    },
+    {
+      "word": "TIRE",
+      "hint": "Vehicle part"
+    },
+    {
+      "word": "TISSUE",
+      "hint": "Paper product"
+    },
+    {
+      "word": "TOAST",
+      "hint": "Food"
+    },
+    {
+      "word": "TOILET",
+      "hint": "Household item"
+    },
+    {
+      "word": "TOILET PAPER",
+      "hint": "Household item"
+    },
+    {
+      "word": "TOMATO",
+      "hint": "Food"
+    },
+    {
+      "word": "TOMB",
+      "hint": "Grave"
+    },
+    {
+      "word": "TOOTHBRUSH",
+      "hint": "Toiletry"
+    },
+    {
+      "word": "TOOTHPASTE",
+      "hint": "Toiletry"
+    },
+    {
+      "word": "TOOTHPICK",
+      "hint": "Kitchen tool"
+    },
+    {
+      "word": "TOWER",
+      "hint": "Structure"
+    },
+    {
+      "word": "TOY",
+      "hint": "Plaything"
+    },
+    {
+      "word": "TRAIN",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "TRASH CAN",
+      "hint": "Container"
+    },
+    {
+      "word": "TREADMILL",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "TREE",
+      "hint": "Plant"
+    },
+    {
+      "word": "TRUCK",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "TSUNAMI",
+      "hint": "Natural disaster"
+    },
+    {
+      "word": "TURTLE",
+      "hint": "Animal"
+    },
+    {
+      "word": "UNICORN",
+      "hint": "Mythical creature"
+    },
+    {
+      "word": "VALLEY",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "VASE",
+      "hint": "Decorative container"
+    },
+    {
+      "word": "VEGETABLES",
+      "hint": "Food"
+    },
+    {
+      "word": "VELCRO",
+      "hint": "Fastener"
+    },
+    {
+      "word": "VOLCANO",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "VOLLEYBALL",
+      "hint": "Sports equipment"
+    },
+    {
+      "word": "VULTURE",
+      "hint": "Animal"
+    },
+    {
+      "word": "WAFFLE",
+      "hint": "Food"
+    },
+    {
+      "word": "WALL",
+      "hint": "Structure"
+    },
+    {
+      "word": "WALRUS",
+      "hint": "Animal"
+    },
+    {
+      "word": "WATER",
+      "hint": "Natural resource"
+    },
+    {
+      "word": "WATERFALL",
+      "hint": "Natural feature"
+    },
+    {
+      "word": "WATERMELON",
+      "hint": "Food"
+    },
+    {
+      "word": "WAX",
+      "hint": "Candle material"
+    },
+    {
+      "word": "WEB",
+      "hint": "Spider product"
+    },
+    {
+      "word": "WHEEL",
+      "hint": "Invention"
+    },
+    {
+      "word": "WHALE",
+      "hint": "Animal"
+    },
+    {
+      "word": "WHISKEY",
+      "hint": "Drink"
+    },
+    {
+      "word": "WHISTLE",
+      "hint": "Signaling device"
+    },
+    {
+      "word": "WIND",
+      "hint": "Weather"
+    },
+    {
+      "word": "WIND CHIME",
+      "hint": "Musical instrument"
+    },
+    {
+      "word": "WINDOW",
+      "hint": "Building feature"
+    },
+    {
+      "word": "WINE",
+      "hint": "Drink"
+    },
+    {
+      "word": "WOLF",
+      "hint": "Animal"
+    },
+    {
+      "word": "WOOD",
+      "hint": "Material"
+    },
+    {
+      "word": "YACHT",
+      "hint": "Vehicle"
+    },
+    {
+      "word": "YOGURT",
+      "hint": "Food"
+    },
+    {
+      "word": "ZEBRA",
+      "hint": "Animal"
+    },
+    {
+      "word": "NEEDLE",
+      "hint": "A small slender tool with a pointed end"
+    },
+    {
+      "word": "ZIPPER",
+      "hint": "A device for binding the edges of fabric"
+    },
+    {
+      "word": "INKWELL",
+      "hint": "A small pot or container for ink"
+    },
+    {
+      "word": "FOUNTAIN PEN",
+      "hint": "A pen that contains a reservoir of liquid ink"
+    },
+    {
+      "word": "BALLPOINT PEN",
+      "hint": "A pen with a tiny ball as its writing point"
+    },
+    {
+      "word": "EYE",
+      "hint": "Body part"
+    },
+    {
+      "word": "ICE CREAM",
+      "hint": "Food"
+    },
+    {
+      "word": "INK",
+      "hint": "Writing liquid"
+    },
+    {
+      "word": "MILK",
+      "hint": "Food"
+    },
+    {
+      "word": "MOON",
+      "hint": "Satellite"
+    },
+    {
+      "word": "MUG",
+      "hint": "Cup"
+    },
+    {
+      "word": "MUSHROOM",
+      "hint": "Plant"
+    },
+    {
+      "word": "NEST",
+      "hint": "Animal home"
+    },
+    {
+      "word": "PILLOW",
+      "hint": "Bedding"
+    },
+    {
+      "word": "PIZZA",
+      "hint": "Food"
+    },
+    {
+      "word": "SUN",
+      "hint": "Star"
+    },
+    {
+      "word": "SUNRISE",
+      "hint": "Natural event"
+    }
+  ],
+  "Where": [
+    {
+      "word": "THE RIVERINA",
+      "hint": "Agricultural region of south-western New South Wales"
+    },
+    {
+      "word": "THE MALLEE",
+      "hint": "Region in Victoria and South Australia"
+    },
+    {
+      "word": "THE WHEATBELT",
+      "hint": "Region in Western Australia"
+    },
+    {
+      "word": "THE PILBARA",
+      "hint": "Region in Western Australia"
+    },
+    {
+      "word": "BAY OF PLENTY",
+      "hint": "Region of New Zealand"
+    },
+    {
+      "word": "WAIKATO",
+      "hint": "Region of New Zealand"
+    },
+    {
+      "word": "RHODES",
+      "hint": "Largest of the Greek Dodecanese islands"
+    },
+    {
+      "word": "ABU DHABI",
+      "hint": "Capital of United Arab Emirates"
+    },
+    {
+      "word": "CENTRAL AFRICAN REPUBLIC",
+      "hint": "African country"
+    },
+    {
+      "word": "EQUATORIAL GUINEA",
+      "hint": "African country"
+    },
+    {
+      "word": "TURKMENISTAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "UZBEKISTAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "ECUADOR",
+      "hint": "South American country"
+    },
+    {
+      "word": "EL SALVADOR",
+      "hint": "North American country"
+    },
+    {
+      "word": "ERITREA",
+      "hint": "African country"
+    },
+    {
+      "word": "ESWATINI",
+      "hint": "African country"
+    },
+    {
+      "word": "GABON",
+      "hint": "African country"
+    },
+    {
+      "word": "LICHTENSTEIN",
+      "hint": "Microstate between Austria and Switzerland"
+    },
+    {
+      "word": "TEOTIHUACAN",
+      "hint": "Ancient city in Mexico"
+    },
+    {
+      "word": "BAGAN",
+      "hint": "Ancient city in Myanmar"
+    },
+    {
+      "word": "AURORA AUSTRALIS",
+      "hint": "Southern Lights"
+    },
+    {
+      "word": "MOOREA",
+      "hint": "Island in French Polynesia"
+    },
+    {
+      "word": "GUADALCANAL",
+      "hint": "Island in the Solomon Islands"
+    },
+    {
+      "word": "KAMCHATKA PENINSULA",
+      "hint": "Peninsula in the Russian Far East"
+    },
+    {
+      "word": "CAPE VERDE",
+      "hint": "Island country in the Atlantic Ocean"
+    },
+    {
+      "word": "DOMINICA",
+      "hint": "Mountainous Caribbean island nation"
+    },
+    {
+      "word": "MARTINIQUE",
+      "hint": "French island in the Caribbean"
+    },
+    {
+      "word": "GUADELOUPE",
+      "hint": "French island group in the southern Caribbean Sea"
+    },
+    {
+      "word": "SVALBARD",
+      "hint": "Norwegian archipelago between mainland Norway and the North Pole"
+    },
+    {
+      "word": "THE VOLGA DELTA",
+      "hint": "Largest river delta in Europe"
+    },
+    {
+      "word": "THE ORINOCO BELT",
+      "hint": "Territory in Venezuela"
+    },
+    {
+      "word": "THE CANADIAN SHIELD",
+      "hint": "Large area of exposed Precambrian igneous and high-grade metamorphic rocks"
+    },
+    {
+      "word": "DOUBTFUL SOUND",
+      "hint": "Fjord in Fiordland, in the far south west of New Zealand"
+    },
+    {
+      "word": "FOX GLACIER",
+      "hint": "Glacier in Westland Tai Poutini National Park"
+    },
+    {
+      "word": "CHATHAM ISLANDS",
+      "hint": "Archipelago in the Pacific Ocean about 800 kilometres east of the South Island of New Zealand"
+    },
+    {
+      "word": "THE WIMMERA",
+      "hint": "Region in Victoria"
+    },
+    {
+      "word": "SERPENT MOUND",
+      "hint": "Prehistoric effigy mound in Ohio"
+    },
+    {
+      "word": "CARNAC",
+      "hint": "Commune in Brittany, France, known for its megalithic alignments"
+    },
+    {
+      "word": "WOODHENGE",
+      "hint": "Neolithic Class II henge and timber circle monument located in the Stonehenge World Heritage Site in Wiltshire"
+    },
+    {
+      "word": "DURRINGTON WALLS",
+      "hint": "Large Neolithic settlement and later henge enclosure located in the Stonehenge World Heritage Site"
+    },
+    {
+      "word": "SCAFELL PIKE",
+      "hint": "Highest and the most prominent mountain in England"
+    },
+    {
+      "word": "DOWTH",
+      "hint": "Neolithic passage grave located in the Boyne Valley, County Meath, Ireland"
+    },
+    {
+      "word": "SKELLIG MICHAEL",
+      "hint": "Twin-pinnacled crag 11.6 kilometres west of the Iveragh Peninsula in County Kerry, Ireland"
+    },
+    {
+      "word": "THE GOBBINS",
+      "hint": "Cliff-face path at Islandmagee, County Antrim, Northern Ireland"
+    },
+    {
+      "word": "KEUKENHOF",
+      "hint": "One of the world's largest flower gardens, situated in the town of Lisse, in the Netherlands"
+    },
+    {
+      "word": "RUBENSHUIS",
+      "hint": "Former home and studio of Peter Paul Rubens in Antwerp, Belgium"
+    },
+    {
+      "word": "VIANDEN CASTLE",
+      "hint": "One of the largest fortified castles west of the Rhine"
+    },
+    {
+      "word": "MULLERTHAL REGION",
+      "hint": "Region in the north-east of Luxembourg"
+    },
+    {
+      "word": "EAGLE'S NEST",
+      "hint": "Third Reich-era building erected atop the summit of the Kehlstein, a rocky outcrop that rises above the Obersalzberg near the town of Berchtesgaden"
+    },
+    {
+      "word": "ZUGSPITZE",
+      "hint": "Highest peak of the Wetterstein Mountains as well as the highest mountain in Germany"
+    },
+    {
+      "word": "ZAKOPANE",
+      "hint": "Town in the extreme south of Poland"
+    },
+    {
+      "word": "FOLEGANDROS",
+      "hint": "Small Greek island in the Aegean Sea that, together with Sikinos, Ios, Anafi and Santorini, forms the southern part of the Cyclades"
+    },
+    {
+      "word": "CHAD",
+      "hint": "African country"
+    },
+    {
+      "word": "DJIBOUTI",
+      "hint": "African country"
+    },
+    {
+      "word": "GUINEA-BISSAU",
+      "hint": "African country"
+    },
+    {
+      "word": "KAZAKHSTAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "LESOTHO",
+      "hint": "African country"
+    },
+    {
+      "word": "MARSHALL ISLANDS",
+      "hint": "Oceanian country"
+    },
+    {
+      "word": "TUVALU",
+      "hint": "Oceanian country"
+    },
+    {
+      "word": "CANTERBURY",
+      "hint": "Region of New Zealand"
+    },
+    {
+      "word": "OTAGO",
+      "hint": "Region of New Zealand"
+    },
+    {
+      "word": "ANGOLA",
+      "hint": "African country"
+    },
+    {
+      "word": "GEORGIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "SAINT LUCIA",
+      "hint": "North American country"
+    },
+    {
+      "word": "SAINT VINCENT AND THE GRENADINES",
+      "hint": "North American country"
+    },
+    {
+      "word": "SAUDI ARABIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "BURJ KHALIFA",
+      "hint": "World's tallest building in Dubai"
+    },
+    {
+      "word": "ACROPOLIS OF ATHENS",
+      "hint": "Ancient citadel in Greece"
+    },
+    {
+      "word": "THE LOUVRE",
+      "hint": "World's largest art museum in Paris"
+    },
+    {
+      "word": "CHRIST THE REDEEMER",
+      "hint": "Art Deco statue in Rio"
+    },
+    {
+      "word": "PETRA",
+      "hint": "Ancient city in Jordan"
+    },
+    {
+      "word": "KYOTO",
+      "hint": "Former imperial capital of Japan"
+    },
+    {
+      "word": "CAIRO",
+      "hint": "Capital of Egypt"
+    },
+    {
+      "word": "BANGKOK",
+      "hint": "Capital of Thailand"
+    },
+    {
+      "word": "SINGAPORE",
+      "hint": "Island city-state in Asia"
+    },
+    {
+      "word": "PHNOM PENH",
+      "hint": "Capital of Cambodia"
+    },
+    {
+      "word": "JAKARTA",
+      "hint": "Capital of Indonesia"
+    },
+    {
+      "word": "KATHMANDU",
+      "hint": "Capital of Nepal"
+    },
+    {
+      "word": "DHAKA",
+      "hint": "Capital of Bangladesh"
+    },
+    {
+      "word": "SAN MARINO",
+      "hint": "Microstate surrounded by Italy"
+    },
+    {
+      "word": "ANDORRA",
+      "hint": "Microstate between France and Spain"
+    },
+    {
+      "word": "CRETE",
+      "hint": "Largest Greek island"
+    },
+    {
+      "word": "SICILY",
+      "hint": "Largest Mediterranean island"
+    },
+    {
+      "word": "SARDINIA",
+      "hint": "Italian island in the Mediterranean"
+    },
+    {
+      "word": "CORSICA",
+      "hint": "French island in the Mediterranean"
+    },
+    {
+      "word": "GALAPAGOS ISLANDS",
+      "hint": "Archipelago known for unique wildlife"
+    },
+    {
+      "word": "EASTER ISLAND",
+      "hint": "Chilean island with moai statues"
+    },
+    {
+      "word": "BORA BORA",
+      "hint": "Island in French Polynesia"
+    },
+    {
+      "word": "SAMOA",
+      "hint": "Polynesian island country"
+    },
+    {
+      "word": "TONGA",
+      "hint": "Polynesian kingdom of islands"
+    },
+    {
+      "word": "LANGKAWI",
+      "hint": "Malaysian island archipelago"
+    },
+    {
+      "word": "SEYCHELLES",
+      "hint": "Archipelago nation in the Indian Ocean"
+    },
+    {
+      "word": "MAURITIUS",
+      "hint": "Island nation in the Indian Ocean"
+    },
+    {
+      "word": "MADAGASCAR",
+      "hint": "Large island nation off Africa"
+    },
+    {
+      "word": "ZANZIBAR",
+      "hint": "Tanzanian archipelago off East Africa"
+    },
+    {
+      "word": "THE COTSWOLDS",
+      "hint": "Rural area of south-central England"
+    },
+    {
+      "word": "HADRIAN'S WALL",
+      "hint": "Roman fortification in England"
+    },
+    {
+      "word": "STRATFORD-UPON-AVON",
+      "hint": "Shakespeare's birthplace"
+    },
+    {
+      "word": "THE KREMLIN",
+      "hint": "Fortified complex in Moscow"
+    },
+    {
+      "word": "FORBIDDEN CITY",
+      "hint": "Palace complex in Beijing"
+    },
+    {
+      "word": "ARCHES NATIONAL PARK",
+      "hint": "National Park in Utah"
+    },
+    {
+      "word": "MOUNT KILIMANJARO",
+      "hint": "Dormant volcano in Tanzania"
+    },
+    {
+      "word": "NINGALOO REEF",
+      "hint": "Fringing coral reef in Western Australia"
+    },
+    {
+      "word": "TOWER OF LONDON",
+      "hint": "Historic castle in London"
+    },
+    {
+      "word": "EDINBURGH CASTLE",
+      "hint": "Historic fortress in Scotland"
+    },
+    {
+      "word": "BLARNEY CASTLE",
+      "hint": "Castle in Cork Ireland"
+    },
+    {
+      "word": "CHICHEN ITZA",
+      "hint": "Mayan ruins in Mexico"
+    },
+    {
+      "word": "TULUM",
+      "hint": "Mayan ruins in Mexico"
+    },
+    {
+      "word": "ANGKOR WAT",
+      "hint": "Temple complex in Cambodia"
+    },
+    {
+      "word": "BOROBUDUR",
+      "hint": "Buddhist temple in Indonesia"
+    },
+    {
+      "word": "SANTORINI CALDERA",
+      "hint": "Volcanic caldera in the Aegean Sea"
+    },
+    {
+      "word": "BLUE LAGOON",
+      "hint": "Geothermal spa in Iceland"
+    },
+    {
+      "word": "ARCTIC CIRCLE",
+      "hint": "Northernmost of the five major circles of latitude"
+    },
+    {
+      "word": "KALAHARI DESERT",
+      "hint": "Large semi-arid sandy savanna in Africa"
+    },
+    {
+      "word": "ATACAMA DESERT",
+      "hint": "Desert plateau in South America"
+    },
+    {
+      "word": "DANUBE RIVER",
+      "hint": "Europe's second-longest river"
+    },
+    {
+      "word": "LAKE BAIKAL",
+      "hint": "World's largest freshwater lake by volume"
+    },
+    {
+      "word": "CASPIAN SEA",
+      "hint": "World's largest inland body of water"
+    },
+    {
+      "word": "LAKE VICTORIA",
+      "hint": "One of the African Great Lakes"
+    },
+    {
+      "word": "LAKE TANGANYIKA",
+      "hint": "One of the African Great Lakes"
+    },
+    {
+      "word": "IGUAZU FALLS",
+      "hint": "Waterfalls of the Iguazu River"
+    },
+    {
+      "word": "ANGEL FALLS",
+      "hint": "World's tallest uninterrupted waterfall"
+    },
+    {
+      "word": "SUEZ CANAL",
+      "hint": "Artificial sea-level waterway in Egypt"
+    },
+    {
+      "word": "PANAMA CANAL",
+      "hint": "Artificial waterway in Panama"
+    },
+    {
+      "word": "STRAIT OF GIBRALTAR",
+      "hint": "Strait connecting the Atlantic to the Mediterranean"
+    },
+    {
+      "word": "ENGLISH CHANNEL",
+      "hint": "Body of water separating England and France"
+    },
+    {
+      "word": "BERING STRAIT",
+      "hint": "Strait between Asia and North America"
+    },
+    {
+      "word": "CAPE OF GOOD HOPE",
+      "hint": "Rocky headland on the coast of South Africa"
+    },
+    {
+      "word": "CAPE HORN",
+      "hint": "Southernmost headland of the Tierra del Fuego archipelago"
+    },
+    {
+      "word": "MOUNT RUSHMORE",
+      "hint": "Sculpture carved into a mountain in South Dakota"
+    },
+    {
+      "word": "CRAZY HORSE MEMORIAL",
+      "hint": "Mountain monument under construction in South Dakota"
+    },
+    {
+      "word": "THE ALAMO",
+      "hint": "Historic mission in San Antonio Texas"
+    },
+    {
+      "word": "NORMANDY BEACHES",
+      "hint": "Landing sites of the 1944 invasion"
+    },
+    {
+      "word": "AUSCHWITZ",
+      "hint": "Nazi concentration camp in Poland"
+    },
+    {
+      "word": "HIROSHIMA",
+      "hint": "Japanese city destroyed by an atomic bomb"
+    },
+    {
+      "word": "NAGASAKI",
+      "hint": "Japanese city destroyed by an atomic bomb"
+    },
+    {
+      "word": "CHERNOBYL",
+      "hint": "Site of a nuclear disaster in Ukraine"
+    },
+    {
+      "word": "FUKUSHIMA",
+      "hint": "Site of a nuclear disaster in Japan"
+    },
+    {
+      "word": "TRANS-SIBERIAN RAILWAY",
+      "hint": "Network of railways connecting Moscow with the Russian Far East"
+    },
+    {
+      "word": "ORIENT EXPRESS",
+      "hint": "Former long-distance passenger train service"
+    },
+    {
+      "word": "OKAVANGO DELTA",
+      "hint": "Vast inland river delta in Botswana"
+    },
+    {
+      "word": "GALILEE",
+      "hint": "Region in northern Israel"
+    },
+    {
+      "word": "BETHLEHEM",
+      "hint": "Town in the West Bank"
+    },
+    {
+      "word": "NAZARETH",
+      "hint": "City in northern Israel"
+    },
+    {
+      "word": "MECCA",
+      "hint": "Islam's holiest city"
+    },
+    {
+      "word": "MEDINA",
+      "hint": "Islam's second-holiest city"
+    },
+    {
+      "word": "LOURDES",
+      "hint": "Town in southwestern France known for pilgrimages"
+    },
+    {
+      "word": "FATIMA",
+      "hint": "Town in Portugal known for Marian apparitions"
+    },
+    {
+      "word": "SANTIAGO DE COMPOSTELA",
+      "hint": "Pilgrimage destination in Spain"
+    },
+    {
+      "word": "GLASTONBURY",
+      "hint": "Town in Somerset England"
+    },
+    {
+      "word": "TIMBUKTU",
+      "hint": "City in Mali"
+    },
+    {
+      "word": "MARRAKECH",
+      "hint": "City in Morocco"
+    },
+    {
+      "word": "KARNAK",
+      "hint": "Temple complex in Egypt"
+    },
+    {
+      "word": "DELPHI",
+      "hint": "Ancient sanctuary in Greece"
+    },
+    {
+      "word": "OLYMPIA",
+      "hint": "Ancient sanctuary in Greece"
+    },
+    {
+      "word": "MYCENAE",
+      "hint": "Archaeological site in Greece"
+    },
+    {
+      "word": "KNOSSOS",
+      "hint": "Archaeological site on Crete"
+    },
+    {
+      "word": "EPHESUS",
+      "hint": "Ancient Greek city in Turkey"
+    },
+    {
+      "word": "TROY",
+      "hint": "Ancient city in Turkey"
+    },
+    {
+      "word": "CONSTANTINOPLE",
+      "hint": "Former name of Istanbul"
+    },
+    {
+      "word": "ISTANBUL",
+      "hint": "City in Turkey"
+    },
+    {
+      "word": "ST. PETERSBURG",
+      "hint": "City in Russia"
+    },
+    {
+      "word": "FLORENCE",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "PISA",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "DRESDEN",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "LEIPZIG",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "NUREMBERG",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "LUCERNE",
+      "hint": "City in Switzerland"
+    },
+    {
+      "word": "GHENT",
+      "hint": "City in Belgium"
+    },
+    {
+      "word": "GRANADA",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "CORDOBA",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "BILBAO",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "SAIPAN",
+      "hint": "Largest of the Northern Mariana Islands"
+    },
+    {
+      "word": "TAHITI",
+      "hint": "Largest island in French Polynesia"
+    },
+    {
+      "word": "COOK ISLANDS",
+      "hint": "Nation in the South Pacific"
+    },
+    {
+      "word": "NEW CALEDONIA",
+      "hint": "French territory in the South Pacific"
+    },
+    {
+      "word": "SOLOMON ISLANDS",
+      "hint": "Sovereign state in Oceania"
+    },
+    {
+      "word": "IWO JIMA",
+      "hint": "One of the Japanese Volcano Islands"
+    },
+    {
+      "word": "OKINAWA",
+      "hint": "Japanese prefecture comprising islands"
+    },
+    {
+      "word": "HOKKAIDO",
+      "hint": "Northernmost of Japan's main islands"
+    },
+    {
+      "word": "HONSHU",
+      "hint": "Largest and most populous island of Japan"
+    },
+    {
+      "word": "KYUSHU",
+      "hint": "Third largest island of Japan"
+    },
+    {
+      "word": "SHIKOKU",
+      "hint": "Smallest of Japan's main islands"
+    },
+    {
+      "word": "JEJU ISLAND",
+      "hint": "Island in South Korea"
+    },
+    {
+      "word": "TIBET",
+      "hint": "Region in Asia on the Tibetan Plateau"
+    },
+    {
+      "word": "URAL MOUNTAINS",
+      "hint": "Mountain range that runs from north to south through western Russia"
+    },
+    {
+      "word": "CAUCASUS MOUNTAINS",
+      "hint": "Mountain range at the intersection of Europe and Asia"
+    },
+    {
+      "word": "PAMPAS",
+      "hint": "Fertile South American lowlands"
+    },
+    {
+      "word": "TIERRA DEL FUEGO",
+      "hint": "Archipelago at South America's southernmost tip"
+    },
+    {
+      "word": "CANARY ISLANDS",
+      "hint": "Spanish archipelago off the coast of northwestern Africa"
+    },
+    {
+      "word": "BERMUDA",
+      "hint": "British island territory in the North Atlantic"
+    },
+    {
+      "word": "BAHAMAS",
+      "hint": "Archipelago in the Atlantic Ocean"
+    },
+    {
+      "word": "CUBA",
+      "hint": "Country in the Caribbean"
+    },
+    {
+      "word": "JAMAICA",
+      "hint": "Island country in the Caribbean"
+    },
+    {
+      "word": "HISPANIOLA",
+      "hint": "Island in the Caribbean divided between Haiti and the Dominican Republic"
+    },
+    {
+      "word": "PUERTO RICO",
+      "hint": "US territory in the Caribbean"
+    },
+    {
+      "word": "VIRGIN ISLANDS",
+      "hint": "Archipelago in the Caribbean"
+    },
+    {
+      "word": "THE GRENADINES",
+      "hint": "Chain of small islands in the Lesser Antilles"
+    },
+    {
+      "word": "ANTIGUA AND BARBUDA",
+      "hint": "Sovereign state in the West Indies"
+    },
+    {
+      "word": "CAYMAN ISLANDS",
+      "hint": "British Overseas Territory in the Caribbean"
+    },
+    {
+      "word": "TURKS AND CAICOS",
+      "hint": "Archipelago in the Atlantic Ocean"
+    },
+    {
+      "word": "GREENLAND",
+      "hint": "Autonomous territory of Denmark"
+    },
+    {
+      "word": "ICELAND",
+      "hint": "Nordic island nation"
+    },
+    {
+      "word": "FAROE ISLANDS",
+      "hint": "Archipelago, part of the Kingdom of Denmark"
+    },
+    {
+      "word": "LAPLAND",
+      "hint": "Region in northern Europe"
+    },
+    {
+      "word": "THE BALTIC STATES",
+      "hint": "Estonia, Latvia, and Lithuania"
+    },
+    {
+      "word": "THE BALKANS",
+      "hint": "Geographical region in Southeast Europe"
+    },
+    {
+      "word": "TRANSYLVANIA",
+      "hint": "Historical region in central Romania"
+    },
+    {
+      "word": "THE DANUBE DELTA",
+      "hint": "Second largest river delta in Europe"
+    },
+    {
+      "word": "THE MEKONG DELTA",
+      "hint": "Region in southwestern Vietnam"
+    },
+    {
+      "word": "THE GANGES DELTA",
+      "hint": "River delta in the Bengal region"
+    },
+    {
+      "word": "THE INDUS VALLEY",
+      "hint": "Region in South Asia"
+    },
+    {
+      "word": "MESOPOTAMIA",
+      "hint": "Historical region of Western Asia"
+    },
+    {
+      "word": "THE LEVANT",
+      "hint": "Historical geographical term referring to a large area in the Eastern Mediterranean"
+    },
+    {
+      "word": "THE MAGHREB",
+      "hint": "Region of North Africa"
+    },
+    {
+      "word": "SUB-SAHARAN AFRICA",
+      "hint": "Area of the continent of Africa that lies south of the Sahara"
+    },
+    {
+      "word": "WEST AFRICA",
+      "hint": "Westernmost region of Africa"
+    },
+    {
+      "word": "CENTRAL AFRICA",
+      "hint": "Core region of the African continent"
+    },
+    {
+      "word": "SOUTHERN AFRICA",
+      "hint": "Southernmost region in Africa"
+    },
+    {
+      "word": "THE HORN OF AFRICA",
+      "hint": "Peninsula in Northeast Africa"
+    },
+    {
+      "word": "THE SAHEL",
+      "hint": "Ecoregion in Africa"
+    },
+    {
+      "word": "THE CONGO BASIN",
+      "hint": "Sedimentary basin of the Congo River"
+    },
+    {
+      "word": "THE GREAT RIFT VALLEY",
+      "hint": "Series of contiguous geographic trenches"
+    },
+    {
+      "word": "THE SERENGETI MIGRATION",
+      "hint": "Annual migration of giant herds of grazers"
+    },
+    {
+      "word": "THE AMAZON BASIN",
+      "hint": "Part of South America drained by the Amazon River"
+    },
+    {
+      "word": "THE GREAT PLAINS",
+      "hint": "Broad expanse of flat land in North America"
+    },
+    {
+      "word": "THE DEEP SOUTH",
+      "hint": "Cultural and geographic subregion in the Southern United States"
+    },
+    {
+      "word": "THE PACIFIC NORTHWEST",
+      "hint": "Region in western North America"
+    },
+    {
+      "word": "THE SUN BELT",
+      "hint": "Region of the United States"
+    },
+    {
+      "word": "THE RUST BELT",
+      "hint": "Region of the United States"
+    },
+    {
+      "word": "APPALACHIA",
+      "hint": "Cultural region in the Eastern United States"
+    },
+    {
+      "word": "THE OZARKS",
+      "hint": "Physiographic region in the U.S. states of Arkansas and Missouri"
+    },
+    {
+      "word": "RED ROCKS AMPHITHEATRE",
+      "hint": "Rock structure near Morrison, Colorado"
+    },
+    {
+      "word": "GETTYSBURG",
+      "hint": "Battlefield site in Pennsylvania"
+    },
+    {
+      "word": "VALLEY FORGE",
+      "hint": "Winter encampment of the Continental Army"
+    },
+    {
+      "word": "JAMESTOWN",
+      "hint": "First permanent English settlement in the Americas"
+    },
+    {
+      "word": "DEVIL'S ISLAND",
+      "hint": "Former penal colony in French Guiana"
+    },
+    {
+      "word": "PORT ARTHUR",
+      "hint": "Former convict settlement in Tasmania"
+    },
+    {
+      "word": "FREMANTLE PRISON",
+      "hint": "Former Australian prison in Western Australia"
+    },
+    {
+      "word": "NORFOLK ISLAND",
+      "hint": "External territory of Australia in the Pacific Ocean"
+    },
+    {
+      "word": "CHRISTMAS ISLAND",
+      "hint": "Australian external territory in the Indian Ocean"
+    },
+    {
+      "word": "COCOS (KEELING) ISLANDS",
+      "hint": "Australian external territory in the Indian Ocean"
+    },
+    {
+      "word": "THE FLINDERS RANGES",
+      "hint": "Largest mountain range in South Australia"
+    },
+    {
+      "word": "THE SNOWY MOUNTAINS",
+      "hint": "Highest mountain range on the mainland of Australia"
+    },
+    {
+      "word": "THE DANDENONGS",
+      "hint": "Set of low mountain ranges in Victoria"
+    },
+    {
+      "word": "THE GLASS HOUSE MOUNTAINS",
+      "hint": "Group of thirteen hills in Queensland"
+    },
+    {
+      "word": "THE PINNACLES",
+      "hint": "Limestone formations in Western Australia"
+    },
+    {
+      "word": "WAVE ROCK",
+      "hint": "Natural rock formation in Western Australia"
+    },
+    {
+      "word": "KATA TJUTA",
+      "hint": "Large group of domed rocks in the Northern Territory"
+    },
+    {
+      "word": "LITCHFIELD NATIONAL PARK",
+      "hint": "National Park in the Northern Territory"
+    },
+    {
+      "word": "EL QUESTRO",
+      "hint": "Wilderness park in Western Australia"
+    },
+    {
+      "word": "PURNULULU NATIONAL PARK",
+      "hint": "Home of the Bungle Bungles"
+    },
+    {
+      "word": "BUNGLE BUNGLES",
+      "hint": "Landform in Western Australia"
+    },
+    {
+      "word": "HORIZONTAL FALLS",
+      "hint": "Natural phenomenon in Western Australia"
+    },
+    {
+      "word": "THE MURRAY RIVER",
+      "hint": "Australia's longest river"
+    },
+    {
+      "word": "THE DARLING RIVER",
+      "hint": "Third longest river in Australia"
+    },
+    {
+      "word": "THE MURRUMBIDGEE RIVER",
+      "hint": "Major tributary of the Murray River"
+    },
+    {
+      "word": "THE HAWKESBURY RIVER",
+      "hint": "Semi-mature tide dominated drowned valley estuary in NSW"
+    },
+    {
+      "word": "LAKE ARGYLE",
+      "hint": "Largest artificial lake in Australia"
+    },
+    {
+      "word": "LAKE BURLEY GRIFFIN",
+      "hint": "Artificial lake in the centre of Canberra"
+    },
+    {
+      "word": "GEOGRAPHE BAY",
+      "hint": "Bay in Western Australia"
+    },
+    {
+      "word": "SPENCER GULF",
+      "hint": "Largest inlet on the southern coast of Australia"
+    },
+    {
+      "word": "GULF OF CARPENTARIA",
+      "hint": "Large shallow sea enclosed on three sides by northern Australia"
+    },
+    {
+      "word": "TORRES STRAIT",
+      "hint": "Strait which lies between Australia and the Melanesian island of New Guinea"
+    },
+    {
+      "word": "FOVEAUX STRAIT",
+      "hint": "Strait that separates Stewart Island from the South Island of New Zealand"
+    },
+    {
+      "word": "MILFORD SOUND",
+      "hint": "Fjord in the south west of New Zealand's South Island"
+    },
+    {
+      "word": "FIORDLAND NATIONAL PARK",
+      "hint": "National park in the southwest corner of the South Island of New Zealand"
+    },
+    {
+      "word": "AORAKI / MOUNT COOK",
+      "hint": "Highest mountain in New Zealand"
+    },
+    {
+      "word": "FRANZ JOSEF GLACIER",
+      "hint": "Glacier in Westland Tai Poutini National Park"
+    },
+    {
+      "word": "LAKE TAUPO",
+      "hint": "Lake in the North Island of New Zealand"
+    },
+    {
+      "word": "LAKE WAKATIPU",
+      "hint": "Inland lake in the South Island of New Zealand"
+    },
+    {
+      "word": "ROTORUA",
+      "hint": "Town on the southern shores of a lake in the North Island of New Zealand"
+    },
+    {
+      "word": "QUEENSTOWN",
+      "hint": "Resort town in Otago in the south-west of New Zealand's South Island"
+    },
+    {
+      "word": "BAY OF ISLANDS",
+      "hint": "Area in the Northland Region of the North Island of New Zealand"
+    },
+    {
+      "word": "COROMANDEL PENINSULA",
+      "hint": "Peninsula on the North Island of New Zealand"
+    },
+    {
+      "word": "WAIHEKE ISLAND",
+      "hint": "Island in the Hauraki Gulf of New Zealand"
+    },
+    {
+      "word": "STEWART ISLAND",
+      "hint": "New Zealand's third-largest island"
+    },
+    {
+      "word": "MARIANA TRENCH",
+      "hint": "Deepest oceanic trench on Earth"
+    },
+    {
+      "word": "MID-ATLANTIC RIDGE",
+      "hint": "Mid-ocean ridge located along the floor of the Atlantic Ocean"
+    },
+    {
+      "word": "THE BERMUDA TRIANGLE",
+      "hint": "Mythical section of the Atlantic Ocean"
+    },
+    {
+      "word": "ATLANTIS",
+      "hint": "Mythical island mentioned in Plato's dialogues"
+    },
+    {
+      "word": "EL DORADO",
+      "hint": "Mythical city of gold"
+    },
+    {
+      "word": "SHANGRI-LA",
+      "hint": "Fictional place described in the 1933 novel Lost Horizon"
+    },
+    {
+      "word": "CAMELOT",
+      "hint": "Castle and court associated with the legendary King Arthur"
+    },
+    {
+      "word": "AVALON",
+      "hint": "Legendary island featured in the Arthurian legend"
+    },
+    {
+      "word": "MIDDLE-EARTH",
+      "hint": "Fictional setting of much of J. R. R. Tolkien's fantasy"
+    },
+    {
+      "word": "NARNIA",
+      "hint": "Fantasy world created by C. S. Lewis"
+    },
+    {
+      "word": "HOGWARTS",
+      "hint": "Fictional school of magic in the Harry Potter series"
+    },
+    {
+      "word": "WESTEROS",
+      "hint": "Fictional continent in Game of Thrones"
+    },
+    {
+      "word": "THE INTERNATIONAL DATE LINE",
+      "hint": "An imaginary line on the surface of the Earth that runs from the north to the south pole and demarcates the change of one calendar day to the next"
+    },
+    {
+      "word": "THE ANTARCTIC CIRCLE",
+      "hint": "The most southerly of the five major circles of latitude that mark maps of the Earth"
+    },
+    {
+      "word": "THE RED CENTRE",
+      "hint": "The southern part of the Northern Territory in Australia"
+    },
+    {
+      "word": "THE TOP END",
+      "hint": "The northern part of the Northern Territory in Australia"
+    },
+    {
+      "word": "THE NORTH SHORE",
+      "hint": "Region of Sydney"
+    },
+    {
+      "word": "THE EASTERN SUBURBS",
+      "hint": "Region of Sydney"
+    },
+    {
+      "word": "THE SOUTHERN HIGHLANDS",
+      "hint": "Region in New South Wales"
+    },
+    {
+      "word": "GIPPSLAND",
+      "hint": "Region in Victoria"
+    },
+    {
+      "word": "THE FLEURIEU PENINSULA",
+      "hint": "Peninsula in South Australia"
+    },
+    {
+      "word": "THE YORKE PENINSULA",
+      "hint": "Peninsula in South Australia"
+    },
+    {
+      "word": "THE WEST COAST",
+      "hint": "Region of Tasmania"
+    },
+    {
+      "word": "CHAMONIX",
+      "hint": "Resort area near the junction of France, Switzerland and Italy"
+    },
+    {
+      "word": "ASPEN",
+      "hint": "Ski resort town in Colorado"
+    },
+    {
+      "word": "VERBIER",
+      "hint": "Village located in south-western Switzerland"
+    },
+    {
+      "word": "MAMMOTH LAKES",
+      "hint": "Town in California's Sierra Nevada mountains"
+    },
+    {
+      "word": "TELLURIDE",
+      "hint": "Former Victorian mining town in Colorado's Rocky Mountains"
+    },
+    {
+      "word": "LAKE LOUISE",
+      "hint": "Hamlet in Banff National Park in the Canadian Rockies"
+    },
+    {
+      "word": "JASPER",
+      "hint": "Alpine town in Alberta, Canada"
+    },
+    {
+      "word": "GSTAAD",
+      "hint": "Upscale resort town in the Bernese Oberland region of the Swiss Alps"
+    },
+    {
+      "word": "HAKUBA",
+      "hint": "Village in the Japanese Alps"
+    },
+    {
+      "word": "ZION",
+      "hint": "Biblical name for Jerusalem"
+    },
+    {
+      "word": "BABYLON",
+      "hint": "Ancient city in Mesopotamia"
+    },
+    {
+      "word": "CARTHAGE",
+      "hint": "Ancient city on the coast of North Africa"
+    },
+    {
+      "word": "SPARTA",
+      "hint": "Ancient city-state in Greece"
+    },
+    {
+      "word": "THEBES",
+      "hint": "Ancient city in Egypt"
+    },
+    {
+      "word": "MEMPHIS",
+      "hint": "Ancient capital of Egypt"
+    },
+    {
+      "word": "UR",
+      "hint": "Ancient city in Mesopotamia"
+    },
+    {
+      "word": "NINEVEH",
+      "hint": "Ancient Assyrian city"
+    },
+    {
+      "word": "PERSEPOLIS",
+      "hint": "Ancient capital of the Achaemenid Empire"
+    },
+    {
+      "word": "ANTIOCH",
+      "hint": "Ancient Greek city on the eastern side of the Orontes River"
+    },
+    {
+      "word": "PALMYRA",
+      "hint": "Ancient city in present-day Syria"
+    },
+    {
+      "word": "TIKAL",
+      "hint": "Ancient Mayan citadel in Guatemala"
+    },
+    {
+      "word": "COPAN",
+      "hint": "Archaeological site of the Maya civilization in Honduras"
+    },
+    {
+      "word": "UXMAL",
+      "hint": "Ancient Maya city of the classical period in Mexico"
+    },
+    {
+      "word": "CUZCO",
+      "hint": "City in the Peruvian Andes, once capital of the Inca Empire"
+    },
+    {
+      "word": "TENOCHTITLAN",
+      "hint": "Ancient capital of the Aztec Empire"
+    },
+    {
+      "word": "CAHOKIA",
+      "hint": "Pre-Columbian Native American city"
+    },
+    {
+      "word": "MESA VERDE",
+      "hint": "National Park in Colorado, home to Ancestral Puebloan cliff dwellings"
+    },
+    {
+      "word": "CHACO CANYON",
+      "hint": "National Historical Park in New Mexico"
+    },
+    {
+      "word": "L'ANSE AUX MEADOWS",
+      "hint": "Archaeological site on the northernmost tip of the island of Newfoundland"
+    },
+    {
+      "word": "SKARA BRAE",
+      "hint": "Stone-built Neolithic settlement in Scotland"
+    },
+    {
+      "word": "NEWGRANGE",
+      "hint": "Prehistoric monument in County Meath, Ireland"
+    },
+    {
+      "word": "AVEBURY",
+      "hint": "Neolithic henge monument containing three stone circles, around the village of Avebury in Wiltshire"
+    },
+    {
+      "word": "GOBEKLI TEPE",
+      "hint": "Neolithic archaeological site in Turkey"
+    },
+    {
+      "word": "BYBLOS",
+      "hint": "Ancient Phoenician port city"
+    },
+    {
+      "word": "SIDON",
+      "hint": "Ancient Phoenician city"
+    },
+    {
+      "word": "TYRE",
+      "hint": "Ancient Phoenician port city"
+    },
+    {
+      "word": "SAQQARA",
+      "hint": "Vast, ancient burial ground in Egypt, serving as the necropolis for the Ancient Egyptian capital, Memphis"
+    },
+    {
+      "word": "DAHSHUR",
+      "hint": "Royal necropolis located in the desert on the west bank of the Nile approximately 40 kilometres south of Cairo"
+    },
+    {
+      "word": "ABYDOS",
+      "hint": "One of the oldest cities of ancient Egypt"
+    },
+    {
+      "word": "LUXOR TEMPLE",
+      "hint": "Large Ancient Egyptian temple complex located on the east bank of the Nile River in the city today known as Luxor"
+    },
+    {
+      "word": "TEMPLE OF KARNAK",
+      "hint": "Comprises a vast mix of decayed temples, chapels, pylons, and other buildings near Luxor, in Egypt"
+    },
+    {
+      "word": "MORTUARY TEMPLE OF HATSHEPSUT",
+      "hint": "Mortuary temple of Ancient Egypt located in Upper Egypt"
+    },
+    {
+      "word": "RAMESSEUM",
+      "hint": "Mortuary temple of Pharaoh Ramesses II"
+    },
+    {
+      "word": "MEDINET HABU",
+      "hint": "Mortuary Temple of Ramesses III"
+    },
+    {
+      "word": "DENDERA TEMPLE COMPLEX",
+      "hint": "One of the best-preserved temple complexes in Egypt"
+    },
+    {
+      "word": "TEMPLE OF EDFU",
+      "hint": "Ancient Egyptian temple located on the west bank of the Nile in Edfu"
+    },
+    {
+      "word": "TEMPLE OF KOM OMBO",
+      "hint": "Unusual double temple in the town of Kom Ombo in Aswan Governorate, Upper Egypt"
+    },
+    {
+      "word": "TEMPLES OF ABU SIMBEL",
+      "hint": "Two massive rock temples at Abu Simbel, a village in Nubia, Upper Egypt"
+    },
+    {
+      "word": "ERECHTHEION",
+      "hint": "Ancient Greek temple on the north side of the Acropolis of Athens in Greece which was dedicated to both Athena and Poseidon"
+    },
+    {
+      "word": "TEMPLE OF HEPHAESTUS",
+      "hint": "Well-preserved Greek temple; it remains standing largely as built"
+    },
+    {
+      "word": "THEATRE OF DIONYSUS",
+      "hint": "Major theatre in Athens, built at the foot of the Athenian Acropolis"
+    },
+    {
+      "word": "ODEON OF HERODES ATTICUS",
+      "hint": "Stone Roman theatre structure located on the southwest slope of the Acropolis of Athens"
+    },
+    {
+      "word": "PALATINE HILL",
+      "hint": "Centermost of the Seven Hills of Rome"
+    },
+    {
+      "word": "AVENTINE HILL",
+      "hint": "One of the Seven Hills of Rome"
+    },
+    {
+      "word": "CAELIAN HILL",
+      "hint": "One of the Seven Hills of Rome"
+    },
+    {
+      "word": "ESQUILINE HILL",
+      "hint": "One of the Seven Hills of Rome"
+    },
+    {
+      "word": "VIMINAL HILL",
+      "hint": "Smallest of the Seven Hills of Rome"
+    },
+    {
+      "word": "QUIRINAL HILL",
+      "hint": "One of the Seven Hills of Rome"
+    },
+    {
+      "word": "PANTHEON",
+      "hint": "Former Roman temple, now a church, in Rome, Italy"
+    },
+    {
+      "word": "TRAJAN'S MARKET",
+      "hint": "Large complex of ruins in the city of Rome, Italy, located on the Via dei Fori Imperiali"
+    },
+    {
+      "word": "BATHS OF CARACALLA",
+      "hint": "The city's second largest Roman public baths, or thermae, in Rome, Italy"
+    },
+    {
+      "word": "BATHS OF DIOCLETIAN",
+      "hint": "Largest of the imperial baths, or thermae, in ancient Rome"
+    },
+    {
+      "word": "CIRCUS MAXIMUS",
+      "hint": "Ancient Roman chariot-racing stadium and mass entertainment venue in Rome, Italy"
+    },
+    {
+      "word": "APPIAN WAY",
+      "hint": "One of the earliest and strategically most important Roman roads of the ancient republic"
+    },
+    {
+      "word": "HADRIAN'S VILLA",
+      "hint": "Large Roman archaeological complex at Tivoli, Italy"
+    },
+    {
+      "word": "OSTIA ANTICA",
+      "hint": "Large archaeological site, close to the modern town of Ostia, that was the location of the harbour city of ancient Rome"
+    },
+    {
+      "word": "LIBRARY OF CELSUS",
+      "hint": "Ancient Roman building in Ephesus, Anatolia"
+    },
+    {
+      "word": "TERRACE HOUSES",
+      "hint": "Ancient Roman residential buildings in Ephesus"
+    },
+    {
+      "word": "GREAT THEATRE OF EPHESUS",
+      "hint": "Largest theatre in Anatolia"
+    },
+    {
+      "word": "HAGIA SOPHIA",
+      "hint": "Late antique place of worship in Istanbul"
+    },
+    {
+      "word": "BLUE MOSQUE",
+      "hint": "Ottoman-era historical mosque in Istanbul"
+    },
+    {
+      "word": "TOPKAPI PALACE",
+      "hint": "Large museum in the east of the Fatih district of Istanbul in Turkey"
+    },
+    {
+      "word": "MAIDEN'S TOWER",
+      "hint": "Tower on a small islet at the southern entrance of the Bosphorus strait in Istanbul, Turkey"
+    },
+    {
+      "word": "GIRALDA",
+      "hint": "Bell tower of the Seville Cathedral in Seville, Spain"
+    },
+    {
+      "word": "EL ESCORIAL",
+      "hint": "Historical residence of the King of Spain, in the town of San Lorenzo de El Escorial"
+    },
+    {
+      "word": "VALLEY OF THE FALLEN",
+      "hint": "Catholic basilica and a monumental memorial in the municipality of San Lorenzo de El Escorial"
+    },
+    {
+      "word": "GIOTTO'S BELL TOWER",
+      "hint": "Free-standing campanile that is part of the complex of buildings that make up Florence Cathedral on the Piazza del Duomo in Florence, Italy"
+    },
+    {
+      "word": "BAPTISTERY OF ST. JOHN",
+      "hint": "Religious building in Florence, Italy, and has the status of a minor basilica"
+    },
+    {
+      "word": "PALAZZO PITTI",
+      "hint": "Vast, mainly Renaissance, palace in Florence, Italy"
+    },
+    {
+      "word": "BOBOLI GARDENS",
+      "hint": "Historical park of the city of Florence that was opened to the public in 1766"
+    },
+    {
+      "word": "GALLERIA DELL'ACCADEMIA",
+      "hint": "Art museum in Florence, Italy"
+    },
+    {
+      "word": "CINQUE TERRE",
+      "hint": "String of centuries-old seaside villages on the rugged Italian Riviera coastline"
+    },
+    {
+      "word": "DUOMO DI MILANO",
+      "hint": "Cathedral church of Milan, Lombardy, Italy"
+    },
+    {
+      "word": "GALLERIA VITTORIO EMANUELE II",
+      "hint": "Italy's oldest active shopping gallery and a major landmark of Milan, Italy"
+    },
+    {
+      "word": "LA SCALA",
+      "hint": "Opera house in Milan, Italy"
+    },
+    {
+      "word": "SFORZA CASTLE",
+      "hint": "Castle in Milan, northern Italy"
+    },
+    {
+      "word": "LAKE MAGGIORE",
+      "hint": "Large lake located on the south side of the Alps"
+    },
+    {
+      "word": "DOLOMITES",
+      "hint": "Mountain range located in northeastern Italy"
+    },
+    {
+      "word": "STELVIO PASS",
+      "hint": "Mountain pass in northern Italy bordering Switzerland at an elevation of 2,757 m above sea level"
+    },
+    {
+      "word": "CASTEL SANT'ANGELO",
+      "hint": "Towering cylindrical building in Parco Adriano, Rome, Italy"
+    },
+    {
+      "word": "DOGE'S PALACE",
+      "hint": "Palace built in Venetian Gothic style, and one of the main landmarks of the city of Venice in northern Italy"
+    },
+    {
+      "word": "BRIDGE OF SIGHS",
+      "hint": "Bridge located in Venice, northern Italy"
+    },
+    {
+      "word": "RIALTO BRIDGE",
+      "hint": "Oldest of the four bridges spanning the Grand Canal in Venice, Italy"
+    },
+    {
+      "word": "ST. MARK'S BASILICA",
+      "hint": "Cathedral church of the Roman Catholic Archdiocese of Venice, northern Italy"
+    },
+    {
+      "word": "MURANO",
+      "hint": "Series of islands linked by bridges in the Venetian Lagoon, northern Italy"
+    },
+    {
+      "word": "BURANO",
+      "hint": "Island in the Venetian Lagoon, northern Italy"
+    },
+    {
+      "word": "BLUE GROTTO",
+      "hint": "Sea cave on the coast of the island of Capri, southern Italy"
+    },
+    {
+      "word": "MOUNT SOLARO",
+      "hint": "Mountain on the island of Capri in Campania, Italy"
+    },
+    {
+      "word": "FARAGLIONI",
+      "hint": "Three towering rock formations which jut out from the Mediterranean just off the island of Capri's coast"
+    },
+    {
+      "word": "PROCIDA",
+      "hint": "One of the Flegrean Islands off the coast of Naples in southern Italy"
+    },
+    {
+      "word": "STROMBOLI",
+      "hint": "Island in the Tyrrhenian Sea, off the north coast of Sicily, containing one of the three active volcanoes in Italy"
+    },
+    {
+      "word": "EGADI ISLANDS",
+      "hint": "Group of five small mountainous islands in the Mediterranean Sea off the northwest coast of Sicily, Italy"
+    },
+    {
+      "word": "LES INVALIDES",
+      "hint": "Complex of buildings in the 7th arrondissement of Paris, France, containing museums and monuments, all relating to the military history of France"
+    },
+    {
+      "word": "CATACOMBS OF PARIS",
+      "hint": "Underground ossuaries in Paris, France, which hold the remains of more than six million people"
+    },
+    {
+      "word": "PERE LACHAISE CEMETERY",
+      "hint": "Largest cemetery in Paris, France"
+    },
+    {
+      "word": "PALACE OF VERSAILLES",
+      "hint": "Former royal residence located in Versailles, about 12 miles west of the French capital Paris"
+    },
+    {
+      "word": "GIVERNY",
+      "hint": "Commune in the Normandy region of northern France"
+    },
+    {
+      "word": "MONT SAINT-MICHEL",
+      "hint": "Tidal island and mainland commune in Normandy, France"
+    },
+    {
+      "word": "D-DAY BEACHES",
+      "hint": "Landing areas in Normandy of the Allied invasion of Normandy in Operation Overlord during World War II"
+    },
+    {
+      "word": "OMAHA BEACH",
+      "hint": "Code name for one of the five sectors of the Allied invasion of German-occupied France in the Normandy landings"
+    },
+    {
+      "word": "JUNO BEACH",
+      "hint": "One of five beaches of the Allied invasion of German-occupied France in the Normandy landings"
+    },
+    {
+      "word": "GOLD BEACH",
+      "hint": "Code name for one of the five areas of the Allied invasion of German-occupied France in the Normandy landings"
+    },
+    {
+      "word": "SWORD BEACH",
+      "hint": "Code name given to one of the five main landing areas along the Normandy coast during the initial assault phase, Operation Neptune, of Operation Overlord"
+    },
+    {
+      "word": "PONT DU GARD",
+      "hint": "Ancient Roman aqueduct bridge built in the first century AD to carry water over 50 km to the Roman colony of Nemausus"
+    },
+    {
+      "word": "CHURCHILL WAR ROOMS",
+      "hint": "Museum in London and one of the five branches of the Imperial War Museums"
+    },
+    {
+      "word": "HMS BELFAST",
+      "hint": "Town-class light cruiser that was built for the Royal Navy"
+    },
+    {
+      "word": "THE SHARD",
+      "hint": "95-story supertall skyscraper, designed by the Italian architect Renzo Piano, in Southwark, London"
+    },
+    {
+      "word": "MILLENNIUM BRIDGE",
+      "hint": "London,Steel suspension bridge for pedestrians crossing the River Thames in London"
+    },
+    {
+      "word": "PORTOBELLO ROAD MARKET",
+      "hint": "Street market in the Notting Hill district of the Royal Borough of Kensington and Chelsea in west London"
+    },
+    {
+      "word": "BOROUGH MARKET",
+      "hint": "Wholesale and retail food market in Southwark, London"
+    },
+    {
+      "word": "REGENT'S PARK",
+      "hint": "One of the Royal Parks of London"
+    },
+    {
+      "word": "KENSINGTON GARDENS",
+      "hint": "One of the Royal Parks of London"
+    },
+    {
+      "word": "GREENWICH PARK",
+      "hint": "Former hunting park in Greenwich and one of the largest single green spaces in south-east London"
+    },
+    {
+      "word": "ROYAL OBSERVATORY",
+      "hint": "Greenwich,Observatory situated on a hill in Greenwich Park in south east London"
+    },
+    {
+      "word": "KEW GARDENS",
+      "hint": "Botanic gardens in southwest London that house the largest and most diverse botanical and mycological collections in the world"
+    },
+    {
+      "word": "HAMPTON COURT PALACE",
+      "hint": "Royal palace in the borough of Richmond upon Thames, 12 miles south west and upstream of central London on the River Thames"
+    },
+    {
+      "word": "WINDSOR GREAT PARK",
+      "hint": "Royal Park of 2,020 hectares, including a deer park, to the south of the town of Windsor on the border of Berkshire and Surrey in England"
+    },
+    {
+      "word": "CANTERBURY CATHEDRAL",
+      "hint": "One of the oldest and most famous Christian structures in England"
+    },
+    {
+      "word": "YORK MINSTER",
+      "hint": "Cathedral of York, England, and is one of the world's largest of its kind"
+    },
+    {
+      "word": "SALISBURY CATHEDRAL",
+      "hint": "Anglican cathedral in Salisbury, England"
+    },
+    {
+      "word": "DURHAM CATHEDRAL",
+      "hint": "Cathedral in the city of Durham, England"
+    },
+    {
+      "word": "LINCOLN CATHEDRAL",
+      "hint": "Cathedral in Lincoln, England"
+    },
+    {
+      "word": "ELY CATHEDRAL",
+      "hint": "Anglican cathedral in the city of Ely, Cambridgeshire, England"
+    },
+    {
+      "word": "GLOUCESTER CATHEDRAL",
+      "hint": "Cathedral in Gloucester, England"
+    },
+    {
+      "word": "WINCHESTER CATHEDRAL",
+      "hint": "Cathedral of the Church of England in Winchester, Hampshire, England"
+    },
+    {
+      "word": "ROMAN BATHS",
+      "hint": "Bath,Well-preserved thermae in the city of Bath, Somerset, England"
+    },
+    {
+      "word": "THE ROYAL CRESCENT",
+      "hint": "Row of 30 terraced houses laid out in a sweeping crescent in the city of Bath, England"
+    },
+    {
+      "word": "THE CIRCUS",
+      "hint": "Bath,Historic street of large townhouses in the city of Bath, Somerset, England"
+    },
+    {
+      "word": "PULTENEY BRIDGE",
+      "hint": "Bridge over the River Avon in Bath, England"
+    },
+    {
+      "word": "CASTLE HOWARD",
+      "hint": "Stately home in North Yorkshire, England"
+    },
+    {
+      "word": "BLENHEIM PALACE",
+      "hint": "Country house in Woodstock, Oxfordshire, England"
+    },
+    {
+      "word": "CHATSWORTH HOUSE",
+      "hint": "Stately home in Derbyshire, England"
+    },
+    {
+      "word": "HIGHCLERE CASTLE",
+      "hint": "Country house in the Jacobethan style, with a park designed by Capability Brown"
+    },
+    {
+      "word": "LYME PARK",
+      "hint": "Large estate located south of Disley, Cheshire, England"
+    },
+    {
+      "word": "FOUNTAINS ABBEY",
+      "hint": "One of the largest and best preserved ruined Cistercian monasteries in England"
+    },
+    {
+      "word": "LINDISFARNE",
+      "hint": "Tidal island off the northeast coast of England"
+    },
+    {
+      "word": "THE HOLY ISLAND OF LINDISFARNE",
+      "hint": "Tidal island off the northeast coast of England"
+    },
+    {
+      "word": "ISLES OF SCILLY",
+      "hint": "Archipelago off the southwestern tip of Cornwall"
+    },
+    {
+      "word": "ST MICHAEL'S MOUNT",
+      "hint": "Tidal island in Mount's Bay, Cornwall, England"
+    },
+    {
+      "word": "DURDLE DOOR",
+      "hint": "Natural limestone arch on the Jurassic Coast near Lulworth in Dorset, England"
+    },
+    {
+      "word": "LULWORTH COVE",
+      "hint": "Cove near the village of West Lulworth, on the Jurassic Coast in Dorset, England"
+    },
+    {
+      "word": "OLD HARRY ROCKS",
+      "hint": "Three chalk formations, including a stack and a stump, located at Handfast Point, on the Isle of Purbeck in Dorset"
+    },
+    {
+      "word": "BEACHY HEAD",
+      "hint": "Chalk headland in East Sussex, England"
+    },
+    {
+      "word": "NORTH DOWNS",
+      "hint": "Ridge of chalk hills in south east England that stretches from Farnham in Surrey to the White Cliffs of Dover in Kent"
+    },
+    {
+      "word": "CHILTERN HILLS",
+      "hint": "Chalk escarpment in England"
+    },
+    {
+      "word": "PEAK DISTRICT",
+      "hint": "Upland area in England at the southern end of the Pennines"
+    },
+    {
+      "word": "YORKSHIRE DALES",
+      "hint": "Upland area of the Pennines in the historic county of Yorkshire, England"
+    },
+    {
+      "word": "LAKE DISTRICT",
+      "hint": "Mountainous region in North West England"
+    },
+    {
+      "word": "HELVELLYN",
+      "hint": "Mountain in the English Lake District"
+    },
+    {
+      "word": "SNOWDONIA",
+      "hint": "Mountainous region in northwestern Wales"
+    },
+    {
+      "word": "BRECON BEACONS",
+      "hint": "Mountain range in South Wales"
+    },
+    {
+      "word": "PEMBROKESHIRE COAST",
+      "hint": "National park along the Pembrokeshire coast in west Wales"
+    },
+    {
+      "word": "GOWER PENINSULA",
+      "hint": "Peninsula on the south coast of Wales"
+    },
+    {
+      "word": "CAERNARFON CASTLE",
+      "hint": "Medieval fortress in Caernarfon, Gwynedd, north-west Wales"
+    },
+    {
+      "word": "CONWY CASTLE",
+      "hint": "Fortification in Conwy, located in North Wales"
+    },
+    {
+      "word": "HARLECH CASTLE",
+      "hint": "Medieval fortification in Harlech, Gwynedd, Wales"
+    },
+    {
+      "word": "CAERPHILLY CASTLE",
+      "hint": "Medieval fortification in Caerphilly in South Wales"
+    },
+    {
+      "word": "CASTELL COCH",
+      "hint": "19th-century Gothic Revival castle built above the village of Tongwynlais in South Wales"
+    },
+    {
+      "word": "PORTMEIRION",
+      "hint": "Tourist village in Gwynedd, North Wales"
+    },
+    {
+      "word": "LLANDUDNO",
+      "hint": "Seaside resort, town and community in Conwy County Borough, Wales"
+    },
+    {
+      "word": "THE TROSSACHS",
+      "hint": "Wooded glens, braes, and lochs in Scotland"
+    },
+    {
+      "word": "GLENCOE",
+      "hint": "Glen of volcanic origins, in the Highlands of Scotland"
+    },
+    {
+      "word": "EILEAN DONAN CASTLE",
+      "hint": "Picturesque castle that frequently appears in photographs, film and television"
+    },
+    {
+      "word": "WALLACE MONUMENT",
+      "hint": "Tower standing on the shoulder of the Abbey Craig, a hilltop overlooking Stirling in Scotland"
+    },
+    {
+      "word": "FALKIRK WHEEL",
+      "hint": "Rotating boat lift in central Scotland"
+    },
+    {
+      "word": "THE KELPIES",
+      "hint": "30-metre-high horse-head sculptures depicting kelpies, located between Falkirk and Grangemouth"
+    },
+    {
+      "word": "FORTH BRIDGE",
+      "hint": "Cantilever railway bridge across the Firth of Forth in the east of Scotland"
+    },
+    {
+      "word": "HOLYROOD PALACE",
+      "hint": "Official residence of the British monarch in Scotland"
+    },
+    {
+      "word": "KELVINGROVE ART GALLERY AND MUSEUM",
+      "hint": "Museum and art gallery in Glasgow, Scotland"
+    },
+    {
+      "word": "RIVERSIDE MUSEUM",
+      "hint": "Location of the Glasgow Museum of Transport"
+    },
+    {
+      "word": "GLASGOW CATHEDRAL",
+      "hint": "One of the grandest medieval buildings in Scotland"
+    },
+    {
+      "word": "ORKNEY",
+      "hint": "Archipelago in the Northern Isles of Scotland"
+    },
+    {
+      "word": "SHETLAND",
+      "hint": "Subarctic archipelago in the Northern Isles of Scotland"
+    },
+    {
+      "word": "OUTER HEBRIDES",
+      "hint": "Chain of inter-connected islands off the west coast of mainland Scotland"
+    },
+    {
+      "word": "INNER HEBRIDES",
+      "hint": "Archipelago off the west coast of mainland Scotland"
+    },
+    {
+      "word": "ST. KILDA",
+      "hint": "Isolated archipelago situated 40 miles west-northwest of North Uist in the North Atlantic Ocean"
+    },
+    {
+      "word": "STAFFA",
+      "hint": "Island of the Inner Hebrides in Argyll and Bute, Scotland"
+    },
+    {
+      "word": "FINGAL'S CAVE",
+      "hint": "Sea cave on the uninhabited island of Staffa, in the Inner Hebrides of Scotland"
+    },
+    {
+      "word": "IONA",
+      "hint": "Small island in the Inner Hebrides of Scotland"
+    },
+    {
+      "word": "MULL",
+      "hint": "Second-largest island of the Inner Hebrides"
+    },
+    {
+      "word": "JURA",
+      "hint": "Island in the Inner Hebrides of Scotland"
+    },
+    {
+      "word": "ISLAY",
+      "hint": "Southernmost of the Inner Hebrides of Scotland"
+    },
+    {
+      "word": "ARRAN",
+      "hint": "Island off the coast of Scotland"
+    },
+    {
+      "word": "RING OF BRODGAR",
+      "hint": "Neolithic henge and stone circle about 6 miles north-east of Stromness on the mainland, the largest island in Orkney, Scotland"
+    },
+    {
+      "word": "STANDING STONES OF STENNESS",
+      "hint": "Neolithic monument on the mainland of Orkney, Scotland"
+    },
+    {
+      "word": "MAESHOWE",
+      "hint": "Neolithic chambered cairn and passage grave situated on Mainland, Orkney, Scotland"
+    },
+    {
+      "word": "JARLSHOF",
+      "hint": "Prehistoric archaeological site in Shetland, Scotland"
+    },
+    {
+      "word": "MOUSA BROCH",
+      "hint": "Iron Age broch tower on the island of Mousa in Shetland, Scotland"
+    },
+    {
+      "word": "CALLANISH STONES",
+      "hint": "Arrangement of standing stones placed in a cruciform pattern with a central stone circle"
+    },
+    {
+      "word": "HILL OF TARA",
+      "hint": "Hill and ancient ceremonial and burial site in County Meath, Ireland"
+    },
+    {
+      "word": "ROCK OF CASHEL",
+      "hint": "Historic site in Ireland's County Tipperary"
+    },
+    {
+      "word": "THE BURREN",
+      "hint": "Region of environmental interest primarily located in northwestern County Clare, Ireland"
+    },
+    {
+      "word": "CONNEMARA",
+      "hint": "Cultural region in County Galway, Ireland"
+    },
+    {
+      "word": "RING OF KERRY",
+      "hint": "Tourist trail in County Kerry, south-western Ireland"
+    },
+    {
+      "word": "DINGLE PENINSULA",
+      "hint": "Peninsula in County Kerry, Ireland"
+    },
+    {
+      "word": "ARAN ISLANDS",
+      "hint": "Group of three islands at the mouth of Galway Bay, on the west coast of Ireland"
+    },
+    {
+      "word": "KILLARNEY NATIONAL PARK",
+      "hint": "National park in County Kerry, Ireland"
+    },
+    {
+      "word": "GLENDALOUGH",
+      "hint": "Glacial valley in County Wicklow, Ireland"
+    },
+    {
+      "word": "WICKLOW MOUNTAINS",
+      "hint": "Mountain range in the southeast of Ireland"
+    },
+    {
+      "word": "GUINNESS STOREHOUSE",
+      "hint": "Tourist attraction at St. James's Gate Brewery in Dublin, Ireland"
+    },
+    {
+      "word": "TRINITY COLLEGE DUBLIN",
+      "hint": "Sole constituent college of the University of Dublin, a research university located in Dublin, Ireland"
+    },
+    {
+      "word": "BOOK OF KELLS",
+      "hint": "Illuminated manuscript Gospel book in Latin, containing the four Gospels of the New Testament together with various prefatory texts and tables"
+    },
+    {
+      "word": "KILMAINHAM GAOL",
+      "hint": "Former prison in Kilmainham, Dublin, Ireland"
+    },
+    {
+      "word": "DUBLIN CASTLE",
+      "hint": "Major Irish government complex, conference centre, and tourist attraction, off Dame Street in Dublin, Ireland"
+    },
+    {
+      "word": "ST. PATRICK'S CATHEDRAL",
+      "hint": "Dublin,National Cathedral of the Church of Ireland"
+    },
+    {
+      "word": "CHRIST CHURCH CATHEDRAL",
+      "hint": "Dublin,Cathedral of the United Dioceses of Dublin and Glendalough and the cathedral of the ecclesiastical province of the United Provinces of Dublin and Cashel in the Church of Ireland"
+    },
+    {
+      "word": "TITANIC BELFAST",
+      "hint": "Visitor attraction and a monument to Belfast's maritime heritage on the site of the former Harland & Wolff shipyard"
+    },
+    {
+      "word": "CARRICK-A-REDE ROPE BRIDGE",
+      "hint": "Rope bridge near Ballintoy in County Antrim, Northern Ireland"
+    },
+    {
+      "word": "DUNLUCE CASTLE",
+      "hint": "Now-ruined medieval castle in Northern Ireland"
+    },
+    {
+      "word": "MOURNE MOUNTAINS",
+      "hint": "Granite mountain range in County Down in the south-east of Northern Ireland"
+    },
+    {
+      "word": "SLIEVE DONARD",
+      "hint": "Highest mountain in Northern Ireland and the wider province of Ulster"
+    },
+    {
+      "word": "RIJKSMUSEUM",
+      "hint": "Dutch national museum dedicated to arts and history in Amsterdam"
+    },
+    {
+      "word": "VAN GOGH MUSEUM",
+      "hint": "Dutch art museum dedicated to the works of Vincent van Gogh and his contemporaries in Amsterdam"
+    },
+    {
+      "word": "ANNE FRANK HOUSE",
+      "hint": "Writer's house and biographical museum dedicated to Jewish wartime diarist Anne Frank"
+    },
+    {
+      "word": "KINDERDIJK",
+      "hint": "Village in the Netherlands' South Holland province, known for its iconic 18th-century windmills"
+    },
+    {
+      "word": "ZAANSE SCHANS",
+      "hint": "Neighbourhood of Zaandam, near Zaandijk, Netherlands"
+    },
+    {
+      "word": "ATOMIUM",
+      "hint": "Landmark building in Brussels, originally constructed for the 1958 Brussels World's Fair"
+    },
+    {
+      "word": "CINQUANTENAIRE",
+      "hint": "Large public park in the easternmost part of the European Quarter in Brussels, Belgium"
+    },
+    {
+      "word": "MINI-EUROPE",
+      "hint": "Miniature park located in Bruparck, at the foot of the Atomium, in Brussels, Belgium"
+    },
+    {
+      "word": "BELFRY OF BRUGES",
+      "hint": "Medieval bell tower in the centre of Bruges, Belgium"
+    },
+    {
+      "word": "GRAVENSTEEN",
+      "hint": "Castle in Ghent, Belgium"
+    },
+    {
+      "word": "BOCK",
+      "hint": "Promontory in the north-eastern corner of Luxembourg City's old historical district"
+    },
+    {
+      "word": "CHEMIN DE LA CORNICHE",
+      "hint": "Promenade in Luxembourg City"
+    },
+    {
+      "word": "CASEMATES DU BOCK",
+      "hint": "Underground fortifications in Luxembourg City"
+    },
+    {
+      "word": "REICHSTAG BUILDING",
+      "hint": "Historic building in Berlin which houses the Bundestag, the lower house of Germany's parliament"
+    },
+    {
+      "word": "MEMORIAL TO THE MURDERED JEWS OF EUROPE",
+      "hint": "Memorial in Berlin to the Jewish victims of the Holocaust"
+    },
+    {
+      "word": "EAST SIDE GALLERY",
+      "hint": "Permanent open-air gallery on the longest surviving section of the Berlin Wall in Berlin-Friedrichshain"
+    },
+    {
+      "word": "MUSEUM ISLAND",
+      "hint": "Museum complex on the northern part of the Spree Island in the historic heart of Berlin"
+    },
+    {
+      "word": "PERGAMON MUSEUM",
+      "hint": "Listed building on the Museum Island in the historic centre of Berlin"
+    },
+    {
+      "word": "NEUES MUSEUM",
+      "hint": "Listed building on the Museum Island in the historic centre of Berlin"
+    },
+    {
+      "word": "ALTES MUSEUM",
+      "hint": "Listed building on the Museum Island in the historic centre of Berlin"
+    },
+    {
+      "word": "POTSDAMER PLATZ",
+      "hint": "Public square and traffic intersection in the centre of Berlin, Germany"
+    },
+    {
+      "word": "SANSSOUCI PALACE",
+      "hint": "Former summer palace of Frederick the Great, King of Prussia, in Potsdam, near Berlin"
+    },
+    {
+      "word": "CECILIENHOF PALACE",
+      "hint": "Palace in Potsdam, Brandenburg, Germany"
+    },
+    {
+      "word": "ZWINGER",
+      "hint": "Palatial complex with gardens in Dresden, Germany"
+    },
+    {
+      "word": "FRAUENKIRCHE",
+      "hint": "Dresden,Lutheran church in Dresden, the capital of the German state of Saxony"
+    },
+    {
+      "word": "DRESDEN CASTLE",
+      "hint": "One of the oldest buildings in Dresden, it has been the residence of the electors and kings of Saxony for almost 400 years"
+    },
+    {
+      "word": "MARIENPLATZ",
+      "hint": "Central square in the city centre of Munich since 1158"
+    },
+    {
+      "word": "NYMPHENBURG PALACE",
+      "hint": "Baroque palace in Munich, Bavaria, southern Germany"
+    },
+    {
+      "word": "ENGLISH GARDEN",
+      "hint": "Munich,Large public park in the centre of Munich, Bavaria"
+    },
+    {
+      "word": "DEUTSCHES MUSEUM",
+      "hint": "World's largest science and technology museum, in Munich, Germany"
+    },
+    {
+      "word": "BMW WELT",
+      "hint": "Multi-use exhibition centre used for BMW's public relations"
+    },
+    {
+      "word": "DACHAU CONCENTRATION CAMP",
+      "hint": "First of the Nazi concentration camps opened in Germany, intended to hold political prisoners"
+    },
+    {
+      "word": "KONIGSSEE",
+      "hint": "Natural lake in the extreme southeast Berchtesgadener Land district of the German state of Bavaria, near the Austrian border"
+    },
+    {
+      "word": "ROMANTIC ROAD",
+      "hint": "Theme route in southern Germany"
+    },
+    {
+      "word": "HOHENZOLLERN BRIDGE",
+      "hint": "Bridge crossing the river Rhine in the German city of Cologne"
+    },
+    {
+      "word": "ELBE PHILHARMONIC HALL",
+      "hint": "Concert hall in the HafenCity quarter of Hamburg, Germany"
+    },
+    {
+      "word": "SPEICHERSTADT",
+      "hint": "Largest warehouse district in the world where the buildings stand on timber-pile foundations, oak logs, in this particular case"
+    },
+    {
+      "word": "PORT OF HAMBURG",
+      "hint": "Seaport on the river Elbe in Hamburg, Germany, 110 kilometres from its mouth on the North Sea"
+    },
+    {
+      "word": "WADDEN SEA",
+      "hint": "Intertidal zone in the southeastern part of the North Sea"
+    },
+    {
+      "word": "MAINAU",
+      "hint": "Island in Lake Constance"
+    },
+    {
+      "word": "RHINE FALLS",
+      "hint": "Waterfall located in Switzerland on the High Rhine river"
+    },
+    {
+      "word": "CHAPEL BRIDGE",
+      "hint": "Covered wooden footbridge spanning the river Reuss in the city of Lucerne in central Switzerland"
+    },
+    {
+      "word": "LION MONUMENT",
+      "hint": "Rock relief in Lucerne, Switzerland"
+    },
+    {
+      "word": "MOUNT PILATUS",
+      "hint": "Mountain massif overlooking Lucerne in Central Switzerland"
+    },
+    {
+      "word": "MOUNT RIGI",
+      "hint": "Mountain in the Alps, located in Central Switzerland"
+    },
+    {
+      "word": "LAKE LUCERNE",
+      "hint": "Lake in central Switzerland and the fourth largest in the country"
+    },
+    {
+      "word": "LAKE GENEVA",
+      "hint": "Lake on the north side of the Alps, shared between Switzerland and France"
+    },
+    {
+      "word": "JET D'EAU",
+      "hint": "Large fountain in Geneva, Switzerland"
+    },
+    {
+      "word": "ST. PIERRE CATHEDRAL",
+      "hint": "Cathedral in Geneva, Switzerland"
+    },
+    {
+      "word": "PALACE OF NATIONS",
+      "hint": "Home of the United Nations Office at Geneva"
+    },
+    {
+      "word": "CERN",
+      "hint": "European research organization that operates the largest particle physics laboratory in the world"
+    },
+    {
+      "word": "CHILLON CASTLE",
+      "hint": "Island castle located on Lake Geneva, south of Veytaux in the canton of Vaud"
+    },
+    {
+      "word": "JUNGFRAU",
+      "hint": "One of the main summits of the Bernese Alps, located between the northern canton of Bern and the southern canton of Valais, halfway between Interlaken and Fiesch"
+    },
+    {
+      "word": "EIGER",
+      "hint": "3,967-metre mountain of the Bernese Alps, overlooking Grindelwald and Wengen in the Bernese Oberland of Switzerland"
+    },
+    {
+      "word": "GRINDELWALD",
+      "hint": "Village and municipality in the Interlaken-Oberhasli administrative district in the canton of Bern in Switzerland"
+    },
+    {
+      "word": "LAUTERBRUNNEN",
+      "hint": "Valley featuring rocky cliffs and 72 waterfalls"
+    },
+    {
+      "word": "SCHILTHORN",
+      "hint": "2,970-metre-high summit of the Bernese Alps, overlooking the valley of Lauterbrunnen in the Swiss canton of Bern"
+    },
+    {
+      "word": "TITLIS",
+      "hint": "Mountain of the Uri Alps, located on the border between the cantons of Obwalden and Bern"
+    },
+    {
+      "word": "HOFBURG PALACE",
+      "hint": "Former principal imperial palace of the Habsburg dynasty rulers and today serves as the official residence and workplace of the President of Austria"
+    },
+    {
+      "word": "SPANISH RIDING SCHOOL",
+      "hint": "Austrian institution dedicated to the preservation of classical dressage and the training of Lipizzaner horses"
+    },
+    {
+      "word": "DANUBE TOWER",
+      "hint": "Tower in Vienna, the tallest structure in Austria"
+    },
+    {
+      "word": "WACHAU",
+      "hint": "Austrian valley with a picturesque landscape formed by the Danube river"
+    },
+    {
+      "word": "MELK ABBEY",
+      "hint": "Benedictine abbey above the town of Melk, Lower Austria, Austria, on a rocky outcrop overlooking the Danube river"
+    },
+    {
+      "word": "HOHENSALZBURG FORTRESS",
+      "hint": "Large medieval fortress in the city of Salzburg, Austria"
+    },
+    {
+      "word": "MOZART'S BIRTHPLACE",
+      "hint": "House in Salzburg, Austria, where Wolfgang Amadeus Mozart was born in 1756"
+    },
+    {
+      "word": "MIRABELL PALACE",
+      "hint": "Historical building in the city of Salzburg, Austria"
+    },
+    {
+      "word": "HELLBRUNN PALACE",
+      "hint": "Early Baroque villa of palatial size, near Morzg, a southern district of the city of Salzburg, Austria"
+    },
+    {
+      "word": "GROSSGLOCKNER HIGH ALPINE ROAD",
+      "hint": "Highest surfaced mountain pass road in Austria"
+    },
+    {
+      "word": "EISRIESENWELT",
+      "hint": "Natural limestone and ice cave located in Werfen, Austria, about 40 km south of Salzburg"
+    },
+    {
+      "word": "PRAGUE CASTLE",
+      "hint": "Castle complex in Prague, Czech Republic"
+    },
+    {
+      "word": "ST. VITUS CATHEDRAL",
+      "hint": "Metropolitan Cathedral of Saints Vitus, Wenceslaus and Adalbert is a Roman Catholic metropolitan cathedral in Prague, the seat of the Archbishop of Prague"
+    },
+    {
+      "word": "CHARLES BRIDGE",
+      "hint": "Medieval stone arch bridge that crosses the Vltava river in Prague, Czech Republic"
+    },
+    {
+      "word": "OLD TOWN SQUARE",
+      "hint": "Prague,Historic square in the Old Town quarter of Prague, the capital of the Czech Republic"
+    },
+    {
+      "word": "PRAGUE ASTRONOMICAL CLOCK",
+      "hint": "Medieval astronomical clock attached to the Old Town Hall in Prague"
+    },
+    {
+      "word": "JEWISH QUARTER",
+      "hint": "Prague,Town quarter in Prague, Czech Republic"
+    },
+    {
+      "word": "DANCING HOUSE",
+      "hint": "Nickname given to the Nationale-Nederlanden building in Prague, Czech Republic"
+    },
+    {
+      "word": "KARLOVY VARY",
+      "hint": "Spa city in the west Bohemian region of the Czech Republic"
+    },
+    {
+      "word": "FISHERMAN'S BASTION",
+      "hint": "One of the best known monuments in Budapest, located near the Buda Castle, in the 1st district of Budapest"
+    },
+    {
+      "word": "BUDA CASTLE",
+      "hint": "Historical castle and palace complex of the Hungarian kings in Budapest"
+    },
+    {
+      "word": "MATTHIAS CHURCH",
+      "hint": "Roman Catholic church located in front of the Fisherman's Bastion at the heart of Buda's Castle District"
+    },
+    {
+      "word": "HUNGARIAN PARLIAMENT BUILDING",
+      "hint": "Seat of the National Assembly of Hungary, a notable landmark of Hungary, and a popular tourist destination in Budapest"
+    },
+    {
+      "word": "ST. STEPHEN'S BASILICA",
+      "hint": "Budapest,Roman Catholic basilica in Budapest, Hungary"
+    },
+    {
+      "word": "SZECHENYI THERMAL BATH",
+      "hint": "Largest medicinal bath in Europe"
+    },
+    {
+      "word": "CHAIN BRIDGE",
+      "hint": "Suspension bridge that spans the River Danube between Buda and Pest, the western and eastern sides of Budapest"
+    },
+    {
+      "word": "MARGARET ISLAND",
+      "hint": "2.5 km long island, 500 metres wide, in the middle of the Danube in central Budapest"
+    },
+    {
+      "word": "HEROES' SQUARE",
+      "hint": "Budapest,One of the major squares in Budapest, Hungary"
+    },
+    {
+      "word": "LAKE BALATON",
+      "hint": "Freshwater lake in the Transdanubian region of Hungary"
+    },
+    {
+      "word": "WIELICZKA SALT MINE",
+      "hint": "Former salt mine in the town of Wieliczka, in southern Poland"
+    },
+    {
+      "word": "WARSAW OLD TOWN",
+      "hint": "Oldest part of Warsaw, the capital city of Poland"
+    },
+    {
+      "word": "ROYAL CASTLE",
+      "hint": "Warsaw,Castle residency that formerly served throughout the centuries as the official residence of the Polish monarchs"
+    },
+    {
+      "word": "PALACE OF CULTURE AND SCIENCE",
+      "hint": "Notable high-rise building in central Warsaw, Poland"
+    },
+    {
+      "word": "WARSAW UPRISING MUSEUM",
+      "hint": "Museum in Warsaw, Poland, dedicated to the Warsaw Uprising of 1944"
+    },
+    {
+      "word": "POLIN MUSEUM OF THE HISTORY OF POLISH JEWS",
+      "hint": "Museum on the site of the former Warsaw Ghetto"
+    },
+    {
+      "word": "MALBORK CASTLE",
+      "hint": "13th-century Teutonic castle and fortress located near the town of Malbork, Poland"
+    },
+    {
+      "word": "BIAÅ‚OWIEÅ¼A FOREST",
+      "hint": "One of the last and largest remaining parts of the immense primeval forest that once stretched across the European Plain"
+    },
+    {
+      "word": "MASURIAN LAKE DISTRICT",
+      "hint": "Lake district in northeastern Poland containing more than 2,000 lakes"
+    },
+    {
+      "word": "TATRA MOUNTAINS",
+      "hint": "Mountain range that forms a natural border between Slovakia and Poland"
+    },
+    {
+      "word": "TIVOLI GARDENS",
+      "hint": "Amusement park and pleasure garden in Copenhagen, Denmark"
+    },
+    {
+      "word": "CHRISTIANSBORG PALACE",
+      "hint": "Palace and government building on the islet of Slotsholmen in central Copenhagen, Denmark"
+    },
+    {
+      "word": "AMALIENBORG",
+      "hint": "Home of the Danish royal family"
+    },
+    {
+      "word": "SKAGEN",
+      "hint": "Denmark's northernmost town"
+    },
+    {
+      "word": "GRENEN",
+      "hint": "Sandbar in Skagen"
+    },
+    {
+      "word": "SKANSEN",
+      "hint": "First open-air museum and zoo in Sweden"
+    },
+    {
+      "word": "STOCKHOLM CITY HALL",
+      "hint": "Building of the Municipal Council for the City of Stockholm in central Stockholm"
+    },
+    {
+      "word": "GOTLAND",
+      "hint": "Sweden's largest island"
+    },
+    {
+      "word": "VISBY",
+      "hint": "Locality and the seat of Gotland Municipality in Gotland County, Sweden"
+    },
+    {
+      "word": "OSLO OPERA HOUSE",
+      "hint": "Home of the Norwegian National Opera and Ballet, and the national opera theatre in Norway"
+    },
+    {
+      "word": "VIGELAND PARK",
+      "hint": "Sculpture park in the Frogner Park, Oslo"
+    },
+    {
+      "word": "FRAM MUSEUM",
+      "hint": "Museum telling the story of Norwegian polar exploration"
+    },
+    {
+      "word": "NATIONAL ARCHAEOLOGICAL MUSEUM",
+      "hint": "Athens,Largest archaeological museum in Greece and one of the most important museums in the world dedicated to ancient Greek art"
+    },
+    {
+      "word": "METEORA",
+      "hint": "Rock formation in central Greece hosting one of the largest and most precipitously built complexes of Eastern Orthodox monasteries"
+    },
+    {
+      "word": "DELOS",
+      "hint": "Greek island and archaeological site in the Aegean Sea's Cyclades archipelago"
+    },
+    {
+      "word": "MILOS",
+      "hint": "Volcanic Greek island in the Aegean Sea, just north of the Sea of Crete"
+    },
+    {
+      "word": "MOUNT ATHOS",
+      "hint": "Mountain and peninsula in northeastern Greece and an important centre of Eastern Orthodox monasticism"
+    },
+    {
+      "word": "LENIN'S MAUSOLEUM",
+      "hint": "Mausoleum that serves as the resting place of Soviet leader Vladimir Lenin"
+    },
+    {
+      "word": "PUSHKIN MUSEUM",
+      "hint": "Largest museum of European art in Moscow"
+    },
+    {
+      "word": "HERMITAGE MUSEUM",
+      "hint": "Museum of art and culture in Saint Petersburg, Russia"
+    },
+    {
+      "word": "WINTER PALACE",
+      "hint": "Former residence in Saint Petersburg of the Russian monarchs"
+    },
+    {
+      "word": "PETERHOF PALACE",
+      "hint": "Series of palaces and gardens located in Petergof, Saint Petersburg, Russia"
+    },
+    {
+      "word": "CATHERINE PALACE",
+      "hint": "Rococo palace located in the town of Tsarskoye Selo, 30 km south of St. Petersburg, Russia"
+    },
+    {
+      "word": "CHURCH OF THE SAVIOR ON SPILLED BLOOD",
+      "hint": "Former Russian Orthodox church in Saint Petersburg, Russia"
+    },
+    {
+      "word": "ST. ISAAC'S CATHEDRAL",
+      "hint": "Large architectural landmark cathedral that currently functions as a museum in Saint Petersburg, Russia"
+    },
+    {
+      "word": "PETER AND PAUL FORTRESS",
+      "hint": "Original citadel of St. Petersburg, Russia"
+    },
+    {
+      "word": "NEVSKY PROSPEKT",
+      "hint": "Main street in the federal city of St. Petersburg in Russia"
+    },
+    {
+      "word": "ADDIS ABABA",
+      "hint": "Capital of Ethiopia"
+    },
+    {
+      "word": "AMMAN",
+      "hint": "Capital of Jordan"
+    },
+    {
+      "word": "ANDES MOUNTAINS",
+      "hint": "Mountain range in South America"
+    },
+    {
+      "word": "ARMENIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "ASUNCION",
+      "hint": "Capital of Paraguay"
+    },
+    {
+      "word": "AUSTRALIAN OUTBACK",
+      "hint": "Remote region of Australia"
+    },
+    {
+      "word": "BAHRAIN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "BANGLADESH",
+      "hint": "Asian country"
+    },
+    {
+      "word": "BEIRUT",
+      "hint": "Capital of Lebanon"
+    },
+    {
+      "word": "BELARUS",
+      "hint": "European country"
+    },
+    {
+      "word": "BELGRADE",
+      "hint": "Capital of Serbia"
+    },
+    {
+      "word": "BELIZE",
+      "hint": "North American country"
+    },
+    {
+      "word": "BHUTAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "BOLIVIA",
+      "hint": "South American country"
+    },
+    {
+      "word": "BRATISLAVA",
+      "hint": "Capital of Slovakia"
+    },
+    {
+      "word": "BUCHAREST",
+      "hint": "Capital of Romania"
+    },
+    {
+      "word": "BURKINA FASO",
+      "hint": "African country"
+    },
+    {
+      "word": "BURUNDI",
+      "hint": "African country"
+    },
+    {
+      "word": "CAMEROON",
+      "hint": "African country"
+    },
+    {
+      "word": "CHILE",
+      "hint": "South American country"
+    },
+    {
+      "word": "COLOMBO",
+      "hint": "City in Sri Lanka"
+    },
+    {
+      "word": "CONGO (DEMOCRATIC REPUBLIC)",
+      "hint": "African country"
+    },
+    {
+      "word": "CONGO (REPUBLIC OF THE)",
+      "hint": "African country"
+    },
+    {
+      "word": "DAR ES SALAAM",
+      "hint": "City in Tanzania"
+    },
+    {
+      "word": "DOHA",
+      "hint": "Capital of Qatar"
+    },
+    {
+      "word": "DOMINICAN REPUBLIC",
+      "hint": "North American country"
+    },
+    {
+      "word": "ESTONIA",
+      "hint": "European country"
+    },
+    {
+      "word": "GAMBIA",
+      "hint": "African country"
+    },
+    {
+      "word": "GIBRALTAR",
+      "hint": "British island territory"
+    },
+    {
+      "word": "JOHANNESBURG",
+      "hint": "City in South Africa"
+    },
+    {
+      "word": "JORDAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "KHARTOUM",
+      "hint": "Capital of Sudan"
+    },
+    {
+      "word": "K2",
+      "hint": "Second highest mountain in the world"
+    },
+    {
+      "word": "KYIV",
+      "hint": "Capital of Ukraine"
+    },
+    {
+      "word": "LA PAZ",
+      "hint": "Capital of Bolivia"
+    },
+    {
+      "word": "LATVIA",
+      "hint": "European country"
+    },
+    {
+      "word": "LEBANON",
+      "hint": "Asian country"
+    },
+    {
+      "word": "LIBYA",
+      "hint": "African country"
+    },
+    {
+      "word": "LITHUANIA",
+      "hint": "European country"
+    },
+    {
+      "word": "LUXEMBOURG",
+      "hint": "European country"
+    },
+    {
+      "word": "MANAGUA",
+      "hint": "Capital of Nicaragua"
+    },
+    {
+      "word": "MAURITANIA",
+      "hint": "African country"
+    },
+    {
+      "word": "MICRONESIA",
+      "hint": "Oceanian country"
+    },
+    {
+      "word": "MOGADISHU",
+      "hint": "Capital of Somalia"
+    },
+    {
+      "word": "MOLDOVA",
+      "hint": "European country"
+    },
+    {
+      "word": "MONGOLIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "MONTEVIDEO",
+      "hint": "Capital of Uruguay"
+    },
+    {
+      "word": "MOROCCO",
+      "hint": "African country"
+    },
+    {
+      "word": "MUSCAT",
+      "hint": "Capital of Oman"
+    },
+    {
+      "word": "NAIROBI",
+      "hint": "Capital of Kenya"
+    },
+    {
+      "word": "NAMIBIA",
+      "hint": "African country"
+    },
+    {
+      "word": "NEW BRUNSWICK",
+      "hint": "Canadian province"
+    },
+    {
+      "word": "NICARAGUA",
+      "hint": "North American country"
+    },
+    {
+      "word": "NIGER",
+      "hint": "African country"
+    },
+    {
+      "word": "NORTH MACEDONIA",
+      "hint": "European country"
+    },
+    {
+      "word": "NORTHERN TERRITORY",
+      "hint": "Australian territory"
+    },
+    {
+      "word": "NOTRE-DAME DE PARIS",
+      "hint": "Cathedral in Paris, France"
+    },
+    {
+      "word": "NOVA SCOTIA",
+      "hint": "Canadian province"
+    },
+    {
+      "word": "OCEANIA",
+      "hint": "Region in the Pacific"
+    },
+    {
+      "word": "OKLAHOMA",
+      "hint": "US state"
+    },
+    {
+      "word": "OMAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "ONTARIO",
+      "hint": "Canadian province"
+    },
+    {
+      "word": "PAKISTAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "PALAU",
+      "hint": "Oceanian country"
+    },
+    {
+      "word": "PALESTINE",
+      "hint": "Middle Eastern territory"
+    },
+    {
+      "word": "PANAMA",
+      "hint": "North American country"
+    },
+    {
+      "word": "PARAGUAY",
+      "hint": "South American country"
+    },
+    {
+      "word": "PRAIA",
+      "hint": "Capital of Cape Verde"
+    },
+    {
+      "word": "RIGA",
+      "hint": "Capital of Latvia"
+    },
+    {
+      "word": "SIERRA LEONE",
+      "hint": "African country"
+    },
+    {
+      "word": "SKOPJE",
+      "hint": "Capital of North Macedonia"
+    },
+    {
+      "word": "SLOVAKIA",
+      "hint": "European country"
+    },
+    {
+      "word": "SLOVENIA",
+      "hint": "European country"
+    },
+    {
+      "word": "SURINAME",
+      "hint": "South American country"
+    },
+    {
+      "word": "TAJIKISTAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "TBILISI",
+      "hint": "Capital of Georgia"
+    },
+    {
+      "word": "TOGO",
+      "hint": "African country"
+    },
+    {
+      "word": "TRIPOLI",
+      "hint": "Capital of Libya"
+    },
+    {
+      "word": "TUNIS",
+      "hint": "Capital of Tunisia"
+    },
+    {
+      "word": "UGANDA",
+      "hint": "African country"
+    },
+    {
+      "word": "URUGUAY",
+      "hint": "South American country"
+    },
+    {
+      "word": "VENEZUELA",
+      "hint": "South American country"
+    },
+    {
+      "word": "VIETNAM",
+      "hint": "Asian country"
+    },
+    {
+      "word": "WESTERN SAHARA",
+      "hint": "Territory in North Africa"
+    },
+    {
+      "word": "WISCONSIN",
+      "hint": "US state"
+    },
+    {
+      "word": "YEMEN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "YEREVAN",
+      "hint": "Capital of Armenia"
+    },
+    {
+      "word": "ZAGREB",
+      "hint": "Capital of Croatia"
+    },
+    {
+      "word": "ZAMBIA",
+      "hint": "African country"
+    },
+    {
+      "word": "ZIMBABWE",
+      "hint": "African country"
+    },
+    {
+      "word": "UNITED ARAB EMIRATES",
+      "hint": "Asian country"
+    },
+    {
+      "word": "GREAT WALL OF CHINA",
+      "hint": "Ancient fortification in Asia"
+    },
+    {
+      "word": "SYDNEY OPERA HOUSE",
+      "hint": "Famous Australian landmark"
+    },
+    {
+      "word": "STATUE OF LIBERTY",
+      "hint": "Gift from France in NYC"
+    },
+    {
+      "word": "COLOSSEUM",
+      "hint": "Roman amphitheater in Italy"
+    },
+    {
+      "word": "TAJ MAHAL",
+      "hint": "Marble mausoleum in India"
+    },
+    {
+      "word": "MACHU PICCHU",
+      "hint": "Incan citadel in Peru"
+    },
+    {
+      "word": "PYRAMIDS OF GIZA",
+      "hint": "Ancient tombs in Egypt"
+    },
+    {
+      "word": "ULURU",
+      "hint": "Large sandstone rock in Australia"
+    },
+    {
+      "word": "GRAND CANYON",
+      "hint": "Massive gorge in Arizona USA"
+    },
+    {
+      "word": "AMAZON RAINFOREST",
+      "hint": "Largest tropical rainforest"
+    },
+    {
+      "word": "MOUNT EVEREST",
+      "hint": "World's highest peak"
+    },
+    {
+      "word": "NIAGARA FALLS",
+      "hint": "Waterfalls on US-Canada border"
+    },
+    {
+      "word": "ST. PETER'S BASILICA",
+      "hint": "Church in Vatican City"
+    },
+    {
+      "word": "VENICE",
+      "hint": "City of canals in Italy"
+    },
+    {
+      "word": "SANTORINI",
+      "hint": "Greek island with white buildings"
+    },
+    {
+      "word": "JERUSALEM",
+      "hint": "Holy city in the Middle East"
+    },
+    {
+      "word": "MOSCOW",
+      "hint": "Capital of Russia"
+    },
+    {
+      "word": "BEIJING",
+      "hint": "Capital of China"
+    },
+    {
+      "word": "TOKYO",
+      "hint": "Capital of Japan"
+    },
+    {
+      "word": "LONDON",
+      "hint": "Capital of England"
+    },
+    {
+      "word": "PARIS",
+      "hint": "Capital of France"
+    },
+    {
+      "word": "ROME",
+      "hint": "Capital of Italy"
+    },
+    {
+      "word": "NEW YORK CITY",
+      "hint": "The Big Apple"
+    },
+    {
+      "word": "LOS ANGELES",
+      "hint": "City of Angels"
+    },
+    {
+      "word": "BERLIN",
+      "hint": "Capital of Germany"
+    },
+    {
+      "word": "MADRID",
+      "hint": "Capital of Spain"
+    },
+    {
+      "word": "HONG KONG",
+      "hint": "Special administrative region of China"
+    },
+    {
+      "word": "DUBAI",
+      "hint": "City in the UAE"
+    },
+    {
+      "word": "SYDNEY",
+      "hint": "Largest city in Australia"
+    },
+    {
+      "word": "MELBOURNE",
+      "hint": "Coastal capital of Victoria Australia"
+    },
+    {
+      "word": "AUCKLAND",
+      "hint": "Largest city in New Zealand"
+    },
+    {
+      "word": "TORONTO",
+      "hint": "Largest city in Canada"
+    },
+    {
+      "word": "VANCOUVER",
+      "hint": "City in British Columbia Canada"
+    },
+    {
+      "word": "RIO DE JANEIRO",
+      "hint": "City in Brazil"
+    },
+    {
+      "word": "BUENOS AIRES",
+      "hint": "Capital of Argentina"
+    },
+    {
+      "word": "CAPE TOWN",
+      "hint": "Port city in South Africa"
+    },
+    {
+      "word": "AMSTERDAM",
+      "hint": "Capital of the Netherlands"
+    },
+    {
+      "word": "PRAGUE",
+      "hint": "Capital of the Czech Republic"
+    },
+    {
+      "word": "VIENNA",
+      "hint": "Capital of Austria"
+    },
+    {
+      "word": "BUDAPEST",
+      "hint": "Capital of Hungary"
+    },
+    {
+      "word": "WARSAW",
+      "hint": "Capital of Poland"
+    },
+    {
+      "word": "DUBLIN",
+      "hint": "Capital of Ireland"
+    },
+    {
+      "word": "EDINBURGH",
+      "hint": "Capital of Scotland"
+    },
+    {
+      "word": "STOCKHOLM",
+      "hint": "Capital of Sweden"
+    },
+    {
+      "word": "OSLO",
+      "hint": "Capital of Norway"
+    },
+    {
+      "word": "COPENHAGEN",
+      "hint": "Capital of Denmark"
+    },
+    {
+      "word": "HELSINKI",
+      "hint": "Capital of Finland"
+    },
+    {
+      "word": "REYKJAVIK",
+      "hint": "Capital of Iceland"
+    },
+    {
+      "word": "WELLINGTON",
+      "hint": "Capital of New Zealand"
+    },
+    {
+      "word": "CANBERRA",
+      "hint": "Capital of Australia"
+    },
+    {
+      "word": "OTTAWA",
+      "hint": "Capital of Canada"
+    },
+    {
+      "word": "WASHINGTON D.C.",
+      "hint": "Capital of the United States"
+    },
+    {
+      "word": "MEXICO CITY",
+      "hint": "Capital of Mexico"
+    },
+    {
+      "word": "LIMA",
+      "hint": "Capital of Peru"
+    },
+    {
+      "word": "SANTIAGO",
+      "hint": "Capital of Chile"
+    },
+    {
+      "word": "HAVANA",
+      "hint": "Capital of Cuba"
+    },
+    {
+      "word": "KINGSTON",
+      "hint": "Capital of Jamaica"
+    },
+    {
+      "word": "SEOUL",
+      "hint": "Capital of South Korea"
+    },
+    {
+      "word": "HANOI",
+      "hint": "Capital of Vietnam"
+    },
+    {
+      "word": "KUALA LUMPUR",
+      "hint": "Capital of Malaysia"
+    },
+    {
+      "word": "MANILA",
+      "hint": "Capital of the Philippines"
+    },
+    {
+      "word": "NEW DELHI",
+      "hint": "Capital of India"
+    },
+    {
+      "word": "ISLAMABAD",
+      "hint": "Capital of Pakistan"
+    },
+    {
+      "word": "THIMPHU",
+      "hint": "Capital of Bhutan"
+    },
+    {
+      "word": "RIYADH",
+      "hint": "Capital of Saudi Arabia"
+    },
+    {
+      "word": "TEHRAN",
+      "hint": "Capital of Iran"
+    },
+    {
+      "word": "BAGHDAD",
+      "hint": "Capital of Iraq"
+    },
+    {
+      "word": "DAMASCUS",
+      "hint": "Capital of Syria"
+    },
+    {
+      "word": "ANKARA",
+      "hint": "Capital of Turkey"
+    },
+    {
+      "word": "ATHENS",
+      "hint": "Capital of Greece"
+    },
+    {
+      "word": "LISBON",
+      "hint": "Capital of Portugal"
+    },
+    {
+      "word": "BRUSSELS",
+      "hint": "Capital of Belgium"
+    },
+    {
+      "word": "BERN",
+      "hint": "Capital of Switzerland"
+    },
+    {
+      "word": "LUXEMBOURG CITY",
+      "hint": "Capital of Luxembourg"
+    },
+    {
+      "word": "MONACO",
+      "hint": "Microstate on the French Riviera"
+    },
+    {
+      "word": "VATICAN CITY",
+      "hint": "Smallest country in the world"
+    },
+    {
+      "word": "MALTA",
+      "hint": "Island country in the Mediterranean"
+    },
+    {
+      "word": "CYPRUS",
+      "hint": "Island country in the Mediterranean"
+    },
+    {
+      "word": "IBIZA",
+      "hint": "Spanish island known for nightlife"
+    },
+    {
+      "word": "MAJORCA",
+      "hint": "Largest of Spain's Balearic Islands"
+    },
+    {
+      "word": "TENERIFE",
+      "hint": "Largest of Spain's Canary Islands"
+    },
+    {
+      "word": "FIJI",
+      "hint": "Island country in Melanesia"
+    },
+    {
+      "word": "HAWAII",
+      "hint": "US state of islands in the Pacific"
+    },
+    {
+      "word": "BALI",
+      "hint": "Indonesian island known for temples"
+    },
+    {
+      "word": "PHUKET",
+      "hint": "Island province in Thailand"
+    },
+    {
+      "word": "MALDIVES",
+      "hint": "Archipelago nation in the Indian Ocean"
+    },
+    {
+      "word": "GREAT BARRIER REEF",
+      "hint": "World's largest coral reef system"
+    },
+    {
+      "word": "THE OUTBACK",
+      "hint": "Vast remote interior of Australia"
+    },
+    {
+      "word": "BONDI BEACH",
+      "hint": "Famous beach in Sydney"
+    },
+    {
+      "word": "WAIKIKI BEACH",
+      "hint": "Famous beach in Honolulu"
+    },
+    {
+      "word": "COPACABANA BEACH",
+      "hint": "Famous beach in Rio de Janeiro"
+    },
+    {
+      "word": "IPANEMA BEACH",
+      "hint": "Famous beach in Rio de Janeiro"
+    },
+    {
+      "word": "SOUTH BEACH",
+      "hint": "Famous beach in Miami"
+    },
+    {
+      "word": "VENICE BEACH",
+      "hint": "Famous beach in Los Angeles"
+    },
+    {
+      "word": "THE FRENCH RIVIERA",
+      "hint": "Mediterranean coast of France"
+    },
+    {
+      "word": "AMALFI COAST",
+      "hint": "Stretch of coastline in Italy"
+    },
+    {
+      "word": "CLIFFS OF MOHER",
+      "hint": "Sea cliffs in Ireland"
+    },
+    {
+      "word": "GIANT'S CAUSEWAY",
+      "hint": "Area of basalt columns in Northern Ireland"
+    },
+    {
+      "word": "SCOTTISH HIGHLANDS",
+      "hint": "Mountainous region of Scotland"
+    },
+    {
+      "word": "LOCH NESS",
+      "hint": "Large deep freshwater loch in Scotland"
+    },
+    {
+      "word": "STONEHENGE",
+      "hint": "Prehistoric monument in England"
+    },
+    {
+      "word": "BATH",
+      "hint": "City in England known for Roman baths"
+    },
+    {
+      "word": "CAMBRIDGE",
+      "hint": "University city in England"
+    },
+    {
+      "word": "OXFORD",
+      "hint": "University city in England"
+    },
+    {
+      "word": "THE VATICAN",
+      "hint": "Home of the Pope"
+    },
+    {
+      "word": "RED SQUARE",
+      "hint": "City square in Moscow"
+    },
+    {
+      "word": "TIANANMEN SQUARE",
+      "hint": "City square in Beijing"
+    },
+    {
+      "word": "HOLLYWOOD",
+      "hint": "Neighborhood in Los Angeles"
+    },
+    {
+      "word": "LAS VEGAS STRIP",
+      "hint": "Stretch of Las Vegas Boulevard"
+    },
+    {
+      "word": "TIMES SQUARE",
+      "hint": "Major intersection in Manhattan"
+    },
+    {
+      "word": "CENTRAL PARK",
+      "hint": "Urban park in Manhattan"
+    },
+    {
+      "word": "GOLDEN GATE BRIDGE",
+      "hint": "Suspension bridge in San Francisco"
+    },
+    {
+      "word": "ALCATRAZ ISLAND",
+      "hint": "Former prison in San Francisco Bay"
+    },
+    {
+      "word": "YOSEMITE NATIONAL PARK",
+      "hint": "National Park in California"
+    },
+    {
+      "word": "YELLOWSTONE NATIONAL PARK",
+      "hint": "National Park in Wyoming"
+    },
+    {
+      "word": "ZION NATIONAL PARK",
+      "hint": "National Park in Utah"
+    },
+    {
+      "word": "ROCKY MOUNTAINS",
+      "hint": "Major mountain range in North America"
+    },
+    {
+      "word": "APPALACHIAN MOUNTAINS",
+      "hint": "Mountain range in Eastern North America"
+    },
+    {
+      "word": "THE ALPS",
+      "hint": "Mountain range in Europe"
+    },
+    {
+      "word": "THE HIMALAYAS",
+      "hint": "Mountain range in Asia"
+    },
+    {
+      "word": "THE ANDES",
+      "hint": "Mountain range in South America"
+    },
+    {
+      "word": "MOUNT FUJI",
+      "hint": "Japan's highest mountain"
+    },
+    {
+      "word": "MATTERHORN",
+      "hint": "Mountain in the Alps"
+    },
+    {
+      "word": "MONT BLANC",
+      "hint": "Highest mountain in the Alps"
+    },
+    {
+      "word": "DENALI",
+      "hint": "Highest mountain peak in North America"
+    },
+    {
+      "word": "AYERS ROCK",
+      "hint": "Alternative name for Uluru"
+    },
+    {
+      "word": "THE KIMBERLEY",
+      "hint": "Region in Western Australia"
+    },
+    {
+      "word": "KAKADU NATIONAL PARK",
+      "hint": "National Park in the Northern Territory"
+    },
+    {
+      "word": "DAINTREE RAINFOREST",
+      "hint": "Rainforest in Queensland"
+    },
+    {
+      "word": "FRASER ISLAND",
+      "hint": "World's largest sand island"
+    },
+    {
+      "word": "GREAT OCEAN ROAD",
+      "hint": "Scenic drive in Victoria Australia"
+    },
+    {
+      "word": "TWELVE APOSTLES",
+      "hint": "Limestone stacks off the Australian coast"
+    },
+    {
+      "word": "WINEGLASS BAY",
+      "hint": "Bay in Tasmania"
+    },
+    {
+      "word": "BAY OF FIRES",
+      "hint": "Bay in Tasmania"
+    },
+    {
+      "word": "ROTTNEST ISLAND",
+      "hint": "Island off Western Australia"
+    },
+    {
+      "word": "MARGARET RIVER",
+      "hint": "Region in Western Australia known for wine"
+    },
+    {
+      "word": "BAROSSA VALLEY",
+      "hint": "Wine region in South Australia"
+    },
+    {
+      "word": "HUNTER VALLEY",
+      "hint": "Wine region in New South Wales"
+    },
+    {
+      "word": "YARRA VALLEY",
+      "hint": "Wine region in Victoria"
+    },
+    {
+      "word": "NAPA VALLEY",
+      "hint": "Wine region in California"
+    },
+    {
+      "word": "BORDEAUX",
+      "hint": "Wine region in France"
+    },
+    {
+      "word": "TUSCANY",
+      "hint": "Region in Italy known for wine"
+    },
+    {
+      "word": "CHAMPAGNE",
+      "hint": "Wine region in France"
+    },
+    {
+      "word": "PROVENCE",
+      "hint": "Region in France"
+    },
+    {
+      "word": "NORMANDY",
+      "hint": "Region in France"
+    },
+    {
+      "word": "BRITTANY",
+      "hint": "Region in France"
+    },
+    {
+      "word": "BAVARIA",
+      "hint": "State in Germany"
+    },
+    {
+      "word": "BLACK FOREST",
+      "hint": "Forested mountain range in Germany"
+    },
+    {
+      "word": "NEUSCHWANSTEIN CASTLE",
+      "hint": "Castle in Bavaria"
+    },
+    {
+      "word": "VERSAILLES",
+      "hint": "Royal palace in France"
+    },
+    {
+      "word": "BUCKINGHAM PALACE",
+      "hint": "Royal residence in London"
+    },
+    {
+      "word": "WINDSOR CASTLE",
+      "hint": "Royal residence in Berkshire"
+    },
+    {
+      "word": "SISTINE CHAPEL",
+      "hint": "Chapel in the Apostolic Palace"
+    },
+    {
+      "word": "ST. MARK'S SQUARE",
+      "hint": "Principal public square of Venice"
+    },
+    {
+      "word": "POMPEII",
+      "hint": "Ancient Roman city near Naples"
+    },
+    {
+      "word": "HERCULANEUM",
+      "hint": "Ancient Roman town near Naples"
+    },
+    {
+      "word": "MOUNT VESUVIUS",
+      "hint": "Volcano that destroyed Pompeii"
+    },
+    {
+      "word": "MOUNT ETNA",
+      "hint": "Active volcano in Sicily"
+    },
+    {
+      "word": "NORTHERN LIGHTS",
+      "hint": "Natural light display"
+    },
+    {
+      "word": "ANTARCTICA",
+      "hint": "Earth's southernmost continent"
+    },
+    {
+      "word": "SAHARA DESERT",
+      "hint": "Largest hot desert in the world"
+    },
+    {
+      "word": "GOBI DESERT",
+      "hint": "Large desert region in Asia"
+    },
+    {
+      "word": "DEATH VALLEY",
+      "hint": "Desert valley in California"
+    },
+    {
+      "word": "NILE RIVER",
+      "hint": "Longest river in the world"
+    },
+    {
+      "word": "AMAZON RIVER",
+      "hint": "Largest river by discharge volume"
+    },
+    {
+      "word": "YANGTZE RIVER",
+      "hint": "Longest river in Asia"
+    },
+    {
+      "word": "MISSISSIPPI RIVER",
+      "hint": "Chief river of the second-largest drainage system in North America"
+    },
+    {
+      "word": "RHINE RIVER",
+      "hint": "River in Western Europe"
+    },
+    {
+      "word": "THAMES RIVER",
+      "hint": "River flowing through London"
+    },
+    {
+      "word": "SEINE RIVER",
+      "hint": "River flowing through Paris"
+    },
+    {
+      "word": "TIBER RIVER",
+      "hint": "River flowing through Rome"
+    },
+    {
+      "word": "LAKE SUPERIOR",
+      "hint": "Largest of the Great Lakes of North America"
+    },
+    {
+      "word": "LAKE MICHIGAN",
+      "hint": "One of the Great Lakes of North America"
+    },
+    {
+      "word": "LAKE HURON",
+      "hint": "One of the Great Lakes of North America"
+    },
+    {
+      "word": "LAKE ERIE",
+      "hint": "One of the Great Lakes of North America"
+    },
+    {
+      "word": "LAKE ONTARIO",
+      "hint": "One of the Great Lakes of North America"
+    },
+    {
+      "word": "DEAD SEA",
+      "hint": "Salt lake bordered by Jordan and Israel"
+    },
+    {
+      "word": "VICTORIA FALLS",
+      "hint": "Waterfall on the Zambezi River"
+    },
+    {
+      "word": "PEARL HARBOR",
+      "hint": "US naval base in Hawaii"
+    },
+    {
+      "word": "SILICON VALLEY",
+      "hint": "Region in Northern California"
+    },
+    {
+      "word": "WALL STREET",
+      "hint": "Financial district of New York City"
+    },
+    {
+      "word": "THE CITY OF LONDON",
+      "hint": "Financial district of London"
+    },
+    {
+      "word": "LA RAMBLA",
+      "hint": "Street in central Barcelona"
+    },
+    {
+      "word": "ABBEY ROAD",
+      "hint": "Street in London famous for its recording studio"
+    },
+    {
+      "word": "ROUTE 66",
+      "hint": "Historic highway in the US"
+    },
+    {
+      "word": "PACIFIC COAST HIGHWAY",
+      "hint": "Highway along the coast of California"
+    },
+    {
+      "word": "SERENGETI",
+      "hint": "Ecosystem in Africa"
+    },
+    {
+      "word": "MASAI MARA",
+      "hint": "National reserve in Kenya"
+    },
+    {
+      "word": "KRUGER NATIONAL PARK",
+      "hint": "National Park in South Africa"
+    },
+    {
+      "word": "CASABLANCA",
+      "hint": "City in Morocco"
+    },
+    {
+      "word": "FES",
+      "hint": "City in Morocco"
+    },
+    {
+      "word": "ALEXANDRIA",
+      "hint": "City in Egypt"
+    },
+    {
+      "word": "LUXOR",
+      "hint": "City in Egypt"
+    },
+    {
+      "word": "VALLEY OF THE KINGS",
+      "hint": "Valley in Egypt where pharaohs were buried"
+    },
+    {
+      "word": "ABU SIMBEL",
+      "hint": "Temple complex in Egypt"
+    },
+    {
+      "word": "SIENA",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "VERONA",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "NAPLES",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "MILAN",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "TURIN",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "GENOA",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "BOLOGNA",
+      "hint": "City in Italy"
+    },
+    {
+      "word": "PALERMO",
+      "hint": "City in Sicily"
+    },
+    {
+      "word": "CATANIA",
+      "hint": "City in Sicily"
+    },
+    {
+      "word": "MARSEILLE",
+      "hint": "City in France"
+    },
+    {
+      "word": "LYON",
+      "hint": "City in France"
+    },
+    {
+      "word": "NICE",
+      "hint": "City in France"
+    },
+    {
+      "word": "CANNES",
+      "hint": "City on the French Riviera"
+    },
+    {
+      "word": "ST. TROPEZ",
+      "hint": "Town on the French Riviera"
+    },
+    {
+      "word": "AVIGNON",
+      "hint": "City in Provence France"
+    },
+    {
+      "word": "STRASBOURG",
+      "hint": "City in France"
+    },
+    {
+      "word": "FRANKFURT",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "MUNICH",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "HAMBURG",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "COLOGNE",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "STUTTGART",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "HANOVER",
+      "hint": "City in Germany"
+    },
+    {
+      "word": "GENEVA",
+      "hint": "City in Switzerland"
+    },
+    {
+      "word": "ZURICH",
+      "hint": "City in Switzerland"
+    },
+    {
+      "word": "INTERLAKEN",
+      "hint": "Town in Switzerland"
+    },
+    {
+      "word": "ZERMATT",
+      "hint": "Town in Switzerland"
+    },
+    {
+      "word": "ST. MORITZ",
+      "hint": "Resort town in Switzerland"
+    },
+    {
+      "word": "DAVOS",
+      "hint": "Town in Switzerland"
+    },
+    {
+      "word": "SALZBURG",
+      "hint": "City in Austria"
+    },
+    {
+      "word": "INNSBRUCK",
+      "hint": "City in Austria"
+    },
+    {
+      "word": "HALLSTATT",
+      "hint": "Village in Austria"
+    },
+    {
+      "word": "ROTTERDAM",
+      "hint": "City in the Netherlands"
+    },
+    {
+      "word": "THE HAGUE",
+      "hint": "City in the Netherlands"
+    },
+    {
+      "word": "UTRECHT",
+      "hint": "City in the Netherlands"
+    },
+    {
+      "word": "ANTWERP",
+      "hint": "City in Belgium"
+    },
+    {
+      "word": "BRUGES",
+      "hint": "City in Belgium"
+    },
+    {
+      "word": "BARCELONA",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "SEVILLE",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "VALENCIA",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "MALAGA",
+      "hint": "City in Spain"
+    },
+    {
+      "word": "PORTO",
+      "hint": "City in Portugal"
+    },
+    {
+      "word": "SINTRA",
+      "hint": "Town in Portugal"
+    },
+    {
+      "word": "ALGARVE",
+      "hint": "Region in Portugal"
+    },
+    {
+      "word": "MADEIRA",
+      "hint": "Portuguese archipelago"
+    },
+    {
+      "word": "AZORES",
+      "hint": "Portuguese archipelago"
+    },
+    {
+      "word": "HOI AN",
+      "hint": "City in Vietnam"
+    },
+    {
+      "word": "HA LONG BAY",
+      "hint": "Bay in Vietnam"
+    },
+    {
+      "word": "SIEM REAP",
+      "hint": "City in Cambodia"
+    },
+    {
+      "word": "LUANG PRABANG",
+      "hint": "City in Laos"
+    },
+    {
+      "word": "CHIANG MAI",
+      "hint": "City in Thailand"
+    },
+    {
+      "word": "KRABI",
+      "hint": "Province in Thailand"
+    },
+    {
+      "word": "PENANG",
+      "hint": "Island state in Malaysia"
+    },
+    {
+      "word": "BORNEO",
+      "hint": "Large island in Southeast Asia"
+    },
+    {
+      "word": "SUMATRA",
+      "hint": "Large island in Indonesia"
+    },
+    {
+      "word": "JAVA",
+      "hint": "Island in Indonesia"
+    },
+    {
+      "word": "KOMODO ISLAND",
+      "hint": "Island in Indonesia known for dragons"
+    },
+    {
+      "word": "PALAWAN",
+      "hint": "Island province in the Philippines"
+    },
+    {
+      "word": "CEBU",
+      "hint": "Island province in the Philippines"
+    },
+    {
+      "word": "GUAM",
+      "hint": "US island territory in Micronesia"
+    },
+    {
+      "word": "VANUATU",
+      "hint": "Island country in the South Pacific"
+    },
+    {
+      "word": "PAPUA NEW GUINEA",
+      "hint": "Country in Oceania"
+    },
+    {
+      "word": "TAIWAN",
+      "hint": "Island country in East Asia"
+    },
+    {
+      "word": "SRI LANKA",
+      "hint": "Island country in South Asia"
+    },
+    {
+      "word": "GOA",
+      "hint": "State in India"
+    },
+    {
+      "word": "KERALA",
+      "hint": "State in India"
+    },
+    {
+      "word": "RAJASTHAN",
+      "hint": "State in India"
+    },
+    {
+      "word": "PUNJAB",
+      "hint": "Region straddling the border between India and Pakistan"
+    },
+    {
+      "word": "SIBERIA",
+      "hint": "Extensive geographical region in Asia"
+    },
+    {
+      "word": "PATAGONIA",
+      "hint": "Region at the southern end of South America"
+    },
+    {
+      "word": "BARBADOS",
+      "hint": "Island country in the Lesser Antilles"
+    },
+    {
+      "word": "TRINIDAD AND TOBAGO",
+      "hint": "Dual-island Caribbean nation"
+    },
+    {
+      "word": "ARUBA",
+      "hint": "Dutch Caribbean island"
+    },
+    {
+      "word": "CURACAO",
+      "hint": "Dutch Caribbean island"
+    },
+    {
+      "word": "SAINT MARTIN",
+      "hint": "Island in the northeast Caribbean"
+    },
+    {
+      "word": "ST. LUCIA",
+      "hint": "Island country in the West Indies"
+    },
+    {
+      "word": "ST. KITTS AND NEVIS",
+      "hint": "Dual-island nation in the West Indies"
+    },
+    {
+      "word": "SCANDINAVIA",
+      "hint": "Subregion in Northern Europe"
+    },
+    {
+      "word": "THE NORDIC COUNTRIES",
+      "hint": "Geographical and cultural region in Northern Europe"
+    },
+    {
+      "word": "THE NILE DELTA",
+      "hint": "Delta formed in Northern Egypt"
+    },
+    {
+      "word": "THE MISSISSIPPI DELTA",
+      "hint": "Region in the southern United States"
+    },
+    {
+      "word": "THE MIDWEST",
+      "hint": "Region of the United States"
+    },
+    {
+      "word": "NEW ENGLAND",
+      "hint": "Region of the United States"
+    },
+    {
+      "word": "THE EVERGLADES",
+      "hint": "Natural region of tropical wetlands in Florida"
+    },
+    {
+      "word": "THE FLORIDA KEYS",
+      "hint": "Archipelago off the southern coast of Florida"
+    },
+    {
+      "word": "THE OUTER BANKS",
+      "hint": "Barrier islands off the coast of North Carolina"
+    },
+    {
+      "word": "CAPE COD",
+      "hint": "Geographic cape at the southeastern corner of Massachusetts"
+    },
+    {
+      "word": "MARTHA'S VINEYARD",
+      "hint": "Island south of Cape Cod in Massachusetts"
+    },
+    {
+      "word": "NANTUCKET",
+      "hint": "Island off Cape Cod in Massachusetts"
+    },
+    {
+      "word": "LONG ISLAND",
+      "hint": "Island in southeastern New York"
+    },
+    {
+      "word": "THE JERSEY SHORE",
+      "hint": "Coastal region of the state of New Jersey"
+    },
+    {
+      "word": "THE HAMPTONS",
+      "hint": "Group of hamlets and villages in Long Island, New York"
+    },
+    {
+      "word": "BEVERLY HILLS",
+      "hint": "City in Los Angeles County, California"
+    },
+    {
+      "word": "MALIBU",
+      "hint": "Beach city in Los Angeles County, California"
+    },
+    {
+      "word": "PALO ALTO",
+      "hint": "City in Silicon Valley"
+    },
+    {
+      "word": "GREENWICH VILLAGE",
+      "hint": "Neighborhood on the west side of Manhattan"
+    },
+    {
+      "word": "SOHO",
+      "hint": "Neighborhood in Lower Manhattan"
+    },
+    {
+      "word": "HARLEM",
+      "hint": "Neighborhood in Upper Manhattan"
+    },
+    {
+      "word": "THE BRONX",
+      "hint": "Borough of New York City"
+    },
+    {
+      "word": "BROOKLYN",
+      "hint": "Borough of New York City"
+    },
+    {
+      "word": "QUEENS",
+      "hint": "Borough of New York City"
+    },
+    {
+      "word": "STATEN ISLAND",
+      "hint": "Borough of New York City"
+    },
+    {
+      "word": "MANHATTAN",
+      "hint": "Borough of New York City"
+    },
+    {
+      "word": "CHICAGO LOOP",
+      "hint": "Central business district of Chicago"
+    },
+    {
+      "word": "FRENCH QUARTER",
+      "hint": "Oldest neighborhood in the city of New Orleans"
+    },
+    {
+      "word": "BOURBON STREET",
+      "hint": "Street in the heart of the French Quarter"
+    },
+    {
+      "word": "WRIGLEY FIELD",
+      "hint": "Baseball park in Chicago"
+    },
+    {
+      "word": "FENWAY PARK",
+      "hint": "Baseball park in Boston"
+    },
+    {
+      "word": "YANKEE STADIUM",
+      "hint": "Baseball park in the Bronx"
+    },
+    {
+      "word": "MADISON SQUARE GARDEN",
+      "hint": "Multi-purpose indoor arena in New York City"
+    },
+    {
+      "word": "THE HOLLYWOOD BOWL",
+      "hint": "Amphitheater in the Hollywood Hills"
+    },
+    {
+      "word": "PLYMOUTH ROCK",
+      "hint": "Traditional site of disembarkation of the Mayflower Pilgrims"
+    },
+    {
+      "word": "ELLIS ISLAND",
+      "hint": "Immigration station in New York Harbor"
+    },
+    {
+      "word": "ANGEL ISLAND",
+      "hint": "Immigration station in San Francisco Bay"
+    },
+    {
+      "word": "ROBBEN ISLAND",
+      "hint": "Island where Nelson Mandela was imprisoned"
+    },
+    {
+      "word": "LORD HOWE ISLAND",
+      "hint": "Volcanic island in the Tasman Sea"
+    },
+    {
+      "word": "THE WHITSUNDAYS",
+      "hint": "74 islands off the coast of Queensland"
+    },
+    {
+      "word": "MAGNETIC ISLAND",
+      "hint": "Island off the coast of Townsville, Queensland"
+    },
+    {
+      "word": "MORETON ISLAND",
+      "hint": "Island on the eastern side of Moreton Bay"
+    },
+    {
+      "word": "STRADBROKE ISLAND",
+      "hint": "Island that forms the eastern side of Moreton Bay"
+    },
+    {
+      "word": "K'GARI",
+      "hint": "Formerly Fraser Island"
+    },
+    {
+      "word": "PHILLIP ISLAND",
+      "hint": "Island south of Melbourne, Victoria"
+    },
+    {
+      "word": "KANGAROO ISLAND",
+      "hint": "Island off the mainland of South Australia"
+    },
+    {
+      "word": "BRUNY ISLAND",
+      "hint": "Island off the south-eastern coast of Tasmania"
+    },
+    {
+      "word": "THE BLUE MOUNTAINS",
+      "hint": "Mountainous region in New South Wales"
+    },
+    {
+      "word": "THE GRAMPIANS",
+      "hint": "National Park in Victoria"
+    },
+    {
+      "word": "KINGS CANYON",
+      "hint": "Canyon in the Northern Territory"
+    },
+    {
+      "word": "KATHERINE GORGE",
+      "hint": "Gorge system in the Northern Territory"
+    },
+    {
+      "word": "THE YARRA RIVER",
+      "hint": "River in Victoria flowing through Melbourne"
+    },
+    {
+      "word": "THE BRISBANE RIVER",
+      "hint": "River that flows through the city of Brisbane"
+    },
+    {
+      "word": "THE SWAN RIVER",
+      "hint": "River in Western Australia flowing through Perth"
+    },
+    {
+      "word": "THE DERWENT RIVER",
+      "hint": "River in Tasmania flowing through Hobart"
+    },
+    {
+      "word": "THE TORRENS RIVER",
+      "hint": "River in Adelaide"
+    },
+    {
+      "word": "SYDNEY HARBOUR",
+      "hint": "Natural harbour of Sydney"
+    },
+    {
+      "word": "PORT PHILLIP BAY",
+      "hint": "Large bay in southern Victoria"
+    },
+    {
+      "word": "MORETON BAY",
+      "hint": "Bay located on the eastern coast of Australia"
+    },
+    {
+      "word": "JERVIS BAY",
+      "hint": "Bay and village on the south coast of New South Wales"
+    },
+    {
+      "word": "SHARK BAY",
+      "hint": "World Heritage Site in Western Australia"
+    },
+    {
+      "word": "GREAT AUSTRALIAN BIGHT",
+      "hint": "Large oceanic bight off the central and western portions of the southern coastline of mainland Australia"
+    },
+    {
+      "word": "BASS STRAIT",
+      "hint": "Sea strait separating Tasmania from the Australian mainland"
+    },
+    {
+      "word": "COOK STRAIT",
+      "hint": "Strait that separates the North and South Islands of New Zealand"
+    },
+    {
+      "word": "THE RING OF FIRE",
+      "hint": "Region around much of the rim of the Pacific Ocean where many volcanic eruptions and earthquakes occur"
+    },
+    {
+      "word": "SAN ANDREAS FAULT",
+      "hint": "Continental transform fault that extends through California"
+    },
+    {
+      "word": "TATOOINE",
+      "hint": "Fictional desert planet in Star Wars"
+    },
+    {
+      "word": "THE NORTH POLE",
+      "hint": "The northernmost point on Earth"
+    },
+    {
+      "word": "THE EQUATOR",
+      "hint": "An imaginary line around the middle of the Earth"
+    },
+    {
+      "word": "THE TROPIC OF CANCER",
+      "hint": "The most northerly circle of latitude on Earth at which the Sun can be directly overhead"
+    },
+    {
+      "word": "THE TROPIC OF CAPRICORN",
+      "hint": "The southernmost latitude where the Sun can be seen directly overhead"
+    },
+    {
+      "word": "THE GOLD COAST",
+      "hint": "Coastal city in Queensland"
+    },
+    {
+      "word": "THE SUNSHINE COAST",
+      "hint": "Coastal region in Queensland"
+    },
+    {
+      "word": "THE CENTRAL COAST",
+      "hint": "Region in New South Wales"
+    },
+    {
+      "word": "THE NORTHERN BEACHES",
+      "hint": "Region of Sydney"
+    },
+    {
+      "word": "THE MORNINGTON PENINSULA",
+      "hint": "Peninsula located south-east of Melbourne"
+    },
+    {
+      "word": "THE BELLARINE PENINSULA",
+      "hint": "Peninsula located south-west of Melbourne"
+    },
+    {
+      "word": "THE TASMAN PENINSULA",
+      "hint": "Peninsula in Tasmania"
+    },
+    {
+      "word": "WHISTLER",
+      "hint": "Resort town in British Columbia, Canada"
+    },
+    {
+      "word": "ST. ANTON",
+      "hint": "Village and ski resort in the Austrian Alps"
+    },
+    {
+      "word": "COURCHEVEL",
+      "hint": "French Alps ski resort"
+    },
+    {
+      "word": "VAL D'ISERE",
+      "hint": "Ski resort in the French Alps"
+    },
+    {
+      "word": "JACKSON HOLE",
+      "hint": "Valley in Wyoming"
+    },
+    {
+      "word": "PARK CITY",
+      "hint": "City in Utah"
+    },
+    {
+      "word": "LAKE TAHOE",
+      "hint": "Large freshwater lake in the Sierra Nevada Mountains"
+    },
+    {
+      "word": "SUN VALLEY",
+      "hint": "Resort city in Idaho"
+    },
+    {
+      "word": "BANFF",
+      "hint": "Resort town in Alberta, Canada"
+    },
+    {
+      "word": "MONT TREMBLANT",
+      "hint": "City in the Laurentian mountains of Quebec, Canada"
+    },
+    {
+      "word": "CORTINA D'AMPEZZO",
+      "hint": "Ski resort in northern Italy"
+    },
+    {
+      "word": "JERICHO",
+      "hint": "City in the Palestinian Territories, located in the Jordan Valley"
+    },
+    {
+      "word": "GIZA NECROPOLIS",
+      "hint": "Site on the Giza Plateau in Greater Cairo, Egypt that includes the Great Pyramid of Giza"
+    },
+    {
+      "word": "COLOSSI OF MEMNON",
+      "hint": "Two massive stone statues of the Pharaoh Amenhotep III"
+    },
+    {
+      "word": "PARTHENON",
+      "hint": "Former temple on the Athenian Acropolis, Greece, dedicated to the goddess Athena"
+    },
+    {
+      "word": "TEMPLE OF OLYMPIAN ZEUS",
+      "hint": "Athens,Former colossal temple at the center of the Greek capital Athens"
+    },
+    {
+      "word": "ANCIENT AGORA OF ATHENS",
+      "hint": "Best-known example of an ancient Greek agora, located to the northwest of the Acropolis"
+    },
+    {
+      "word": "ROMAN FORUM",
+      "hint": "Rectangular forum (plaza) surrounded by the ruins of several important ancient government buildings at the center of the city of Rome"
+    },
+    {
+      "word": "CAPITOLINE HILL",
+      "hint": "One of the Seven Hills of Rome"
+    },
+    {
+      "word": "GRAND BAZAAR",
+      "hint": "Istanbul,One of the largest and oldest covered markets in the world"
+    },
+    {
+      "word": "SPICE BAZAAR",
+      "hint": "Istanbul,One of the largest bazaars in the city of Istanbul"
+    },
+    {
+      "word": "ALHAMBRA",
+      "hint": "Palace and fortress complex located in Granada, Andalusia, Spain"
+    },
+    {
+      "word": "ALCAZAR OF SEVILLE",
+      "hint": "Royal palace in Seville, Spain, originally developed by Moorish Muslim kings"
+    },
+    {
+      "word": "GOTHIC QUARTER",
+      "hint": "Barcelona,Centre of the old city of Barcelona"
+    },
+    {
+      "word": "MONTJUIC",
+      "hint": "Hill in Barcelona, Catalonia, Spain"
+    },
+    {
+      "word": "ROYAL PALACE OF MADRID",
+      "hint": "Official residence of the Spanish royal family at the city of Madrid, although now only used for state ceremonies"
+    },
+    {
+      "word": "PRADO MUSEUM",
+      "hint": "Main Spanish national art museum, located in central Madrid"
+    },
+    {
+      "word": "REINA SOFIA MUSEUM",
+      "hint": "Spain's national museum of 20th-century art"
+    },
+    {
+      "word": "THYSSEN-BORNEMISZA MUSEUM",
+      "hint": "Art museum in Madrid, Spain, located near the Prado Museum"
+    },
+    {
+      "word": "GUGGENHEIM MUSEUM BILBAO",
+      "hint": "Museum of modern and contemporary art designed by Canadian-American architect Frank Gehry, and located in Bilbao, Basque Country, Spain"
+    },
+    {
+      "word": "CITY OF ARTS AND SCIENCES",
+      "hint": "Cultural and architectural complex in the city of Valencia, Spain"
+    },
+    {
+      "word": "TORRE AGBAR",
+      "hint": "38-story skyscraper/tower located in the Poblenou neighborhood of Barcelona, Catalonia, Spain"
+    },
+    {
+      "word": "PUENTE NUEVO",
+      "hint": "Bridge in Ronda, Spain"
+    },
+    {
+      "word": "UFFIZI GALLERY",
+      "hint": "Prominent art museum located adjacent to the Piazza della Signoria in the Historic Centre of Florence in the region of Tuscany, Italy"
+    },
+    {
+      "word": "FLORENCE CATHEDRAL",
+      "hint": "Cathedral of Florence, Italy"
+    },
+    {
+      "word": "PALAZZO VECCHIO",
+      "hint": "Town hall of Florence, Italy"
+    },
+    {
+      "word": "PIAZZA DELLA SIGNORIA",
+      "hint": "L-shaped square in front of the Palazzo Vecchio in Florence, Italy"
+    },
+    {
+      "word": "LEANING TOWER OF PISA",
+      "hint": "Campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa"
+    },
+    {
+      "word": "LAKE COMO",
+      "hint": "Lake of glacial origin in Lombardy, Italy"
+    },
+    {
+      "word": "LAKE GARDA",
+      "hint": "Largest lake in Italy"
+    },
+    {
+      "word": "TREVI FOUNTAIN",
+      "hint": "Fountain in the Trevi district in Rome, Italy"
+    },
+    {
+      "word": "PIAZZA NAVONA",
+      "hint": "Public open space in Rome, Italy"
+    },
+    {
+      "word": "VILLA BORGHESE",
+      "hint": "Landscape garden in Rome, containing a number of buildings, museums and attractions"
+    },
+    {
+      "word": "GRAND CANAL",
+      "hint": "Venice,Channel in Venice, Italy"
+    },
+    {
+      "word": "CAPRI",
+      "hint": "Island located in the Tyrrhenian Sea off the Sorrento Peninsula, on the south side of the Gulf of Naples in the Campania region of Italy"
+    },
+    {
+      "word": "ISCHIA",
+      "hint": "Volcanic island in the Tyrrhenian Sea"
+    },
+    {
+      "word": "AEOLIAN ISLANDS",
+      "hint": "Volcanic archipelago in the Tyrrhenian Sea north of Sicily"
+    },
+    {
+      "word": "THE LOUVRE PYRAMID",
+      "hint": "Large glass and metal pyramid designed by Chinese-American architect I. M. Pei, surrounded by three smaller pyramids, in the main courtyard of the Louvre Palace in Paris"
+    },
+    {
+      "word": "CENTRE POMPIDOU",
+      "hint": "Complex building in the Beaubourg area of the 4th arrondissement of Paris, near Les Halles, the rue Montorgueil, and the Marais"
+    },
+    {
+      "word": "MONTMARTRE",
+      "hint": "Large hill in Paris's 18th arrondissement"
+    },
+    {
+      "word": "MOULIN ROUGE",
+      "hint": "Cabaret in Paris, France"
+    },
+    {
+      "word": "PIGALLE",
+      "hint": "Area in Paris, France, around the Place Pigalle, on the border between the 9th and the 18th arrondissements"
+    },
+    {
+      "word": "LE MARAIS",
+      "hint": "Historic district in Paris, France"
+    },
+    {
+      "word": "LATIN QUARTER",
+      "hint": "Paris,Area in the 5th and the 6th arrondissements of Paris"
+    },
+    {
+      "word": "PLACE DE LA CONCORDE",
+      "hint": "One of the major public squares in Paris, France"
+    },
+    {
+      "word": "PLACE CHARLES DE GAULLE",
+      "hint": "Large road junction in Paris, France, the meeting point of twelve straight avenues"
+    },
+    {
+      "word": "LOIRE VALLEY",
+      "hint": "Region in central France"
+    },
+    {
+      "word": "CARCASSONNE",
+      "hint": "Fortified city in the French department of Aude, in the region of Occitanie"
+    },
+    {
+      "word": "VERDON GORGE",
+      "hint": "River canyon in southeastern France"
+    },
+    {
+      "word": "BRITISH MUSEUM",
+      "hint": "Public institution dedicated to human history, art and culture located in the Bloomsbury area of London"
+    },
+    {
+      "word": "NATIONAL GALLERY",
+      "hint": "London,Art museum in Trafalgar Square in the City of Westminster, in Central London"
+    },
+    {
+      "word": "TATE MODERN",
+      "hint": "Modern art gallery located in London"
+    },
+    {
+      "word": "TATE BRITAIN",
+      "hint": "Art museum on Millbank in the City of Westminster in London"
+    },
+    {
+      "word": "VICTORIA AND ALBERT MUSEUM",
+      "hint": "World's largest museum of applied and decorative arts and design, as well as sculpture, housing a permanent collection of over 2.27 million objects"
+    },
+    {
+      "word": "NATURAL HISTORY MUSEUM",
+      "hint": "London,Natural history museum that exhibits a vast range of specimens from various segments of natural history"
+    },
+    {
+      "word": "SCIENCE MUSEUM",
+      "hint": "London,Major museum on Exhibition Road in South Kensington, London"
+    },
+    {
+      "word": "IMPERIAL WAR MUSEUM",
+      "hint": "London,National museum organisation with branches at five locations in England, three of which are in London"
+    },
+    {
+      "word": "CUTTY SARK",
+      "hint": "British clipper ship"
+    },
+    {
+      "word": "SHAKESPEARE'S GLOBE",
+      "hint": "Reconstruction of the Globe Theatre, an Elizabethan playhouse for which William Shakespeare wrote his plays, in the London Borough of Southwark"
+    },
+    {
+      "word": "WESTMINSTER ABBEY",
+      "hint": "Large, mainly Gothic abbey church in the City of Westminster, London"
+    },
+    {
+      "word": "ST. PAUL'S CATHEDRAL",
+      "hint": "Anglican cathedral in London and is the seat of the Bishop of London"
+    },
+    {
+      "word": "HOUSES OF PARLIAMENT",
+      "hint": "Meeting place for both the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom"
+    },
+    {
+      "word": "BIG BEN",
+      "hint": "Great Bell of the striking clock at the north end of the Palace of Westminster in London"
+    },
+    {
+      "word": "LONDON EYE",
+      "hint": "Cantilevered observation wheel on the South Bank of the River Thames in London"
+    },
+    {
+      "word": "TOWER BRIDGE",
+      "hint": "Combined bascule and suspension bridge in London, built between 1886 and 1894"
+    },
+    {
+      "word": "TRAFALGAR SQUARE",
+      "hint": "Public square in the City of Westminster, Central London"
+    },
+    {
+      "word": "PICCADILLY CIRCUS",
+      "hint": "Road junction and public space of London's West End in the City of Westminster"
+    },
+    {
+      "word": "LEICESTER SQUARE",
+      "hint": "Pedestrianised square in the West End of London"
+    },
+    {
+      "word": "COVENT GARDEN",
+      "hint": "District in London, on the eastern fringes of the West End"
+    },
+    {
+      "word": "NOTTING HILL",
+      "hint": "District of West London, England, in the Royal Borough of Kensington and Chelsea"
+    },
+    {
+      "word": "CAMDEN MARKET",
+      "hint": "Collection of retail markets in Camden Town, London"
+    },
+    {
+      "word": "HYDE PARK",
+      "hint": "London,Major park in Central London"
+    },
+    {
+      "word": "WHITBY ABBEY",
+      "hint": "Ruined Benedictine abbey sited on the East Cliff above Whitby in North Yorkshire, England"
+    },
+    {
+      "word": "ISLE OF WIGHT",
+      "hint": "Island and county in the English Channel"
+    },
+    {
+      "word": "LAND'S END",
+      "hint": "Headland and holiday complex in western Cornwall, England"
+    },
+    {
+      "word": "THE LIZARD",
+      "hint": "Peninsula in southern Cornwall, England"
+    },
+    {
+      "word": "JURASSIC COAST",
+      "hint": "World Heritage Site on the English Channel coast of southern England"
+    },
+    {
+      "word": "THE NEEDLES",
+      "hint": "Row of three stacks of chalk that rise about 30m out of the sea off the western extremity of the Isle of Wight, England"
+    },
+    {
+      "word": "WHITE CLIFFS OF DOVER",
+      "hint": "Cliffs which form part of the English coastline facing the Strait of Dover and France"
+    },
+    {
+      "word": "SEVEN SISTERS",
+      "hint": "Sussex,Series of chalk sea cliffs on the English Channel coast"
+    },
+    {
+      "word": "SOUTH DOWNS",
+      "hint": "Range of chalk hills that extends for about 260 square miles across the south-eastern coastal counties of England"
+    },
+    {
+      "word": "CARDIFF CASTLE",
+      "hint": "Medieval castle and Victorian Gothic revival mansion located in the city centre of Cardiff, Wales"
+    },
+    {
+      "word": "LOCH LOMOND",
+      "hint": "Freshwater Scottish loch which crosses the Highland Boundary Fault"
+    },
+    {
+      "word": "BEN NEVIS",
+      "hint": "Highest mountain in the British Isles"
+    },
+    {
+      "word": "ISLE OF SKYE",
+      "hint": "Largest and northernmost of the major islands in the Inner Hebrides of Scotland"
+    },
+    {
+      "word": "URQUHART CASTLE",
+      "hint": "Ruined castle that sits beside Loch Ness in the Highlands of Scotland"
+    },
+    {
+      "word": "STIRLING CASTLE",
+      "hint": "One of the largest and most important castles in Scotland"
+    },
+    {
+      "word": "ROYAL MILE",
+      "hint": "Succession of streets forming the main thoroughfare of the Old Town of the city of Edinburgh in Scotland"
+    },
+    {
+      "word": "PRINCES STREET",
+      "hint": "One of the major thoroughfares in central Edinburgh, Scotland"
+    },
+    {
+      "word": "CALTON HILL",
+      "hint": "Hill in central Edinburgh, Scotland"
+    },
+    {
+      "word": "ARTHUR'S SEAT",
+      "hint": "Edinburgh,Extinct volcano which is the main peak of the group of hills in Edinburgh, Scotland"
+    },
+    {
+      "word": "SCOTTISH NATIONAL GALLERY",
+      "hint": "National art gallery of Scotland"
+    },
+    {
+      "word": "TEMPLE BAR",
+      "hint": "Dublin,Area on the south bank of the River Liffey in central Dublin, Ireland"
+    },
+    {
+      "word": "GRAFTON STREET",
+      "hint": "One of the two principal shopping streets in Dublin's city centre"
+    },
+    {
+      "word": "O'CONNELL STREET",
+      "hint": "Dublin's main thoroughfare"
+    },
+    {
+      "word": "PHOENIX PARK",
+      "hint": "Urban park in Dublin, Ireland"
+    },
+    {
+      "word": "BELFAST CITY HALL",
+      "hint": "Civic building of Belfast City Council located in Donegall Square, Belfast, Northern Ireland"
+    },
+    {
+      "word": "CANALS OF AMSTERDAM",
+      "hint": "Over 100 kilometres of canals, about 90 islands and 1,500 bridges"
+    },
+    {
+      "word": "GRAND PLACE",
+      "hint": "Central square of Brussels, Belgium"
+    },
+    {
+      "word": "MANNEKEN PIS",
+      "hint": "Landmark small bronze sculpture in central Brussels"
+    },
+    {
+      "word": "CANALS OF BRUGES",
+      "hint": "Series of canals in the city of Bruges, Belgium"
+    },
+    {
+      "word": "LUXEMBOURG GARDENS",
+      "hint": "Paris,Public park in Paris, France"
+    },
+    {
+      "word": "ADOLPHE BRIDGE",
+      "hint": "Double-decked arch bridge in Luxembourg City, in southern Luxembourg"
+    },
+    {
+      "word": "BERLIN WALL",
+      "hint": "Guarded concrete barrier that physically and ideologically divided Berlin from 1961 to 1989"
+    },
+    {
+      "word": "BRANDENBURG GATE",
+      "hint": "18th-century neoclassical monument in Berlin"
+    },
+    {
+      "word": "CHECKPOINT CHARLIE",
+      "hint": "Best-known Berlin Wall crossing point between East Berlin and West Berlin during the Cold War"
+    },
+    {
+      "word": "BERLINER DOM",
+      "hint": "Protestant church and dynastic tomb on the Museum Island in Berlin"
+    },
+    {
+      "word": "FERNSEHTURM BERLIN",
+      "hint": "Television tower in central Berlin, Germany"
+    },
+    {
+      "word": "TIERGARTEN",
+      "hint": "Berlin's most popular inner-city park, located completely in the district of the same name"
+    },
+    {
+      "word": "CHARLOTTENBURG PALACE",
+      "hint": "Largest palace in Berlin"
+    },
+    {
+      "word": "HEIDELBERG CASTLE",
+      "hint": "Ruin in Germany and landmark of Heidelberg"
+    },
+    {
+      "word": "OLD BRIDGE",
+      "hint": "Heidelberg,Arch bridge in Heidelberg that crosses the Neckar river"
+    },
+    {
+      "word": "COLOGNE CATHEDRAL",
+      "hint": "Cathedral in Cologne, North Rhine-Westphalia, Germany"
+    },
+    {
+      "word": "MINIATUR WUNDERLAND",
+      "hint": "Model railway and miniature airport attraction in Hamburg, Germany"
+    },
+    {
+      "word": "REEPERBAHN",
+      "hint": "Street and entertainment district in Hamburg's St. Pauli district, one of the two centres of Hamburg's nightlife and also the city's major red-light district"
+    },
+    {
+      "word": "SYLT",
+      "hint": "Island in northern Germany, part of Nordfriesland district, Schleswig-Holstein, and well known for the distinctive shape of its shoreline"
+    },
+    {
+      "word": "LAKE CONSTANCE",
+      "hint": "Lake on the Rhine at the northern foot of the Alps, and consists of three bodies of water"
+    },
+    {
+      "word": "ST. STEPHEN'S CATHEDRAL",
+      "hint": "Vienna,Mother church of the Roman Catholic Archdiocese of Vienna and the seat of the Archbishop of Vienna"
+    },
+    {
+      "word": "BELVEDERE PALACE",
+      "hint": "Historic building complex in Vienna, Austria"
+    },
+    {
+      "word": "VIENNA STATE OPERA",
+      "hint": "Austrian opera house and opera company based in Vienna, Austria"
+    },
+    {
+      "word": "PRATER",
+      "hint": "Large public park in Vienna's 2nd district"
+    },
+    {
+      "word": "THE LITTLE MERMAID",
+      "hint": "Copenhagen,Bronze statue by Edvard Eriksen, depicting a mermaid becoming human"
+    },
+    {
+      "word": "NYHAVN",
+      "hint": "17th-century waterfront, canal and entertainment district in Copenhagen, Denmark"
+    },
+    {
+      "word": "ROSENBORG CASTLE",
+      "hint": "Renaissance castle located in Copenhagen, Denmark"
+    },
+    {
+      "word": "LEGOLAND BILLUND",
+      "hint": "Theme park in Billund, Denmark"
+    },
+    {
+      "word": "GAMLA STAN",
+      "hint": "Old town of Stockholm, Sweden"
+    },
+    {
+      "word": "VASA MUSEUM",
+      "hint": "Maritime museum in Stockholm, Sweden"
+    },
+    {
+      "word": "STOCKHOLM PALACE",
+      "hint": "Official residence and major royal palace of the Swedish monarch"
+    },
+    {
+      "word": "DROTTNINGHOLM PALACE",
+      "hint": "Private residence of the Swedish royal family"
+    },
+    {
+      "word": "HELSINKI CATHEDRAL",
+      "hint": "Finnish Evangelical Lutheran cathedral of the Diocese of Helsinki, located in the neighbourhood of Kruununhaka in the centre of Helsinki, Finland"
+    },
+    {
+      "word": "SUOMENLINNA",
+      "hint": "Inhabited sea fortress built on eight islands about 4 km southeast of the city centre of Helsinki"
+    },
+    {
+      "word": "GOLDEN CIRCLE",
+      "hint": "Iceland,Tourist route in southern Iceland"
+    },
+    {
+      "word": "GEYSIR",
+      "hint": "Sometimes known as The Great Geysir, is a geyser in southwestern Iceland"
+    },
+    {
+      "word": "ACROPOLIS MUSEUM",
+      "hint": "Archaeological museum focused on the findings of the archaeological site of the Acropolis of Athens"
+    },
+    {
+      "word": "PLAKA",
+      "hint": "Old historical neighborhood of Athens, clustered around the northern and eastern slopes of the Acropolis"
+    },
+    {
+      "word": "MONASTIRAKI",
+      "hint": "Flea market neighborhood in the old town of Athens, Greece"
+    },
+    {
+      "word": "SYNTAGMA SQUARE",
+      "hint": "Central square of Athens"
+    },
+    {
+      "word": "PANATHENAIC STADIUM",
+      "hint": "Multi-purpose stadium in Athens, Greece"
+    },
+    {
+      "word": "MYKONOS",
+      "hint": "Greek island, part of the Cyclades, lying between Tinos, Syros, Paros and Naxos"
+    },
+    {
+      "word": "NAXOS",
+      "hint": "Greek island in the South Aegean, the largest of the Cyclades"
+    },
+    {
+      "word": "PAROS",
+      "hint": "Greek island in the Aegean Sea best known for its beaches and traditional villages"
+    },
+    {
+      "word": "IOS",
+      "hint": "Greek island in the Cyclades group in the Aegean Sea"
+    },
+    {
+      "word": "CORFU",
+      "hint": "Greek island in the Ionian Sea"
+    },
+    {
+      "word": "ZAKYNTHOS",
+      "hint": "Greek island in the Ionian Sea"
+    },
+    {
+      "word": "THESSALONIKI",
+      "hint": "Greek port city on the Thermaic Gulf of the Aegean Sea"
+    },
+    {
+      "word": "SAINT BASIL'S CATHEDRAL",
+      "hint": "Orthodox church in Red Square in Moscow"
+    },
+    {
+      "word": "BOLSHOI THEATRE",
+      "hint": "Historic theatre in Moscow, Russia"
+    },
+    {
+      "word": "TRETYAKOV GALLERY",
+      "hint": "Art gallery in Moscow, Russia"
+    },
+    {
+      "word": "ABUJA",
+      "hint": "Capital of Nigeria"
+    },
+    {
+      "word": "ACCRA",
+      "hint": "Capital of Ghana"
+    },
+    {
+      "word": "ADELAIDE",
+      "hint": "Australian state"
+    },
+    {
+      "word": "ALABAMA",
+      "hint": "US state"
+    },
+    {
+      "word": "ALASKA",
+      "hint": "US state"
+    },
+    {
+      "word": "ALBANIA",
+      "hint": "European country"
+    },
+    {
+      "word": "ALBERTA",
+      "hint": "Canadian province"
+    },
+    {
+      "word": "ALGERIA",
+      "hint": "African country"
+    },
+    {
+      "word": "ALGIERS",
+      "hint": "Capital of Algeria"
+    },
+    {
+      "word": "ARCTIC",
+      "hint": "Polar region"
+    },
+    {
+      "word": "ARGENTINA",
+      "hint": "South American country"
+    },
+    {
+      "word": "AUSTRIA",
+      "hint": "European country"
+    },
+    {
+      "word": "BELGIUM",
+      "hint": "European country"
+    },
+    {
+      "word": "BOSNIA AND HERZEGOVINA",
+      "hint": "European country"
+    },
+    {
+      "word": "BOTSWANA",
+      "hint": "African country"
+    },
+    {
+      "word": "BRASILIA",
+      "hint": "Capital of Brazil"
+    },
+    {
+      "word": "BRAZIL",
+      "hint": "South American country"
+    },
+    {
+      "word": "BRISBANE",
+      "hint": "City in Australia"
+    },
+    {
+      "word": "BRUNEI",
+      "hint": "Asian country"
+    },
+    {
+      "word": "CALIFORNIA",
+      "hint": "US state"
+    },
+    {
+      "word": "CAMBODIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "CANADA",
+      "hint": "North American country"
+    },
+    {
+      "word": "CARIBBEAN",
+      "hint": "Region in the Americas"
+    },
+    {
+      "word": "CHICAGO",
+      "hint": "US city"
+    },
+    {
+      "word": "CHINA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "COLOMBIA",
+      "hint": "South American country"
+    },
+    {
+      "word": "COLORADO",
+      "hint": "US state"
+    },
+    {
+      "word": "CROATIA",
+      "hint": "European country"
+    },
+    {
+      "word": "CZECH REPUBLIC",
+      "hint": "European country"
+    },
+    {
+      "word": "DELAWARE",
+      "hint": "US state"
+    },
+    {
+      "word": "DENMARK",
+      "hint": "European country"
+    },
+    {
+      "word": "EGYPT",
+      "hint": "African country"
+    },
+    {
+      "word": "ENGLAND",
+      "hint": "Country of the UK"
+    },
+    {
+      "word": "ETHIOPIA",
+      "hint": "African country"
+    },
+    {
+      "word": "FLORIDA",
+      "hint": "US state"
+    },
+    {
+      "word": "FRANCE",
+      "hint": "European country"
+    },
+    {
+      "word": "GERMANY",
+      "hint": "European country"
+    },
+    {
+      "word": "GHANA",
+      "hint": "African country"
+    },
+    {
+      "word": "GREECE",
+      "hint": "European country"
+    },
+    {
+      "word": "GUATEMALA",
+      "hint": "North American country"
+    },
+    {
+      "word": "GUINEA",
+      "hint": "African country"
+    },
+    {
+      "word": "GUYANA",
+      "hint": "South American country"
+    },
+    {
+      "word": "HAITI",
+      "hint": "North American country"
+    },
+    {
+      "word": "HARARE",
+      "hint": "Capital of Zimbabwe"
+    },
+    {
+      "word": "HIMALAYAS",
+      "hint": "Mountain range in Asia"
+    },
+    {
+      "word": "HO CHI MINH CITY",
+      "hint": "City in Vietnam"
+    },
+    {
+      "word": "HONDURAS",
+      "hint": "North American country"
+    },
+    {
+      "word": "HUNGARY",
+      "hint": "European country"
+    },
+    {
+      "word": "IDAHO",
+      "hint": "US state"
+    },
+    {
+      "word": "ILLINOIS",
+      "hint": "US state"
+    },
+    {
+      "word": "INDIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "INDONESIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "IRAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "IRAQ",
+      "hint": "Asian country"
+    },
+    {
+      "word": "ISRAEL",
+      "hint": "Asian country"
+    },
+    {
+      "word": "ITALY",
+      "hint": "European country"
+    },
+    {
+      "word": "JAPAN",
+      "hint": "Asian country"
+    },
+    {
+      "word": "KENYA",
+      "hint": "African country"
+    },
+    {
+      "word": "KILIMANJARO",
+      "hint": "Mountain in Tanzania"
+    },
+    {
+      "word": "KINSHASA",
+      "hint": "City in DR Congo"
+    },
+    {
+      "word": "KOLKATA",
+      "hint": "City in India"
+    },
+    {
+      "word": "KOSOVO",
+      "hint": "European country"
+    },
+    {
+      "word": "KUWAIT",
+      "hint": "Asian country"
+    },
+    {
+      "word": "LAGOS",
+      "hint": "City in Nigeria"
+    },
+    {
+      "word": "LATIN AMERICA",
+      "hint": "Region in the Americas"
+    },
+    {
+      "word": "LAS VEGAS",
+      "hint": "US city"
+    },
+    {
+      "word": "MALAWI",
+      "hint": "African country"
+    },
+    {
+      "word": "MALAYSIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "MALI",
+      "hint": "African country"
+    },
+    {
+      "word": "MANITOBA",
+      "hint": "Canadian province"
+    },
+    {
+      "word": "MEXICO",
+      "hint": "North American country"
+    },
+    {
+      "word": "MIAMI",
+      "hint": "US city"
+    },
+    {
+      "word": "MICHIGAN",
+      "hint": "US state"
+    },
+    {
+      "word": "MINNESOTA",
+      "hint": "US state"
+    },
+    {
+      "word": "MISSISSIPPI",
+      "hint": "US state"
+    },
+    {
+      "word": "MISSOURI",
+      "hint": "US state"
+    },
+    {
+      "word": "MONTANA",
+      "hint": "US state"
+    },
+    {
+      "word": "MONTREAL",
+      "hint": "Canadian city"
+    },
+    {
+      "word": "MUMBAI",
+      "hint": "City in India"
+    },
+    {
+      "word": "NASSAU",
+      "hint": "Capital of Bahamas"
+    },
+    {
+      "word": "NETHERLANDS",
+      "hint": "European country"
+    },
+    {
+      "word": "NEVADA",
+      "hint": "US state"
+    },
+    {
+      "word": "NEW JERSEY",
+      "hint": "US state"
+    },
+    {
+      "word": "NEW SOUTH WALES",
+      "hint": "Australian state"
+    },
+    {
+      "word": "NEW ZEALAND",
+      "hint": "Oceanian country"
+    },
+    {
+      "word": "NIGERIA",
+      "hint": "African country"
+    },
+    {
+      "word": "NORTH CAROLINA",
+      "hint": "US state"
+    },
+    {
+      "word": "NORTH DAKOTA",
+      "hint": "US state"
+    },
+    {
+      "word": "NORTH KOREA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "NORTHERN IRELAND",
+      "hint": "Country of the UK"
+    },
+    {
+      "word": "NORWAY",
+      "hint": "European country"
+    },
+    {
+      "word": "OHIO",
+      "hint": "US state"
+    },
+    {
+      "word": "OSAKA",
+      "hint": "City in Japan"
+    },
+    {
+      "word": "PENNSYLVANIA",
+      "hint": "US state"
+    },
+    {
+      "word": "PERU",
+      "hint": "South American country"
+    },
+    {
+      "word": "POLAND",
+      "hint": "European country"
+    },
+    {
+      "word": "PORTUGAL",
+      "hint": "European country"
+    },
+    {
+      "word": "PRETORIA",
+      "hint": "Capital of South Africa"
+    },
+    {
+      "word": "QATAR",
+      "hint": "Asian country"
+    },
+    {
+      "word": "QUEBEC",
+      "hint": "Canadian province"
+    },
+    {
+      "word": "QUEENSLAND",
+      "hint": "Australian state"
+    },
+    {
+      "word": "RHODE ISLAND",
+      "hint": "US state"
+    },
+    {
+      "word": "RUSSIA",
+      "hint": "Transcontinental country (Europe/Asia)"
+    },
+    {
+      "word": "RWANDA",
+      "hint": "African country"
+    },
+    {
+      "word": "SAN FRANCISCO",
+      "hint": "US city"
+    },
+    {
+      "word": "SAO PAULO",
+      "hint": "City in Brazil"
+    },
+    {
+      "word": "SCOTLAND",
+      "hint": "Country of the UK"
+    },
+    {
+      "word": "SENEGAL",
+      "hint": "African country"
+    },
+    {
+      "word": "SERBIA",
+      "hint": "European country"
+    },
+    {
+      "word": "SHANGHAI",
+      "hint": "City in China"
+    },
+    {
+      "word": "SOMALIA",
+      "hint": "African country"
+    },
+    {
+      "word": "SOUTH DAKOTA",
+      "hint": "US state"
+    },
+    {
+      "word": "SOUTH KOREA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "SOUTH SUDAN",
+      "hint": "African country"
+    },
+    {
+      "word": "SPAIN",
+      "hint": "European country"
+    },
+    {
+      "word": "SUDAN",
+      "hint": "African country"
+    },
+    {
+      "word": "SWEDEN",
+      "hint": "European country"
+    },
+    {
+      "word": "SWITZERLAND",
+      "hint": "European country"
+    },
+    {
+      "word": "SYDNEY HARBOUR BRIDGE",
+      "hint": "Bridge in Sydney, Australia"
+    },
+    {
+      "word": "SYRIA",
+      "hint": "Asian country"
+    },
+    {
+      "word": "TAIPEI",
+      "hint": "Capital of Taiwan"
+    },
+    {
+      "word": "TANZANIA",
+      "hint": "African country"
+    },
+    {
+      "word": "TEL AVIV",
+      "hint": "City in Israel"
+    },
+    {
+      "word": "TENNESSEE",
+      "hint": "US state"
+    },
+    {
+      "word": "TEXAS",
+      "hint": "US state"
+    },
+    {
+      "word": "THAILAND",
+      "hint": "Asian country"
+    },
+    {
+      "word": "TURKEY",
+      "hint": "Asian country"
+    },
+    {
+      "word": "UKRAINE",
+      "hint": "European country"
+    },
+    {
+      "word": "UNITED KINGDOM",
+      "hint": "European country"
+    },
+    {
+      "word": "UNITED STATES",
+      "hint": "North American country"
+    },
+    {
+      "word": "VICTORIA",
+      "hint": "Australian state"
+    },
+    {
+      "word": "WALES",
+      "hint": "Country of the UK"
+    },
+    {
+      "word": "WESTERN AUSTRALIA",
+      "hint": "Australian state"
+    },
+    {
+      "word": "EIFFEL TOWER",
+      "hint": "Iconic structure in Paris"
+    }
+  ],
+  "Who": [
+    {
+      "word": "GOTYE",
+      "hint": "Belgian-Australian musician; 'Somebody That I Used to Know'"
+    },
+    {
+      "word": "KING CHARLES III",
+      "hint": "Current King of the United Kingdom and Australia"
+    },
+    {
+      "word": "KIM IL-SUNG",
+      "hint": "North Korean founder"
+    },
+    {
+      "word": "CLOVIS I",
+      "hint": "First King of the Franks"
+    },
+    {
+      "word": "NAPOLEON III",
+      "hint": "Emperor of France (Napoleon's nephew)"
+    },
+    {
+      "word": "MAX WEBER",
+      "hint": "German sociologist"
+    },
+    {
+      "word": "LEONHARD EULER",
+      "hint": "Prolific Swiss mathematician"
+    },
+    {
+      "word": "FIONA WOOD",
+      "hint": "Plastic surgeon known for her 'spray-on skin' invention"
+    },
+    {
+      "word": "CAMERON SMITH",
+      "hint": "NRL legend; Most games played in history"
+    },
+    {
+      "word": "GARY ABLETT JR.",
+      "hint": "Dual Brownlow Medalist in AFL"
+    },
+    {
+      "word": "DUSTIN MARTIN",
+      "hint": "Three-time Norm Smith Medalist in AFL"
+    },
+    {
+      "word": "WARWICK THORNTON",
+      "hint": "Indigenous Australian film director; 'Samson and Delilah'"
+    },
+    {
+      "word": "GEOFFREY GURRUMUL YUNUPINGU",
+      "hint": "Blind Indigenous Australian musician"
+    },
+    {
+      "word": "ALAN BOND",
+      "hint": "Australian businessman famous for winning the America's Cup"
+    },
+    {
+      "word": "RICHARD FLANAGAN",
+      "hint": "Australian novelist; Booker Prize winner for 'The Narrow Road to the Deep North'"
+    },
+    {
+      "word": "PATRICK WHITE",
+      "hint": "Australian Nobel laureate in Literature"
+    },
+    {
+      "word": "PATRICIA PICCININI",
+      "hint": "Australian artist known for her hyperrealistic sculptures"
+    },
+    {
+      "word": "POL POT",
+      "hint": "Leader of the Khmer Rouge in Cambodia"
+    },
+    {
+      "word": "JACKSON POLLOCK",
+      "hint": "American painter and a major figure in the abstract expressionist movement"
+    },
+    {
+      "word": "LE CORBUSIER",
+      "hint": "Swiss-French architect and pioneer of modern architecture"
+    },
+    {
+      "word": "VALENTINA TERESHKOVA",
+      "hint": "First woman to have flown in space"
+    },
+    {
+      "word": "NIKOLA TESLA",
+      "hint": "Serbian-American inventor and electrical engineer"
+    },
+    {
+      "word": "GUGLIELMO MARCONI",
+      "hint": "Italian inventor, known for his work on long-distance radio transmission"
+    },
+    {
+      "word": "GEORGE SOROS",
+      "hint": "Hungarian-American billionaire investor and philanthropist"
+    },
+    {
+      "word": "HENRY CLAY FRICK",
+      "hint": "American industrialist, financier, and art patron"
+    },
+    {
+      "word": "STEPHEN GIRARD",
+      "hint": "French-American philanthropist and banker"
+    },
+    {
+      "word": "MARIE STOPES",
+      "hint": "British author, palaeobotanist, and campaigner for eugenics and women's rights"
+    },
+    {
+      "word": "DIAN FOSSEY",
+      "hint": "American primatologist and conservationist"
+    },
+    {
+      "word": "WANGARI MAATHAI",
+      "hint": "Kenyan social, environmental, and political activist, Nobel laureate"
+    },
+    {
+      "word": "EMPRESS WU ZETIAN",
+      "hint": "The only female emperor of China"
+    },
+    {
+      "word": "MONA HATOUM",
+      "hint": "Palestinian multimedia and installation artist who lives in London"
+    },
+    {
+      "word": "WANGECHI MUTU",
+      "hint": "Kenyan-born American visual artist"
+    },
+    {
+      "word": "NJIDEKA AKUNYILI CROSBY",
+      "hint": "Nigerian-born visual artist working in Los Angeles"
+    },
+    {
+      "word": "RAGNAR LODBROK",
+      "hint": "Legendary Viking leader"
+    },
+    {
+      "word": "UMAR IBN AL-KHATTAB",
+      "hint": "Second Caliph of Islam"
+    },
+    {
+      "word": "GIORDANO BRUNO",
+      "hint": "Italian philosopher (martyr)"
+    },
+    {
+      "word": "MARCUS AURELIUS",
+      "hint": "Roman philosopher-emperor"
+    },
+    {
+      "word": "NEBUCHADNEZZAR II",
+      "hint": "King of Babylon"
+    },
+    {
+      "word": "DEMOCRITUS",
+      "hint": "Ancient atomic theory philosopher"
+    },
+    {
+      "word": "ROSALIND FRANKLIN",
+      "hint": "DNA double-helix researcher"
+    },
+    {
+      "word": "MENCIUS",
+      "hint": "Chinese Confucian philosopher"
+    },
+    {
+      "word": "TONY ABBOTT",
+      "hint": "Australian Prime Minister (2013-2015)"
+    },
+    {
+      "word": "MALCOLM TURNBULL",
+      "hint": "Australian Prime Minister (2015-2018)"
+    },
+    {
+      "word": "PETER DUTTON",
+      "hint": "Current Australian Leader of the Opposition"
+    },
+    {
+      "word": "ROLF HARRIS",
+      "hint": "Disgraced Australian entertainer and artist"
+    },
+    {
+      "word": "JANE CAMPION",
+      "hint": "New Zealand director, first woman to win the Palme d'Or"
+    },
+    {
+      "word": "POH LING YEOW",
+      "hint": "Malaysian-born Australian artist and celebrity chef"
+    },
+    {
+      "word": "CLIVE ROBERTSON",
+      "hint": "Iconic Australian radio and television broadcaster"
+    },
+    {
+      "word": "ARTHUR PHILLIP",
+      "hint": "First Governor of New South Wales"
+    },
+    {
+      "word": "CHARLES BEAN",
+      "hint": "Australia's official historian of World War I"
+    },
+    {
+      "word": "FRANK GEHRY",
+      "hint": "Canadian-born American architect"
+    },
+    {
+      "word": "JACK MA",
+      "hint": "Chinese business magnate, co-founder of Alibaba Group"
+    },
+    {
+      "word": "CARLOS SLIM",
+      "hint": "Mexican business magnate"
+    },
+    {
+      "word": "BERNARD ARNAULT",
+      "hint": "French business magnate, chairman of LVMH"
+    },
+    {
+      "word": "AMANCIO ORTEGA",
+      "hint": "Spanish billionaire businessman, founder of Inditex (Zara)"
+    },
+    {
+      "word": "LARRY ELLISON",
+      "hint": "American business magnate, co-founder of Oracle Corporation"
+    },
+    {
+      "word": "CHARLES KOCH",
+      "hint": "American billionaire businessman, co-owner of Koch Industries"
+    },
+    {
+      "word": "DAVID KOCH",
+      "hint": "American businessman, philanthropist, and political activist"
+    },
+    {
+      "word": "SALADIN",
+      "hint": "Muslim military leader"
+    },
+    {
+      "word": "CONSTANTINE THE GREAT",
+      "hint": "First Christian Roman Emperor"
+    },
+    {
+      "word": "CHARLES V",
+      "hint": "Holy Roman Emperor,Holy Roman Emperor"
+    },
+    {
+      "word": "MARTIN VAN BUREN",
+      "hint": "8th US President"
+    },
+    {
+      "word": "CALIGULA",
+      "hint": "Roman emperor (cruel)"
+    },
+    {
+      "word": "FRANZ JOSEPH I OF AUSTRIA",
+      "hint": "Austrian Emperor"
+    },
+    {
+      "word": "FRANCISCO FRANCO",
+      "hint": "Spanish dictator"
+    },
+    {
+      "word": "NIKITA KHRUSHCHEV",
+      "hint": "Soviet leader (Cold War)"
+    },
+    {
+      "word": "AVERROES",
+      "hint": "Andalusian Muslim philosopher"
+    },
+    {
+      "word": "ENRICO FERMI",
+      "hint": "Nuclear reactor pioneer"
+    },
+    {
+      "word": "SACHIN TENDULKAR",
+      "hint": "Indian cricket legend"
+    },
+    {
+      "word": "GEORG W. F. HEGEL",
+      "hint": "German philosopher"
+    },
+    {
+      "word": "JUSTINIAN I",
+      "hint": "Byzantine emperor"
+    },
+    {
+      "word": "HENRIK IBSEN",
+      "hint": "Norwegian playwright"
+    },
+    {
+      "word": "HERACLITUS",
+      "hint": "Greek philosopher"
+    },
+    {
+      "word": "EMPRESS ELISABETH OF AUSTRIA",
+      "hint": "Austrian Empress (Sisi)"
+    },
+    {
+      "word": "HERODOTUS",
+      "hint": "Greek Father of History"
+    },
+    {
+      "word": "PONTIUS PILATE",
+      "hint": "Roman governor (Jesus's trial)"
+    },
+    {
+      "word": "MARY I OF ENGLAND",
+      "hint": "Queen of England (Bloody Mary)"
+    },
+    {
+      "word": "WILLIAM WALLACE",
+      "hint": "Braveheart Scottish hero"
+    },
+    {
+      "word": "ERWIN ROMMEL",
+      "hint": "German WWII general - Desert Fox"
+    },
+    {
+      "word": "KUBLAI KHAN",
+      "hint": "Founder of China's Yuan dynasty"
+    },
+    {
+      "word": "POPE BENEDICT XVI",
+      "hint": "Pope (2005-2013)"
+    },
+    {
+      "word": "ANNE BOLEYN",
+      "hint": "Henry VIII second wife"
+    },
+    {
+      "word": "JAMES COOK",
+      "hint": "Explored Australia & New Zealand"
+    },
+    {
+      "word": "PAUL THE APOSTLE",
+      "hint": "Christian apostle"
+    },
+    {
+      "word": "SOPHOCLES",
+      "hint": "Greek tragedian"
+    },
+    {
+      "word": "MARIA THERESA",
+      "hint": "Austrian empress"
+    },
+    {
+      "word": "MARIA MONTESSORI",
+      "hint": "Pioneering educator"
+    },
+    {
+      "word": "MICHAEL SCHUMACHER",
+      "hint": "Formula One champion"
+    },
+    {
+      "word": "VASCO DA GAMA",
+      "hint": "Portuguese explorer"
+    },
+    {
+      "word": "ADAM SMITH",
+      "hint": "Scottish economist"
+    },
+    {
+      "word": "CARL LINNAEUS",
+      "hint": "Swedish botanist"
+    },
+    {
+      "word": "NOSTRADAMUS",
+      "hint": "French astrologer"
+    },
+    {
+      "word": "VLAD THE IMPALER",
+      "hint": "Inspiration for Dracula"
+    },
+    {
+      "word": "OMAR KHAYYAM",
+      "hint": "Persian poet & astronomer"
+    },
+    {
+      "word": "POCAHONTAS",
+      "hint": "Native American figure"
+    },
+    {
+      "word": "IVAN THE TERRIBLE",
+      "hint": "First Tsar of Russia"
+    },
+    {
+      "word": "FREDERICK THE GREAT",
+      "hint": "Prussian king (Enlightenment)"
+    },
+    {
+      "word": "JOHN HOWARD",
+      "hint": "Australian Prime Minister (1996-2007)"
+    },
+    {
+      "word": "SHANE WARNE",
+      "hint": "Legendary Australian leg-spin cricketer"
+    },
+    {
+      "word": "PAUL KEATING",
+      "hint": "Australian Prime Minister (1991-1996) known for his wit"
+    },
+    {
+      "word": "JULIA GILLARD",
+      "hint": "Australia's first female Prime Minister"
+    },
+    {
+      "word": "BOB HAWKE",
+      "hint": "Australian Prime Minister (1983-1991); Loved beer and sport"
+    },
+    {
+      "word": "GEOFFREY RUSH",
+      "hint": "Australian actor; Played Captain Barbossa in 'Pirates of the Caribbean'"
+    },
+    {
+      "word": "KEVIN RUDD",
+      "hint": "Australian Prime Minister; Said Sorry to the Stolen Generations"
+    },
+    {
+      "word": "ASH BARTY",
+      "hint": "Australian tennis player; Won Wimbledon in 2021"
+    },
+    {
+      "word": "ADAM GOODES",
+      "hint": "AFL legend and 2014 Australian of the Year"
+    },
+    {
+      "word": "PAUL KELLY",
+      "hint": "Iconic Australian singer-songwriter; 'How to Make Gravy'"
+    },
+    {
+      "word": "FRED HOLLOWS",
+      "hint": "Ophthalmologist who worked to restore eyesight"
+    },
+    {
+      "word": "GINA RINEHART",
+      "hint": "Australian mining magnate and billionaire"
+    },
+    {
+      "word": "TIM MINCHIN",
+      "hint": "Australian comedian, actor, and musician"
+    },
+    {
+      "word": "PETER GARRETT",
+      "hint": "Lead singer of Midnight Oil and former politician"
+    },
+    {
+      "word": "RUPERT MURDOCH",
+      "hint": "Australian-born global media mogul"
+    },
+    {
+      "word": "NICK CAVE",
+      "hint": "Australian musician; Frontman of The Bad Seeds"
+    },
+    {
+      "word": "GOUGH WHITLAM",
+      "hint": "Australian Prime Minister dismissed in 1975"
+    },
+    {
+      "word": "PAT RAFTER",
+      "hint": "Australian tennis player; Two-time US Open champion"
+    },
+    {
+      "word": "ROBERT MENZIES",
+      "hint": "Australia's longest-serving Prime Minister"
+    },
+    {
+      "word": "DANIEL JOHNS",
+      "hint": "Lead singer of Australian band Silverchair"
+    },
+    {
+      "word": "ITA BUTTROSE",
+      "hint": "Legendary Australian media editor and businesswoman"
+    },
+    {
+      "word": "GRACE TAME",
+      "hint": "2021 Australian of the Year and advocate"
+    },
+    {
+      "word": "ANDREW FORREST",
+      "hint": "Australian businessman and philanthropist; 'Twiggy'"
+    },
+    {
+      "word": "MARTIN LUTHER KING JR.",
+      "hint": "Leader of the American civil rights movement"
+    },
+    {
+      "word": "WINSTON CHURCHILL",
+      "hint": "British Prime Minister during World War II"
+    },
+    {
+      "word": "STEVEN SPIELBERG",
+      "hint": "Legendary film director; 'Jaws', 'E.T.', 'Jurassic Park'"
+    },
+    {
+      "word": "MARIE CURIE",
+      "hint": "Pioneering physicist and chemist; Discovered radium"
+    },
+    {
+      "word": "CHARLES DARWIN",
+      "hint": "Naturalist; Developed the theory of evolution"
+    },
+    {
+      "word": "ISAAC NEWTON",
+      "hint": "Scientist who formulated the laws of motion and universal gravitation"
+    },
+    {
+      "word": "VINCENT VAN GOGH",
+      "hint": "Dutch post-impressionist painter; 'Starry Night'"
+    },
+    {
+      "word": "PABLO PICASSO",
+      "hint": "Spanish artist; Co-founded the Cubist movement"
+    },
+    {
+      "word": "GEORGE ORWELL",
+      "hint": "Author of '1984' and 'Animal Farm'"
+    },
+    {
+      "word": "JANE AUSTEN",
+      "hint": "English novelist; Wrote 'Pride and Prejudice'"
+    },
+    {
+      "word": "JULIUS CAESAR",
+      "hint": "Roman general and statesman"
+    },
+    {
+      "word": "NAPOLEON BONAPARTE",
+      "hint": "French military leader and emperor"
+    },
+    {
+      "word": "CLEOPATRA",
+      "hint": "The last active ruler of the Ptolemaic Kingdom of Egypt"
+    },
+    {
+      "word": "MAHATMA GANDHI",
+      "hint": "Leader of India's independence movement"
+    },
+    {
+      "word": "TIGER WOODS",
+      "hint": "Dominant American professional golfer"
+    },
+    {
+      "word": "SERENA WILLIAMS",
+      "hint": "American tennis player; 23 Grand Slam singles titles"
+    },
+    {
+      "word": "QUENTIN TARANTINO",
+      "hint": "American film director; 'Pulp Fiction', 'Kill Bill'"
+    },
+    {
+      "word": "XI JINPING",
+      "hint": "General Secretary of the Chinese Communist Party"
+    },
+    {
+      "word": "JUSTIN TRUDEAU",
+      "hint": "Prime Minister of Canada"
+    },
+    {
+      "word": "VOLODYMYR ZELENSKYY",
+      "hint": "President of Ukraine"
+    },
+    {
+      "word": "STEPHEN HAWKING",
+      "hint": "Theoretical physicist and author of 'A Brief History of Time'"
+    },
+    {
+      "word": "ANTHONY ALBANESE",
+      "hint": "Current Australian Prime Minister"
+    },
+    {
+      "word": "PENNY WONG",
+      "hint": "Current Australian Minister for Foreign Affairs"
+    },
+    {
+      "word": "RICKY PONTING",
+      "hint": "Former Australian cricket captain"
+    },
+    {
+      "word": "ADAM GILCHRIST",
+      "hint": "Legendary Australian wicketkeeper-batsman"
+    },
+    {
+      "word": "GLENN MCGRATH",
+      "hint": "Legendary Australian fast bowler"
+    },
+    {
+      "word": "SUSIE O'NEILL",
+      "hint": "Australian swimmer; 'Madame Butterfly'"
+    },
+    {
+      "word": "GRANT HACKETT",
+      "hint": "Australian long-distance swimmer"
+    },
+    {
+      "word": "CADEL EVANS",
+      "hint": "First Australian to win the Tour de France"
+    },
+    {
+      "word": "ELLYSE PERRY",
+      "hint": "Australian dual-international in cricket and soccer"
+    },
+    {
+      "word": "DYLAN ALCOTT",
+      "hint": "Paralympian in tennis and basketball; 2022 Australian of the Year"
+    },
+    {
+      "word": "KURT FEARNLEY",
+      "hint": "Australian wheelchair racer and Paralympian"
+    },
+    {
+      "word": "MARK WEBBER",
+      "hint": "Former Australian Formula One driver"
+    },
+    {
+      "word": "PETER BROCK",
+      "hint": "Legendary Australian V8 Supercar driver; 'King of the Mountain'"
+    },
+    {
+      "word": "ANDREW JOHNS",
+      "hint": "NRL Immortal and rugby league commentator"
+    },
+    {
+      "word": "JOHNATHAN THURSTON",
+      "hint": "NRL legend and four-time Dally M Medal winner"
+    },
+    {
+      "word": "GREG INGLIS",
+      "hint": "NRL superstar; 'GI'"
+    },
+    {
+      "word": "LANCE FRANKLIN",
+      "hint": "AFL superstar forward; 'Buddy'"
+    },
+    {
+      "word": "CHRIS JUDD",
+      "hint": "Dual Brownlow Medalist and AFL captain"
+    },
+    {
+      "word": "WAYNE CAREY",
+      "hint": "AFL legend; 'The King'"
+    },
+    {
+      "word": "TONY LOCKETT",
+      "hint": "AFL's all-time leading goalkicker; 'Plugger'"
+    },
+    {
+      "word": "GUY PEARCE",
+      "hint": "Australian actor; Starred in 'Memento' and 'Priscilla'"
+    },
+    {
+      "word": "DAVID WENHAM",
+      "hint": "Australian actor; Faramir in 'Lord of the Rings'"
+    },
+    {
+      "word": "BEN MENDELSOHN",
+      "hint": "Australian actor; Starred in 'Animal Kingdom'"
+    },
+    {
+      "word": "JOEL EDGERTON",
+      "hint": "Australian actor and director"
+    },
+    {
+      "word": "TONI COLLETTE",
+      "hint": "Australian actress; Starred in 'Muriel's Wedding'"
+    },
+    {
+      "word": "POWDERFINGER",
+      "hint": "Brisbane rock band fronted by Bernard Fanning"
+    },
+    {
+      "word": "SILVERCHAIR",
+      "hint": "Newcastle rock band fronted by Daniel Johns"
+    },
+    {
+      "word": "TAME IMPALA",
+      "hint": "Psychedelic music project of Kevin Parker"
+    },
+    {
+      "word": "COURTNEY BARNETT",
+      "hint": "Australian indie rock musician"
+    },
+    {
+      "word": "BERT NEWTON",
+      "hint": "Legendary Australian television presenter"
+    },
+    {
+      "word": "GRAHAM KENNEDY",
+      "hint": "The King of Australian television"
+    },
+    {
+      "word": "DON LANE",
+      "hint": "American-born Australian television host"
+    },
+    {
+      "word": "KERRY O'BRIEN",
+      "hint": "Veteran Australian political journalist; 'The 7.30 Report'"
+    },
+    {
+      "word": "LEIGH SALES",
+      "hint": "Former host of ABC's '7.30'"
+    },
+    {
+      "word": "WALEED ALY",
+      "hint": "Co-host of 'The Project'"
+    },
+    {
+      "word": "CARRIE BICKMORE",
+      "hint": "Former co-host of 'The Project'"
+    },
+    {
+      "word": "KARL STEFANOVIC",
+      "hint": "Co-host of the 'Today' show"
+    },
+    {
+      "word": "LISA WILKINSON",
+      "hint": "Journalist and host of 'The Project'"
+    },
+    {
+      "word": "SHAUN MICALLEF",
+      "hint": "Australian comedian and television host"
+    },
+    {
+      "word": "ADAM HILLS",
+      "hint": "Australian comedian; Host of 'Spicks and Specks'"
+    },
+    {
+      "word": "WIL ANDERSON",
+      "hint": "Australian comedian and host of 'Gruen'"
+    },
+    {
+      "word": "JUDITH LUCY",
+      "hint": "Australian stand-up comedian"
+    },
+    {
+      "word": "HANNAH GADSBY",
+      "hint": "Australian comedian; 'Nanette'"
+    },
+    {
+      "word": "ANH DO",
+      "hint": "Vietnamese-born Australian comedian and author"
+    },
+    {
+      "word": "JANE TURNER",
+      "hint": "Co-creator and star of 'Kath & Kim' (Kath Day-Knight)"
+    },
+    {
+      "word": "GINA RILEY",
+      "hint": "Co-creator and star of 'Kath & Kim' (Kim Craig)"
+    },
+    {
+      "word": "ROB SITCH",
+      "hint": "Australian comedian, director, and actor; 'The Castle', 'Frontline'"
+    },
+    {
+      "word": "THE CHASER (TEAM)",
+      "hint": "Australian satirical comedy group"
+    },
+    {
+      "word": "PETER WEIR",
+      "hint": "Australian film director; 'The Truman Show', 'Dead Poets Society'"
+    },
+    {
+      "word": "EDDIE MABO",
+      "hint": "Indigenous land rights campaigner"
+    },
+    {
+      "word": "NEVILLE BONNER",
+      "hint": "First Indigenous Australian to sit in Federal Parliament"
+    },
+    {
+      "word": "ADAM BRIGGS",
+      "hint": "Indigenous Australian rapper, writer, and actor"
+    },
+    {
+      "word": "ARCHIE ROACH",
+      "hint": "Indigenous Australian musician and songwriter"
+    },
+    {
+      "word": "CHRISTINE ANU",
+      "hint": "Torres Strait Islander singer; 'My Island Home'"
+    },
+    {
+      "word": "NOEL PEARSON",
+      "hint": "Indigenous Australian lawyer and activist"
+    },
+    {
+      "word": "MARCIA LANGTON",
+      "hint": "Prominent Indigenous Australian academic"
+    },
+    {
+      "word": "STAN GRANT",
+      "hint": "Indigenous Australian journalist and writer"
+    },
+    {
+      "word": "JAMES PACKER",
+      "hint": "Australian billionaire businessman and investor"
+    },
+    {
+      "word": "LINDSAY FOX",
+      "hint": "Founder of Australian logistics company Linfox"
+    },
+    {
+      "word": "KERRY STOKES",
+      "hint": "Australian businessman with interests in media and mining"
+    },
+    {
+      "word": "CLIVE PALMER",
+      "hint": "Australian mining magnate and politician"
+    },
+    {
+      "word": "DICK SMITH",
+      "hint": "Australian entrepreneur and adventurer"
+    },
+    {
+      "word": "JOHN BERTRAND",
+      "hint": "Skipper of the America's Cup-winning yacht Australia II"
+    },
+    {
+      "word": "VICTOR CHANG",
+      "hint": "Pioneering Australian heart surgeon"
+    },
+    {
+      "word": "IAN FRAZER",
+      "hint": "Co-creator of the HPV vaccine"
+    },
+    {
+      "word": "PETER DOHERTY",
+      "hint": "Australian Nobel laureate in Medicine (immunology)"
+    },
+    {
+      "word": "ELIZABETH BLACKBURN",
+      "hint": "Australian-American Nobel laureate (telomerase)"
+    },
+    {
+      "word": "BARRY MARSHALL",
+      "hint": "Australian Nobel laureate; Linked bacteria to stomach ulcers"
+    },
+    {
+      "word": "ROBIN WARREN",
+      "hint": "Australian Nobel laureate; Linked bacteria to stomach ulcers"
+    },
+    {
+      "word": "TIM FLANNERY",
+      "hint": "Australian mammalogist and environmentalist"
+    },
+    {
+      "word": "KARL KRUSZELNICKI",
+      "hint": "Australian science communicator; 'Dr Karl'"
+    },
+    {
+      "word": "ANDY THOMAS",
+      "hint": "Australian-born NASA astronaut"
+    },
+    {
+      "word": "GERMAINE GREER",
+      "hint": "Australian feminist writer; 'The Female Eunuch'"
+    },
+    {
+      "word": "PETER SINGER",
+      "hint": "Australian moral philosopher; 'Animal Liberation'"
+    },
+    {
+      "word": "ROBERT HUGHES",
+      "hint": "Australian art critic and writer; 'The Shock of the New'"
+    },
+    {
+      "word": "CLIVE JAMES",
+      "hint": "Australian writer, critic, and broadcaster"
+    },
+    {
+      "word": "THOMAS KENEALLY",
+      "hint": "Australian novelist; 'Schindler's Ark'"
+    },
+    {
+      "word": "TIM WINTON",
+      "hint": "Australian novelist; 'Cloudstreet'"
+    },
+    {
+      "word": "MARKUS ZUSAK",
+      "hint": "Australian author; 'The Book Thief'"
+    },
+    {
+      "word": "LIANE MORIARTY",
+      "hint": "Australian author; 'Big Little Lies'"
+    },
+    {
+      "word": "BRYCE COURTENAY",
+      "hint": "South African-Australian novelist; 'The Power of One'"
+    },
+    {
+      "word": "COLLEEN MCCULLOUGH",
+      "hint": "Australian author; 'The Thorn Birds'"
+    },
+    {
+      "word": "HENRY LAWSON",
+      "hint": "Iconic Australian writer and bush poet"
+    },
+    {
+      "word": "BANJO PATERSON",
+      "hint": "Iconic Australian bush poet; 'Waltzing Matilda'"
+    },
+    {
+      "word": "MILES FRANKLIN",
+      "hint": "Australian writer; Her name is on Australia's top literary prize"
+    },
+    {
+      "word": "MAY GIBBS",
+      "hint": "Australian children's author and illustrator; 'Snugglepot and Cuddlepie'"
+    },
+    {
+      "word": "MARGARET FULTON",
+      "hint": "Australian cookery writer who revolutionised home cooking"
+    },
+    {
+      "word": "MAGGIE BEER",
+      "hint": "Australian chef, food author, and restaurateur"
+    },
+    {
+      "word": "STEPHANIE ALEXANDER",
+      "hint": "Australian chef and food writer"
+    },
+    {
+      "word": "NEIL PERRY",
+      "hint": "Australian chef and restaurateur"
+    },
+    {
+      "word": "CURTIS STONE",
+      "hint": "Australian celebrity chef"
+    },
+    {
+      "word": "GEORGE CALOMBARIS",
+      "hint": "Former 'MasterChef Australia' judge"
+    },
+    {
+      "word": "MATT PRESTON",
+      "hint": "Former 'MasterChef Australia' judge"
+    },
+    {
+      "word": "GARY MEHIGAN",
+      "hint": "Former 'MasterChef Australia' judge"
+    },
+    {
+      "word": "KYLIE KWONG",
+      "hint": "Australian chef specialising in Chinese-Australian cuisine"
+    },
+    {
+      "word": "TETSUYA WAKUDA",
+      "hint": "Japanese-born Australian chef"
+    },
+    {
+      "word": "SIDNEY NOLAN",
+      "hint": "Australian artist known for his Ned Kelly series"
+    },
+    {
+      "word": "ARTHUR BOYD",
+      "hint": "Australian painter"
+    },
+    {
+      "word": "BRETT WHITELEY",
+      "hint": "Australian avant-garde artist"
+    },
+    {
+      "word": "ALBERT NAMATJIRA",
+      "hint": "Pioneering Indigenous Australian artist"
+    },
+    {
+      "word": "EMILY KAME KNGWARREYE",
+      "hint": "Prominent Indigenous Australian artist"
+    },
+    {
+      "word": "PRO HART",
+      "hint": "Australian painter known for his outback scenes"
+    },
+    {
+      "word": "KEN DONE",
+      "hint": "Australian artist known for his vibrant designs"
+    },
+    {
+      "word": "REG MOMBASSA",
+      "hint": "New Zealand-born artist and musician (Mental As Anything)"
+    },
+    {
+      "word": "CARLA ZAMPATTI",
+      "hint": "Italian-born Australian fashion designer"
+    },
+    {
+      "word": "ALEX PERRY",
+      "hint": "Australian fashion designer known for evening wear"
+    },
+    {
+      "word": "COLLETTE DINNIGAN",
+      "hint": "Australian fashion designer"
+    },
+    {
+      "word": "AKIRA ISOGAWA",
+      "hint": "Japanese-born Australian fashion designer"
+    },
+    {
+      "word": "JENNY KEE",
+      "hint": "Australian artist and fashion designer"
+    },
+    {
+      "word": "LINDA JACKSON",
+      "hint": "Australian artist and fashion designer"
+    },
+    {
+      "word": "BEN CHIFLEY",
+      "hint": "Australian Prime Minister (post-WWII)"
+    },
+    {
+      "word": "MALCOLM FRASER",
+      "hint": "Australian Prime Minister (1975-1983)"
+    },
+    {
+      "word": "PAULINE HANSON",
+      "hint": "Founder and leader of the One Nation party"
+    },
+    {
+      "word": "BOB BROWN",
+      "hint": "Former leader of the Australian Greens"
+    },
+    {
+      "word": "JACQUI LAMBIE",
+      "hint": "Tasmanian senator and political figure"
+    },
+    {
+      "word": "DERRYN HINCH",
+      "hint": "Australian media personality and former senator"
+    },
+    {
+      "word": "ALAN JONES",
+      "hint": "Controversial Australian radio broadcaster"
+    },
+    {
+      "word": "ANDREW DENTON",
+      "hint": "Australian television producer and comedian"
+    },
+    {
+      "word": "JOHN SAFRAN",
+      "hint": "Australian documentary maker and satirist"
+    },
+    {
+      "word": "NORMAN SWAN",
+      "hint": "Scottish-born Australian physician and broadcaster"
+    },
+    {
+      "word": "JULIAN ASSANGE",
+      "hint": "Australian founder of WikiLeaks"
+    },
+    {
+      "word": "DAVID HICKS",
+      "hint": "Australian who was detained at Guantanamo Bay"
+    },
+    {
+      "word": "NED KELLY",
+      "hint": "Australia's most famous bushranger"
+    },
+    {
+      "word": "CAPTAIN COOK",
+      "hint": "British explorer who mapped the eastern coast of Australia"
+    },
+    {
+      "word": "WILLIAM BLIGH",
+      "hint": "Fourth Governor of New South Wales; 'Mutiny on the Bounty'"
+    },
+    {
+      "word": "LACHLAN MACQUARIE",
+      "hint": "Fifth Governor of New South Wales; 'Father of Australia'"
+    },
+    {
+      "word": "DOUGLAS MAWSON",
+      "hint": "Australian geologist and Antarctic explorer"
+    },
+    {
+      "word": "CHARLES KINGSFORD SMITH",
+      "hint": "Pioneering Australian aviator"
+    },
+    {
+      "word": "NANCY BIRD WALTON",
+      "hint": "Pioneering Australian aviator"
+    },
+    {
+      "word": "JOHN FLYNN",
+      "hint": "Founder of the Royal Flying Doctor Service"
+    },
+    {
+      "word": "MARY MACKILLOP",
+      "hint": "Australia's first Catholic saint"
+    },
+    {
+      "word": "'WEARY' DUNLOP",
+      "hint": "Australian surgeon and WWII prisoner of war"
+    },
+    {
+      "word": "JOHN MONASH",
+      "hint": "Australian military commander in World War I"
+    },
+    {
+      "word": "MARGARET THATCHER",
+      "hint": "The Iron Lady; Former UK Prime Minister"
+    },
+    {
+      "word": "AL GORE",
+      "hint": "Former US Vice President and climate activist"
+    },
+    {
+      "word": "ANGELA MERKEL",
+      "hint": "Former Chancellor of Germany"
+    },
+    {
+      "word": "EMMANUEL MACRON",
+      "hint": "President of France"
+    },
+    {
+      "word": "MIKHAIL GORBACHEV",
+      "hint": "Last leader of the Soviet Union"
+    },
+    {
+      "word": "SADDAM HUSSEIN",
+      "hint": "Former dictator of Iraq"
+    },
+    {
+      "word": "OSAMA BIN LADEN",
+      "hint": "Founder of al-Qaeda"
+    },
+    {
+      "word": "THOMAS JEFFERSON",
+      "hint": "Third President of the United States"
+    },
+    {
+      "word": "FRANKLIN D. ROOSEVELT",
+      "hint": "32nd President of the United States"
+    },
+    {
+      "word": "BENITO MUSSOLINI",
+      "hint": "Fascist dictator of Italy"
+    },
+    {
+      "word": "VLADIMIR LENIN",
+      "hint": "Leader of the Bolshevik Revolution"
+    },
+    {
+      "word": "KARL MARX",
+      "hint": "Philosopher and author of 'The Communist Manifesto'"
+    },
+    {
+      "word": "CHE GUEVARA",
+      "hint": "Argentine Marxist revolutionary"
+    },
+    {
+      "word": "HO CHI MINH",
+      "hint": "Vietnamese revolutionary leader"
+    },
+    {
+      "word": "GENGHIS KHAN",
+      "hint": "Founder of the Mongol Empire"
+    },
+    {
+      "word": "ALEXANDER THE GREAT",
+      "hint": "King of Macedon who conquered a vast empire"
+    },
+    {
+      "word": "MARIE ANTOINETTE",
+      "hint": "Last Queen of France before the French Revolution"
+    },
+    {
+      "word": "JOAN OF ARC",
+      "hint": "French heroine and Roman Catholic saint"
+    },
+    {
+      "word": "MARTIN LUTHER",
+      "hint": "Key figure in the Protestant Reformation"
+    },
+    {
+      "word": "JOHN CALVIN",
+      "hint": "Influential French theologian during the Protestant Reformation"
+    },
+    {
+      "word": "GALILEO GALILEI",
+      "hint": "Italian astronomer; 'Father of Modern Science'"
+    },
+    {
+      "word": "NICOLAUS COPERNICUS",
+      "hint": "Astronomer who proposed a heliocentric model of the universe"
+    },
+    {
+      "word": "JOHANNES KEPLER",
+      "hint": "German astronomer known for his laws of planetary motion"
+    },
+    {
+      "word": "LARRY DAVID",
+      "hint": "Co-creator of 'Seinfeld' and creator of 'Curb Your Enthusiasm'"
+    },
+    {
+      "word": "FYODOR DOSTOEVSKY",
+      "hint": "Russian novelist; 'Crime and Punishment'"
+    },
+    {
+      "word": "HOMER",
+      "hint": "Ancient Greek author of 'The Iliad' and 'The Odyssey'"
+    },
+    {
+      "word": "PLATO",
+      "hint": "Ancient Greek philosopher"
+    },
+    {
+      "word": "ARISTOTLE",
+      "hint": "Ancient Greek philosopher and scientist"
+    },
+    {
+      "word": "SOCRATES",
+      "hint": "Classical Greek philosopher credited as one of the founders of Western philosophy"
+    },
+    {
+      "word": "CONFUCIUS",
+      "hint": "Chinese philosopher"
+    },
+    {
+      "word": "ANDY WARHOL",
+      "hint": "American artist and leader in the Pop Art movement"
+    },
+    {
+      "word": "FRIDA KAHLO",
+      "hint": "Mexican painter known for her self-portraits"
+    },
+    {
+      "word": "GEORGIA O'KEEFFE",
+      "hint": "American modernist artist"
+    },
+    {
+      "word": "EDGAR DEGAS",
+      "hint": "French Impressionist artist"
+    },
+    {
+      "word": "RAPHAEL",
+      "hint": "Italian painter and architect of the High Renaissance"
+    },
+    {
+      "word": "DONATELLO",
+      "hint": "Italian sculptor of the Renaissance"
+    },
+    {
+      "word": "JOHANNES VERMEER",
+      "hint": "Dutch Baroque Period painter; 'Girl with a Pearl Earring'"
+    },
+    {
+      "word": "CARAVAGGIO",
+      "hint": "Italian painter active in Rome, Naples, Malta, and Sicily"
+    },
+    {
+      "word": "RICHARD WAGNER",
+      "hint": "German composer, theatre director, and conductor"
+    },
+    {
+      "word": "IGOR STRAVINSKY",
+      "hint": "Russian composer, pianist, and conductor"
+    },
+    {
+      "word": "AKIRA KUROSAWA",
+      "hint": "Japanese film director"
+    },
+    {
+      "word": "INGMAR BERGMAN",
+      "hint": "Swedish film director"
+    },
+    {
+      "word": "FEDERICO FELLINI",
+      "hint": "Italian film director"
+    },
+    {
+      "word": "JOHN GLENN",
+      "hint": "First American to orbit the Earth"
+    },
+    {
+      "word": "SALLY RIDE",
+      "hint": "First American woman in space"
+    },
+    {
+      "word": "AMELIA EARHART",
+      "hint": "American aviation pioneer who disappeared during a flight"
+    },
+    {
+      "word": "CHARLES LINDBERGH",
+      "hint": "American aviator who made the first solo transatlantic flight"
+    },
+    {
+      "word": "ALEXANDER GRAHAM BELL",
+      "hint": "Scottish-born inventor credited with patenting the first practical telephone"
+    },
+    {
+      "word": "THOMAS EDISON",
+      "hint": "American inventor; phonograph, light bulb"
+    },
+    {
+      "word": "JAMES WATT",
+      "hint": "Scottish inventor whose steam engine improvements were fundamental to the Industrial Revolution"
+    },
+    {
+      "word": "KARL BENZ",
+      "hint": "German engine designer and automobile engineer"
+    },
+    {
+      "word": "LOUIS PASTEUR",
+      "hint": "French biologist and chemist, known for pasteurization"
+    },
+    {
+      "word": "ALEXANDER FLEMING",
+      "hint": "Scottish physician who discovered penicillin"
+    },
+    {
+      "word": "JONAS SALK",
+      "hint": "American medical researcher who developed one of the first successful polio vaccines"
+    },
+    {
+      "word": "EDWARD JENNER",
+      "hint": "English physician who pioneered the concept of vaccines"
+    },
+    {
+      "word": "SIGMUND FREUD",
+      "hint": "Austrian neurologist and the founder of psychoanalysis"
+    },
+    {
+      "word": "CARL JUNG",
+      "hint": "Swiss psychiatrist and psychoanalyst who founded analytical psychology"
+    },
+    {
+      "word": "IVAN PAVLOV",
+      "hint": "Russian physiologist known for his work in classical conditioning"
+    },
+    {
+      "word": "B. F. SKINNER",
+      "hint": "American psychologist known for his work on behaviorism"
+    },
+    {
+      "word": "NOAM CHOMSKY",
+      "hint": "American linguist, philosopher, and political activist"
+    },
+    {
+      "word": "ALBERT CAMUS",
+      "hint": "French philosopher and author"
+    },
+    {
+      "word": "JEAN-PAUL SARTRE",
+      "hint": "French philosopher, playwright, and novelist"
+    },
+    {
+      "word": "SIMONE DE BEAUVOIR",
+      "hint": "French writer, intellectual, and feminist philosopher"
+    },
+    {
+      "word": "IMMANUEL KANT",
+      "hint": "German philosopher in the Age of Enlightenment"
+    },
+    {
+      "word": "JOHN LOCKE",
+      "hint": "English philosopher and physician, Father of Liberalism"
+    },
+    {
+      "word": "VOLTAIRE",
+      "hint": "French Enlightenment writer, historian, and philosopher"
+    },
+    {
+      "word": "JEAN-JACQUES ROUSSEAU",
+      "hint": "Genevan philosopher, writer, and composer"
+    },
+    {
+      "word": "SUN TZU",
+      "hint": "Chinese general and strategist; 'The Art of War'"
+    },
+    {
+      "word": "BILLIE JEAN KING",
+      "hint": "American former World No. 1 professional tennis player"
+    },
+    {
+      "word": "MUHAMMAD ALI",
+      "hint": "American professional boxer, The Greatest"
+    },
+    {
+      "word": "DIEGO MARADONA",
+      "hint": "Argentine professional football player and manager"
+    },
+    {
+      "word": "LIONEL MESSI",
+      "hint": "Argentine professional footballer"
+    },
+    {
+      "word": "CRISTIANO RONALDO",
+      "hint": "Portuguese professional footballer"
+    },
+    {
+      "word": "ROGER FEDERER",
+      "hint": "Swiss professional tennis player"
+    },
+    {
+      "word": "RAFAEL NADAL",
+      "hint": "Spanish professional tennis player"
+    },
+    {
+      "word": "ZINEDINE ZIDANE",
+      "hint": "French former professional football player and manager"
+    },
+    {
+      "word": "JET LI",
+      "hint": "Chinese film actor, film producer, and martial artist"
+    },
+    {
+      "word": "GRACE KELLY",
+      "hint": "American actress who became Princess of Monaco"
+    },
+    {
+      "word": "HUMPHREY BOGART",
+      "hint": "American screen and stage actor"
+    },
+    {
+      "word": "CARY GRANT",
+      "hint": "English-American actor"
+    },
+    {
+      "word": "KATHARINE HEPBURN",
+      "hint": "American actress of film, stage, and television"
+    },
+    {
+      "word": "BETTE DAVIS",
+      "hint": "American actress with a career spanning more than 50 years"
+    },
+    {
+      "word": "LUCILLE BALL",
+      "hint": "American actress, comedian, and producer; 'I Love Lucy'"
+    },
+    {
+      "word": "JUDY GARLAND",
+      "hint": "American actress and singer; Dorothy in 'The Wizard of Oz'"
+    },
+    {
+      "word": "FRED ASTAIRE",
+      "hint": "American dancer, singer, actor, and choreographer"
+    },
+    {
+      "word": "GENE KELLY",
+      "hint": "American dancer, actor, singer, and director"
+    },
+    {
+      "word": "ZAHA HADID",
+      "hint": "Iraqi-British architect"
+    },
+    {
+      "word": "GIORGIO ARMANI",
+      "hint": "Italian fashion designer"
+    },
+    {
+      "word": "COCO CHANEL",
+      "hint": "French fashion designer and businesswoman"
+    },
+    {
+      "word": "CHRISTIAN DIOR",
+      "hint": "French fashion designer"
+    },
+    {
+      "word": "YVES SAINT LAURENT",
+      "hint": "French fashion designer"
+    },
+    {
+      "word": "RALPH LAUREN",
+      "hint": "American fashion designer"
+    },
+    {
+      "word": "CALVIN KLEIN",
+      "hint": "American fashion designer"
+    },
+    {
+      "word": "DONATELLA VERSACE",
+      "hint": "Italian fashion designer"
+    },
+    {
+      "word": "ANNA WINTOUR",
+      "hint": "British-American journalist, editor-in-chief of Vogue"
+    },
+    {
+      "word": "GORDON RAMSAY",
+      "hint": "British chef, restaurateur, and television personality"
+    },
+    {
+      "word": "BANKSY",
+      "hint": "Anonymous England-based street artist"
+    },
+    {
+      "word": "SHEPARD FAIREY",
+      "hint": "American contemporary street artist, graphic designer (OBEY)"
+    },
+    {
+      "word": "JEFF KOONS",
+      "hint": "American artist known for working with popular culture subjects"
+    },
+    {
+      "word": "DAMIEN HIRST",
+      "hint": "English artist, entrepreneur, and art collector"
+    },
+    {
+      "word": "YAYOI KUSAMA",
+      "hint": "Japanese contemporary artist"
+    },
+    {
+      "word": "AI WEIWEI",
+      "hint": "Chinese contemporary artist and activist"
+    },
+    {
+      "word": "HAYAO MIYAZAKI",
+      "hint": "Japanese animated film director (Studio Ghibli)"
+    },
+    {
+      "word": "AKIRA TORIYAMA",
+      "hint": "Japanese manga artist; 'Dragon Ball'"
+    },
+    {
+      "word": "SHIGERU MIYAMOTO",
+      "hint": "Japanese video game designer at Nintendo"
+    },
+    {
+      "word": "HIDEO KOJIMA",
+      "hint": "Japanese video game designer; 'Metal Gear' series"
+    },
+    {
+      "word": "TIM BERNERS-LEE",
+      "hint": "English computer scientist, inventor of the World Wide Web"
+    },
+    {
+      "word": "LINUS TORVALDS",
+      "hint": "Finnish-American software engineer, creator of the Linux kernel"
+    },
+    {
+      "word": "LARRY PAGE",
+      "hint": "Co-founder of Google"
+    },
+    {
+      "word": "SERGEY BRIN",
+      "hint": "Co-founder of Google"
+    },
+    {
+      "word": "SUSAN WOJCICKI",
+      "hint": "Former CEO of YouTube"
+    },
+    {
+      "word": "SHERYL SANDBERG",
+      "hint": "Former COO of Meta Platforms"
+    },
+    {
+      "word": "SATYA NADELLA",
+      "hint": "CEO of Microsoft"
+    },
+    {
+      "word": "SUNDAR PICHAI",
+      "hint": "CEO of Alphabet Inc. and Google"
+    },
+    {
+      "word": "INDRA NOOYI",
+      "hint": "Former CEO of PepsiCo"
+    },
+    {
+      "word": "WARREN BUFFETT",
+      "hint": "American business magnate, investor, and philanthropist"
+    },
+    {
+      "word": "RICHARD BRANSON",
+      "hint": "British business magnate, founder of the Virgin Group"
+    },
+    {
+      "word": "HOWARD SCHULTZ",
+      "hint": "American businessman, former CEO of Starbucks"
+    },
+    {
+      "word": "MICHAEL BLOOMBERG",
+      "hint": "American businessman, politician, and philanthropist"
+    },
+    {
+      "word": "HOWARD HUGHES",
+      "hint": "American business magnate, investor, and aviator"
+    },
+    {
+      "word": "CORNELIUS VANDERBILT",
+      "hint": "American business magnate who built his wealth in railroads and shipping"
+    },
+    {
+      "word": "J. P. MORGAN",
+      "hint": "American financier and banker who dominated corporate finance"
+    },
+    {
+      "word": "ANDREW MELLON",
+      "hint": "American banker, businessman, and politician"
+    },
+    {
+      "word": "JOHN JACOB ASTOR",
+      "hint": "German-American businessman, real estate builder, and investor"
+    },
+    {
+      "word": "MADAM C. J. WALKER",
+      "hint": "African American entrepreneur, philanthropist, and activist"
+    },
+    {
+      "word": "HELENA RUBINSTEIN",
+      "hint": "Polish-American businesswoman, art collector, and philanthropist"
+    },
+    {
+      "word": "HARRIET BEECHER STOWE",
+      "hint": "American abolitionist and author; 'Uncle Tom's Cabin'"
+    },
+    {
+      "word": "ELIZABETH CADY STANTON",
+      "hint": "American suffragist, social activist, and abolitionist"
+    },
+    {
+      "word": "SOJOURNER TRUTH",
+      "hint": "African-American abolitionist and women's rights activist"
+    },
+    {
+      "word": "HARRIET TUBMAN",
+      "hint": "American abolitionist and political activist"
+    },
+    {
+      "word": "EMMELINE PANKHURST",
+      "hint": "British political activist and leader of the suffragette movement"
+    },
+    {
+      "word": "MARGARET SANGER",
+      "hint": "American birth control activist"
+    },
+    {
+      "word": "JANE GOODALL",
+      "hint": "English primatologist and anthropologist"
+    },
+    {
+      "word": "MARY SEACOLE",
+      "hint": "British-Jamaican nurse and businesswoman in the Crimean War"
+    },
+    {
+      "word": "DOROTHY DAY",
+      "hint": "American journalist, social activist, and Catholic convert"
+    },
+    {
+      "word": "CORETTA SCOTT KING",
+      "hint": "American author, activist, and civil rights leader"
+    },
+    {
+      "word": "BETTY FRIEDAN",
+      "hint": "American feminist writer and activist; 'The Feminine Mystique'"
+    },
+    {
+      "word": "GLORIA STEINEM",
+      "hint": "American feminist journalist and social political activist"
+    },
+    {
+      "word": "ANGELA DAVIS",
+      "hint": "American political activist, philosopher, and academic"
+    },
+    {
+      "word": "RUTH BADER GINSBURG",
+      "hint": "Associate Justice of the Supreme Court of the United States"
+    },
+    {
+      "word": "SONIA SOTOMAYOR",
+      "hint": "Associate Justice of the Supreme Court of the United States"
+    },
+    {
+      "word": "SANDRA DAY O'CONNOR",
+      "hint": "First woman to serve on the Supreme Court of the United States"
+    },
+    {
+      "word": "CONDOLEEZZA RICE",
+      "hint": "American political scientist and diplomat"
+    },
+    {
+      "word": "MADELEINE ALBRIGHT",
+      "hint": "American politician and diplomat, first female Secretary of State"
+    },
+    {
+      "word": "NANCY PELOSI",
+      "hint": "American politician, former Speaker of the House of Representatives"
+    },
+    {
+      "word": "ALEXANDRIA OCASIO-CORTEZ",
+      "hint": "American politician and activist"
+    },
+    {
+      "word": "MICHELLE OBAMA",
+      "hint": "American attorney and author, former First Lady of the United States"
+    },
+    {
+      "word": "JACQUELINE KENNEDY ONASSIS",
+      "hint": "American socialite, writer, and photographer, former First Lady"
+    },
+    {
+      "word": "MELANIA TRUMP",
+      "hint": "Slovenian-American former model, former First Lady of the United States"
+    },
+    {
+      "word": "GOLDA MEIR",
+      "hint": "Fourth Prime Minister of Israel"
+    },
+    {
+      "word": "BENAZIR BHUTTO",
+      "hint": "11th and 13th Prime Minister of Pakistan"
+    },
+    {
+      "word": "CORAZON AQUINO",
+      "hint": "11th President of the Philippines"
+    },
+    {
+      "word": "AUNG SAN SUU KYI",
+      "hint": "Myanmar politician, diplomat, and author"
+    },
+    {
+      "word": "BOUDICA",
+      "hint": "Queen of the British Iceni tribe who led an uprising against the Romans"
+    },
+    {
+      "word": "AGRIPPINA THE YOUNGER",
+      "hint": "Roman Empress and one of the most prominent women in the Julio-Claudian dynasty"
+    },
+    {
+      "word": "THEODORA",
+      "hint": "Empress of the Byzantine Empire and the wife of Emperor Justinian I"
+    },
+    {
+      "word": "HILDEGARD OF BINGEN",
+      "hint": "German Benedictine abbess, writer, composer, and philosopher"
+    },
+    {
+      "word": "CHRISTINE DE PIZAN",
+      "hint": "Italian-French author who served as a court writer for several French dukes"
+    },
+    {
+      "word": "ARTEMISIA GENTILESCHI",
+      "hint": "Italian Baroque painter"
+    },
+    {
+      "word": "BERTHE MORISOT",
+      "hint": "French painter and a member of the Impressionists"
+    },
+    {
+      "word": "CAMILLE CLAUDEL",
+      "hint": "French sculptor"
+    },
+    {
+      "word": "AUGUSTA SAVAGE",
+      "hint": "American sculptor associated with the Harlem Renaissance"
+    },
+    {
+      "word": "LOUISE BOURGEOIS",
+      "hint": "French-American artist"
+    },
+    {
+      "word": "AGNES MARTIN",
+      "hint": "American abstract painter"
+    },
+    {
+      "word": "HELEN FRANKENTHALER",
+      "hint": "American abstract expressionist painter"
+    },
+    {
+      "word": "LEE KRASNER",
+      "hint": "American abstract expressionist painter"
+    },
+    {
+      "word": "NAN GOLDIN",
+      "hint": "American photographer and activist"
+    },
+    {
+      "word": "SALLY MANN",
+      "hint": "American photographer, widely known for her large-format, black-and-white photographs"
+    },
+    {
+      "word": "CARRIE MAE WEEMS",
+      "hint": "American artist who works with text, fabric, audio, and digital images"
+    },
+    {
+      "word": "LORNA SIMPSON",
+      "hint": "American photographer and multimedia artist"
+    },
+    {
+      "word": "LAURIE ANDERSON",
+      "hint": "American avant-garde artist, composer, musician, and film director"
+    },
+    {
+      "word": "TRACEY EMIN",
+      "hint": "English artist known for her autobiographical and confessional artwork"
+    },
+    {
+      "word": "RACHEL WHITEREAD",
+      "hint": "English artist who primarily produces sculptures"
+    },
+    {
+      "word": "GUERILLA GIRLS",
+      "hint": "Anonymous group of feminist, female artists devoted to fighting sexism"
+    },
+    {
+      "word": "BARBARA KRUGER",
+      "hint": "American conceptual artist and collagist"
+    },
+    {
+      "word": "JENNY HOLZER",
+      "hint": "American neo-conceptual artist"
+    },
+    {
+      "word": "KIKI SMITH",
+      "hint": "German-born American artist whose work has addressed the themes of sex, birth and regeneration"
+    },
+    {
+      "word": "KARA WALKER",
+      "hint": "American contemporary painter, silhouettist, and print-maker"
+    },
+    {
+      "word": "YINKA SHONIBARE",
+      "hint": "British-Nigerian artist living in the United Kingdom"
+    },
+    {
+      "word": "SONIA BOYCE",
+      "hint": "British Afro-Caribbean artist"
+    },
+    {
+      "word": "WILLIAM KENTRIDGE",
+      "hint": "South African artist best known for his prints, drawings, and animated films"
+    },
+    {
+      "word": "MARLENE DUMAS",
+      "hint": "South African artist and painter"
+    },
+    {
+      "word": "ZANELE MUHOLI",
+      "hint": "South African artist and visual activist"
+    },
+    {
+      "word": "NANDIPHA MNTAMBO",
+      "hint": "South African artist known for her sculptures, videos, and photographs"
+    },
+    {
+      "word": "MARY SIBANDE",
+      "hint": "South African artist based in Johannesburg"
+    },
+    {
+      "word": "NICHOLAS HLOBO",
+      "hint": "South African artist based in Johannesburg"
+    },
+    {
+      "word": "KEMANG WA LEHULERE",
+      "hint": "South African artist"
+    },
+    {
+      "word": "NAPOLEON",
+      "hint": "French emperor"
+    },
+    {
+      "word": "MARCO POLO",
+      "hint": "Italian explorer"
+    },
+    {
+      "word": "ARCHIMEDES",
+      "hint": "Greek mathematician"
+    },
+    {
+      "word": "FERDINAND MAGELLAN",
+      "hint": "Portuguese explorer"
+    },
+    {
+      "word": "LOUIS XIV OF FRANCE",
+      "hint": "King of France (Sun King)"
+    },
+    {
+      "word": "AUGUSTUS",
+      "hint": "First Roman emperor"
+    },
+    {
+      "word": "SAINT PETER",
+      "hint": "First Pope"
+    },
+    {
+      "word": "DANTE ALIGHIERI",
+      "hint": "Italian poet (Divine Comedy)"
+    },
+    {
+      "word": "FRIEDRICH NIETZSCHE",
+      "hint": "German philosopher"
+    },
+    {
+      "word": "JOHANN WOLFGANG VON GOETHE",
+      "hint": "German writer (Faust)"
+    },
+    {
+      "word": "FRANCIS BACON",
+      "hint": "Philosopher & statesman"
+    },
+    {
+      "word": "SULEIMAN THE MAGNIFICENT",
+      "hint": "Ottoman sultan"
+    },
+    {
+      "word": "HANNIBAL",
+      "hint": "Carthaginian general"
+    },
+    {
+      "word": "THOMAS AQUINAS",
+      "hint": "Catholic theologian"
+    },
+    {
+      "word": "ZOROASTER",
+      "hint": "Persian prophet"
+    },
+    {
+      "word": "SPARTACUS",
+      "hint": "Thracian gladiator"
+    },
+    {
+      "word": "ULYSSES S. GRANT",
+      "hint": "American Civil War general"
+    },
+    {
+      "word": "CICERO",
+      "hint": "Roman orator & statesman"
+    },
+    {
+      "word": "COMMODUS",
+      "hint": "Roman emperor"
+    },
+    {
+      "word": "GEORGE FRIDERIC HANDEL",
+      "hint": "Baroque composer"
+    },
+    {
+      "word": "PETER PAUL RUBENS",
+      "hint": "Flemish Baroque painter"
+    },
+    {
+      "word": "CARL FRIEDRICH GAUSS",
+      "hint": "German mathematician"
+    },
+    {
+      "word": "FRANZ SCHUBERT",
+      "hint": "Austrian composer"
+    },
+    {
+      "word": "MONTESQUIEU",
+      "hint": "French political philosopher"
+    },
+    {
+      "word": "NERO",
+      "hint": "Roman emperor (tyrant)"
+    },
+    {
+      "word": "JULES VERNE",
+      "hint": "Science fiction author"
+    },
+    {
+      "word": "FRANCIS OF ASSISI",
+      "hint": "Italian Catholic friar"
+    },
+    {
+      "word": "EPICURUS",
+      "hint": "Greek philosopher"
+    },
+    {
+      "word": "VIRGIL",
+      "hint": "Roman poet (*Aeneid*)"
+    },
+    {
+      "word": "PETRARCH",
+      "hint": "Italian Renaissance poet"
+    },
+    {
+      "word": "PTOLEMY",
+      "hint": "Greek astronomer & geographer"
+    },
+    {
+      "word": "PERICLES",
+      "hint": "Athenian statesman"
+    },
+    {
+      "word": "DMITRI MENDELEEV",
+      "hint": "Periodic table chemist"
+    },
+    {
+      "word": "EDVARD MUNCH",
+      "hint": "Norwegian painter (*The Scream*)"
+    },
+    {
+      "word": "QIN SHI HUANG",
+      "hint": "First Emperor of China"
+    },
+    {
+      "word": "RAMESSES II",
+      "hint": "Egyptian pharaoh"
+    },
+    {
+      "word": "HENRY VIII OF ENGLAND",
+      "hint": "King of England (six wives)"
+    },
+    {
+      "word": "ANTON CHEKHOV",
+      "hint": "Russian playwright"
+    },
+    {
+      "word": "SOLOMON",
+      "hint": "Biblical king of Israel"
+    },
+    {
+      "word": "DAVID (BIBLICAL)",
+      "hint": "Biblical king of Israel"
+    },
+    {
+      "word": "AMERIGO VESPUCCI",
+      "hint": "Explorer (namesake of America)"
+    },
+    {
+      "word": "FRANCISCO GOYA",
+      "hint": "Spanish painter"
+    },
+    {
+      "word": "LEON TROTSKY",
+      "hint": "Marxist revolutionary"
+    },
+    {
+      "word": "JOSIP BROZ TITO",
+      "hint": "Yugoslav leader"
+    },
+    {
+      "word": "ALI (CALIPH ALI)",
+      "hint": "Fourth Caliph of Islam"
+    },
+    {
+      "word": "BARTOLOMEU DIAS",
+      "hint": "Portuguese explorer"
+    },
+    {
+      "word": "CHARLES DE GAULLE",
+      "hint": "Leader of Free France"
+    },
+    {
+      "word": "NICHOLAS II OF RUSSIA",
+      "hint": "Last Russian Tsar"
+    },
+    {
+      "word": "DIOCLETIAN",
+      "hint": "Roman emperor"
+    },
+    {
+      "word": "SANDRO BOTTICELLI",
+      "hint": "Italian Renaissance painter"
+    },
+    {
+      "word": "FRANZ LISZT",
+      "hint": "Virtuoso pianist"
+    },
+    {
+      "word": "FRIEDRICH ENGELS",
+      "hint": "Co-author of *The Communist Manifesto*"
+    },
+    {
+      "word": "EUCLID",
+      "hint": "Greek mathematician (geometry)"
+    },
+    {
+      "word": "ALAN TURING",
+      "hint": "Computer science pioneer"
+    },
+    {
+      "word": "MIGUEL DE CERVANTES",
+      "hint": "Author of *Don Quixote*"
+    },
+    {
+      "word": "GUSTAV MAHLER",
+      "hint": "Austrian composer"
+    },
+    {
+      "word": "JOHANNES BRAHMS",
+      "hint": "German composer"
+    },
+    {
+      "word": "PAUL GAUGUIN",
+      "hint": "French Post-Impressionist painter"
+    },
+    {
+      "word": "ROSA LUXEMBURG",
+      "hint": "Marxist revolutionary"
+    },
+    {
+      "word": "ROBERT SCHUMANN",
+      "hint": "German Romantic composer"
+    },
+    {
+      "word": "HENRI MATISSE",
+      "hint": "French modern artist"
+    },
+    {
+      "word": "GREGOR MENDEL",
+      "hint": "Father of genetics"
+    },
+    {
+      "word": "GUSTAV KLIMT",
+      "hint": "Austrian Symbolist painter"
+    },
+    {
+      "word": "ALESSANDRO VOLTA",
+      "hint": "Pioneer of battery (Volt)"
+    },
+    {
+      "word": "JOHN WILKES BOOTH",
+      "hint": "Assassin of Lincoln"
+    },
+    {
+      "word": "ANTHONY OF PADUA",
+      "hint": "Catholic saint & preacher"
+    },
+    {
+      "word": "CHIANG KAI-SHEK",
+      "hint": "Leader of Nationalist China"
+    },
+    {
+      "word": "CARDINAL RICHELIEU",
+      "hint": "French chief minister"
+    },
+    {
+      "word": "POPE GREGORY I (THE GREAT)",
+      "hint": "Early medieval Pope"
+    },
+    {
+      "word": "PHIDIAS",
+      "hint": "Ancient Greek sculptor"
+    },
+    {
+      "word": "PIET MONDRIAN",
+      "hint": "Dutch abstract painter"
+    },
+    {
+      "word": "THUCYDIDES",
+      "hint": "Athenian historian"
+    },
+    {
+      "word": "JOHN DALTON",
+      "hint": "Atomic theory chemist"
+    },
+    {
+      "word": "JOSHUA (BIBLICAL)",
+      "hint": "Biblical leader after Moses"
+    },
+    {
+      "word": "ADA LOVELACE",
+      "hint": "First computer programmer"
+    },
+    {
+      "word": "SUN YAT-SEN",
+      "hint": "Father of modern China"
+    },
+    {
+      "word": "MARY SHELLEY",
+      "hint": "Author of *Frankenstein*"
+    },
+    {
+      "word": "ISAAC ASIMOV",
+      "hint": "Science fiction writer"
+    },
+    {
+      "word": "H. G. WELLS",
+      "hint": "Science fiction author"
+    },
+    {
+      "word": "ANDREW LLOYD WEBBER",
+      "hint": "Musical theatre composer"
+    },
+    {
+      "word": "ROBERT E. LEE",
+      "hint": "Confederate Civil War general"
+    },
+    {
+      "word": "WILLIAM THE CONQUEROR",
+      "hint": "Norman conqueror of England"
+    },
+    {
+      "word": "SITTING BULL",
+      "hint": "Lakota leader at Little Bighorn"
+    },
+    {
+      "word": "AKBAR THE GREAT",
+      "hint": "Mughal emperor of India"
+    },
+    {
+      "word": "SHAKA ZULU",
+      "hint": "Founder of the Zulu Kingdom"
+    },
+    {
+      "word": "HAROLD HOLT",
+      "hint": "Australian Prime Minister who disappeared in 1967"
+    },
+    {
+      "word": "ABU BAKR",
+      "hint": "First Caliph of Islam"
+    },
+    {
+      "word": "JOHANNES GUTENBERG",
+      "hint": "Inventor of the printing press"
+    },
+    {
+      "word": "TRAJAN",
+      "hint": "Roman emperor"
+    },
+    {
+      "word": "EDMUND HILLARY",
+      "hint": "First to summit Everest"
+    },
+    {
+      "word": "HAMMURABI",
+      "hint": "Babylonian lawgiver"
+    },
+    {
+      "word": "ELIZABETH I OF ENGLAND",
+      "hint": "Queen of England (16th century)"
+    },
+    {
+      "word": "MAX PLANCK",
+      "hint": "Quantum theory physicist"
+    },
+    {
+      "word": "OTTO I (OTTO THE GREAT)",
+      "hint": "First German Holy Roman Emperor"
+    },
+    {
+      "word": "ANTONIO VIVALDI",
+      "hint": "Italian Baroque composer"
+    },
+    {
+      "word": "BLAISE PASCAL",
+      "hint": "French mathematician & philosopher"
+    },
+    {
+      "word": "ATTILA",
+      "hint": "Leader of the Huns"
+    },
+    {
+      "word": "PETER THE GREAT",
+      "hint": "Modernizing Russian tsar"
+    },
+    {
+      "word": "RUMI",
+      "hint": "Persian Sufi poet"
+    },
+    {
+      "word": "IGNAZ SEMMELWEIS",
+      "hint": "Advocate of hand-washing"
+    },
+    {
+      "word": "AYRTON SENNA",
+      "hint": "Formula One legend"
+    },
+    {
+      "word": "AUGUSTINE OF HIPPO",
+      "hint": "Christian theologian"
+    },
+    {
+      "word": "RICHARD III OF ENGLAND",
+      "hint": "King of England"
+    },
+    {
+      "word": "THOMAS HOBBES",
+      "hint": "English political philosopher"
+    },
+    {
+      "word": "14TH DALAI LAMA",
+      "hint": "Tibetan spiritual leader"
+    },
+    {
+      "word": "CHARLEMAGNE",
+      "hint": "First Holy Roman Emperor"
+    },
+    {
+      "word": "FRANZ KAFKA",
+      "hint": "Czech novelist"
+    },
+    {
+      "word": "NEFERTITI",
+      "hint": "Egyptian queen"
+    },
+    {
+      "word": "AKHENATEN",
+      "hint": "Monotheistic pharaoh"
+    },
+    {
+      "word": "IGNATIUS OF LOYOLA",
+      "hint": "Founder of the Jesuits"
+    },
+    {
+      "word": "OTTO VON BISMARCK",
+      "hint": "Chancellor of Germany"
+    },
+    {
+      "word": "JACK THE RIPPER",
+      "hint": "Unidentified serial killer"
+    },
+    {
+      "word": "SAINT JOSEPH",
+      "hint": "Biblical figure (Jesus's father on Earth)"
+    },
+    {
+      "word": "QUEEN ELIZABETH THE QUEEN MOTHER",
+      "hint": "Queen Elizabeth II's mother"
+    },
+    {
+      "word": "JIMMY CARTER",
+      "hint": "39th US President"
+    },
+    {
+      "word": "JOHN THE BAPTIST",
+      "hint": "Biblical preacher"
+    },
+    {
+      "word": "EDGAR ALLAN POE",
+      "hint": "American horror author"
+    },
+    {
+      "word": "MEL GIBSON",
+      "hint": "Actor & director (*Braveheart*)"
+    },
+    {
+      "word": "HIPPOCRATES",
+      "hint": "Ancient Greek physician"
+    },
+    {
+      "word": "ALFRED NOBEL",
+      "hint": "Founder of Nobel Prizes"
+    },
+    {
+      "word": "CATHY FREEMAN",
+      "hint": "Won 400m gold at Sydney 2000 Olympics"
+    },
+    {
+      "word": "NICOLE KIDMAN",
+      "hint": "Australian actress; Star of 'Moulin Rouge!'"
+    },
+    {
+      "word": "KYLIE MINOGUE",
+      "hint": "Australian pop star; 'The Princess of Pop'"
+    },
+    {
+      "word": "STEVE IRWIN",
+      "hint": "Australian zookeeper and conservationist; 'The Crocodile Hunter'"
+    },
+    {
+      "word": "HUGH JACKMAN",
+      "hint": "Australian actor; Played Wolverine in 'X-Men'"
+    },
+    {
+      "word": "IAN THORPE",
+      "hint": "Australian swimmer; Nicknamed 'Thorpedo'"
+    },
+    {
+      "word": "AC/DC",
+      "hint": "Iconic Australian hard rock band"
+    },
+    {
+      "word": "CATE BLANCHETT",
+      "hint": "Australian actress; Won Oscars for 'The Aviator' and 'Blue Jasmine'"
+    },
+    {
+      "word": "CHRIS HEMSWORTH",
+      "hint": "Australian actor; Plays Thor in the Marvel Cinematic Universe"
+    },
+    {
+      "word": "MARGOT ROBBIE",
+      "hint": "Australian actress; Starred in 'Barbie' and 'I, Tonya'"
+    },
+    {
+      "word": "LLEYTON HEWITT",
+      "hint": "Australian tennis player; Known for his C'mon! catchcry"
+    },
+    {
+      "word": "DONALD BRADMAN",
+      "hint": "Considered the greatest cricketer of all time"
+    },
+    {
+      "word": "JIMMY BARNES",
+      "hint": "Scottish-born Australian rock singer; Cold Chisel frontman"
+    },
+    {
+      "word": "OLIVIA NEWTON-JOHN",
+      "hint": "Australian singer and actress; Starred in 'Grease'"
+    },
+    {
+      "word": "STEVEN BRADBURY",
+      "hint": "Won Olympic gold after his opponents fell"
+    },
+    {
+      "word": "SAM KERR",
+      "hint": "Captain of the Australian Matildas soccer team"
+    },
+    {
+      "word": "BARACK OBAMA",
+      "hint": "44th President of the United States"
+    },
+    {
+      "word": "QUEEN ELIZABETH II",
+      "hint": "Longest-reigning British monarch"
+    },
+    {
+      "word": "DONALD TRUMP",
+      "hint": "45th President of the United States"
+    },
+    {
+      "word": "NELSON MANDELA",
+      "hint": "Anti-apartheid leader and first President of South Africa"
+    },
+    {
+      "word": "WILLIAM SHAKESPEARE",
+      "hint": "English playwright; Wrote 'Hamlet' and 'Romeo and Juliet'"
+    },
+    {
+      "word": "ALBERT EINSTEIN",
+      "hint": "Physicist; Developed the theory of relativity"
+    },
+    {
+      "word": "LEONARDO DA VINCI",
+      "hint": "Renaissance artist and inventor; Painted the 'Mona Lisa'"
+    },
+    {
+      "word": "MICHAEL JACKSON",
+      "hint": "The King of Pop"
+    },
+    {
+      "word": "TAYLOR SWIFT",
+      "hint": "American pop and country music superstar"
+    },
+    {
+      "word": "J.K. ROWLING",
+      "hint": "Author of the 'Harry Potter' series"
+    },
+    {
+      "word": "STEVE JOBS",
+      "hint": "Co-founder of Apple Inc."
+    },
+    {
+      "word": "BILL GATES",
+      "hint": "Co-founder of Microsoft"
+    },
+    {
+      "word": "THE BEATLES",
+      "hint": "Iconic British rock band from Liverpool"
+    },
+    {
+      "word": "MADONNA",
+      "hint": "The Queen of Pop"
+    },
+    {
+      "word": "TOM HANKS",
+      "hint": "American actor; Starred in 'Forrest Gump' and 'Cast Away'"
+    },
+    {
+      "word": "OPRAH WINFREY",
+      "hint": "American talk show host and media executive"
+    },
+    {
+      "word": "MICHAEL JORDAN",
+      "hint": "Legendary American basketball player for the Chicago Bulls"
+    },
+    {
+      "word": "BRITNEY SPEARS",
+      "hint": "The Princess of Pop; Known for '...Baby One More Time'"
+    },
+    {
+      "word": "EMINEM",
+      "hint": "American rapper; Star of '8 Mile'"
+    },
+    {
+      "word": "LADY GAGA",
+      "hint": "American pop star known for her flamboyant style"
+    },
+    {
+      "word": "MARK ZUCKERBERG",
+      "hint": "Co-founder of Facebook"
+    },
+    {
+      "word": "ELON MUSK",
+      "hint": "CEO of Tesla and SpaceX"
+    },
+    {
+      "word": "NIRVANA",
+      "hint": "American grunge band fronted by Kurt Cobain"
+    },
+    {
+      "word": "SPICE GIRLS",
+      "hint": "British girl group; Champions of 'Girl Power'"
+    },
+    {
+      "word": "FRIENDS (CAST)",
+      "hint": "Ensemble cast of the iconic 90s sitcom"
+    },
+    {
+      "word": "SEINFELD (CAST)",
+      "hint": "Ensemble cast of the show about nothing"
+    },
+    {
+      "word": "DANIEL RADCLIFFE",
+      "hint": "Actor who played Harry Potter"
+    },
+    {
+      "word": "SIMON COWELL",
+      "hint": "Acerbic judge on 'American Idol' and 'The X Factor'"
+    },
+    {
+      "word": "VLADIMIR PUTIN",
+      "hint": "President of Russia"
+    },
+    {
+      "word": "GRETA THUNBERG",
+      "hint": "Swedish environmental activist"
+    },
+    {
+      "word": "MALALA YOUSAFZAI",
+      "hint": "Pakistani activist for female education and Nobel laureate"
+    },
+    {
+      "word": "JEFF BEZOS",
+      "hint": "Founder of Amazon"
+    },
+    {
+      "word": "SCOTT MORRISON",
+      "hint": "Australian Prime Minister (2018-2022)"
+    },
+    {
+      "word": "JACINDA ARDERN",
+      "hint": "Former Prime Minister of New Zealand"
+    },
+    {
+      "word": "BORIS JOHNSON",
+      "hint": "Former Prime Minister of the United Kingdom"
+    },
+    {
+      "word": "JOE BIDEN",
+      "hint": "Current President of the United States"
+    },
+    {
+      "word": "KAMALA HARRIS",
+      "hint": "Current Vice President of the United States"
+    },
+    {
+      "word": "TIM CAHILL",
+      "hint": "Australian soccer's all-time leading goalscorer"
+    },
+    {
+      "word": "HARRY KEWELL",
+      "hint": "Australian soccer player; 'The Wizard of Oz'"
+    },
+    {
+      "word": "MICK FANNING",
+      "hint": "Australian three-time world champion surfer"
+    },
+    {
+      "word": "LAYNE BEACHLEY",
+      "hint": "Australian seven-time world champion surfer"
+    },
+    {
+      "word": "DANIEL RICCIARDO",
+      "hint": "Australian Formula One driver"
+    },
+    {
+      "word": "CRAIG LOWNDES",
+      "hint": "Australian V8 Supercar driver"
+    },
+    {
+      "word": "ERIC BANA",
+      "hint": "Australian actor; Starred in 'Chopper' and 'Hulk'"
+    },
+    {
+      "word": "RUSSELL CROWE",
+      "hint": "New Zealand-born Australian actor; 'Gladiator'"
+    },
+    {
+      "word": "SAM WORTHINGTON",
+      "hint": "Australian actor; Starred in 'Avatar'"
+    },
+    {
+      "word": "ROSE BYRNE",
+      "hint": "Australian actress; Starred in 'Bridesmaids'"
+    },
+    {
+      "word": "ISLA FISHER",
+      "hint": "Australian actress; Starred in 'Wedding Crashers'"
+    },
+    {
+      "word": "REBEL WILSON",
+      "hint": "Australian actress and comedian; 'Pitch Perfect'"
+    },
+    {
+      "word": "INXS",
+      "hint": "Australian rock band fronted by Michael Hutchence"
+    },
+    {
+      "word": "CROWDED HOUSE",
+      "hint": "Australian/New Zealand rock band; 'Don't Dream It's Over'"
+    },
+    {
+      "word": "SIA",
+      "hint": "Australian singer-songwriter; Known for wearing wigs"
+    },
+    {
+      "word": "DELTA GOODREM",
+      "hint": "Australian singer and actress; Judge on 'The Voice'"
+    },
+    {
+      "word": "GUY SEBASTIAN",
+      "hint": "First winner of 'Australian Idol'"
+    },
+    {
+      "word": "JESSICA MAUBOY",
+      "hint": "Australian singer and actress"
+    },
+    {
+      "word": "KEITH URBAN",
+      "hint": "Australian country music singer"
+    },
+    {
+      "word": "THE WIGGLES",
+      "hint": "Iconic Australian children's music group"
+    },
+    {
+      "word": "RAY MARTIN",
+      "hint": "Australian television journalist and presenter"
+    },
+    {
+      "word": "KITTY FLANAGAN",
+      "hint": "Australian comedian and writer"
+    },
+    {
+      "word": "JIM JEFFERIES",
+      "hint": "Australian stand-up comedian"
+    },
+    {
+      "word": "CARL BARRON",
+      "hint": "Australian stand-up comedian"
+    },
+    {
+      "word": "MAGDA SZUBANSKI",
+      "hint": "Australian actress and comedian; Sharon Strzelecki in 'Kath & Kim'"
+    },
+    {
+      "word": "BAZ LUHRMANN",
+      "hint": "Australian film director; 'Moulin Rouge!', 'The Great Gatsby'"
+    },
+    {
+      "word": "GEORGE MILLER",
+      "hint": "Australian film director; 'Mad Max' series, 'Babe'"
+    },
+    {
+      "word": "MIKE CANNON-BROOKES",
+      "hint": "Co-founder of Atlassian"
+    },
+    {
+      "word": "SCOTT FARQUHAR",
+      "hint": "Co-founder of Atlassian"
+    },
+    {
+      "word": "MELANIE PERKINS",
+      "hint": "Co-founder of Canva"
+    },
+    {
+      "word": "FRANK LOWY",
+      "hint": "Co-founder of Westfield Group"
+    },
+    {
+      "word": "HARRY TRIGUBOFF",
+      "hint": "Australian property developer; 'High-Rise Harry'"
+    },
+    {
+      "word": "ADAM LIAW",
+      "hint": "Winner of 'MasterChef Australia' and food writer"
+    },
+    {
+      "word": "PETER GILMORE",
+      "hint": "Executive chef of Quay restaurant in Sydney"
+    },
+    {
+      "word": "JOHN CURTIN",
+      "hint": "Australian Prime Minister during World War II"
+    },
+    {
+      "word": "JOHN LAWS",
+      "hint": "Legendary Australian radio presenter"
+    },
+    {
+      "word": "MARY DONALDSON",
+      "hint": "Australian who became Crown Princess of Denmark"
+    },
+    {
+      "word": "SCHAPELLE CORBY",
+      "hint": "Australian convicted of drug trafficking in Indonesia"
+    },
+    {
+      "word": "LINDY CHAMBERLAIN",
+      "hint": "Wrongfully convicted of the murder of her daughter Azaria"
+    },
+    {
+      "word": "PRINCESS DIANA",
+      "hint": "Princess of Wales"
+    },
+    {
+      "word": "PRINCE WILLIAM",
+      "hint": "Prince of Wales"
+    },
+    {
+      "word": "PRINCE HARRY",
+      "hint": "Duke of Sussex"
+    },
+    {
+      "word": "KATE MIDDLETON",
+      "hint": "Princess of Wales"
+    },
+    {
+      "word": "MEGHAN MARKLE",
+      "hint": "Duchess of Sussex"
+    },
+    {
+      "word": "TONY BLAIR",
+      "hint": "Former UK Prime Minister"
+    },
+    {
+      "word": "DAVID CAMERON",
+      "hint": "Former UK Prime Minister"
+    },
+    {
+      "word": "THERESA MAY",
+      "hint": "Former UK Prime Minister"
+    },
+    {
+      "word": "GEORGE W. BUSH",
+      "hint": "43rd President of the United States"
+    },
+    {
+      "word": "BILL CLINTON",
+      "hint": "42nd President of the United States"
+    },
+    {
+      "word": "HILLARY CLINTON",
+      "hint": "Former US Secretary of State"
+    },
+    {
+      "word": "DALAI LAMA",
+      "hint": "Spiritual leader of Tibetan Buddhism"
+    },
+    {
+      "word": "POPE JOHN PAUL II",
+      "hint": "Former head of the Catholic Church"
+    },
+    {
+      "word": "POPE FRANCIS",
+      "hint": "Current head of the Catholic Church"
+    },
+    {
+      "word": "GEORGE WASHINGTON",
+      "hint": "First President of the United States"
+    },
+    {
+      "word": "ABRAHAM LINCOLN",
+      "hint": "16th President of the United States"
+    },
+    {
+      "word": "JOHN F. KENNEDY",
+      "hint": "35th President of the United States"
+    },
+    {
+      "word": "RONALD REAGAN",
+      "hint": "40th President of the United States"
+    },
+    {
+      "word": "RICHARD NIXON",
+      "hint": "37th President of the United States"
+    },
+    {
+      "word": "ADOLF HITLER",
+      "hint": "Dictator of Nazi Germany"
+    },
+    {
+      "word": "JOSEPH STALIN",
+      "hint": "Dictator of the Soviet Union"
+    },
+    {
+      "word": "FIDEL CASTRO",
+      "hint": "Communist leader of Cuba"
+    },
+    {
+      "word": "MAO ZEDONG",
+      "hint": "Founding father of the People's Republic of China"
+    },
+    {
+      "word": "QUEEN VICTORIA",
+      "hint": "Long-reigning British monarch of the 19th century"
+    },
+    {
+      "word": "HENRY VIII",
+      "hint": "King of England known for his six marriages"
+    },
+    {
+      "word": "ELIZABETH I",
+      "hint": "Queen of England; 'The Virgin Queen'"
+    },
+    {
+      "word": "LEONARDO DICAPRIO",
+      "hint": "American actor; Starred in 'Titanic' and 'Inception'"
+    },
+    {
+      "word": "BRAD PITT",
+      "hint": "American actor and film producer"
+    },
+    {
+      "word": "ANGELINA JOLIE",
+      "hint": "American actress and humanitarian"
+    },
+    {
+      "word": "GEORGE CLOONEY",
+      "hint": "American actor and filmmaker"
+    },
+    {
+      "word": "JULIA ROBERTS",
+      "hint": "American actress; Starred in 'Pretty Woman'"
+    },
+    {
+      "word": "SANDRA BULLOCK",
+      "hint": "American actress; Starred in 'Speed' and 'Gravity'"
+    },
+    {
+      "word": "MERYL STREEP",
+      "hint": "Acclaimed American actress with numerous Oscar nominations"
+    },
+    {
+      "word": "ROBERT DE NIRO",
+      "hint": "American actor; Starred in 'Taxi Driver' and 'Raging Bull'"
+    },
+    {
+      "word": "AL PACINO",
+      "hint": "American actor; Starred in 'The Godfather' and 'Scarface'"
+    },
+    {
+      "word": "JACK NICHOLSON",
+      "hint": "American actor known for his versatile and iconic roles"
+    },
+    {
+      "word": "MARLON BRANDO",
+      "hint": "Influential American actor; 'On the Waterfront'"
+    },
+    {
+      "word": "CLINT EASTWOOD",
+      "hint": "American actor and director"
+    },
+    {
+      "word": "MORGAN FREEMAN",
+      "hint": "American actor known for his distinctive voice"
+    },
+    {
+      "word": "DENZEL WASHINGTON",
+      "hint": "American actor with two Academy Awards"
+    },
+    {
+      "word": "WILL SMITH",
+      "hint": "American actor and rapper; 'The Fresh Prince of Bel-Air'"
+    },
+    {
+      "word": "JOHNNY DEPP",
+      "hint": "American actor; Captain Jack Sparrow in 'Pirates of the Caribbean'"
+    },
+    {
+      "word": "KEANU REEVES",
+      "hint": "Canadian actor; Starred in 'The Matrix' and 'John Wick'"
+    },
+    {
+      "word": "HARRISON FORD",
+      "hint": "American actor; Indiana Jones and Han Solo"
+    },
+    {
+      "word": "ARNOLD SCHWARZENEGGER",
+      "hint": "Austrian-American actor and former Governor of California"
+    },
+    {
+      "word": "SYLVESTER STALLONE",
+      "hint": "American actor; Rocky Balboa and John Rambo"
+    },
+    {
+      "word": "BRUCE WILLIS",
+      "hint": "American actor; John McClane in 'Die Hard'"
+    },
+    {
+      "word": "SAMUEL L. JACKSON",
+      "hint": "American actor with over 150 film credits"
+    },
+    {
+      "word": "DWAYNE JOHNSON",
+      "hint": "The Rock; American actor and former professional wrestler"
+    },
+    {
+      "word": "JENNIFER ANISTON",
+      "hint": "American actress; Rachel Green in 'Friends'"
+    },
+    {
+      "word": "COURTENEY COX",
+      "hint": "American actress; Monica Geller in 'Friends'"
+    },
+    {
+      "word": "LISA KUDROW",
+      "hint": "American actress; Phoebe Buffay in 'Friends'"
+    },
+    {
+      "word": "MATT LEBLANC",
+      "hint": "American actor; Joey Tribbiani in 'Friends'"
+    },
+    {
+      "word": "MATTHEW PERRY",
+      "hint": "American-Canadian actor; Chandler Bing in 'Friends'"
+    },
+    {
+      "word": "DAVID SCHWIMMER",
+      "hint": "American actor; Ross Geller in 'Friends'"
+    },
+    {
+      "word": "JERRY SEINFELD",
+      "hint": "American comedian and co-creator of 'Seinfeld'"
+    },
+    {
+      "word": "ROWAN ATKINSON",
+      "hint": "British actor and comedian; Mr. Bean"
+    },
+    {
+      "word": "JOHN CLEESE",
+      "hint": "British actor and comedian; Monty Python, 'Fawlty Towers'"
+    },
+    {
+      "word": "RICKY GERVAIS",
+      "hint": "British comedian and creator of 'The Office'"
+    },
+    {
+      "word": "STEPHEN FRY",
+      "hint": "British actor, comedian, and writer"
+    },
+    {
+      "word": "HUGH LAURIE",
+      "hint": "British actor; Starred in 'House'"
+    },
+    {
+      "word": "SACHA BARON COHEN",
+      "hint": "British comedian; Borat, Ali G"
+    },
+    {
+      "word": "JAMES CORDEN",
+      "hint": "British comedian and host of 'The Late Late Show'"
+    },
+    {
+      "word": "THE ROLLING STONES",
+      "hint": "Iconic British rock band"
+    },
+    {
+      "word": "LED ZEPPELIN",
+      "hint": "English rock band formed in 1968"
+    },
+    {
+      "word": "QUEEN",
+      "hint": "British rock band fronted by Freddie Mercury"
+    },
+    {
+      "word": "DAVID BOWIE",
+      "hint": "English singer-songwriter and actor"
+    },
+    {
+      "word": "ELTON JOHN",
+      "hint": "English singer, songwriter, and pianist"
+    },
+    {
+      "word": "GEORGE MICHAEL",
+      "hint": "English singer and songwriter"
+    },
+    {
+      "word": "U2",
+      "hint": "Irish rock band fronted by Bono"
+    },
+    {
+      "word": "COLDPLAY",
+      "hint": "British rock band fronted by Chris Martin"
+    },
+    {
+      "word": "OASIS",
+      "hint": "English rock band with Gallagher brothers"
+    },
+    {
+      "word": "RADIOHEAD",
+      "hint": "English rock band fronted by Thom Yorke"
+    },
+    {
+      "word": "THE SMITHS",
+      "hint": "English rock band with Morrissey and Johnny Marr"
+    },
+    {
+      "word": "PINK FLOYD",
+      "hint": "English rock band known for progressive and psychedelic music"
+    },
+    {
+      "word": "BOB DYLAN",
+      "hint": "American singer-songwriter and Nobel laureate"
+    },
+    {
+      "word": "BRUCE SPRINGSTEEN",
+      "hint": "The Boss; American singer-songwriter"
+    },
+    {
+      "word": "ELVIS PRESLEY",
+      "hint": "The King of Rock and Roll"
+    },
+    {
+      "word": "FRANK SINATRA",
+      "hint": "Ol' Blue Eyes; American singer and actor"
+    },
+    {
+      "word": "JIMI HENDRIX",
+      "hint": "American rock guitarist, singer, and songwriter"
+    },
+    {
+      "word": "BOB MARLEY",
+      "hint": "Jamaican singer who became a global icon of reggae music"
+    },
+    {
+      "word": "TUPAC SHAKUR",
+      "hint": "American rapper and actor"
+    },
+    {
+      "word": "THE NOTORIOUS B.I.G.",
+      "hint": "American rapper"
+    },
+    {
+      "word": "JAY-Z",
+      "hint": "American rapper and businessman"
+    },
+    {
+      "word": "KANYE WEST",
+      "hint": "American rapper, producer, and fashion designer"
+    },
+    {
+      "word": "DR. DRE",
+      "hint": "American rapper and producer"
+    },
+    {
+      "word": "SNOOP DOGG",
+      "hint": "American rapper and media personality"
+    },
+    {
+      "word": "MARIAH CAREY",
+      "hint": "American singer known for her five-octave vocal range"
+    },
+    {
+      "word": "WHITNEY HOUSTON",
+      "hint": "American singer and actress"
+    },
+    {
+      "word": "CELINE DION",
+      "hint": "Canadian singer"
+    },
+    {
+      "word": "ARETHA FRANKLIN",
+      "hint": "The Queen of Soul"
+    },
+    {
+      "word": "STEVIE WONDER",
+      "hint": "American singer, songwriter, and multi-instrumentalist"
+    },
+    {
+      "word": "PRINCE",
+      "hint": "American singer-songwriter, multi-instrumentalist, and actor"
+    },
+    {
+      "word": "JUSTIN TIMBERLAKE",
+      "hint": "American singer, songwriter, and actor"
+    },
+    {
+      "word": "RIHANNA",
+      "hint": "Barbadian singer, businesswoman, and actress"
+    },
+    {
+      "word": "KATY PERRY",
+      "hint": "American pop singer"
+    },
+    {
+      "word": "ADELE",
+      "hint": "British singer-songwriter"
+    },
+    {
+      "word": "ED SHEERAN",
+      "hint": "British singer-songwriter"
+    },
+    {
+      "word": "JUSTIN BIEBER",
+      "hint": "Canadian pop singer"
+    },
+    {
+      "word": "ARIANA GRANDE",
+      "hint": "American singer and actress"
+    },
+    {
+      "word": "BILLIE EILISH",
+      "hint": "American singer-songwriter"
+    },
+    {
+      "word": "OLIVIA RODRIGO",
+      "hint": "American singer-songwriter and actress"
+    },
+    {
+      "word": "HARRY STYLES",
+      "hint": "English singer, formerly of One Direction"
+    },
+    {
+      "word": "ONE DIRECTION",
+      "hint": "English-Irish pop boy band"
+    },
+    {
+      "word": "BACKSTREET BOYS",
+      "hint": "American boy band"
+    },
+    {
+      "word": "*NSYNC",
+      "hint": "American boy band"
+    },
+    {
+      "word": "NEW KIDS ON THE BLOCK",
+      "hint": "American boy band"
+    },
+    {
+      "word": "TAKE THAT",
+      "hint": "English pop group"
+    },
+    {
+      "word": "WESTLIFE",
+      "hint": "Irish boy band"
+    },
+    {
+      "word": "DESTINY'S CHILD",
+      "hint": "American girl group"
+    },
+    {
+      "word": "TLC",
+      "hint": "American girl group"
+    },
+    {
+      "word": "EN VOGUE",
+      "hint": "American R&B/pop vocal group"
+    },
+    {
+      "word": "PUSSYCAT DOLLS",
+      "hint": "American girl group and dance ensemble"
+    },
+    {
+      "word": "BLACKPINK",
+      "hint": "South Korean girl group"
+    },
+    {
+      "word": "BTS",
+      "hint": "South Korean boy band"
+    },
+    {
+      "word": "PSY",
+      "hint": "South Korean singer; 'Gangnam Style'"
+    },
+    {
+      "word": "J. R. R. TOLKIEN",
+      "hint": "Author of 'The Hobbit' and 'The Lord of the Rings'"
+    },
+    {
+      "word": "C. S. LEWIS",
+      "hint": "Author of 'The Chronicles of Narnia'"
+    },
+    {
+      "word": "GEORGE R. R. MARTIN",
+      "hint": "Author of 'A Song of Ice and Fire' (Game of Thrones)"
+    },
+    {
+      "word": "J. D. SALINGER",
+      "hint": "Author of 'The Catcher in the Rye'"
+    },
+    {
+      "word": "F. SCOTT FITZGERALD",
+      "hint": "Author of 'The Great Gatsby'"
+    },
+    {
+      "word": "ERNEST HEMINGWAY",
+      "hint": "American novelist and short-story writer"
+    },
+    {
+      "word": "MARK TWAIN",
+      "hint": "American writer and humorist; 'Tom Sawyer'"
+    },
+    {
+      "word": "CHARLES DICKENS",
+      "hint": "English writer and social critic; 'Oliver Twist'"
+    },
+    {
+      "word": "LEO TOLSTOY",
+      "hint": "Russian writer; 'War and Peace'"
+    },
+    {
+      "word": "BUDDHA",
+      "hint": "Siddhartha Gautama, founder of Buddhism"
+    },
+    {
+      "word": "MUHAMMAD",
+      "hint": "Prophet of Islam"
+    },
+    {
+      "word": "MOSES",
+      "hint": "Prophet in Abrahamic religions"
+    },
+    {
+      "word": "CLAUDE MONET",
+      "hint": "Founder of French Impressionist painting"
+    },
+    {
+      "word": "PIERRE-AUGUSTE RENOIR",
+      "hint": "French Impressionist artist"
+    },
+    {
+      "word": "MICHELANGELO",
+      "hint": "Italian sculptor, painter, architect, and poet of the High Renaissance"
+    },
+    {
+      "word": "REMBRANDT",
+      "hint": "Dutch Golden Age painter"
+    },
+    {
+      "word": "FRANK LLOYD WRIGHT",
+      "hint": "American architect"
+    },
+    {
+      "word": "LUDWIG VAN BEETHOVEN",
+      "hint": "German composer and pianist"
+    },
+    {
+      "word": "WOLFGANG AMADEUS MOZART",
+      "hint": "Prolific and influential composer of the Classical period"
+    },
+    {
+      "word": "JOHANN SEBASTIAN BACH",
+      "hint": "German composer of the Baroque period"
+    },
+    {
+      "word": "PYOTR ILYICH TCHAIKOVSKY",
+      "hint": "Russian composer of the Romantic period"
+    },
+    {
+      "word": "ALFRED HITCHCOCK",
+      "hint": "English film director; 'The Master of Suspense'"
+    },
+    {
+      "word": "STANLEY KUBRICK",
+      "hint": "American film director; '2001: A Space Odyssey'"
+    },
+    {
+      "word": "MARTIN SCORSESE",
+      "hint": "American film director; 'Goodfellas'"
+    },
+    {
+      "word": "FRANCIS FORD COPPOLA",
+      "hint": "American film director; 'The Godfather'"
+    },
+    {
+      "word": "ORSON WELLES",
+      "hint": "American director, actor, and writer; 'Citizen Kane'"
+    },
+    {
+      "word": "CHARLIE CHAPLIN",
+      "hint": "English comic actor and filmmaker of the silent era"
+    },
+    {
+      "word": "WALT DISNEY",
+      "hint": "American entrepreneur and pioneer of the animation industry"
+    },
+    {
+      "word": "JIM HENSON",
+      "hint": "American puppeteer, creator of The Muppets"
+    },
+    {
+      "word": "DR. SEUSS",
+      "hint": "American children's author and cartoonist"
+    },
+    {
+      "word": "ROALD DAHL",
+      "hint": "British novelist and short-story writer"
+    },
+    {
+      "word": "HANS CHRISTIAN ANDERSEN",
+      "hint": "Danish author of fairy tales"
+    },
+    {
+      "word": "BROTHERS GRIMM",
+      "hint": "German academics who published collections of folk tales"
+    },
+    {
+      "word": "AESOP",
+      "hint": "Greek fabulist credited with a number of fables"
+    },
+    {
+      "word": "NEIL ARMSTRONG",
+      "hint": "First person to walk on the Moon"
+    },
+    {
+      "word": "BUZZ ALDRIN",
+      "hint": "Second person to walk on the Moon"
+    },
+    {
+      "word": "YURI GAGARIN",
+      "hint": "First human to journey into outer space"
+    },
+    {
+      "word": "WRIGHT BROTHERS",
+      "hint": "Orville and Wilbur; credited with inventing the first successful airplane"
+    },
+    {
+      "word": "HENRY FORD",
+      "hint": "Founder of the Ford Motor Company"
+    },
+    {
+      "word": "NOVAK DJOKOVIC",
+      "hint": "Serbian professional tennis player"
+    },
+    {
+      "word": "USAIN BOLT",
+      "hint": "Jamaican sprinter, widely considered to be the greatest sprinter of all time"
+    },
+    {
+      "word": "MICHAEL PHELPS",
+      "hint": "American former competitive swimmer and the most successful Olympian of all time"
+    },
+    {
+      "word": "WAYNE GRETZKY",
+      "hint": "Canadian former professional ice hockey player, The Great One"
+    },
+    {
+      "word": "TOM BRADY",
+      "hint": "American football quarterback"
+    },
+    {
+      "word": "LEBRON JAMES",
+      "hint": "American professional basketball player"
+    },
+    {
+      "word": "KOBE BRYANT",
+      "hint": "American professional basketball player"
+    },
+    {
+      "word": "SHAQUILLE O'NEAL",
+      "hint": "American former professional basketball player"
+    },
+    {
+      "word": "MAGIC JOHNSON",
+      "hint": "American former professional basketball player"
+    },
+    {
+      "word": "LARRY BIRD",
+      "hint": "American former professional basketball player"
+    },
+    {
+      "word": "KAREEM ABDUL-JABBAR",
+      "hint": "American former professional basketball player"
+    },
+    {
+      "word": "DAVID BECKHAM",
+      "hint": "English former professional footballer"
+    },
+    {
+      "word": "JACKIE CHAN",
+      "hint": "Hong Kong actor, martial artist, and stuntman"
+    },
+    {
+      "word": "BRUCE LEE",
+      "hint": "Hong Kong and American martial artist, actor, and director"
+    },
+    {
+      "word": "MARILYN MONROE",
+      "hint": "American actress, model, and singer"
+    },
+    {
+      "word": "AUDREY HEPBURN",
+      "hint": "British actress and humanitarian"
+    },
+    {
+      "word": "JAMES DEAN",
+      "hint": "American actor, cultural icon of teenage disillusionment"
+    },
+    {
+      "word": "JAMIE OLIVER",
+      "hint": "British chef and restaurateur"
+    },
+    {
+      "word": "ANTHONY BOURDAIN",
+      "hint": "American celebrity chef, author, and travel documentarian"
+    },
+    {
+      "word": "JULIA CHILD",
+      "hint": "American chef, author, and television personality"
+    },
+    {
+      "word": "MARTHA STEWART",
+      "hint": "American retail businesswoman, writer, and television personality"
+    },
+    {
+      "word": "MICHAEL DELL",
+      "hint": "American billionaire businessman, founder of Dell Technologies"
+    },
+    {
+      "word": "JOHN D. ROCKEFELLER",
+      "hint": "American oil industry business magnate and philanthropist"
+    },
+    {
+      "word": "ANDREW CARNEGIE",
+      "hint": "Scottish-American industrialist and philanthropist"
+    },
+    {
+      "word": "MARY KAY ASH",
+      "hint": "American businesswoman and founder of Mary Kay Cosmetics"
+    },
+    {
+      "word": "ELIZABETH ARDEN",
+      "hint": "Canadian-American businesswoman who founded a cosmetics empire"
+    },
+    {
+      "word": "SUSAN B. ANTHONY",
+      "hint": "American social reformer and women's rights activist"
+    },
+    {
+      "word": "ROSA PARKS",
+      "hint": "American activist in the civil rights movement"
+    },
+    {
+      "word": "RACHEL CARSON",
+      "hint": "American marine biologist and author; 'Silent Spring'"
+    },
+    {
+      "word": "FLORENCE NIGHTINGALE",
+      "hint": "English social reformer and the founder of modern nursing"
+    },
+    {
+      "word": "CLARA BARTON",
+      "hint": "Pioneering American nurse who founded the American Red Cross"
+    },
+    {
+      "word": "MOTHER TERESA",
+      "hint": "Albanian-Indian Roman Catholic nun and missionary"
+    },
+    {
+      "word": "ELEANOR ROOSEVELT",
+      "hint": "American political figure, diplomat, and activist"
+    },
+    {
+      "word": "INDIRA GANDHI",
+      "hint": "Third Prime Minister of India"
+    },
+    {
+      "word": "CATHERINE THE GREAT",
+      "hint": "Empress of Russia from 1762 until 1796"
+    },
+    {
+      "word": "LIVIA DRUSILLA",
+      "hint": "Roman empress as the wife of the emperor Augustus"
+    },
+    {
+      "word": "ISABELLA I OF CASTILE",
+      "hint": "Queen of Castile from 1474 until her death"
+    },
+    {
+      "word": "ELEANOR OF AQUITAINE",
+      "hint": "Queen consort of France and England and duchess of Aquitaine"
+    },
+    {
+      "word": "MARY CASSATT",
+      "hint": "American painter and printmaker"
+    },
+    {
+      "word": "DIANE ARBUS",
+      "hint": "American photographer"
+    },
+    {
+      "word": "CINDY SHERMAN",
+      "hint": "American artist whose work consists of photographic self-portraits"
+    },
+    {
+      "word": "ANNIE LEIBOVITZ",
+      "hint": "American portrait photographer"
+    },
+    {
+      "word": "YOKO ONO",
+      "hint": "Japanese multimedia artist, singer, songwriter, and peace activist"
+    },
+    {
+      "word": "PATTI SMITH",
+      "hint": "American singer-songwriter, musician, author, and poet"
+    },
+    {
+      "word": "STEVE MCQUEEN",
+      "hint": "British film director, producer, and screenwriter"
+    },
+    {
+      "word": "THEASTER GATES",
+      "hint": "American social practice installation artist"
+    },
+    {
+      "word": "CHRISTOPHER COLUMBUS",
+      "hint": "Italian explorer"
+    },
+    {
+      "word": "ABRAHAM (BIBLICAL)",
+      "hint": "Biblical patriarch"
+    },
+    {
+      "word": "GAUTAMA BUDDHA",
+      "hint": "Founder of Buddhism"
+    },
+    {
+      "word": "MARY (MOTHER OF JESUS)",
+      "hint": "Mother of Jesus"
+    },
+    {
+      "word": "JOSEPH HAYDN",
+      "hint": "Austrian composer"
+    },
+    {
+      "word": "PYTHAGORAS",
+      "hint": "Greek mathematician"
+    },
+    {
+      "word": "GIUSEPPE VERDI",
+      "hint": "Italian opera composer"
+    },
+    {
+      "word": "SAINT GEORGE",
+      "hint": "Patron saint of England"
+    },
+    {
+      "word": "MICHAEL FARADAY",
+      "hint": "Pioneer of electromagnetism"
+    },
+    {
+      "word": "FREDDIE MERCURY",
+      "hint": "Queen lead singer"
+    },
+    {
+      "word": "JUDAS ISCARIOT",
+      "hint": "Apostle who betrayed Jesus"
+    },
+    {
+      "word": "MALCOLM X",
+      "hint": "Civil rights activist"
+    },
+    {
+      "word": "ELIJAH",
+      "hint": "Biblical prophet"
+    },
+    {
+      "word": "AGATHA CHRISTIE",
+      "hint": "Mystery novelist"
+    },
+    {
+      "word": "BENJAMIN FRANKLIN",
+      "hint": "American founding father"
+    },
+    {
+      "word": "ANNE FRANK",
+      "hint": "Holocaust diarist"
+    },
+    {
+      "word": "EDVARD GRIEG",
+      "hint": "Norwegian composer"
+    },
+    {
+      "word": "ARTHUR CONAN DOYLE",
+      "hint": "Sherlock Holmes creator"
+    },
+    {
+      "word": "VESPASIAN",
+      "hint": "Roman emperor (built Colosseum)"
+    },
+    {
+      "word": "HENRY DUNANT",
+      "hint": "Red Cross founder"
+    },
+    {
+      "word": "OSKAR SCHINDLER",
+      "hint": "Saved Jews during the Holocaust"
+    },
+    {
+      "word": "LUCIANO PAVAROTTI",
+      "hint": "Italian opera tenor"
+    },
+    {
+      "word": "STAN LEE",
+      "hint": "Marvel Comics creator"
+    },
+    {
+      "word": "TOM CRUISE",
+      "hint": "Hollywood actor (*Mission: Impossible*)"
+    },
+    {
+      "word": "DWIGHT D. EISENHOWER",
+      "hint": "General & 34th US President"
+    },
+    {
+      "word": "DUKE OF WELLINGTON",
+      "hint": "Defeated Napoleon at Waterloo"
+    },
+    {
+      "word": "BABE RUTH",
+      "hint": "Legendary baseball slugger"
+    },
+    {
+      "word": "HENRY KISSINGER",
+      "hint": "US diplomat"
+    },
+    {
+      "word": "PAUL MCCARTNEY",
+      "hint": "Beatles singer-songwriter"
+    },
+    {
+      "word": "FREDERICK I (BARBAROSSA)",
+      "hint": "Holy Roman Emperor (Barbarossa)"
+    },
+    {
+      "word": "TUTANKHAMUN",
+      "hint": "Egyptian pharaoh"
+    },
+    {
+      "word": "GEORGE HARRISON",
+      "hint": "Beatles lead guitarist"
+    },
+    {
+      "word": "JESSE OWENS",
+      "hint": "1936 Olympic track star"
+    },
+    {
+      "word": "JESUS CHRIST",
+      "hint": "Central figure of Christianity"
     }
   ]
 };

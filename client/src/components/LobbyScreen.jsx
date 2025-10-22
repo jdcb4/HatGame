@@ -50,7 +50,8 @@ const LobbyScreen = ({ playerId, playerName }) => {
 
     try {
       await startGame(gameId, playerId);
-      navigate(`/game/${gameId}`);
+      // Don't navigate here - let the useEffect handle it when game.status updates
+      // This prevents a race condition where host tries to go to /game before turn starts
     } catch (err) {
       console.error('Failed to start game:', err);
     }

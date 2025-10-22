@@ -9,7 +9,8 @@
     "client": "cd client && npm run dev",
     "build": "cd client && npm install && npm run build",
     "start": "node server/index.js",
-    "install-all": "npm install && cd client && npm install"
+    "install-all": "npm install && cd client && npm install",
+    "convert-words": "node server/data/convertWords.js"
   },
   "dependencies": {
     "express": "^4.18.2",

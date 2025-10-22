@@ -1,0 +1,196 @@
+# Cursor AI Rules for BackEndTicky
+
+## Project Context
+- **Project:** BackEndTicky - Multiplayer word guessing game (similar to Catchphrase)
+- **Tech Stack:** Node.js, Express, Socket.IO, React 18, MongoDB, Tailwind CSS
+- **Developer:** @jdcb4 (novice coder, prefer simple understandable code)
+- **GitHub:** github.com/jdcb4
+
+## Core Philosophy
+Write code that is structured to be understandable to a user that is a novice coder.
+- Prefer explicit over clever
+- Prefer simple and reliable over complex and optimized
+- Include comments explaining WHY, not WHAT
+- Use descriptive variable names over abbreviations
+
+## Critical Architecture - DO NOT BREAK
+
+### Word Preloading System
+The app uses optimistic updates with word preloading for instant feedback:
+- Server sends 15-word queue at turn start (currentTurn.wordQueue)
+- Client shows next word instantly from local queue (0ms delay)
+- Server processes scoring in background
+- Auto-refill when ≤8 words remaining
+- When modifying turn logic, preserve this queue-based system
+
+### Mongoose Gotchas
+- Map keys MUST be strings: `game.currentDescriberIndex.get(String(teamIndex))`
+- Nested objects require markModified(): `game.markModified('wordsByCategoryForGame')`
+- Use atomic updates for concurrent operations: `Game.updateOne({ id }, { $set: {...} })`
+
+### State Management
+- Server is source of truth (MongoDB)
+- Client never modifies game state directly
+- All state changes via socket actions: `emitGameAction('action-name', payload)`
+- Socket broadcasts to rooms: `io.to(gameId).emit('game-updated', game)`
+
+## Code Style
+
+### Naming
+- **Variables:** camelCase, descriptive names
+- **Functions:** Verb-first (handleStartTurn, emitGameAction, getDescriberForTeam)
+- **Booleans:** Use is/has/can/should prefix (isDescriber, hasMoreWords, canStartGame)
+- **Constants:** SCREAMING_SNAKE_CASE for true constants
+
+### Logging
+Always use emoji prefixes for console.log:
+- ✅ Success/completion
+- ❌ Errors
+- ⚠️ Warnings
+- 📨 Received events
+- 📤 Sent events
+- 🔍 Debug info
+- 🎯 Matched condition
+- 🔄 State updates
+- 💾 Database operations
+
+Example: `console.log('✅ Turn completed successfully');`
+
+### React Components
+Structure components in this order:
+1. Hooks (useParams, useNavigate, useContext)
+2. Local state (useState)
+3. Refs (useRef)
+4. Effects (useEffect)
+5. Event handlers
+6. Early returns (loading, error states)
+7. Derived state/computations
+8. Main render
+
+### Error Handling
+- **Server:** Return original game on error (don't throw, avoids breaking state)
+- **Client:** Set error state and display to user
+- Always log errors with ❌ emoji
+
+## Mobile-First Design
+- Always test on mobile viewport (min-height issues are common)
+- Use Tailwind responsive breakpoints: `text-3xl sm:text-4xl md:text-5xl`
+- Mobile first, scale up (not desktop first, scale down)
+- Compact labels on mobile: "Skips" not "Skips Remaining"
+- Large touch targets: `py-3 sm:py-4`
+- Optimize viewport: `h-[95vh] sm:h-[90vh]`
+
+## Socket Communication
+- Event names: kebab-case (join-game, game-action)
+- Action names: verb-object (start-turn, word-correct, word-skip)
+- Always broadcast to room: `io.to(gameId).emit()`
+- Validate gameId exists before emitting
+
+## Database Operations
+- Always use string keys for Map access: `String(teamIndex)`
+- Call markModified() after modifying nested objects
+- Use atomic updates (updateOne with $set) for concurrent operations
+- Handle Mongoose VersionError with retry logic (3 attempts)
+- Players stored as objects { [playerId]: playerName }, NOT arrays
+- Use Object.keys(), Object.values(), Object.entries() to iterate
+
+## When Modifying Code
+
+### Before Changing Server Logic
+- Check if it affects word preloading (handleStartTurn, handleWordCorrect, handleWordSkip, handleRequestMoreWords)
+- Ensure currentTurn.wordQueue and currentTurn.queueIndex still work
+- Consider network latency (Railway deployment has 2-3s round-trip)
+
+### Before Changing Client Components
+- Preserve optimistic update pattern in GameScreen.jsx
+- Maintain role-based views (describer/guesser/spectator)
+- Test on mobile viewport (most users play on phones)
+- Keep button debouncing (prevents double-clicks)
+
+### Before Adding Dependencies
+Ask: Is it necessary? Is it maintained? Is it lightweight? Is it secure?
+Document reason in commit message.
+
+## Testing Approach
+- Test with multiple browser tabs (different players)
+- Test on mobile viewport (Chrome DevTools mobile emulation)
+- Test with slow network (Chrome DevTools throttling)
+- Test with 2 teams and 3 teams
+- Test edge cases: timer expiry, rapid clicking, network disconnect
+
+## Common Patterns
+
+### Emitting Socket Actions
+```javascript
+emitGameAction('start-turn', {});
+emitGameAction('word-correct', { word, queueIndex });
+```
+
+### Accessing Game State
+```javascript
+const currentTeam = game.teams[game.currentTeamIndex];
+const isDescriber = game.currentTurn?.describerPlayerId === playerId;
+```
+
+### Mongoose Operations
+```javascript
+// Atomic update
+await Game.updateOne({ id: gameId }, { $set: { field: value } });
+
+// Mark modified
+game.field = newValue;
+game.markModified('field');
+await game.save();
+```
+
+### React Navigation
+```javascript
+// Check conditions before navigating
+useEffect(() => {
+  if (game?.currentPhase === 'ready' && !game.currentTurn) {
+    navigate(`/ready/${gameId}`);
+  }
+}, [game?.currentPhase, game?.currentTurn]);
+```
+
+## Files to Reference
+- `ARCHITECTURE.md` - Complete architecture documentation
+- `CONVENTIONS.md` - Detailed code conventions
+- `TODO.txt` - Active tasks and completed history
+
+## When Suggesting Changes
+1. Explain WHY the change is needed (not just what)
+2. Show code examples with before/after
+3. Consider impact on mobile UX
+4. Consider network latency (Railway deployment)
+5. Preserve optimistic update patterns
+6. Keep code simple and readable for novice coders
+
+## Performance Considerations
+- Word preloading eliminates 1-2s delays (don't break it!)
+- Button debouncing prevents duplicate submissions
+- Atomic DB updates prevent race conditions
+- Socket.IO rooms for efficient broadcasting
+- Client-side timer reduces server load
+
+## Security Notes (Future)
+- Need to add rate limiting (express-rate-limit)
+- Need to validate all socket action payloads
+- Need to sanitize user input (team names, player names)
+- Need to implement game cleanup (delete old games)
+
+## Deployment
+- Railway: Backend + MongoDB Atlas
+- Vercel: Alternative option
+- Environment variables: MONGODB_URI, CLIENT_URL, PORT
+- Socket.IO configured for WebSocket with polling fallback
+
+## Last Updated
+October 19, 2025
+
+## Additional Notes
+- Game is actively used, prioritize stability over features
+- Mobile users are primary audience
+- Network latency is significant (Railway deployment)
+- Always test changes with real gameplay scenarios
+

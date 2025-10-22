@@ -122,6 +122,9 @@ io.on('connection', (socket) => {
         case 'word-skip':
           updatedGame = await handleWordSkip(game, payload);
           break;
+        case 'use-hint':
+          updatedGame = await handleUseHint(game, payload);
+          break;
         case 'request-more-words':
           console.log('🎯 MATCHED request-more-words case!');
           updatedGame = await handleRequestMoreWords(game, payload);
@@ -230,8 +233,9 @@ function shuffleArray(array) {
   }
 }
 
-// Global flag to prevent concurrent handleStartTurn calls
+// Global flags to prevent concurrent calls
 let isStartingTurn = false;
+let isEndingTurn = false;
 
 async function handleStartTurn(game) {
   console.log('handleStartTurn called for game:', game.id);
@@ -343,11 +347,13 @@ async function handleStartTurn(game) {
     category: selectedCategory,
     word: wordQueue[0].word,
     wordQueue: wordQueue.map(w => w.word),  // Send word strings to client
+    hintQueue: wordQueue.map(w => w.hint || ''),  // Send hint strings to client
     queueIndex: 0,  // Track position in queue
     startTime: new Date(),
     timeLeft: game.gameSettings.turnDuration,
     turnWords: [],
     skipsRemaining: game.gameSettings.skipsPerTurn,
+    hintsRemaining: game.gameSettings.hintsPerTurn,  // Initialize hints for the turn
     turnScore: 0,
     describerPlayerId: describerPlayerId,
     describerPlayerName: describerPlayerName
@@ -481,6 +487,33 @@ async function handleWordSkip(game, { word }) {
   return await game.save();
 }
 
+async function handleUseHint(game, { queueIndex }) {
+  console.log('💡 handleUseHint called:', {
+    gameId: game.id,
+    queueIndex,
+    hintsRemaining: game.currentTurn?.hintsRemaining
+  });
+  
+  // Check if currentTurn exists
+  if (!game.currentTurn || !game.currentTurn.category) {
+    console.log('CurrentTurn not properly initialized, ignoring use-hint action');
+    return game;
+  }
+  
+  // Check if hints are available
+  if (!game.currentTurn.hintsRemaining || game.currentTurn.hintsRemaining <= 0) {
+    console.log('No hints remaining, ignoring use-hint action');
+    return game;
+  }
+  
+  // Decrement hints remaining
+  game.currentTurn.hintsRemaining--;
+  
+  console.log(`✅ Hint used. Hints remaining: ${game.currentTurn.hintsRemaining}`);
+  
+  return await game.save();
+}
+
 async function handleRequestMoreWords(game, { count = 10 }) {
   console.log('🔄 handleRequestMoreWords called:', { 
     gameId: game.id, 
@@ -522,16 +555,19 @@ async function handleRequestMoreWords(game, { count = 10 }) {
     console.log(`➕ Adding ${additionalWords.length} words to queue (old length: ${oldQueueLength})`);
     console.log(`   New words:`, additionalWords.map(w => w.word));
     
-    // Append to existing queue
+    // Append to existing queues (both words and hints)
     const newQueue = latestGame.currentTurn.wordQueue.concat(additionalWords.map(w => w.word));
+    const newHintQueue = (latestGame.currentTurn.hintQueue || []).concat(additionalWords.map(w => w.hint || ''));
     
     // Update the words array
     latestGame.wordsByCategoryForGame[latestGame.currentTurn.category] = words;
     
-    // Mark both fields as modified for Mongoose
+    // Mark fields as modified for Mongoose
     latestGame.markModified('wordsByCategoryForGame');
     latestGame.currentTurn.wordQueue = newQueue;
+    latestGame.currentTurn.hintQueue = newHintQueue;
     latestGame.markModified('currentTurn.wordQueue');
+    latestGame.markModified('currentTurn.hintQueue');
     
     console.log(`✅ New queue length: ${newQueue.length} (added ${newQueue.length - oldQueueLength} words)`);
     console.log(`   Queue now has:`, newQueue.slice(-5)); // Show last 5 words
@@ -551,9 +587,11 @@ async function handleRequestMoreWords(game, { count = 10 }) {
           const retryGame = await Game.findOne({ id: game.id });
           if (retryGame) {
             retryGame.currentTurn.wordQueue = newQueue;
+            retryGame.currentTurn.hintQueue = newHintQueue;
             retryGame.wordsByCategoryForGame[retryGame.currentTurn.category] = words;
             retryGame.markModified('wordsByCategoryForGame');
             retryGame.markModified('currentTurn.wordQueue');
+            retryGame.markModified('currentTurn.hintQueue');
             Object.assign(latestGame, retryGame);
           }
         } else {
@@ -571,21 +609,31 @@ async function handleRequestMoreWords(game, { count = 10 }) {
 
 async function handleEndTurn(game) {
   console.log('handleEndTurn called for game:', game.id);
-  console.log('Current turn state:', game.currentTurn);
-  console.log('Current team index:', game.currentTeamIndex);
   
-  // Check if currentTurn exists
-  if (!game.currentTurn) {
-    console.log('No currentTurn found, creating empty turn data');
-    // Create empty turn data if currentTurn is missing
-    game.currentTurn = {
-      turnScore: 0,
-      turnWords: [],
-      category: 'unknown',
-      describerPlayerId: 'unknown',
-      describerPlayerName: 'Unknown'
-    };
+  // Prevent multiple concurrent calls to handleEndTurn
+  if (isEndingTurn) {
+    console.log('⚠️ handleEndTurn already in progress, ignoring duplicate call');
+    return game;
   }
+  
+  isEndingTurn = true;
+  
+  try {
+    console.log('Current turn state:', game.currentTurn);
+    console.log('Current team index:', game.currentTeamIndex);
+    
+    // Check if currentTurn exists
+    if (!game.currentTurn) {
+      console.log('No currentTurn found, creating empty turn data');
+      // Create empty turn data if currentTurn is missing
+      game.currentTurn = {
+        turnScore: 0,
+        turnWords: [],
+        category: 'unknown',
+        describerPlayerId: 'unknown',
+        describerPlayerName: 'Unknown'
+      };
+    }
   
   // Ensure turnScore is a valid number before adding to team score
   const turnScore = isNaN(game.currentTurn.turnScore) ? 0 : game.currentTurn.turnScore;
@@ -656,7 +704,12 @@ async function handleEndTurn(game) {
   console.log(`Turn ended: Team ${previousTeamIndex} → Team ${game.currentTeamIndex}, Phase: ready, Round: ${game.currentRound}`);
   
   // Next team will start when their describer clicks "Start Your Turn"
-  return await game.save();
+  const savedGame = await game.save();
+  return savedGame;
+  
+  } finally {
+    isEndingTurn = false;
+  }
 }
 
 async function handleNextTurn(game) {

@@ -51,6 +51,10 @@ const gameSchema = new mongoose.Schema({
     penaltyForExtraSkip: {
       type: Number,
       default: 1
+    },
+    hintsPerTurn: {
+      type: Number,
+      default: 2
     }
   },
   currentPhase: {
@@ -75,6 +79,7 @@ const gameSchema = new mongoose.Schema({
     category: String,
     word: String,
     wordQueue: [String],  // Preloaded words for optimistic client updates
+    hintQueue: [String],  // Preloaded hints corresponding to wordQueue (for future hint feature)
     queueIndex: {         // Current position in word queue
       type: Number,
       default: 0
@@ -90,6 +95,7 @@ const gameSchema = new mongoose.Schema({
       timestamp: Date
     }],
     skipsRemaining: Number,
+    hintsRemaining: Number,
     turnScore: Number,
     describerPlayerId: String,
     describerPlayerName: String

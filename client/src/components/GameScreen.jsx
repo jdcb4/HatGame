@@ -15,6 +15,10 @@ const GameScreen = ({ playerId, playerName }) => {
   // Local word queue for optimistic updates (instant feedback)
   const [localWordQueue, setLocalWordQueue] = useState([]);
   const [localWordIndex, setLocalWordIndex] = useState(0);
+  
+  // Hint functionality
+  const [showHint, setShowHint] = useState(false);
+  const [currentHint, setCurrentHint] = useState('');
 
   useEffect(() => {
     if (gameId) {
@@ -34,6 +38,12 @@ const GameScreen = ({ playerId, playerName }) => {
       setLocalWordIndex(game.currentTurn.queueIndex || 0);
     }
   }, [game?.currentTurn?.startTime]); // Only reinitialize when a new turn starts
+  
+  // Clear hint when word changes
+  useEffect(() => {
+    setShowHint(false);
+    setCurrentHint('');
+  }, [localWordIndex]);
   
   // Request more words when queue is running low (8 words left - request earlier!)
   // Use a ref to track if we've already requested to avoid multiple requests
@@ -225,8 +235,24 @@ const GameScreen = ({ playerId, playerName }) => {
   const handleEndTurn = () => {
     console.log('GameScreen: Ending turn');
     emitGameAction('end-turn', {});
+    // Clear hint when turn ends
+    setShowHint(false);
+    setCurrentHint('');
     // Don't navigate immediately - let the game state update first
     // Navigation will happen in useEffect when currentPhase changes to 'ready'
+  };
+  
+  // Handle showing hint
+  const handleShowHint = () => {
+    if (game?.currentTurn?.hintsRemaining > 0) {
+      const hintIndex = localWordIndex;
+      const hint = game.currentTurn.hintQueue?.[hintIndex] || 'No hint available';
+      setCurrentHint(hint);
+      setShowHint(true);
+      
+      // Decrement hints remaining on server
+      emitGameAction('use-hint', { queueIndex: hintIndex });
+    }
   };
 
   if (loading) {
@@ -370,11 +396,14 @@ const GameScreen = ({ playerId, playerName }) => {
                     'Loading...'
                   }
                 </p>
-                {/* Debug info - show remaining words */}
-                {localWordQueue.length > 0 && (
-                  <p className="text-xs text-slate-400 mt-2">
-                    {localWordQueue.length - localWordIndex} words remaining
-                  </p>
+                
+                {/* Hint display */}
+                {showHint && currentHint && (
+                  <div className="mt-4 p-3 bg-indigo-100 border-2 border-indigo-300 rounded-lg max-w-md">
+                    <p className="text-sm sm:text-base text-indigo-900 text-center font-medium">
+                      💡 {currentHint}
+                    </p>
+                  </div>
                 )}
               </>
             ) : isCurrentTeam ? (
@@ -419,22 +448,36 @@ const GameScreen = ({ playerId, playerName }) => {
 
           {/* Action Buttons (only for describer) */}
           {isDescriber && (
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-4 sm:mt-6">
-              <button
-                onClick={handleWordSkip}
-                disabled={isProcessingAction}
-                className="bg-amber-500 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
-              >
-                Skip
-              </button>
-              <button
-                onClick={handleWordCorrect}
-                disabled={isProcessingAction}
-                className="bg-emerald-600 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
-              >
-                Correct
-              </button>
-            </div>
+            <>
+              {/* Hint Button */}
+              <div className="mt-3">
+                <button
+                  onClick={handleShowHint}
+                  disabled={!game?.currentTurn?.hintsRemaining || game.currentTurn.hintsRemaining === 0 || showHint}
+                  className="w-full bg-indigo-500 text-white font-bold py-2 px-4 rounded-lg text-sm sm:text-base transition-colors hover:bg-indigo-600 disabled:bg-slate-400 disabled:cursor-not-allowed"
+                >
+                  💡 Hint ({game?.currentTurn?.hintsRemaining ?? 0})
+                </button>
+              </div>
+              
+              {/* Skip and Correct Buttons */}
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-3">
+                <button
+                  onClick={handleWordSkip}
+                  disabled={isProcessingAction}
+                  className="bg-amber-500 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                >
+                  Skip
+                </button>
+                <button
+                  onClick={handleWordCorrect}
+                  disabled={isProcessingAction}
+                  className="bg-emerald-600 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                >
+                  Correct
+                </button>
+              </div>
+            </>
           )}
         </div>
       </div>

@@ -1,10 +1,60 @@
 BackEndTicky - TODO List
 ========================
-Last Updated: October 16, 2025
+Last Updated: October 19, 2025
 
 ACTIVE TASKS:
 -------------
 - Make sure that the game ends after both teams have had same number of turns
+
+- Re-add Hints Feature (Toggleable)
+  → Allow up to 2 hints per turn for describer
+  → Hints should reveal part of the word (first letter, length, or category-specific hint)
+  → Make it toggleable in game settings (default: OFF to preserve current gameplay)
+  → Location: GameScreen.jsx (add hint button and logic)
+  → Schema: Add hintsPerTurn and hintsRemaining to gameSettings and currentTurn
+  → UI: Add "Get Hint" button next to Correct/Skip (only if enabled)
+  → Consider: Should hints cost points? Should they be limited per game or per turn?
+
+- Add Settings Panel for Game Creator
+  → Allow host to customize game settings before starting
+  → Location: LobbyScreen.jsx (add expandable settings panel)
+  → Settings to expose:
+    * Turn duration (15s, 30s, 45s, 60s) - currently hardcoded to 30s
+    * Total rounds (1-10) - currently hardcoded to 3
+    * Skips per turn (0-5) - currently hardcoded to 1
+    * Penalty for extra skip (0-3) - currently hardcoded to 1
+    * Enable/disable hints - NEW
+    * Hints per turn (0-3) - NEW
+  → Store in game.gameSettings (already exists, just expose to UI)
+  → UI: Collapsible "Game Settings" section in lobby with dropdowns/sliders
+  → Mobile: Keep compact, use <select> elements instead of custom dropdowns
+
+- Architecture Refactor: Modular Game System
+  → Goal: Extract user management and multiplayer infrastructure so it can be reused for other games
+  → Current structure: Everything is tightly coupled to word-guessing game logic
+  → Proposed structure:
+    /shared/                       # Reusable multiplayer infrastructure
+      /models/BaseGame.js          # Common game fields (id, status, teams, players)
+      /handlers/userManagement.js  # Join game, join team, leave game
+      /handlers/socketSetup.js     # Socket.IO connection, rooms, broadcasting
+    /games/
+      /word-guesser/               # Current game (BackEndTicky)
+        /models/WordGame.js        # Extends BaseGame, adds word-specific fields
+        /handlers/wordHandlers.js  # Game-specific logic (start turn, word correct, etc.)
+        /data/words.js             # Word lists
+      /future-game-1/              # Future game can reuse /shared/
+      /future-game-2/
+  → Benefits:
+    * Reuse user management, team joining, lobby logic
+    * Reuse Socket.IO setup and room management
+    * Each game only implements its unique gameplay logic
+    * Easier to maintain multiple games
+  → Considerations:
+    * Breaking change - requires significant refactoring
+    * Need to ensure backward compatibility with existing database
+    * Test thoroughly before deploying
+  → Priority: Medium (good for future, but current system works)
+  → See ARCHITECTURE.md for current structure before refactoring
 
 
 COMPLETED TASKS:
@@ -47,12 +97,14 @@ PERFORMANCE IMPROVEMENTS:
   → Server sends 15-word queue when turn starts (eliminates per-word round trips)
   → Client shows next word INSTANTLY (0ms delay) using local queue
   → Background server updates handle scoring and validation
-  → Automatic queue refill when 5 words remaining
+  → Automatic queue refill: requests 10 more words when 8 words remaining
   → Button debounce reduced to 200ms (from 1200ms) since no server wait needed
   → Server-side: Added wordQueue and queueIndex to currentTurn schema
-  → Server-side: Added handleRequestMoreWords for dynamic queue refilling
-  → Client-side: Optimistic state management with automatic sync
+  → Server-side: Added handleRequestMoreWords with retry logic for race conditions (up to 3 attempts)
+  → Client-side: Optimistic state management with automatic sync detection
+  → Client-side: Smart queue sync that only updates when server has more words
   → Result: Game feels incredibly responsive, especially on slow connections
+  → TESTED: Successfully handled 42+ words in single turn with smooth queue refilling
 - Mark completed tasks with [DONE - DATE] and move to "COMPLETED TASKS" section
 - Use clear, specific descriptions for each task
 
