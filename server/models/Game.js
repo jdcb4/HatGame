@@ -38,7 +38,7 @@ const gameSchema = new mongoose.Schema({
   gameSettings: {
     turnDuration: {
       type: Number,
-      default: 30
+      default: 45
     },
     totalRounds: {
       type: Number,
@@ -48,19 +48,21 @@ const gameSchema = new mongoose.Schema({
       type: Number,
       default: 1
     },
-    penaltyForExtraSkip: {
+    cluesPerPlayer: {
       type: Number,
-      default: 1
-    },
-    hintsPerTurn: {
-      type: Number,
-      default: 2
+      default: 6
     }
   },
   currentPhase: {
     type: String,
     enum: ['ready', 'guessing', 'finished'],
     default: 'ready'
+  },
+  currentGamePhase: {
+    type: Number,
+    default: 1,
+    min: 1,
+    max: 3
   },
   currentRound: {
     type: Number,
@@ -75,19 +77,29 @@ const gameSchema = new mongoose.Schema({
     of: Number,
     default: {}
   },
+  cluePool: [{
+    clue: String,
+    submittedBy: String,
+    submittedByName: String
+  }],
+  usedCluesInPhase: [{
+    type: String
+  }],
+  clueSubmissions: {
+    type: Object,
+    default: {}
+  },
   currentTurn: {
-    category: String,
-    word: String,
-    wordQueue: [String],  // Preloaded words for optimistic client updates
-    hintQueue: [String],  // Preloaded hints corresponding to wordQueue (for future hint feature)
-    queueIndex: {         // Current position in word queue
+    clue: String,
+    clueQueue: [String],  // Preloaded clues for optimistic client updates
+    queueIndex: {         // Current position in clue queue
       type: Number,
       default: 0
     },
     startTime: Date,
     timeLeft: Number,
-    turnWords: [{
-      word: String,
+    turnClues: [{
+      clue: String,
       status: {
         type: String,
         enum: ['correct', 'skipped']
@@ -95,30 +107,27 @@ const gameSchema = new mongoose.Schema({
       timestamp: Date
     }],
     skipsRemaining: Number,
-    hintsRemaining: Number,
+    skippedClueThisTurn: String,  // Track the one skipped clue that must be answered
     turnScore: Number,
     describerPlayerId: String,
     describerPlayerName: String
   },
-  wordsByCategoryForGame: {
-    type: Object,
-    default: {}
-  },
   lastCompletedTurn: {
-    category: String,
     teamIndex: Number,
     teamName: String,
     describerPlayerId: String,
     describerPlayerName: String,
     score: Number,
-    turnWords: [{
-      word: String,
+    turnClues: [{
+      clue: String,
       status: {
         type: String,
         enum: ['correct', 'skipped']
       },
       timestamp: Date
-    }]
+    }],
+    phaseCompleted: Boolean,    // True if this turn completed a phase
+    completedPhase: Number       // Which phase was completed (1, 2, or 3)
   }
 });
 

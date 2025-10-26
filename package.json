@@ -1,7 +1,7 @@
 {
-  "name": "word-guesser-multiplayer",
+  "name": "the-hat-game",
   "version": "1.0.0",
-  "description": "A multiplayer word guessing game",
+  "description": "The Hat Game - A multiplayer guessing game with three phases",
   "main": "server/index.js",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -9,8 +9,7 @@
     "client": "cd client && npm run dev",
     "build": "cd client && npm install && npm run build",
     "start": "node server/index.js",
-    "install-all": "npm install && cd client && npm install",
-    "convert-words": "node server/data/convertWords.js"
+    "install-all": "npm install && cd client && npm install"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -24,7 +23,7 @@
     "nodemon": "^3.0.1",
     "concurrently": "^8.2.0"
   },
-  "keywords": ["game", "multiplayer", "word-guessing"],
+  "keywords": ["game", "multiplayer", "hat-game", "charades"],
   "author": "jdcb4",
   "license": "MIT"
 }

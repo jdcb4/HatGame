@@ -58,11 +58,11 @@ export const GameProvider = ({ children }) => {
         console.log('📨 Game updated received:', {
           status: updatedGame.status,
           currentPhase: updatedGame.currentPhase,
+          currentGamePhase: updatedGame.currentGamePhase,
           currentTurn: updatedGame.currentTurn ? {
-            category: updatedGame.currentTurn.category,
-            word: updatedGame.currentTurn.word,
+            clue: updatedGame.currentTurn.clue,
             turnScore: updatedGame.currentTurn.turnScore,
-            wordQueueLength: updatedGame.currentTurn.wordQueue?.length,
+            clueQueueLength: updatedGame.currentTurn.clueQueue?.length,
             queueIndex: updatedGame.currentTurn.queueIndex
           } : null,
           hasLastCompletedTurn: !!updatedGame.lastCompletedTurn
@@ -227,6 +227,12 @@ export const GameProvider = ({ children }) => {
     }
   };
 
+  // Submit clues during lobby phase
+  const submitClues = (playerId, playerName, clues) => {
+    console.log('📝 submitClues called:', { playerId, playerName, cluesCount: clues.length });
+    emitGameAction('submit-clues', { playerId, playerName, clues });
+  };
+
   const value = {
     game,
     socket,
@@ -238,7 +244,8 @@ export const GameProvider = ({ children }) => {
     joinTeam,
     startGame,
     fetchGame,
-    emitGameAction
+    emitGameAction,
+    submitClues
   };
 
   return (

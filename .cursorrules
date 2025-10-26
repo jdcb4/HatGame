@@ -1,7 +1,7 @@
-# Cursor AI Rules for BackEndTicky
+# Cursor AI Rules for The Hat Game
 
 ## Project Context
-- **Project:** BackEndTicky - Multiplayer word guessing game (similar to Catchphrase)
+- **Project:** The Hat Game - Multiplayer guessing game with three phases (Describe, One Word, Charades)
 - **Tech Stack:** Node.js, Express, Socket.IO, React 18, MongoDB, Tailwind CSS
 - **Developer:** @jdcb4 (novice coder, prefer simple understandable code)
 - **GitHub:** github.com/jdcb4

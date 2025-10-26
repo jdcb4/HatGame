@@ -1,15 +1,17 @@
-# Word Guesser Multiplayer Game
+# The Hat Game
 
-A real-time multiplayer word guessing game built with Node.js, Express, Socket.IO, React, and MongoDB.
+A real-time multiplayer party game with three exciting phases: Describe, One Word, and Charades! Built with Node.js, Express, Socket.IO, React, and MongoDB.
 
 ## Features
 
+- **Three distinct game phases** (Describe, One Word, Charades)
 - **Real-time multiplayer gameplay** using WebSockets
 - **Team-based competition** with customizable team names
+- **Player-submitted clues** (person names) used across all phases
 - **Role-based views** (describer vs guesser vs spectator)
-- **Timer-based rounds** with scoring system
-- **Hint system** (2 hints per turn with smart auto-clearing)
-- **Word preloading** for instant feedback (0ms delay)
+- **Smart skip system** with return logic (can't skip twice until answering first)
+- **Clue preloading** for instant feedback (0ms delay)
+- **Phase transition announcements** with clear rule displays
 - **Live leaderboard** updates
 - **Responsive design** optimized for mobile and desktop
 - **Production-ready** deployment on Railway with MongoDB Atlas
@@ -74,9 +76,10 @@ A real-time multiplayer word guessing game built with Node.js, Express, Socket.I
 
 1. **Create a free account** at [MongoDB Atlas](https://www.mongodb.com/atlas)
 2. **Create a new cluster** (free M0 tier)
-3. **Create a database user** with read/write permissions
-4. **Whitelist your IP** (or use 0.0.0.0/0 for development)
-5. **Get your connection string** and add it to `.env`
+3. **Create a database** called `thehatgame_db`
+4. **Create a database user** with read/write permissions
+5. **Whitelist your IP** (or use 0.0.0.0/0 for development)
+6. **Get your connection string** and add it to `.env`
 
 ## Deployment to Railway (Production)
 
@@ -112,30 +115,54 @@ If you want to deploy to Vercel anyway (for testing only), you'll need to add a 
 
 ## Game Rules
 
-1. **Setup:** Players create or join a game using a Game ID
-2. **Teams:** Players join teams in the lobby
-3. **Turns:** Teams take turns describing words to their teammates
-4. **Scoring:** Correct guesses = +1 point, skips = -1 point (after free skips)
-5. **Rounds:** Game continues for a set number of rounds
-6. **Winner:** Team with highest score wins
+**The Hat Game** is played in three phases using the same set of clues (person names):
+
+### Setup
+1. **Join Game:** Players create or join using a Game ID
+2. **Join Teams:** 2-4 teams, at least 2 players per team
+3. **Submit Clues:** Each player submits 6 person names (real or fictional)
+
+### Three Phases
+1. **Phase 1: Describe** - Use as many words as you want to describe the person
+2. **Phase 2: One Word** - Say exactly ONE WORD only to give a clue  
+3. **Phase 3: Charades** - Act it out silently - no words or sounds!
+
+### Gameplay
+- Teams alternate turns with a timer (default: 45 seconds)
+- Describer sees clues one at a time from the shared pool
+- Correct guess = +1 point, clue is removed from pool
+- Can skip 1 clue per turn (but must answer it before skipping again)
+- Phase completes when all clues are guessed → advance to next phase
+- Game ends after Phase 3, highest score wins!
+
+**See [HAT_GAME_RULES.md](./HAT_GAME_RULES.md) for detailed rules and strategy tips.**
 
 ## Project Structure
 
 ```
-word-guesser-multiplayer/
-├── server/                 # Backend code
-│   ├── index.js           # Main server file
-│   ├── models/            # Database models
-│   ├── routes/            # API routes
-│   └── data/              # Game data
-├── client/                # Frontend code
+thehatgame/
+├── server/                      # Backend code
+│   ├── index.js                # Main server file
+│   ├── models/                 # Database models
+│   │   └── Game.js            # Game schema with clue pool
+│   ├── routes/                 # API routes
+│   ├── handlers/               # Game logic handlers
+│   │   ├── shared/            # Lobby and clue submission
+│   │   └── gameplay/          # Turn, clue, and queue handlers
+│   └── utils/                  # Helper utilities
+├── client/                     # Frontend code
 │   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── context/      # React context
-│   │   └── App.jsx       # Main app component
+│   │   ├── components/        # React components (screens)
+│   │   │   ├── LobbyScreen.jsx      # Clue submission
+│   │   │   ├── ReadyScreen.jsx      # Phase transitions
+│   │   │   ├── GameScreen.jsx       # Active gameplay
+│   │   │   └── GameOverScreen.jsx   # Final results
+│   │   ├── context/           # React context
+│   │   │   └── GameContext.jsx     # Global state + socket
+│   │   └── App.jsx            # Main app component
 │   └── package.json
-├── package.json           # Root package.json
-├── vercel.json           # Vercel configuration
+├── package.json               # Root package.json
+├── HAT_GAME_RULES.md         # Detailed game rules
 └── README.md
 ```
 
@@ -159,13 +186,18 @@ word-guesser-multiplayer/
 ## Customization
 
 ### Game Settings
-Edit `server/data/words.js` to add/modify word categories and difficulty levels.
+Configurable in the lobby before game starts:
+- Turn duration (15-120 seconds)
+- Total rounds (1-10)
+- Skips per turn (0-5)
+- Clues per player (3-10)
 
 ### Styling
 Modify `client/src/index.css` and component files to change the appearance.
 
 ### Game Rules
-Update `server/models/Game.js` to modify game settings and rules.
+Update `server/models/Game.js` to modify game schema and rules.
+See `HAT_GAME_RULES.md` for detailed gameplay mechanics.
 
 ## Troubleshooting
 

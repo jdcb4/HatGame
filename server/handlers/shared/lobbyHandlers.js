@@ -39,8 +39,26 @@ async function handleJoinTeam(game, { playerId, playerName, teamIndex }) {
 async function handleStartGame(game) {
   console.log('handleStartGame called for game:', game.id);
   
+  // Check if all players have submitted clues
+  const allPlayerIds = new Set();
+  game.teams.forEach(team => {
+    Object.keys(team.players).forEach(pid => allPlayerIds.add(pid));
+  });
+  
+  const submittedCount = Object.keys(game.clueSubmissions || {}).filter(
+    pid => game.clueSubmissions[pid]?.hasSubmitted
+  ).length;
+  
+  if (submittedCount < allPlayerIds.size) {
+    console.error(`❌ Cannot start game: Only ${submittedCount}/${allPlayerIds.size} players have submitted clues`);
+    return game;
+  }
+  
+  console.log(`✅ All ${allPlayerIds.size} players have submitted clues. Starting game!`);
+  
   game.status = 'in-progress';
   game.currentPhase = 'ready';
+  game.currentGamePhase = 1;  // Start with Phase 1: Describe
   game.currentRound = 1;
   game.currentTeamIndex = 0;
   game.lastCompletedTurn = null;
@@ -51,19 +69,19 @@ async function handleStartGame(game) {
     game.currentDescriberIndex.set(String(i), 0);
   }
   
-  // Initialize game words
-  const wordsByCategory = require('../../data/words');
-  game.wordsByCategoryForGame = {};
+  // Shuffle the clue pool for randomness
+  shuffleArray(game.cluePool);
   
-  // Copy and shuffle words in each category
-  for (const [category, words] of Object.entries(wordsByCategory)) {
-    const shuffledWords = [...words];
-    shuffleArray(shuffledWords);
-    game.wordsByCategoryForGame[category] = shuffledWords;
-  }
+  // Initialize used clues tracker (empty at start)
+  game.usedCluesInPhase = [];
   
-  console.log('Game initialized, phase set to ready for first team');
-  console.log('Teams:', game.teams.map((t, i) => `${t.name}: ${Object.keys(t.players).length} players`));
+  console.log('✅ Game initialized with', game.cluePool.length, 'clues');
+  console.log('🎮 Starting Phase 1: Describe');
+  console.log('👥 Teams:', game.teams.map((t, i) => `${t.name}: ${Object.keys(t.players).length} players`));
+  
+  // Mark arrays as modified for Mongoose
+  game.markModified('cluePool');
+  game.markModified('usedCluesInPhase');
   
   // Save and emit - players should now see the Ready screen
   return await game.save();
@@ -81,11 +99,10 @@ async function handleUpdateGameSettings(game, settings) {
   
   // Validate settings values
   const validatedSettings = {
-    turnDuration: Math.max(15, Math.min(120, parseInt(settings.turnDuration) || 30)),
+    turnDuration: Math.max(15, Math.min(120, parseInt(settings.turnDuration) || 45)),
     totalRounds: Math.max(1, Math.min(10, parseInt(settings.totalRounds) || 3)),
     skipsPerTurn: Math.max(0, Math.min(5, parseInt(settings.skipsPerTurn) || 1)),
-    penaltyForExtraSkip: Math.max(0, Math.min(3, parseInt(settings.penaltyForExtraSkip) || 1)),
-    hintsPerTurn: Math.max(0, Math.min(5, parseInt(settings.hintsPerTurn) || 2))
+    cluesPerPlayer: Math.max(3, Math.min(10, parseInt(settings.cluesPerPlayer) || 6))
   };
   
   console.log('✅ Validated settings:', validatedSettings);

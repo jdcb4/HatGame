@@ -95,6 +95,30 @@ function ReadyScreen({ playerId, playerName }) {
       <div className="w-full max-w-2xl">
         <div className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg max-h-[98vh] overflow-y-auto">
           
+          {/* Phase Completion Banner */}
+          {game.lastCompletedTurn?.phaseCompleted && (
+            <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl text-white text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                🎉 Phase {game.lastCompletedTurn.completedPhase} Complete! 🎉
+              </h2>
+              <p className="text-sm sm:text-base mb-3">
+                All clues have been guessed in this phase!
+              </p>
+              {game.currentGamePhase <= 3 && (
+                <div className="bg-white/20 p-3 rounded-lg">
+                  <p className="font-bold mb-2">
+                    {game.currentGamePhase === 2 && 'Now Starting: Phase 2 - One Word'}
+                    {game.currentGamePhase === 3 && 'Now Starting: Phase 3 - Charades'}
+                  </p>
+                  <p className="text-sm">
+                    {game.currentGamePhase === 2 && 'Describers can say only ONE WORD per clue!'}
+                    {game.currentGamePhase === 3 && 'Describers must be SILENT - act it out!'}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+          
           {/* Previous Turn Results (if available) */}
           {game.lastCompletedTurn && (
             <div className="mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-slate-200">
@@ -119,18 +143,18 @@ function ReadyScreen({ playerId, playerName }) {
                   </div>
                 </div>
                 
-                {/* Words from last turn */}
-                {game.lastCompletedTurn.turnWords && game.lastCompletedTurn.turnWords.length > 0 && (
+                {/* Clues from last turn */}
+                {game.lastCompletedTurn.turnClues && game.lastCompletedTurn.turnClues.length > 0 && (
                   <div>
-                    <h3 className="font-semibold text-slate-700 mb-1 text-xs sm:text-sm">Words:</h3>
+                    <h3 className="font-semibold text-slate-700 mb-1 text-xs sm:text-sm">Clues:</h3>
                     <div className="max-h-24 sm:max-h-32 overflow-y-auto space-y-0.5">
-                      {game.lastCompletedTurn.turnWords.map((word, index) => (
+                      {game.lastCompletedTurn.turnClues.map((clue, index) => (
                         <div key={index} className="flex justify-between text-xs sm:text-sm">
-                          <span className="truncate mr-2">{word.word}</span>
+                          <span className="truncate mr-2">{clue.clue}</span>
                           <span className={`font-semibold flex-shrink-0 ${
-                            word.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
+                            clue.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
                           }`}>
-                            {word.status === 'correct' ? '✓' : '⊘'}
+                            {clue.status === 'correct' ? '✓' : '⊘'}
                           </span>
                         </div>
                       ))}
@@ -185,6 +209,20 @@ function ReadyScreen({ playerId, playerName }) {
             ) : (
               // Game in progress - show next turn info
               <>
+                {/* Phase Display */}
+                <div className="mb-4 p-3 bg-indigo-50 border-2 border-indigo-200 rounded-lg">
+                  <p className="text-sm sm:text-base font-bold text-indigo-700">
+                    {game.currentGamePhase === 1 && '📝 Phase 1: Describe'}
+                    {game.currentGamePhase === 2 && '💬 Phase 2: One Word'}
+                    {game.currentGamePhase === 3 && '🎭 Phase 3: Charades'}
+                  </p>
+                  <p className="text-xs sm:text-sm text-indigo-600 mt-1">
+                    {game.currentGamePhase === 1 && 'Use as many words as you want to describe the person'}
+                    {game.currentGamePhase === 2 && 'Say exactly ONE WORD only to give a clue'}
+                    {game.currentGamePhase === 3 && 'Act it out silently - no words or sounds allowed!'}
+                  </p>
+                </div>
+                
                 <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-slate-900">
                   {game.lastCompletedTurn ? 'Next Up' : 'First Turn'}
                 </h2>
@@ -245,6 +283,9 @@ function ReadyScreen({ playerId, playerName }) {
           {game.status !== 'finished' && (
             <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200 text-center text-xs sm:text-sm text-slate-500">
               <p>Round {game.currentRound} of {game.gameSettings?.totalRounds || 3}</p>
+              <p className="mt-1">
+                Phase {game.currentGamePhase} of 3
+              </p>
             </div>
           )}
         </div>

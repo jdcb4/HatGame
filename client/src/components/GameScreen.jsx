@@ -12,13 +12,9 @@ const GameScreen = ({ playerId, playerName }) => {
   const [isCurrentTeam, setIsCurrentTeam] = useState(false);
   const [isProcessingAction, setIsProcessingAction] = useState(false);
   
-  // Local word queue for optimistic updates (instant feedback)
-  const [localWordQueue, setLocalWordQueue] = useState([]);
-  const [localWordIndex, setLocalWordIndex] = useState(0);
-  
-  // Hint functionality
-  const [showHint, setShowHint] = useState(false);
-  const [currentHint, setCurrentHint] = useState('');
+  // Local clue queue for optimistic updates (instant feedback)
+  const [localClueQueue, setLocalClueQueue] = useState([]);
+  const [localClueIndex, setLocalClueIndex] = useState(0);
 
   useEffect(() => {
     if (gameId) {
@@ -26,73 +22,67 @@ const GameScreen = ({ playerId, playerName }) => {
     }
   }, [gameId]);
   
-  // Initialize word queue when turn starts
+  // Initialize clue queue when turn starts
   useEffect(() => {
-    if (game?.currentTurn?.wordQueue && game?.currentTurn?.startTime) {
-      console.log('Initializing word queue:', {
-        queueLength: game.currentTurn.wordQueue.length,
+    if (game?.currentTurn?.clueQueue && game?.currentTurn?.startTime) {
+      console.log('✅ Initializing clue queue:', {
+        queueLength: game.currentTurn.clueQueue.length,
         serverIndex: game.currentTurn.queueIndex || 0,
-        firstWord: game.currentTurn.wordQueue[0]
+        firstClue: game.currentTurn.clueQueue[0]
       });
-      setLocalWordQueue(game.currentTurn.wordQueue);
-      setLocalWordIndex(game.currentTurn.queueIndex || 0);
+      setLocalClueQueue(game.currentTurn.clueQueue);
+      setLocalClueIndex(game.currentTurn.queueIndex || 0);
     }
   }, [game?.currentTurn?.startTime]); // Only reinitialize when a new turn starts
   
-  // Clear hint when word changes
-  useEffect(() => {
-    setShowHint(false);
-    setCurrentHint('');
-  }, [localWordIndex]);
-  
-  // Request more words when queue is running low (8 words left - request earlier!)
+  // Request more clues when queue is running low (8 clues left - request earlier!)
   // Use a ref to track if we've already requested to avoid multiple requests
   const hasRequestedMore = React.useRef(false);
   
   useEffect(() => {
-    if (localWordQueue.length > 0 && localWordIndex >= 0) {
-      const wordsRemaining = localWordQueue.length - localWordIndex;
-      console.log(`📊 Queue status: index=${localWordIndex}, total=${localWordQueue.length}, remaining=${wordsRemaining}`);
+    if (localClueQueue.length > 0 && localClueIndex >= 0) {
+      const cluesRemaining = localClueQueue.length - localClueIndex;
+      console.log(`📊 Queue status: index=${localClueIndex}, total=${localClueQueue.length}, remaining=${cluesRemaining}`);
       
-      // Request earlier (at 8 words) to give time for server round-trip
-      if (wordsRemaining <= 8 && wordsRemaining > 0 && !hasRequestedMore.current) {
-        console.log(`⚠️ Only ${wordsRemaining} words left in queue, requesting more...`);
+      // Request earlier (at 8 clues) to give time for server round-trip
+      if (cluesRemaining <= 8 && cluesRemaining > 0 && !hasRequestedMore.current) {
+        console.log(`⚠️ Only ${cluesRemaining} clues left in queue, requesting more...`);
         emitGameAction('request-more-words', { count: 10 });
         hasRequestedMore.current = true;
       }
       
-      // Reset flag when we have plenty of words again (more than 12)
-      if (wordsRemaining > 12) {
+      // Reset flag when we have plenty of clues again (more than 12)
+      if (cluesRemaining > 12) {
         hasRequestedMore.current = false;
       }
     }
-  }, [localWordIndex, localWordQueue.length]);
+  }, [localClueIndex, localClueQueue.length]);
   
-  // Update local queue when server sends more words
+  // Update local queue when server sends more clues
   useEffect(() => {
-    if (game?.currentTurn?.wordQueue && Array.isArray(game.currentTurn.wordQueue)) {
-      const serverQueueLength = game.currentTurn.wordQueue.length;
-      const localQueueLength = localWordQueue.length;
+    if (game?.currentTurn?.clueQueue && Array.isArray(game.currentTurn.clueQueue)) {
+      const serverQueueLength = game.currentTurn.clueQueue.length;
+      const localQueueLength = localClueQueue.length;
       
       console.log('🔍 Checking queue sync:', {
         serverLength: serverQueueLength,
         localLength: localQueueLength,
-        localIndex: localWordIndex,
-        serverQueuePreview: game.currentTurn.wordQueue.slice(0, 3),
-        localQueuePreview: localWordQueue.slice(0, 3)
+        localIndex: localClueIndex,
+        serverQueuePreview: game.currentTurn.clueQueue.slice(0, 3),
+        localQueuePreview: localClueQueue.slice(0, 3)
       });
       
-      // Update if server has more words OR if local queue is empty
+      // Update if server has more clues OR if local queue is empty
       if (serverQueueLength > localQueueLength || localQueueLength === 0) {
-        console.log('✅ Server has more words! Updating local queue from', localQueueLength, 'to', serverQueueLength);
-        setLocalWordQueue([...game.currentTurn.wordQueue]); // Create new array to trigger re-render
-        // Reset the request flag since we got new words
+        console.log('✅ Server has more clues! Updating local queue from', localQueueLength, 'to', serverQueueLength);
+        setLocalClueQueue([...game.currentTurn.clueQueue]); // Create new array to trigger re-render
+        // Reset the request flag since we got new clues
         hasRequestedMore.current = false;
       } else {
         console.log('   No update needed (server:', serverQueueLength, 'local:', localQueueLength, ')');
       }
     }
-  }, [game?.currentTurn?.wordQueue, game?.currentTurn]); // Watch the whole wordQueue object
+  }, [game?.currentTurn?.clueQueue, game?.currentTurn]); // Watch the whole clueQueue object
 
   // Navigate to ready screen when phase changes to 'ready'
   useEffect(() => {
@@ -156,75 +146,82 @@ const GameScreen = ({ playerId, playerName }) => {
   // Server handles turn initialization automatically
 
   const handleWordCorrect = () => {
-    // Optimistic update: show next word instantly!
-    if (game.currentTurn && !isProcessingAction && localWordQueue.length > 0) {
+    // Optimistic update: show next clue instantly!
+    if (game.currentTurn && !isProcessingAction && localClueQueue.length > 0) {
       // Safety check: don't go past the end of the queue
-      if (localWordIndex >= localWordQueue.length) {
-        console.warn('⚠️ Already at end of word queue, cannot advance');
+      if (localClueIndex >= localClueQueue.length) {
+        console.warn('⚠️ Already at end of clue queue, cannot advance');
         return;
       }
       
       setIsProcessingAction(true);
       
-      const currentWord = localWordQueue[localWordIndex] || game.currentTurn.word;
-      const nextIndex = localWordIndex + 1;
+      const currentClue = localClueQueue[localClueIndex] || game.currentTurn.clue;
+      const nextIndex = localClueIndex + 1;
       
-      // INSTANT: Move to next word locally (0ms delay!)
-      setLocalWordIndex(nextIndex);
+      // INSTANT: Move to next clue locally (0ms delay!)
+      setLocalClueIndex(nextIndex);
       
       // Background: Send action to server for scoring/validation
       emitGameAction('word-correct', { 
-        word: currentWord,
-        queueIndex: localWordIndex 
+        word: currentClue,  // Keep 'word' for backward compatibility
+        queueIndex: localClueIndex 
       });
       
       // Re-enable buttons quickly (200ms) since we don't wait for server
       setTimeout(() => setIsProcessingAction(false), 200);
       
       console.log('✅ Optimistic correct:', { 
-        word: currentWord, 
-        oldIndex: localWordIndex,
+        clue: currentClue, 
+        oldIndex: localClueIndex,
         newIndex: nextIndex,
-        nextWord: localWordQueue[nextIndex],
-        queueLength: localWordQueue.length,
-        remaining: localWordQueue.length - nextIndex
+        nextClue: localClueQueue[nextIndex],
+        queueLength: localClueQueue.length,
+        remaining: localClueQueue.length - nextIndex
       });
     }
   };
 
   const handleWordSkip = () => {
-    // Optimistic update: show next word instantly!
-    if (game.currentTurn && !isProcessingAction && localWordQueue.length > 0) {
+    // Check if already skipped a clue (can't skip twice until answering the first)
+    if (game.currentTurn?.skippedClueThisTurn) {
+      setError('Must answer the skipped clue before skipping another!');
+      setTimeout(() => setError(null), 3000);
+      return;
+    }
+    
+    // Optimistic update: show next clue instantly!
+    if (game.currentTurn && !isProcessingAction && localClueQueue.length > 0) {
       // Safety check: don't go past the end of the queue
-      if (localWordIndex >= localWordQueue.length) {
-        console.warn('⚠️ Already at end of word queue, cannot advance');
+      if (localClueIndex >= localClueQueue.length) {
+        console.warn('⚠️ Already at end of clue queue, cannot advance');
         return;
       }
       
       setIsProcessingAction(true);
       
-      const currentWord = localWordQueue[localWordIndex] || game.currentTurn.word;
-      const nextIndex = localWordIndex + 1;
+      const currentClue = localClueQueue[localClueIndex] || game.currentTurn.clue;
+      const nextIndex = localClueIndex + 1;
       
-      // INSTANT: Move to next word locally (0ms delay!)
-      setLocalWordIndex(nextIndex);
+      // INSTANT: Move to next clue locally (0ms delay!)
+      setLocalClueIndex(nextIndex);
       
       // Background: Send action to server for scoring/validation
       emitGameAction('word-skip', { 
-        word: currentWord,
-        queueIndex: localWordIndex 
+        word: currentClue,  // Keep 'word' for backward compatibility
+        queueIndex: localClueIndex 
       });
       
       // Re-enable buttons quickly (200ms) since we don't wait for server
       setTimeout(() => setIsProcessingAction(false), 200);
       
       console.log('⏭️ Optimistic skip:', { 
-        word: currentWord, 
-        oldIndex: localWordIndex,
+        clue: currentClue, 
+        oldIndex: localClueIndex,
         newIndex: nextIndex,
-        nextWord: localWordQueue[nextIndex],
-        queueLength: localWordQueue.length,
-        remaining: localWordQueue.length - nextIndex
+        nextClue: localClueQueue[nextIndex],
+        queueLength: localClueQueue.length,
+        remaining: localClueQueue.length - nextIndex
       });
     }
   };
@@ -232,24 +229,8 @@ const GameScreen = ({ playerId, playerName }) => {
   const handleEndTurn = () => {
     console.log('GameScreen: Ending turn');
     emitGameAction('end-turn', {});
-    // Clear hint when turn ends
-    setShowHint(false);
-    setCurrentHint('');
     // Don't navigate immediately - let the game state update first
     // Navigation will happen in useEffect when currentPhase changes to 'ready'
-  };
-  
-  // Handle showing hint
-  const handleShowHint = () => {
-    if (game?.currentTurn?.hintsRemaining > 0) {
-      const hintIndex = localWordIndex;
-      const hint = game.currentTurn.hintQueue?.[hintIndex] || 'No hint available';
-      setCurrentHint(hint);
-      setShowHint(true);
-      
-      // Decrement hints remaining on server
-      emitGameAction('use-hint', { queueIndex: hintIndex });
-    }
   };
 
   if (loading) {
@@ -358,6 +339,11 @@ const GameScreen = ({ playerId, playerName }) => {
               <p className="text-xs sm:text-sm text-slate-500">
                 Round {game.currentRound || 1} of {game.gameSettings?.totalRounds || 3}
               </p>
+              <p className="text-xs sm:text-sm font-bold text-indigo-600 mt-1">
+                {game.currentGamePhase === 1 && 'Phase 1: Describe'}
+                {game.currentGamePhase === 2 && 'Phase 2: One Word'}
+                {game.currentGamePhase === 3 && 'Phase 3: Charades'}
+              </p>
             </div>
             <div className="flex flex-col items-end gap-1">
               {/* End Turn Early Button - small icon (only for describer) */}
@@ -385,21 +371,19 @@ const GameScreen = ({ playerId, playerName }) => {
               // Describer view
               <>
                 <h2 className="font-bold text-slate-900 mb-3 break-words text-center text-3xl sm:text-4xl md:text-5xl leading-tight px-2">
-                  {localWordQueue[localWordIndex] || game.currentTurn?.word || 'Loading...'}
+                  {localClueQueue[localClueIndex] || game.currentTurn?.clue || 'Loading...'}
                 </h2>
-                <p className="text-lg sm:text-xl text-slate-500 font-medium">
-                  {game.currentTurn?.category ? 
-                    game.currentTurn.category.charAt(0).toUpperCase() + game.currentTurn.category.slice(1) : 
-                    'Loading...'
-                  }
+                <p className="text-base sm:text-lg text-indigo-600 font-medium mb-2">
+                  {game.currentGamePhase === 1 && '💬 Use as many words as you want!'}
+                  {game.currentGamePhase === 2 && '⚠️ Say exactly ONE WORD only!'}
+                  {game.currentGamePhase === 3 && '🤫 SILENT - Act it out!'}
                 </p>
-                
-                {/* Hint display */}
-                {showHint && currentHint && (
-                  <div className="mt-4 p-3 bg-indigo-100 border-2 border-indigo-300 rounded-lg max-w-md">
-                    <p className="text-sm sm:text-base text-indigo-900 text-center font-medium">
-                      💡 {currentHint}
+                {game.currentTurn?.skippedClueThisTurn && (
+                  <div className="mt-2 p-2 bg-amber-100 border-2 border-amber-400 rounded-lg">
+                    <p className="text-xs sm:text-sm text-amber-900 font-bold">
+                      ⚠️ Skipped: "{game.currentTurn.skippedClueThisTurn}"
                     </p>
+                    <p className="text-xs text-amber-700">Must answer this before skipping again</p>
                   </div>
                 )}
               </>
@@ -409,26 +393,27 @@ const GameScreen = ({ playerId, playerName }) => {
                 <h2 className="font-bold text-slate-900 mb-2 text-center text-xl sm:text-2xl">
                   Your team is guessing!
                 </h2>
-                <p className="text-base sm:text-lg text-slate-500 font-medium mb-3">
-                  Category: {game.currentTurn.category ? game.currentTurn.category.charAt(0).toUpperCase() + game.currentTurn.category.slice(1) : 'Loading...'}
+                <p className="text-base sm:text-lg text-indigo-600 font-medium mb-3">
+                  {game.currentGamePhase === 1 && 'Listen and guess the person!'}
+                  {game.currentGamePhase === 2 && 'One word clue - guess the person!'}
+                  {game.currentGamePhase === 3 && 'Watch the charades!'}
                 </p>
                 <div className="text-center text-slate-600 text-sm sm:text-base">
-                  <p>Listen to your teammate describe the word</p>
                   <p className="text-xs sm:text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
                 </div>
                 
-                {/* Word list for guessers */}
-                {game.currentTurn?.turnWords && game.currentTurn.turnWords.length > 0 && (
+                {/* Clue list for guessers */}
+                {game.currentTurn?.turnClues && game.currentTurn.turnClues.length > 0 && (
                   <div className="mt-4 w-full max-w-md">
-                    <h3 className="text-xs sm:text-sm font-semibold text-slate-700 mb-2 text-center">Words this turn:</h3>
+                    <h3 className="text-xs sm:text-sm font-semibold text-slate-700 mb-2 text-center">Clues this turn:</h3>
                     <div className="max-h-32 sm:max-h-40 overflow-y-auto bg-white border border-slate-200 rounded-lg p-2 space-y-1">
-                      {game.currentTurn.turnWords.map((word, index) => (
+                      {game.currentTurn.turnClues.map((clue, index) => (
                         <div key={index} className="flex justify-between items-center text-xs sm:text-sm px-2 py-1 rounded hover:bg-slate-50">
-                          <span className="truncate mr-2 text-slate-700">{word.word}</span>
+                          <span className="truncate mr-2 text-slate-700">{clue.clue}</span>
                           <span className={`font-bold flex-shrink-0 ${
-                            word.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
+                            clue.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
                           }`}>
-                            {word.status === 'correct' ? '✓' : '⊘'}
+                            {clue.status === 'correct' ? '✓' : '⊘'}
                           </span>
                         </div>
                       ))}
@@ -442,29 +427,28 @@ const GameScreen = ({ playerId, playerName }) => {
                 <h2 className="font-bold text-slate-900 mb-2 text-center text-xl sm:text-2xl">
                   Waiting for {currentTeam.name}
                 </h2>
-                <p className="text-base sm:text-lg text-slate-500 font-medium mb-3">
-                  Category: {game.currentTurn?.category ? 
-                    game.currentTurn.category.charAt(0).toUpperCase() + game.currentTurn.category.slice(1) : 
-                    'Loading...'
-                  }
+                <p className="text-base sm:text-lg text-indigo-600 font-medium mb-3">
+                  {game.currentGamePhase === 1 && 'They are describing'}
+                  {game.currentGamePhase === 2 && 'One word only!'}
+                  {game.currentGamePhase === 3 && 'Silent charades'}
                 </p>
                 <div className="text-center text-slate-600 text-sm sm:text-base">
-                  <p>It's their turn to guess words</p>
+                  <p>It's their turn to guess clues</p>
                   <p className="text-xs sm:text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
                 </div>
                 
-                {/* Word list for spectators */}
-                {game.currentTurn?.turnWords && game.currentTurn.turnWords.length > 0 && (
+                {/* Clue list for spectators */}
+                {game.currentTurn?.turnClues && game.currentTurn.turnClues.length > 0 && (
                   <div className="mt-4 w-full max-w-md">
-                    <h3 className="text-xs sm:text-sm font-semibold text-slate-700 mb-2 text-center">Words this turn:</h3>
+                    <h3 className="text-xs sm:text-sm font-semibold text-slate-700 mb-2 text-center">Clues this turn:</h3>
                     <div className="max-h-32 sm:max-h-40 overflow-y-auto bg-white border border-slate-200 rounded-lg p-2 space-y-1">
-                      {game.currentTurn.turnWords.map((word, index) => (
+                      {game.currentTurn.turnClues.map((clue, index) => (
                         <div key={index} className="flex justify-between items-center text-xs sm:text-sm px-2 py-1 rounded hover:bg-slate-50">
-                          <span className="truncate mr-2 text-slate-700">{word.word}</span>
+                          <span className="truncate mr-2 text-slate-700">{clue.clue}</span>
                           <span className={`font-bold flex-shrink-0 ${
-                            word.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
+                            clue.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
                           }`}>
-                            {word.status === 'correct' ? '✓' : '⊘'}
+                            {clue.status === 'correct' ? '✓' : '⊘'}
                           </span>
                         </div>
                       ))}
@@ -484,22 +468,11 @@ const GameScreen = ({ playerId, playerName }) => {
           {/* Action Buttons (only for describer) */}
           {isDescriber && (
             <>
-              {/* Hint Button */}
-              <div className="mt-3">
-                <button
-                  onClick={handleShowHint}
-                  disabled={!game?.currentTurn?.hintsRemaining || game.currentTurn.hintsRemaining === 0 || showHint}
-                  className="w-full bg-indigo-500 text-white font-bold py-2 px-4 rounded-lg text-sm sm:text-base transition-colors hover:bg-indigo-600 disabled:bg-slate-400 disabled:cursor-not-allowed"
-                >
-                  💡 Hint ({game?.currentTurn?.hintsRemaining ?? 0})
-                </button>
-              </div>
-              
               {/* Skip and Correct Buttons */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-3">
                 <button
                   onClick={handleWordSkip}
-                  disabled={isProcessingAction}
+                  disabled={isProcessingAction || !!game.currentTurn?.skippedClueThisTurn}
                   className="bg-amber-500 text-white font-bold py-3 sm:py-4 rounded-lg text-base sm:text-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   Skip

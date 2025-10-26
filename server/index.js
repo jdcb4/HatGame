@@ -21,17 +21,14 @@ const {
   handleStartGame,
   handleUpdateGameSettings 
 } = require('./handlers/shared/lobbyHandlers');
+const { handleSubmitClues } = require('./handlers/shared/clueHandlers');
+const { handleRequestMoreClues } = require('./handlers/gameplay/queueHandlers');
 const {
-  handleUseHintFast,
-  handleUseHint
-} = require('./handlers/gameplay/hintHandlers');
-const { handleRequestMoreWords } = require('./handlers/gameplay/queueHandlers');
-const {
-  handleWordCorrectFast,
-  handleWordCorrect,
-  handleWordSkipFast,
-  handleWordSkip
-} = require('./handlers/gameplay/wordHandlers');
+  handleClueCorrectFast,
+  handleClueCorrect,
+  handleClueSkipFast,
+  handleClueSkip
+} = require('./handlers/gameplay/clueHandlers');
 const {
   handleStartTurn,
   handleEndTurn,
@@ -70,7 +67,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Connect to MongoDB
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/word-guesser';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/thehatgame_db';
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
@@ -125,7 +122,7 @@ io.on('connection', (socket) => {
         return;
       }
       
-      console.log(`Socket handler: Loaded game ${gameId}, currentTurn exists: ${!!game.currentTurn}, words count: ${game.currentTurn ? Object.keys(game.wordsByCategoryForGame).map(cat => `${cat}:${game.wordsByCategoryForGame[cat].length}`).join(', ') : 'no-turn'}`);
+      console.log(`Socket handler: Loaded game ${gameId}, currentTurn exists: ${!!game.currentTurn}`);
 
       // Process the action based on type
       let updatedGame = game;
@@ -137,6 +134,10 @@ io.on('connection', (socket) => {
         case 'join-team':
           updatedGame = await handleJoinTeam(game, payload);
           break;
+        case 'submit-clues':
+          console.log('📝 Received submit-clues action');
+          updatedGame = await handleSubmitClues(game, payload.playerId, payload.playerName, payload.clues);
+          break;
         case 'start-game':
           updatedGame = await handleStartGame(game);
           break;
@@ -144,27 +145,24 @@ io.on('connection', (socket) => {
           updatedGame = await handleUpdateGameSettings(game, payload);
           break;
         case 'start-turn':
-          console.log('Received start-turn action from client');
+          console.log('🎬 Received start-turn action from client');
           updatedGame = await handleStartTurn(game);
           break;
         case 'word-correct':
           // Fast path: update in memory, broadcast immediately, save in background
-          updatedGame = await handleWordCorrectFast(game, payload);
+          // Keep 'word-correct' name for backward compatibility, but use clue handler
+          updatedGame = await handleClueCorrectFast(game, payload);
           shouldBroadcastFirst = true;
           break;
         case 'word-skip':
           // Fast path: update in memory, broadcast immediately, save in background
-          updatedGame = await handleWordSkipFast(game, payload);
-          shouldBroadcastFirst = true;
-          break;
-        case 'use-hint':
-          // Fast path: update in memory, broadcast immediately, save in background
-          updatedGame = await handleUseHintFast(game, payload);
+          // Keep 'word-skip' name for backward compatibility, but use clue handler
+          updatedGame = await handleClueSkipFast(game, payload);
           shouldBroadcastFirst = true;
           break;
         case 'request-more-words':
-          console.log('🎯 MATCHED request-more-words case!');
-          updatedGame = await handleRequestMoreWords(game, payload);
+          console.log('🎯 MATCHED request-more-clues case!');
+          updatedGame = await handleRequestMoreClues(game, payload);
           break;
         case 'end-turn':
           updatedGame = await handleEndTurn(game);
@@ -186,10 +184,10 @@ io.on('connection', (socket) => {
       }
 
       // Broadcast updated game state to all players in the room
-      console.log('Emitting game-updated with currentTurn:', {
-        category: updatedGame.currentTurn?.category,
-        word: updatedGame.currentTurn?.word,
-        turnScore: updatedGame.currentTurn?.turnScore
+      console.log('📤 Emitting game-updated with currentTurn:', {
+        clue: updatedGame.currentTurn?.clue,
+        turnScore: updatedGame.currentTurn?.turnScore,
+        gamePhase: updatedGame.currentGamePhase
       });
       io.to(gameId).emit('game-updated', updatedGame);
       

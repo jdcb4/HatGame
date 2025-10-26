@@ -5,16 +5,19 @@ import { useGame } from '../context/GameContext';
 const LobbyScreen = ({ playerId, playerName }) => {
   const { gameId } = useParams();
   const navigate = useNavigate();
-  const { game, fetchGame, joinTeam, startGame, emitGameAction, loading, error, setError } = useGame();
+  const { game, fetchGame, joinTeam, startGame, submitClues, emitGameAction, loading, error, setError } = useGame();
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [editingSettings, setEditingSettings] = useState(false);
   const [settingsForm, setSettingsForm] = useState({
-    turnDuration: 30,
+    turnDuration: 45,
     totalRounds: 3,
     skipsPerTurn: 1,
-    penaltyForExtraSkip: 1,
-    hintsPerTurn: 2
+    cluesPerPlayer: 6
   });
+  
+  // Clue submission state
+  const [clues, setClues] = useState([]);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   useEffect(() => {
     if (gameId) {
@@ -37,14 +40,30 @@ const LobbyScreen = ({ playerId, playerName }) => {
   useEffect(() => {
     if (game && game.gameSettings) {
       setSettingsForm({
-        turnDuration: game.gameSettings.turnDuration || 30,
+        turnDuration: game.gameSettings.turnDuration || 45,
         totalRounds: game.gameSettings.totalRounds || 3,
         skipsPerTurn: game.gameSettings.skipsPerTurn || 1,
-        penaltyForExtraSkip: game.gameSettings.penaltyForExtraSkip || 1,
-        hintsPerTurn: game.gameSettings.hintsPerTurn || 2
+        cluesPerPlayer: game.gameSettings.cluesPerPlayer || 6
       });
     }
   }, [game]);
+  
+  // Initialize clues array and check submission status
+  useEffect(() => {
+    if (game && game.gameSettings) {
+      const requiredClues = game.gameSettings.cluesPerPlayer || 6;
+      // Initialize empty clues array if not yet done
+      if (clues.length === 0) {
+        setClues(new Array(requiredClues).fill(''));
+      }
+      
+      // Check if this player has already submitted
+      if (game.clueSubmissions && game.clueSubmissions[playerId]?.hasSubmitted) {
+        setHasSubmitted(true);
+        setClues(game.clueSubmissions[playerId].clues);
+      }
+    }
+  }, [game?.gameSettings?.cluesPerPlayer, game?.clueSubmissions, playerId]);
 
   // Navigate to game screen when game starts
   useEffect(() => {
@@ -87,6 +106,25 @@ const LobbyScreen = ({ playerId, playerName }) => {
     }
   };
 
+  const handleClueChange = (index, value) => {
+    const newClues = [...clues];
+    newClues[index] = value;
+    setClues(newClues);
+  };
+  
+  const handleSubmitClues = () => {
+    // Validate all clues are filled
+    const allFilled = clues.every(clue => clue.trim().length > 0);
+    if (!allFilled) {
+      setError('Please fill in all clues before submitting');
+      return;
+    }
+    
+    console.log('📝 Submitting clues:', clues);
+    submitClues(playerId, playerName, clues);
+    setHasSubmitted(true);
+  };
+  
   const canStartGame = () => {
     if (!game || !game.teams) return false;
     
@@ -94,7 +132,22 @@ const LobbyScreen = ({ playerId, playerName }) => {
     const teamsWithPlayers = game.teams.filter(team => 
       team.players && Object.keys(team.players).length > 0
     );
-    return teamsWithPlayers.length >= 2;
+    
+    if (teamsWithPlayers.length < 2) return false;
+    
+    // Check if all players have submitted clues
+    const allPlayerIds = new Set();
+    game.teams.forEach(team => {
+      if (team.players) {
+        Object.keys(team.players).forEach(pid => allPlayerIds.add(pid));
+      }
+    });
+    
+    const submittedCount = Object.keys(game.clueSubmissions || {}).filter(
+      pid => game.clueSubmissions[pid]?.hasSubmitted
+    ).length;
+    
+    return submittedCount >= allPlayerIds.size;
   };
 
   const handleSettingsChange = (field, value) => {
@@ -114,11 +167,10 @@ const LobbyScreen = ({ playerId, playerName }) => {
     // Reset form to current game settings
     if (game && game.gameSettings) {
       setSettingsForm({
-        turnDuration: game.gameSettings.turnDuration || 30,
+        turnDuration: game.gameSettings.turnDuration || 45,
         totalRounds: game.gameSettings.totalRounds || 3,
         skipsPerTurn: game.gameSettings.skipsPerTurn || 1,
-        penaltyForExtraSkip: game.gameSettings.penaltyForExtraSkip || 1,
-        hintsPerTurn: game.gameSettings.hintsPerTurn || 2
+        cluesPerPlayer: game.gameSettings.cluesPerPlayer || 6
       });
     }
     setEditingSettings(false);
@@ -219,6 +271,69 @@ const LobbyScreen = ({ playerId, playerName }) => {
             </div>
           </div>
 
+          {/* Clue Submission */}
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold text-slate-700 mb-4">Submit Your Clues</h2>
+            <div className="p-4 bg-indigo-50 border-2 border-indigo-200 rounded-lg">
+              <p className="text-sm text-slate-600 mb-4">
+                Each clue should be the name of a <strong>person</strong> (real or fictional). 
+                These will be used across all three phases of the game!
+              </p>
+              
+              {hasSubmitted ? (
+                <div className="bg-emerald-100 border-2 border-emerald-400 rounded-lg p-4 text-center">
+                  <div className="text-emerald-700 font-bold text-lg mb-2">✓ Clues Submitted!</div>
+                  <div className="text-sm text-slate-600 space-y-1">
+                    {clues.map((clue, i) => (
+                      <div key={i}>{i + 1}. {clue}</div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {clues.map((clue, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <span className="text-sm font-semibold text-slate-600 w-8">{index + 1}.</span>
+                      <input
+                        type="text"
+                        value={clue}
+                        onChange={(e) => handleClueChange(index, e.target.value)}
+                        placeholder="Enter a person's name"
+                        className="flex-1 border-2 border-slate-300 rounded px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                      />
+                    </div>
+                  ))}
+                  <button
+                    onClick={handleSubmitClues}
+                    disabled={!clues.every(c => c.trim().length > 0)}
+                    className="w-full mt-4 bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition-colors disabled:bg-slate-400 disabled:cursor-not-allowed"
+                  >
+                    Submit Clues
+                  </button>
+                </div>
+              )}
+              
+              {/* Show submission status for all players */}
+              <div className="mt-4 pt-4 border-t border-indigo-300">
+                <div className="text-sm font-semibold text-slate-700 mb-2">Submission Status:</div>
+                <div className="space-y-1">
+                  {game.teams && game.teams.map((team) => 
+                    team.players && Object.entries(team.players).map(([pid, pname]) => (
+                      <div key={pid} className="flex items-center gap-2 text-sm">
+                        {game.clueSubmissions && game.clueSubmissions[pid]?.hasSubmitted ? (
+                          <span className="text-emerald-600 font-bold">✓</span>
+                        ) : (
+                          <span className="text-slate-400">○</span>
+                        )}
+                        <span className="text-slate-700">{pname}</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Game Settings */}
           <div className="mb-8 p-4 bg-slate-50 rounded-lg">
             <div className="flex justify-between items-center mb-3">
@@ -266,7 +381,7 @@ const LobbyScreen = ({ playerId, playerName }) => {
                   </div>
 
                   <div>
-                    <label className="block text-xs text-slate-600 mb-1">Skips per Turn</label>
+                    <label className="block text-xs text-slate-600 mb-1">Skips per Turn (with return)</label>
                     <select
                       value={settingsForm.skipsPerTurn}
                       onChange={(e) => handleSettingsChange('skipsPerTurn', parseInt(e.target.value))}
@@ -282,32 +397,20 @@ const LobbyScreen = ({ playerId, playerName }) => {
                   </div>
 
                   <div>
-                    <label className="block text-xs text-slate-600 mb-1">Penalty for Extra Skip</label>
+                    <label className="block text-xs text-slate-600 mb-1">Clues per Player</label>
                     <select
-                      value={settingsForm.penaltyForExtraSkip}
-                      onChange={(e) => handleSettingsChange('penaltyForExtraSkip', parseInt(e.target.value))}
+                      value={settingsForm.cluesPerPlayer}
+                      onChange={(e) => handleSettingsChange('cluesPerPlayer', parseInt(e.target.value))}
                       className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
                     >
-                      <option value={0}>0 points</option>
-                      <option value={1}>1 point</option>
-                      <option value={2}>2 points</option>
-                      <option value={3}>3 points</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs text-slate-600 mb-1">Hints per Turn</label>
-                    <select
-                      value={settingsForm.hintsPerTurn}
-                      onChange={(e) => handleSettingsChange('hintsPerTurn', parseInt(e.target.value))}
-                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
-                    >
-                      <option value={0}>0</option>
-                      <option value={1}>1</option>
-                      <option value={2}>2</option>
-                      <option value={3}>3</option>
-                      <option value={4}>4</option>
-                      <option value={5}>5</option>
+                      <option value={3}>3 clues</option>
+                      <option value={4}>4 clues</option>
+                      <option value={5}>5 clues</option>
+                      <option value={6}>6 clues</option>
+                      <option value={7}>7 clues</option>
+                      <option value={8}>8 clues</option>
+                      <option value={9}>9 clues</option>
+                      <option value={10}>10 clues</option>
                     </select>
                   </div>
                 </div>
@@ -331,7 +434,7 @@ const LobbyScreen = ({ playerId, playerName }) => {
               // Read-only display
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div>
-                  <span className="text-slate-600">Turn Duration:</span>
+                  <span className="text-slate-600">Turn Duration (all phases):</span>
                   <span className="font-semibold ml-2">{game.gameSettings.turnDuration}s</span>
                 </div>
                 <div>
@@ -343,12 +446,8 @@ const LobbyScreen = ({ playerId, playerName }) => {
                   <span className="font-semibold ml-2">{game.gameSettings.skipsPerTurn}</span>
                 </div>
                 <div>
-                  <span className="text-slate-600">Penalty for Extra Skip:</span>
-                  <span className="font-semibold ml-2">{game.gameSettings.penaltyForExtraSkip}</span>
-                </div>
-                <div>
-                  <span className="text-slate-600">Hints per Turn:</span>
-                  <span className="font-semibold ml-2">{game.gameSettings.hintsPerTurn}</span>
+                  <span className="text-slate-600">Clues per Player:</span>
+                  <span className="font-semibold ml-2">{game.gameSettings.cluesPerPlayer}</span>
                 </div>
               </div>
             )}
@@ -366,7 +465,22 @@ const LobbyScreen = ({ playerId, playerName }) => {
               </button>
               {!canStartGame() && (
                 <p className="text-sm text-slate-500 mt-2">
-                  Need at least 2 teams with players to start
+                  {(() => {
+                    const teamsWithPlayers = game.teams.filter(team => 
+                      team.players && Object.keys(team.players).length > 0
+                    );
+                    if (teamsWithPlayers.length < 2) {
+                      return 'Need at least 2 teams with players to start';
+                    }
+                    const allPlayerIds = new Set();
+                    game.teams.forEach(team => {
+                      if (team.players) Object.keys(team.players).forEach(pid => allPlayerIds.add(pid));
+                    });
+                    const submittedCount = Object.keys(game.clueSubmissions || {}).filter(
+                      pid => game.clueSubmissions[pid]?.hasSubmitted
+                    ).length;
+                    return `Waiting for ${allPlayerIds.size - submittedCount} player(s) to submit clues`;
+                  })()}
                 </p>
               )}
             </div>
