@@ -1,17 +1,15 @@
 # The Hat Game - TODO List
-**Last Updated:** October 26, 2025
+**Last Updated:** October 26, 2025 (Evening Session)
 
 ## 🎯 Active Development Tasks
 
 ### High Priority
 - [ ] **Skip Logic Refinement**: Work on skip logic improvements (expected to be complex)
-- [ ] **Railway Deployment**: Get Railway deployment configured and working
 
 ### Medium Priority
-- [ ] **Premade Clues Dataset**: Add dataset of premade clues users can load instead of making their own (user has list ready)
-- [ ] **Remove Round Counter**: Remove "Round x of y" text from the UI
-- [ ] **Remove Total Rounds from Settings**: Remove Total Rounds from Game Settings UI in lobby
-- [ ] **Audit Total Rounds Usage**: Check if Total Rounds needs to be removed or modified elsewhere in the codebase
+- [ ] **Shuffle Behavior Analysis**: Understand current shuffle behavior, possibly shuffle remaining clues between player turns and shuffle between each phase
+- [ ] **Game Over Clue Summary**: Show all the clues at the end of the game with count of how many instances of each clue there were
+- [ ] **Rules/About Page**: Add a dedicated page explaining the game rules and how to play
 
 ### Low Priority / Nice-to-Have
 *Optional improvements and feature ideas*
@@ -43,7 +41,15 @@
 
 ## ✅ Recently Completed
 
-### Transformation to The Hat Game (October 26, 2025)
+### Evening Session (October 26, 2025)
+- ✅ **Railway Deployment**: Confirmed working deployment on Railway
+- ✅ **Premade Clues Feature**: Added 910-name dataset with "Get some suggestions" button
+- ✅ **Total Rounds Removal**: Removed totalRounds setting and UI references (game now phase-based)
+- ✅ **Hide Play Again Button**: Temporarily hidden for future redesign
+- ✅ **Vercel Cleanup**: Removed all Vercel files and references (Railway-only now)
+- ✅ **Documentation Updates**: Updated deployment guides and project docs
+
+### Initial Transformation (October 26, 2025)
 - ✅ Renamed project from Word Guesser/BackEndTicky to The Hat Game
 - ✅ Transformed game model from word-category system to clue submission
 - ✅ Implemented three-phase gameplay (Describe, One Word, Charades)
