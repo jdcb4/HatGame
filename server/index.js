@@ -14,6 +14,9 @@ const gameRoutes = require('./routes/gameRoutes');
 // Import utilities
 const { shuffleArray } = require('./utils/arrayUtils');
 
+// Import handlers
+const { handleCreateRematch } = require('./handlers/shared/rematchHandlers');
+
 const app = express();
 const server = http.createServer(app);
 
@@ -285,39 +288,6 @@ async function handleUpdateGameSettings(game, settings) {
   console.log('✅ Game settings updated successfully');
   
   return game;
-}
-
-async function handleCreateRematch(oldGame) {
-  console.log('🔄 Creating rematch for game:', oldGame.id);
-  
-  const Game = require('./models/Game');
-  
-  // Create new game with same settings and team structure
-  const newTeams = oldGame.teams.map(team => ({
-    name: team.name,
-    score: 0,
-    players: { ...team.players } // Copy players to same teams
-  }));
-  
-  // Keep the same host
-  const newGame = new Game({
-    hostId: oldGame.hostId,
-    teams: newTeams,
-    gameSettings: {
-      turnDuration: oldGame.gameSettings.turnDuration,
-      totalRounds: oldGame.gameSettings.totalRounds,
-      skipsPerTurn: oldGame.gameSettings.skipsPerTurn,
-      penaltyForExtraSkip: oldGame.gameSettings.penaltyForExtraSkip,
-      hintsPerTurn: oldGame.gameSettings.hintsPerTurn
-    }
-  });
-  
-  await newGame.save();
-  
-  console.log('✅ Rematch created:', newGame.id);
-  console.log('   Teams:', newGame.teams.map(t => `${t.name} (${Object.keys(t.players).length} players)`));
-  
-  return newGame;
 }
 
 // Global flags to prevent concurrent calls
