@@ -34,7 +34,6 @@ A real-time multiplayer party game with three exciting phases: Describe, One Wor
 ### Hosting
 - **Railway** for production deployment (persistent servers, perfect for Socket.IO)
 - **MongoDB Atlas** for cloud database
-- Note: Vercel not recommended for this app (serverless doesn't support persistent WebSockets)
 
 ## Quick Start
 
@@ -106,12 +105,6 @@ See `RAILWAY_DEPLOY.md` for detailed deployment instructions.
 - ✅ $5/month free tier
 
 ---
-
-## Alternative: Vercel (NOT RECOMMENDED)
-
-**Note:** Vercel is NOT suitable for this app because serverless functions don't support persistent Socket.IO connections. See `DEPLOYMENT.md` for details.
-
-If you want to deploy to Vercel anyway (for testing only), you'll need to add a Redis adapter. Not recommended.
 
 ## Game Rules
 

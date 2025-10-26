@@ -1,8 +1,8 @@
 # Railway Deployment Guide for The Hat Game
 
-Railway provides **persistent servers** which work perfectly with Socket.IO, unlike Vercel's serverless functions.
+Railway provides **persistent servers** which work perfectly with Socket.IO.
 
-## Why Railway Over Vercel?
+## Why Railway?
 - ✅ **Persistent WebSocket connections** (Socket.IO works perfectly)
 - ✅ **Always-on server** (no cold starts)
 - ✅ **Simple deployment** (auto-detects your setup)
@@ -140,18 +140,6 @@ git push
 ```
 
 Railway automatically redeploys on every push! 🚀
-
----
-
-## Comparison: Vercel vs Railway
-
-| Feature | Vercel | Railway |
-|---------|--------|---------|
-| Socket.IO | ⚠️ Unreliable | ✅ Perfect |
-| Real-time Updates | ❌ Broken | ✅ Works |
-| Setup Complexity | 😰 Hard | 😊 Easy |
-| Cold Starts | ⚠️ Yes | ✅ No |
-| Free Tier | ✅ Yes | ✅ $5/month |
 
 ---
 

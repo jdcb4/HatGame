@@ -73,7 +73,7 @@
 - **Vite** - Fast build tool and dev server
 
 ### Hosting
-- **Railway** / **Vercel** - Backend hosting options
+- **Railway** - Backend hosting with persistent servers
 - **MongoDB Atlas** - Cloud database
 - **Vite Build** - Static frontend build
 
@@ -296,7 +296,6 @@ BackEndTicky/
 │           └── things.csv
 │
 ├── package.json                     # Root dependencies (concurrently, nodemon)
-├── vercel.json                      # Vercel deployment config
 ├── railway.json                     # Railway deployment config
 ├── .env.example                     # Environment variable template
 ├── TODO.txt                         # Active tasks and completed history
