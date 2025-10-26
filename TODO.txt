@@ -253,6 +253,25 @@ ACTIVE TASKS:
 
 COMPLETED TASKS:
 ----------------
+[DONE - Oct 26, 2025] Show word list to guessers and spectators in real-time
+  → Added live word list display during active turns for non-describers
+  → Guessers (same team) see words as they're answered in real-time
+  → Spectators (other teams) see words as they're answered in real-time
+  → Display features:
+    * Scrollable list (max height 32/40 on mobile/desktop)
+    * Shows word + status icon (✓ correct or ⊘ skipped)
+    * White background with border, compact styling
+    * Hover effect on each word
+    * Only shows when turnWords array has content
+    * Automatically updates via game-updated broadcasts
+  → Mobile optimized: text-xs/text-sm responsive sizing
+  → File changed: client/src/components/GameScreen.jsx
+  → Benefits:
+    * Guessers can track what words have been done
+    * Spectators more engaged watching the game
+    * Transparent, everyone sees same information
+  → Result: Non-describers now have real-time visibility into turn progress
+
 [DONE - Oct 26, 2025] Fix timer duration on Railway (clock skew issue)
   → Bug: Timers were showing incorrect duration on Railway (15s → 20s, 45s → 48s)
   → Root cause: Clock synchronization issue between Railway server and client browsers

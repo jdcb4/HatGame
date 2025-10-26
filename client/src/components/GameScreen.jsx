@@ -416,6 +416,25 @@ const GameScreen = ({ playerId, playerName }) => {
                   <p>Listen to your teammate describe the word</p>
                   <p className="text-xs sm:text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
                 </div>
+                
+                {/* Word list for guessers */}
+                {game.currentTurn?.turnWords && game.currentTurn.turnWords.length > 0 && (
+                  <div className="mt-4 w-full max-w-md">
+                    <h3 className="text-xs sm:text-sm font-semibold text-slate-700 mb-2 text-center">Words this turn:</h3>
+                    <div className="max-h-32 sm:max-h-40 overflow-y-auto bg-white border border-slate-200 rounded-lg p-2 space-y-1">
+                      {game.currentTurn.turnWords.map((word, index) => (
+                        <div key={index} className="flex justify-between items-center text-xs sm:text-sm px-2 py-1 rounded hover:bg-slate-50">
+                          <span className="truncate mr-2 text-slate-700">{word.word}</span>
+                          <span className={`font-bold flex-shrink-0 ${
+                            word.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
+                          }`}>
+                            {word.status === 'correct' ? '✓' : '⊘'}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </>
             ) : (
               // Opposing team waiting view
@@ -433,6 +452,25 @@ const GameScreen = ({ playerId, playerName }) => {
                   <p>It's their turn to guess words</p>
                   <p className="text-xs sm:text-sm mt-2">Time remaining: {isNaN(timeLeft) ? 0 : timeLeft}s</p>
                 </div>
+                
+                {/* Word list for spectators */}
+                {game.currentTurn?.turnWords && game.currentTurn.turnWords.length > 0 && (
+                  <div className="mt-4 w-full max-w-md">
+                    <h3 className="text-xs sm:text-sm font-semibold text-slate-700 mb-2 text-center">Words this turn:</h3>
+                    <div className="max-h-32 sm:max-h-40 overflow-y-auto bg-white border border-slate-200 rounded-lg p-2 space-y-1">
+                      {game.currentTurn.turnWords.map((word, index) => (
+                        <div key={index} className="flex justify-between items-center text-xs sm:text-sm px-2 py-1 rounded hover:bg-slate-50">
+                          <span className="truncate mr-2 text-slate-700">{word.word}</span>
+                          <span className={`font-bold flex-shrink-0 ${
+                            word.status === 'correct' ? 'text-emerald-600' : 'text-amber-600'
+                          }`}>
+                            {word.status === 'correct' ? '✓' : '⊘'}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </>
             )}
           </div>
