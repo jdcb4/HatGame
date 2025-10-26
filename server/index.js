@@ -145,6 +145,13 @@ io.on('connection', (socket) => {
         case 'next-turn':
           updatedGame = await handleNextTurn(game);
           break;
+        case 'create-rematch':
+          console.log('📥 Received create-rematch action');
+          const newGame = await handleCreateRematch(game);
+          // For rematch, emit the new game to the room AND return it directly to the caller
+          io.to(gameId).emit('rematch-created', { newGameId: newGame.id });
+          socket.emit('rematch-created', { newGameId: newGame.id });
+          return; // Don't broadcast the old game, we already sent the new game ID
         default:
           console.log(`❌ Unknown action received: "${action}"`);
           socket.emit('error', { message: 'Unknown action' });
@@ -275,6 +282,39 @@ async function handleUpdateGameSettings(game, settings) {
   console.log('✅ Game settings updated successfully');
   
   return game;
+}
+
+async function handleCreateRematch(oldGame) {
+  console.log('🔄 Creating rematch for game:', oldGame.id);
+  
+  const Game = require('./models/Game');
+  
+  // Create new game with same settings and team structure
+  const newTeams = oldGame.teams.map(team => ({
+    name: team.name,
+    score: 0,
+    players: { ...team.players } // Copy players to same teams
+  }));
+  
+  // Keep the same host
+  const newGame = new Game({
+    hostId: oldGame.hostId,
+    teams: newTeams,
+    gameSettings: {
+      turnDuration: oldGame.gameSettings.turnDuration,
+      totalRounds: oldGame.gameSettings.totalRounds,
+      skipsPerTurn: oldGame.gameSettings.skipsPerTurn,
+      penaltyForExtraSkip: oldGame.gameSettings.penaltyForExtraSkip,
+      hintsPerTurn: oldGame.gameSettings.hintsPerTurn
+    }
+  });
+  
+  await newGame.save();
+  
+  console.log('✅ Rematch created:', newGame.id);
+  console.log('   Teams:', newGame.teams.map(t => `${t.name} (${Object.keys(t.players).length} players)`));
+  
+  return newGame;
 }
 
 // Utility function to shuffle array

@@ -5,7 +5,8 @@ import { useGame } from '../context/GameContext';
 const GameOverScreen = ({ playerId, playerName }) => {
   const { gameId } = useParams();
   const navigate = useNavigate();
-  const { game, fetchGame, loading, error, setError } = useGame();
+  const { game, fetchGame, emitGameAction, socket, loading, error, setError } = useGame();
+  const [isCreatingRematch, setIsCreatingRematch] = useState(false);
 
   useEffect(() => {
     if (gameId) {
@@ -13,8 +14,27 @@ const GameOverScreen = ({ playerId, playerName }) => {
     }
   }, [gameId]);
 
+  // Listen for rematch-created event
+  useEffect(() => {
+    if (!socket) return;
+
+    const handleRematchCreated = ({ newGameId }) => {
+      console.log('✅ Rematch created, navigating to new lobby:', newGameId);
+      setIsCreatingRematch(false);
+      navigate(`/lobby/${newGameId}`);
+    };
+
+    socket.on('rematch-created', handleRematchCreated);
+
+    return () => {
+      socket.off('rematch-created', handleRematchCreated);
+    };
+  }, [socket, navigate]);
+
   const handlePlayAgain = () => {
-    navigate('/');
+    console.log('🔄 Creating rematch for game:', gameId);
+    setIsCreatingRematch(true);
+    emitGameAction('create-rematch', {});
   };
 
   if (loading) {
@@ -104,9 +124,10 @@ const GameOverScreen = ({ playerId, playerName }) => {
           <div className="space-y-3">
             <button
               onClick={handlePlayAgain}
-              className="bg-emerald-600 text-white font-bold py-4 px-6 rounded-lg w-full hover:bg-emerald-700 transition-transform hover:scale-105"
+              disabled={isCreatingRematch}
+              className="bg-emerald-600 text-white font-bold py-4 px-6 rounded-lg w-full hover:bg-emerald-700 transition-transform hover:scale-105 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
-              Play Again
+              {isCreatingRematch ? 'Creating Rematch...' : 'Play Again'}
             </button>
             <button
               onClick={() => navigate('/')}

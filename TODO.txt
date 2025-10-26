@@ -35,31 +35,6 @@ ACTIVE TASKS:
   → Priority: Medium-High (affects core gameplay experience)
   → Note: Already significantly improved from initial 1200ms debounce, but worth revisiting
 
-- Improve "Play Again" Functionality
-  → Goal: Create a new game with same players and settings when clicking "Play Again"
-  → Current State: Both "Play Again" and "Back to Home" just navigate to home screen (redundant)
-  → Desired Behavior:
-    * Create new game with same gameSettings from previous game
-    * Copy all players from previous game to new game
-    * Maintain team assignments from previous game
-    * Place everyone in lobby (not auto-start)
-    * Allow host to modify settings before starting if desired
-    * Handle missing players gracefully:
-      - Players who don't rejoin are marked as "pending" or removed
-      - Game can still start with remaining players
-      - Maybe show "Waiting for [PlayerName]..." with timeout
-  → Implementation:
-    * Add "rematch" socket action or REST endpoint
-    * Backend creates new game, copies settings and player list
-    * Backend returns new gameId
-    * Frontend navigates all players to new lobby: /lobby/{newGameId}
-    * Optional: Add "rejoin" mechanism so missing players can join later
-  → UI Considerations:
-    * Show loading state while creating rematch
-    * Notify players "Starting rematch..." 
-    * Handle case where some players left / disconnected
-  → Priority: Medium (nice UX improvement, not critical)
-
 - Add "All Play" Feature
   → Goal: Special round where everyone guesses (only one describer)
   → Mechanics:
@@ -253,6 +228,29 @@ ACTIVE TASKS:
 
 COMPLETED TASKS:
 ----------------
+[DONE - Oct 26, 2025] Implement "Play Again" functionality
+  → "Play Again" button now creates rematch with same players and settings
+  → Backend: Added handleCreateRematch function
+    * Creates new game with same gameSettings
+    * Copies team structure (names + players)
+    * Keeps same host
+    * Generates new unique gameId
+    * Broadcasts rematch-created event to all players in room
+  → Frontend: Updated GameOverScreen
+    * Calls emitGameAction('create-rematch', {})
+    * Listens for rematch-created event
+    * Shows "Creating Rematch..." loading state
+    * Navigates all players to new lobby automatically
+  → Benefits:
+    * No need to manually create new game and share code
+    * Players stay together with same teams
+    * Host can still modify settings in new lobby before starting
+    * Smooth transition from one game to next
+  → Files changed:
+    * server/index.js (handler + socket case)
+    * client/src/components/GameOverScreen.jsx
+  → Result: Play Again actually works! Creates rematch instead of going home
+
 [DONE - Oct 26, 2025] Fix timer resetting on every word action
   → Bug: Timer was resetting to full duration every time Correct, Skip, or Hint was pressed
   → Root cause: useEffect dependency was [game], causing it to rerun on every game state update
