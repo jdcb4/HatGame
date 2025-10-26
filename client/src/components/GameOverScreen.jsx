@@ -6,7 +6,7 @@ const GameOverScreen = ({ playerId, playerName }) => {
   const { gameId } = useParams();
   const navigate = useNavigate();
   const { game, fetchGame, emitGameAction, socket, loading, error, setError } = useGame();
-  const [isCreatingRematch, setIsCreatingRematch] = useState(false);
+  // const [isCreatingRematch, setIsCreatingRematch] = useState(false);
 
   useEffect(() => {
     if (gameId) {
@@ -14,28 +14,29 @@ const GameOverScreen = ({ playerId, playerName }) => {
     }
   }, [gameId]);
 
-  // Listen for rematch-created event
-  useEffect(() => {
-    if (!socket) return;
+  // HIDDEN: Play Again functionality - will be redesigned and re-added later
+  // // Listen for rematch-created event
+  // useEffect(() => {
+  //   if (!socket) return;
 
-    const handleRematchCreated = ({ newGameId }) => {
-      console.log('✅ Rematch created, navigating to new lobby:', newGameId);
-      setIsCreatingRematch(false);
-      navigate(`/lobby/${newGameId}`);
-    };
+  //   const handleRematchCreated = ({ newGameId }) => {
+  //     console.log('✅ Rematch created, navigating to new lobby:', newGameId);
+  //     setIsCreatingRematch(false);
+  //     navigate(`/lobby/${newGameId}`);
+  //   };
 
-    socket.on('rematch-created', handleRematchCreated);
+  //   socket.on('rematch-created', handleRematchCreated);
 
-    return () => {
-      socket.off('rematch-created', handleRematchCreated);
-    };
-  }, [socket, navigate]);
+  //   return () => {
+  //     socket.off('rematch-created', handleRematchCreated);
+  //   };
+  // }, [socket, navigate]);
 
-  const handlePlayAgain = () => {
-    console.log('🔄 Creating rematch for game:', gameId);
-    setIsCreatingRematch(true);
-    emitGameAction('create-rematch', {});
-  };
+  // const handlePlayAgain = () => {
+  //   console.log('🔄 Creating rematch for game:', gameId);
+  //   setIsCreatingRematch(true);
+  //   emitGameAction('create-rematch', {});
+  // };
 
   if (loading) {
     return (
@@ -118,16 +119,17 @@ const GameOverScreen = ({ playerId, playerName }) => {
 
           {/* Action Buttons */}
           <div className="space-y-3">
-            <button
+            {/* HIDDEN: Play Again button - will be redesigned and re-added later */}
+            {/* <button
               onClick={handlePlayAgain}
               disabled={isCreatingRematch}
               className="bg-emerald-600 text-white font-bold py-4 px-6 rounded-lg w-full hover:bg-emerald-700 transition-transform hover:scale-105 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               {isCreatingRematch ? 'Creating Rematch...' : 'Play Again'}
-            </button>
+            </button> */}
             <button
               onClick={() => navigate('/')}
-              className="bg-slate-600 text-white font-bold py-2 px-4 rounded-lg w-full hover:bg-slate-700 transition-colors"
+              className="bg-slate-600 text-white font-bold py-4 px-6 rounded-lg w-full hover:bg-slate-700 transition-colors"
             >
               Back to Home
             </button>
