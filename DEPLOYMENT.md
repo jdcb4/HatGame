@@ -1,6 +1,24 @@
-# Vercel Deployment Guide
+# Deployment Guide
 
-This guide will help you deploy your Word Guesser multiplayer game to Vercel.
+## ⚠️ IMPORTANT: Railway is Production
+
+**This app is deployed on Railway, NOT Vercel.**
+
+Railway is the recommended platform for this Socket.IO-based multiplayer game because:
+- ✅ Persistent servers (Socket.IO works perfectly)
+- ✅ WebSocket connections work flawlessly
+- ✅ Real-time multiplayer with no issues
+- ✅ Simple deployment and management
+
+**Vercel is NOT suitable** for this app because serverless functions don't support persistent Socket.IO connections (rooms don't persist between function invocations).
+
+See `RAILWAY_DEPLOY.md` for deployment instructions.
+
+---
+
+# Vercel Deployment Guide (REFERENCE ONLY)
+
+This guide is kept for reference but is **not recommended** for this multiplayer game.
 
 ## Prerequisites
 

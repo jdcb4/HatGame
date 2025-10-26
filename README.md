@@ -8,9 +8,11 @@ A real-time multiplayer word guessing game built with Node.js, Express, Socket.I
 - **Team-based competition** with customizable team names
 - **Role-based views** (describer vs guesser vs spectator)
 - **Timer-based rounds** with scoring system
+- **Hint system** (2 hints per turn with smart auto-clearing)
+- **Word preloading** for instant feedback (0ms delay)
 - **Live leaderboard** updates
-- **Responsive design** that works on mobile and desktop
-- **Easy hosting** on Vercel with MongoDB Atlas
+- **Responsive design** optimized for mobile and desktop
+- **Production-ready** deployment on Railway with MongoDB Atlas
 
 ## Tech Stack
 
@@ -28,8 +30,9 @@ A real-time multiplayer word guessing game built with Node.js, Express, Socket.I
 - **Axios** for HTTP requests
 
 ### Hosting
-- **Vercel** for easy deployment
+- **Railway** for production deployment (persistent servers, perfect for Socket.IO)
 - **MongoDB Atlas** for cloud database
+- Note: Vercel not recommended for this app (serverless doesn't support persistent WebSockets)
 
 ## Quick Start
 
@@ -75,39 +78,37 @@ A real-time multiplayer word guessing game built with Node.js, Express, Socket.I
 4. **Whitelist your IP** (or use 0.0.0.0/0 for development)
 5. **Get your connection string** and add it to `.env`
 
-## Deployment to Vercel
+## Deployment to Railway (Production)
 
-### Option 1: One-Click Deploy
+**Railway is the recommended platform** for this Socket.IO multiplayer game.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/word-guesser-multiplayer)
+See `RAILWAY_DEPLOY.md` for detailed deployment instructions.
 
-### Option 2: Manual Deployment
-
-1. **Install Vercel CLI:**
-   ```bash
-   npm i -g vercel
-   ```
-
-2. **Login to Vercel:**
-   ```bash
-   vercel login
-   ```
-
-3. **Deploy:**
-   ```bash
-   vercel
-   ```
-
-4. **Set environment variables in Vercel dashboard:**
-   - `MONGODB_URI`: Your MongoDB Atlas connection string
-   - `NODE_ENV`: `production`
-
-### Option 3: GitHub Integration
+### Quick Steps:
 
 1. **Push your code to GitHub**
-2. **Connect your GitHub repo to Vercel**
-3. **Set environment variables in Vercel dashboard**
-4. **Deploy automatically on every push**
+2. **Go to [Railway.app](https://railway.app) and sign in with GitHub**
+3. **Click "New Project" → "Deploy from GitHub repo"**
+4. **Select your repository**
+5. **Add environment variables:**
+   - `MONGODB_URI`: Your MongoDB Atlas connection string
+   - `NODE_ENV`: `production`
+   - `PORT`: `3002`
+6. **Railway auto-deploys** on every push
+
+### Why Railway?
+- ✅ Persistent servers (perfect for Socket.IO)
+- ✅ WebSockets work flawlessly
+- ✅ Real-time multiplayer with no issues
+- ✅ $5/month free tier
+
+---
+
+## Alternative: Vercel (NOT RECOMMENDED)
+
+**Note:** Vercel is NOT suitable for this app because serverless functions don't support persistent Socket.IO connections. See `DEPLOYMENT.md` for details.
+
+If you want to deploy to Vercel anyway (for testing only), you'll need to add a Redis adapter. Not recommended.
 
 ## Game Rules
 
