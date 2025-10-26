@@ -112,6 +112,9 @@ io.on('connection', (socket) => {
         case 'start-game':
           updatedGame = await handleStartGame(game);
           break;
+        case 'update-game-settings':
+          updatedGame = await handleUpdateGameSettings(game, payload);
+          break;
         case 'start-turn':
           console.log('Received start-turn action from client');
           updatedGame = await handleStartTurn(game);
@@ -223,6 +226,40 @@ async function handleStartGame(game) {
   
   // Save and emit - players should now see the Ready screen
   return await game.save();
+}
+
+async function handleUpdateGameSettings(game, settings) {
+  console.log('✅ handleUpdateGameSettings called for game:', game.id);
+  console.log('📝 New settings:', settings);
+  
+  // Only allow updating settings in lobby (before game starts)
+  if (game.status !== 'lobby') {
+    console.log('❌ Cannot update settings - game already started');
+    return game;
+  }
+  
+  // Validate settings values
+  const validatedSettings = {
+    turnDuration: Math.max(15, Math.min(120, parseInt(settings.turnDuration) || 30)),
+    totalRounds: Math.max(1, Math.min(10, parseInt(settings.totalRounds) || 3)),
+    skipsPerTurn: Math.max(0, Math.min(5, parseInt(settings.skipsPerTurn) || 1)),
+    penaltyForExtraSkip: Math.max(0, Math.min(3, parseInt(settings.penaltyForExtraSkip) || 1)),
+    hintsPerTurn: Math.max(0, Math.min(5, parseInt(settings.hintsPerTurn) || 2))
+  };
+  
+  console.log('✅ Validated settings:', validatedSettings);
+  
+  // Update game settings
+  game.gameSettings = validatedSettings;
+  
+  // Mark the nested object as modified (Mongoose requirement)
+  game.markModified('gameSettings');
+  
+  // Save and return updated game
+  await game.save();
+  console.log('✅ Game settings updated successfully');
+  
+  return game;
 }
 
 // Utility function to shuffle array
@@ -464,7 +501,9 @@ async function handleWordSkip(game, { word }) {
   if (game.currentTurn.skipsRemaining > 0) {
     game.currentTurn.skipsRemaining--;
   } else {
-    game.currentTurn.turnScore = Math.max(0, game.currentTurn.turnScore - 1);
+    // Apply penalty for extra skip (uses gameSettings value)
+    const penalty = game.gameSettings.penaltyForExtraSkip || 1;
+    game.currentTurn.turnScore = Math.max(0, game.currentTurn.turnScore - penalty);
   }
   
   game.currentTurn.turnWords.push({

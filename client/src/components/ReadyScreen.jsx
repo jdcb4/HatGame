@@ -242,9 +242,11 @@ function ReadyScreen({ playerId, playerName }) {
           </div>
 
           {/* Game Info */}
-          <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200 text-center text-xs sm:text-sm text-slate-500">
-            <p>Round {game.currentRound} of {game.gameSettings?.totalRounds || 3}</p>
-          </div>
+          {game.status !== 'finished' && (
+            <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200 text-center text-xs sm:text-sm text-slate-500">
+              <p>Round {game.currentRound} of {game.gameSettings?.totalRounds || 3}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

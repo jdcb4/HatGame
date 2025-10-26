@@ -1,19 +1,123 @@
 BackEndTicky - TODO List
 ========================
-Last Updated: October 19, 2025
+Last Updated: October 26, 2025
 
 ACTIVE TASKS:
 -------------
-- Make sure that the game ends after both teams have had same number of turns
+- Workshop: Reduce Lag When Answering Words
+  → Goal: Investigate and improve perceived lag between clicking Correct/Skip and seeing next word
+  → Current State: 
+    * Word preloading system already implemented (should be ~0ms delay)
+    * 15-word queue sent at turn start
+    * Client shows next word instantly from local queue
+    * Server processes in background
+    * Auto-refill when ≤8 words remaining
+  → Potential Issues to Investigate:
+    * Is button debouncing too long? (currently 200ms)
+    * Network conditions on Railway deployment (2-3s round-trip measured)
+    * Are there any blocking operations in client-side word handling?
+    * Does score update cause re-render lag?
+    * Mobile device performance (primary use case)
+    * Is optimistic update working correctly on all devices?
+  → Areas to Test:
+    * Test on actual mobile devices (not just desktop)
+    * Test on slow network (throttle in DevTools)
+    * Measure actual delay with console timestamps
+    * Check if all browsers handle optimistic updates correctly
+    * Test with rapid clicking (multiple words quickly)
+  → Potential Improvements:
+    * Reduce button debounce if network lag isn't causing issues
+    * Add visual feedback animation (word slide out/in) to mask any delay
+    * Preload MORE words (currently 15) if queue depletes too fast
+    * Use requestAnimationFrame for smoother transitions
+    * Optimize React re-renders (useMemo, useCallback)
+    * Add haptic feedback on mobile for immediate tactile response
+  → Priority: Medium-High (affects core gameplay experience)
+  → Note: Already significantly improved from initial 1200ms debounce, but worth revisiting
 
-- Re-add Hints Feature (Toggleable)
-  → Allow up to 2 hints per turn for describer
-  → Hints should reveal part of the word (first letter, length, or category-specific hint)
-  → Make it toggleable in game settings (default: OFF to preserve current gameplay)
-  → Location: GameScreen.jsx (add hint button and logic)
-  → Schema: Add hintsPerTurn and hintsRemaining to gameSettings and currentTurn
-  → UI: Add "Get Hint" button next to Correct/Skip (only if enabled)
-  → Consider: Should hints cost points? Should they be limited per game or per turn?
+- Improve "Play Again" Functionality
+  → Goal: Create a new game with same players and settings when clicking "Play Again"
+  → Current State: Both "Play Again" and "Back to Home" just navigate to home screen (redundant)
+  → Desired Behavior:
+    * Create new game with same gameSettings from previous game
+    * Copy all players from previous game to new game
+    * Maintain team assignments from previous game
+    * Place everyone in lobby (not auto-start)
+    * Allow host to modify settings before starting if desired
+    * Handle missing players gracefully:
+      - Players who don't rejoin are marked as "pending" or removed
+      - Game can still start with remaining players
+      - Maybe show "Waiting for [PlayerName]..." with timeout
+  → Implementation:
+    * Add "rematch" socket action or REST endpoint
+    * Backend creates new game, copies settings and player list
+    * Backend returns new gameId
+    * Frontend navigates all players to new lobby: /lobby/{newGameId}
+    * Optional: Add "rejoin" mechanism so missing players can join later
+  → UI Considerations:
+    * Show loading state while creating rematch
+    * Notify players "Starting rematch..." 
+    * Handle case where some players left / disconnected
+  → Priority: Medium (nice UX improvement, not critical)
+
+- Add "All Play" Feature
+  → Goal: Special round where everyone guesses (only one describer)
+  → Mechanics:
+    * Random trigger or specific frequency (every N turns?)
+    * Single word display
+    * All players on BOTH teams can guess (except describer)
+    * First team to guess correctly wins the points
+    * Opposing team can "steal" by guessing correctly
+  → UI Changes:
+    * Special "ALL PLAY!" screen/indicator
+    * All players see word simultaneously (except describer)
+    * First correct answer wins
+  → Considerations:
+    * How to handle simultaneous guesses? (timestamp-based)
+    * Point value (higher stakes for All Play?)
+    * Should describer rotate normally or stay same?
+    * How to trigger: Random chance? Fixed interval? Last turn?
+  → Priority: Medium (exciting feature, but complex)
+  → Schema: Need to track All Play state in currentTurn
+
+- Add "First to X" Game Mode
+  → Goal: Play until one team reaches X points (instead of fixed rounds)
+  → Settings:
+    * Target score: 10, 15, 20, 25, 30, 50 points
+    * Add to game settings: firstToX (boolean), targetScore (number)
+  → Logic Changes:
+    * Check after each turn if any team >= targetScore
+    * End game when condition met (instead of after totalRounds)
+    * Still alternate teams as normal
+  → UI Changes:
+    * Game creation: Toggle "First to X" mode, set target score
+    * During game: Show progress toward target (e.g., "15/25")
+    * Ready screen: "Next to X points!" instead of "Round Y of Z"
+  → Considerations:
+    * Should this be a separate app/game type? (Probably not, just a mode)
+    * Risk: Requires changes to core game loop (endTurn logic)
+    * Testing: Need to ensure no conflicts with existing round-based logic
+    * What if teams tie at same score? (Play one more turn? Sudden death?)
+  → Priority: Medium (popular request, moderate complexity)
+  → CAUTION: Changes affect core game flow - test thoroughly before deploying
+
+- Combine "All Play" + "First to X"
+  → Goal: In "First to X" mode, the final turn is always an All Play
+  → Mechanics:
+    * When a team is 1 turn away from winning (within winning distance)
+    * Trigger All Play for dramatic finish
+    * Winner-takes-all final round
+  → Logic:
+    * Check before each turn: is current team close enough to win?
+    * If yes, convert next turn to All Play
+    * If All Play is won, game over
+    * If All Play is lost, continue until someone reaches target
+  → Considerations:
+    * What's "winning distance"? (1 turn's worth of points? configurable?)
+    * Should losing team get a chance to tie? (Fairness)
+    * Very exciting for players - high stakes ending
+  → Priority: Low (requires both previous features first)
+  → Implementation: Build All Play first, then First to X, then combine
 
 - Add Settings Panel for Game Creator
   → Allow host to customize game settings before starting
@@ -28,6 +132,96 @@ ACTIVE TASKS:
   → Store in game.gameSettings (already exists, just expose to UI)
   → UI: Collapsible "Game Settings" section in lobby with dropdowns/sliders
   → Mobile: Keep compact, use <select> elements instead of custom dropdowns
+
+- Consider "The Hat Game" Implementation
+  → Goal: Similar game where players submit their own words instead of using word database
+  → Classic Rules:
+    * Each player submits 3-5 words/phrases written on paper ("in the hat")
+    * Round 1: Describe word without saying it (like current game)
+    * Round 2: Same words, but only ONE WORD clues allowed
+    * Round 3: Same words, but CHARADES only (no talking)
+    * Points: Team that guesses correctly gets the point
+    * All players' words mixed together and used by all teams
+  → Key Differences from BackEndTicky:
+    * User-generated content instead of database
+    * Multiple rounds with SAME words but different rules
+    * No categories (just random words)
+    * More party-game oriented
+  → Implementation Options:
+    
+    **OPTION A: Separate App (Recommended)**
+    Pros:
+      ✅ Clean separation of concerns
+      ✅ Independent deployment and updates
+      ✅ Easier to maintain and debug
+      ✅ Can have different branding/UI
+      ✅ Users choose which game they want to play
+      ✅ Simpler codebase for each game
+    Cons:
+      ❌ Code duplication (Socket.IO setup, user management, teams)
+      ❌ Two separate deployments to maintain
+      ❌ Can't easily switch between games mid-session
+      ❌ Two separate MongoDB collections/databases
+    
+    **OPTION B: Multiple Games in One App**
+    Pros:
+      ✅ Shared infrastructure (Socket.IO, MongoDB, teams, lobby)
+      ✅ Single deployment to maintain
+      ✅ Could switch game modes in same session
+      ✅ Shared UI components and styles
+      ✅ One codebase to update
+    Cons:
+      ❌ More complex codebase (game mode switches everywhere)
+      ❌ Harder to test (more conditional logic)
+      ❌ Schema needs to support both game types
+      ❌ Risk of breaking one game while updating the other
+      ❌ Harder for novice coder to understand
+    
+    **OPTION C: Modular Architecture (Future-Proof)**
+    Structure:
+      /shared/multiplayer-core/
+        - Socket.IO setup, rooms, broadcasting
+        - User management (join, leave, teams)
+        - Base game schema (id, status, teams, players)
+      /games/word-guesser/    (BackEndTicky)
+        - Word database and categories
+        - Turn logic specific to word guessing
+      /games/hat-game/
+        - User word submission
+        - Multi-round logic (describe/one-word/charades)
+      /client/
+        - Shared components (Lobby, Teams, Timer)
+        - Game-specific components in subfolders
+    Pros:
+      ✅ Best of both worlds
+      ✅ Reusable infrastructure
+      ✅ Easy to add more games later
+      ✅ Clean separation per game
+      ✅ Shared code is actually shared
+    Cons:
+      ❌ Significant upfront refactoring needed
+      ❌ Complex initial setup
+      ❌ Overkill if only planning 2 games
+      ❌ Harder for novice coder initially
+  
+  → Recommendation:
+    * SHORT TERM: Build as separate app (Option A)
+      - Get Hat Game working independently
+      - Learn what infrastructure actually needs to be shared
+      - Keep BackEndTicky stable and production-ready
+    * LONG TERM: If building 3+ games, refactor to modular (Option C)
+      - Extract common multiplayer infrastructure
+      - Each game becomes a "plugin"
+      - Worth the refactoring effort at that point
+  
+  → Technical Considerations:
+    * Hat Game needs: Word submission UI, round tracking, rule changes per round
+    * Different timer rules (usually longer rounds)
+    * Need to store submitted words per game (not global database)
+    * Clear words after game ends (privacy/cleanup)
+  
+  → Priority: Low (interesting idea, but current game is working well)
+  → Next Steps: Build Hat Game as separate repo, reuse learnings from BackEndTicky
 
 - Architecture Refactor: Modular Game System
   → Goal: Extract user management and multiplayer infrastructure so it can be reused for other games
@@ -59,6 +253,67 @@ ACTIVE TASKS:
 
 COMPLETED TASKS:
 ----------------
+[DONE - Oct 26, 2025] Auto-save settings when starting game
+  → Implemented Option B: Auto-save settings on "Start Game" click
+  → If host has settings panel open in edit mode, settings are saved before game starts
+  → Added 100ms delay to ensure settings are saved before game initialization
+  → File changed: client/src/components/LobbyScreen.jsx (handleStartGame function)
+  → Result: No more lost/unsaved settings when starting game
+
+[DONE - Oct 26, 2025] Fixed skip penalty not respecting gameSettings
+  → Bug: Penalty was hardcoded to -1 point instead of using gameSettings.penaltyForExtraSkip
+  → Solution: Changed handleWordSkip to read penalty value from game.gameSettings.penaltyForExtraSkip
+  → File changed: server/index.js (handleWordSkip function)
+  → Result: Setting penalty to 0, 2, or 3 points now works correctly
+
+[DONE - Oct 26, 2025] Fixed "Round 4 of 3" display issue after final turn
+  → Solution: Conditionally hide round counter in ReadyScreen.jsx when game.status === 'finished'
+  → File changed: client/src/components/ReadyScreen.jsx
+  → Result: No more confusing round counter after game completes
+
+[DONE - Oct 26, 2025] Added Settings Panel in Lobby
+  → Game host can now customize settings before starting game
+  → Settings: Turn Duration (15-120s), Total Rounds (1-10), Skips per Turn (0-5), 
+    Penalty for Extra Skip (0-3), Hints per Turn (0-5)
+  → Host sees "Edit" button with editable form controls
+  → Non-host players see read-only display
+  → Mobile-friendly using native select/input elements
+  → Backend: Added handleUpdateGameSettings with validation
+  → Backend: Only allows updates in lobby (before game starts)
+  → Files changed: 
+    * client/src/components/LobbyScreen.jsx (UI)
+    * server/index.js (handler + socket action)
+  → Result: Users can customize gameplay without code changes
+
+[DONE - Oct 22, 2025] Fixed turn rotation bug (teams playing twice in a row)
+  → Root cause: Concurrent handleEndTurn calls from multiple clients when timer expired
+  → Solution: Added concurrency guard (isEndingTurn flag) to prevent duplicate processing
+  → Also fixed: Navigation race condition in LobbyScreen (removed duplicate navigate call)
+  → Result: Teams now properly alternate with no skipping or double turns
+  → See: BUG_ANALYSIS_TURN_ROTATION.md for full technical details
+
+[DONE - Oct 22, 2025] Implemented Hint System
+  → Describer gets 2 hints per turn (configurable via gameSettings.hintsPerTurn)
+  → Hint button shows remaining hints: "💡 Hint (2)"
+  → Displays hint text in blue box below category when clicked
+  → Hints auto-clear when word changes or turn ends
+  → Server-side: Added handleUseHint function, hintsRemaining tracking
+  → Client-side: Smart state management with auto-clear on word change
+  → Future ready: Easy to make configurable in lobby settings later
+  → See: HINT_FEATURE_SUMMARY.md for implementation details
+
+[DONE - Oct 22, 2025] Restructured word data system
+  → Changed from 6 categories (actions, entertainment, food, hobbies, places, things) to 3 categories (Who, Where, What)
+  → Single CSV file structure: Word, Category, Hint columns
+  → Created conversion script: npm run convert-words
+  → Hints now included in word data for hint feature
+  → Deleted old CSV files, consolidated to server/data/csv/words.csv
+  → See: WORD_SYSTEM_README.md for usage guide
+
+[DONE - Oct 22, 2025] Removed "words remaining" debug text
+  → Cleaned up describer view by removing backend caching information
+  → Players no longer see "X words remaining" text
+
 [DONE - Oct 16, 2025] Add a longer word list and integrate with the app
   → Converted 6 CSV files (5,029 words total) into words.js with 6 categories: actions, entertainment, food, hobbies, places, things
 

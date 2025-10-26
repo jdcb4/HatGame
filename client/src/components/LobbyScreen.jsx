@@ -5,8 +5,16 @@ import { useGame } from '../context/GameContext';
 const LobbyScreen = ({ playerId, playerName }) => {
   const { gameId } = useParams();
   const navigate = useNavigate();
-  const { game, fetchGame, joinTeam, startGame, loading, error, setError } = useGame();
+  const { game, fetchGame, joinTeam, startGame, emitGameAction, loading, error, setError } = useGame();
   const [selectedTeam, setSelectedTeam] = useState(null);
+  const [editingSettings, setEditingSettings] = useState(false);
+  const [settingsForm, setSettingsForm] = useState({
+    turnDuration: 30,
+    totalRounds: 3,
+    skipsPerTurn: 1,
+    penaltyForExtraSkip: 1,
+    hintsPerTurn: 2
+  });
 
   useEffect(() => {
     if (gameId) {
@@ -24,6 +32,19 @@ const LobbyScreen = ({ playerId, playerName }) => {
       });
     }
   }, [game, playerId]);
+
+  // Initialize settings form when game loads
+  useEffect(() => {
+    if (game && game.gameSettings) {
+      setSettingsForm({
+        turnDuration: game.gameSettings.turnDuration || 30,
+        totalRounds: game.gameSettings.totalRounds || 3,
+        skipsPerTurn: game.gameSettings.skipsPerTurn || 1,
+        penaltyForExtraSkip: game.gameSettings.penaltyForExtraSkip || 1,
+        hintsPerTurn: game.gameSettings.hintsPerTurn || 2
+      });
+    }
+  }, [game]);
 
   // Navigate to game screen when game starts
   useEffect(() => {
@@ -49,6 +70,15 @@ const LobbyScreen = ({ playerId, playerName }) => {
     }
 
     try {
+      // Auto-save settings if they're being edited
+      if (editingSettings) {
+        console.log('✅ Auto-saving settings before starting game');
+        emitGameAction('update-game-settings', settingsForm);
+        setEditingSettings(false);
+        // Give the settings a moment to save before starting
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
       await startGame(gameId, playerId);
       // Don't navigate here - let the useEffect handle it when game.status updates
       // This prevents a race condition where host tries to go to /game before turn starts
@@ -65,6 +95,33 @@ const LobbyScreen = ({ playerId, playerName }) => {
       team.players && Object.keys(team.players).length > 0
     );
     return teamsWithPlayers.length >= 2;
+  };
+
+  const handleSettingsChange = (field, value) => {
+    setSettingsForm(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const handleSaveSettings = () => {
+    console.log('✅ Saving game settings:', settingsForm);
+    emitGameAction('update-game-settings', settingsForm);
+    setEditingSettings(false);
+  };
+
+  const handleCancelSettings = () => {
+    // Reset form to current game settings
+    if (game && game.gameSettings) {
+      setSettingsForm({
+        turnDuration: game.gameSettings.turnDuration || 30,
+        totalRounds: game.gameSettings.totalRounds || 3,
+        skipsPerTurn: game.gameSettings.skipsPerTurn || 1,
+        penaltyForExtraSkip: game.gameSettings.penaltyForExtraSkip || 1,
+        hintsPerTurn: game.gameSettings.hintsPerTurn || 2
+      });
+    }
+    setEditingSettings(false);
   };
 
   if (loading) {
@@ -164,25 +221,137 @@ const LobbyScreen = ({ playerId, playerName }) => {
 
           {/* Game Settings */}
           <div className="mb-8 p-4 bg-slate-50 rounded-lg">
-            <h3 className="font-semibold text-slate-700 mb-2">Game Settings</h3>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <span className="text-slate-600">Turn Duration:</span>
-                <span className="font-semibold ml-2">{game.gameSettings.turnDuration}s</span>
-              </div>
-              <div>
-                <span className="text-slate-600">Total Rounds:</span>
-                <span className="font-semibold ml-2">{game.gameSettings.totalRounds}</span>
-              </div>
-              <div>
-                <span className="text-slate-600">Skips per Turn:</span>
-                <span className="font-semibold ml-2">{game.gameSettings.skipsPerTurn}</span>
-              </div>
-              <div>
-                <span className="text-slate-600">Penalty for Extra Skip:</span>
-                <span className="font-semibold ml-2">{game.gameSettings.penaltyForExtraSkip}</span>
-              </div>
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="font-semibold text-slate-700">Game Settings</h3>
+              {game.hostId === playerId && !editingSettings && (
+                <button
+                  onClick={() => setEditingSettings(true)}
+                  className="text-sm bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700 transition-colors"
+                >
+                  Edit
+                </button>
+              )}
             </div>
+
+            {editingSettings && game.hostId === playerId ? (
+              // Editable form for host
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-xs text-slate-600 mb-1">Turn Duration</label>
+                    <select
+                      value={settingsForm.turnDuration}
+                      onChange={(e) => handleSettingsChange('turnDuration', parseInt(e.target.value))}
+                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
+                    >
+                      <option value={15}>15 seconds</option>
+                      <option value={30}>30 seconds</option>
+                      <option value={45}>45 seconds</option>
+                      <option value={60}>60 seconds</option>
+                      <option value={90}>90 seconds</option>
+                      <option value={120}>120 seconds</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs text-slate-600 mb-1">Total Rounds</label>
+                    <input
+                      type="number"
+                      min="1"
+                      max="10"
+                      value={settingsForm.totalRounds}
+                      onChange={(e) => handleSettingsChange('totalRounds', parseInt(e.target.value))}
+                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs text-slate-600 mb-1">Skips per Turn</label>
+                    <select
+                      value={settingsForm.skipsPerTurn}
+                      onChange={(e) => handleSettingsChange('skipsPerTurn', parseInt(e.target.value))}
+                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
+                    >
+                      <option value={0}>0</option>
+                      <option value={1}>1</option>
+                      <option value={2}>2</option>
+                      <option value={3}>3</option>
+                      <option value={4}>4</option>
+                      <option value={5}>5</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs text-slate-600 mb-1">Penalty for Extra Skip</label>
+                    <select
+                      value={settingsForm.penaltyForExtraSkip}
+                      onChange={(e) => handleSettingsChange('penaltyForExtraSkip', parseInt(e.target.value))}
+                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
+                    >
+                      <option value={0}>0 points</option>
+                      <option value={1}>1 point</option>
+                      <option value={2}>2 points</option>
+                      <option value={3}>3 points</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs text-slate-600 mb-1">Hints per Turn</label>
+                    <select
+                      value={settingsForm.hintsPerTurn}
+                      onChange={(e) => handleSettingsChange('hintsPerTurn', parseInt(e.target.value))}
+                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
+                    >
+                      <option value={0}>0</option>
+                      <option value={1}>1</option>
+                      <option value={2}>2</option>
+                      <option value={3}>3</option>
+                      <option value={4}>4</option>
+                      <option value={5}>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="flex gap-2 pt-2">
+                  <button
+                    onClick={handleSaveSettings}
+                    className="flex-1 bg-emerald-600 text-white font-semibold py-2 px-4 rounded hover:bg-emerald-700 transition-colors text-sm"
+                  >
+                    Save Settings
+                  </button>
+                  <button
+                    onClick={handleCancelSettings}
+                    className="flex-1 bg-slate-400 text-white font-semibold py-2 px-4 rounded hover:bg-slate-500 transition-colors text-sm"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ) : (
+              // Read-only display
+              <div className="grid grid-cols-2 gap-3 text-sm">
+                <div>
+                  <span className="text-slate-600">Turn Duration:</span>
+                  <span className="font-semibold ml-2">{game.gameSettings.turnDuration}s</span>
+                </div>
+                <div>
+                  <span className="text-slate-600">Total Rounds:</span>
+                  <span className="font-semibold ml-2">{game.gameSettings.totalRounds}</span>
+                </div>
+                <div>
+                  <span className="text-slate-600">Skips per Turn:</span>
+                  <span className="font-semibold ml-2">{game.gameSettings.skipsPerTurn}</span>
+                </div>
+                <div>
+                  <span className="text-slate-600">Penalty for Extra Skip:</span>
+                  <span className="font-semibold ml-2">{game.gameSettings.penaltyForExtraSkip}</span>
+                </div>
+                <div>
+                  <span className="text-slate-600">Hints per Turn:</span>
+                  <span className="font-semibold ml-2">{game.gameSettings.hintsPerTurn}</span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Start Game Button */}
