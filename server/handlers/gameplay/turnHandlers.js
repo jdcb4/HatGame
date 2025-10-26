@@ -47,12 +47,20 @@ async function handleStartTurn(game) {
     console.log('👤 Current describer:', { index: describerIndex, id: describerPlayerId, name: describerPlayerName });
     
     // Get available clues (clues not yet guessed in this phase)
-    const usedClueSet = new Set(game.usedCluesInPhase || []);
-    const availableClues = game.cluePool.filter(clueObj => !usedClueSet.has(clueObj.clue));
+    // usedCluesInPhase now stores pool indices, not strings
+    const usedIndicesSet = new Set(game.usedCluesInPhase || []);
+    const availableCluesWithIndices = game.cluePool
+      .map((clueObj, index) => ({
+        clue: clueObj.clue,
+        submittedBy: clueObj.submittedBy,
+        submittedByName: clueObj.submittedByName,
+        poolIndex: index
+      }))
+      .filter(item => !usedIndicesSet.has(item.poolIndex));
     
-    console.log(`📊 Clue status: ${availableClues.length} available, ${usedClueSet.size} used in phase ${game.currentGamePhase}`);
+    console.log(`📊 Clue status: ${availableCluesWithIndices.length} available, ${usedIndicesSet.size} used in phase ${game.currentGamePhase}`);
     
-    if (availableClues.length === 0) {
+    if (availableCluesWithIndices.length === 0) {
       console.log('⚠️ No available clues - phase should have transitioned already!');
       // This shouldn't happen, but handle gracefully
       game.status = 'finished';
@@ -60,10 +68,12 @@ async function handleStartTurn(game) {
     }
     
     // Preload 15 clues for client-side queue (optimistic updates)
-    const queueSize = Math.min(15, availableClues.length);
+    const queueSize = Math.min(15, availableCluesWithIndices.length);
     const clueQueue = [];
+    const clueQueueIndices = []; // Track pool indices for each queue item
     for (let i = 0; i < queueSize; i++) {
-      clueQueue.push(availableClues[i].clue);
+      clueQueue.push(availableCluesWithIndices[i].clue);
+      clueQueueIndices.push(availableCluesWithIndices[i].poolIndex);
     }
     
     console.log('✅ Preloaded clues in queue:', clueQueue.length);
@@ -72,6 +82,7 @@ async function handleStartTurn(game) {
     game.currentTurn = {
       clue: clueQueue[0],
       clueQueue: clueQueue,  // Send clue strings to client
+      clueQueueIndices: clueQueueIndices,  // Track which pool indices are in queue
       queueIndex: 0,  // Track position in queue
       startTime: new Date(),
       timeLeft: game.gameSettings.turnDuration,
@@ -126,14 +137,14 @@ async function handleEndTurn(game) {
     // Add turn score to team score
     game.teams[game.currentTeamIndex].score += turnScore;
     
-    // Add turn's correct clues to usedCluesInPhase
-    const correctClues = (game.currentTurn.turnClues || [])
-      .filter(tc => tc.status === 'correct')
-      .map(tc => tc.clue);
+    // Add turn's correct clues to usedCluesInPhase (using pool indices)
+    const correctClues = (game.currentTurn.turnClues || []).filter(tc => tc.status === 'correct');
     
-    for (const clue of correctClues) {
-      if (!game.usedCluesInPhase.includes(clue)) {
-        game.usedCluesInPhase.push(clue);
+    // For each correct clue, add its pool index to usedCluesInPhase
+    for (const turnClue of correctClues) {
+      const poolIndex = turnClue.poolIndex;
+      if (poolIndex !== undefined && !game.usedCluesInPhase.includes(poolIndex)) {
+        game.usedCluesInPhase.push(poolIndex);
       }
     }
     

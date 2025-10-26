@@ -199,6 +199,27 @@ io.on('connection', (socket) => {
         });
       }
       
+      // Check if phase completion triggered auto-end-turn
+      if (updatedGame._shouldAutoEndTurn) {
+        console.log('🏁 Auto-ending turn due to phase completion');
+        delete updatedGame._shouldAutoEndTurn; // Clean up flag
+        
+        // Brief delay to let clients process the final correct clue
+        setTimeout(async () => {
+          try {
+            // Reload game from DB to get latest state
+            const freshGame = await Game.findOne({ id: gameId });
+            if (freshGame && freshGame.currentTurn) {
+              const endedGame = await handleEndTurn(freshGame);
+              io.to(gameId).emit('game-updated', endedGame);
+              console.log('✅ Turn auto-ended successfully');
+            }
+          } catch (err) {
+            console.error('❌ Error in auto-end-turn:', err);
+          }
+        }, 1500); // 1.5 second delay for smooth UX
+      }
+      
     } catch (error) {
       console.error('Error handling game action:', error);
       socket.emit('error', { message: 'Server error' });

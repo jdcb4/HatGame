@@ -25,34 +25,47 @@ async function handleRequestMoreClues(game, { count = 10 }) {
     }
     
     // Get available clues (not yet used in this phase)
-    const usedClueSet = new Set(latestGame.usedCluesInPhase || []);
-    const availableClues = latestGame.cluePool.filter(clueObj => !usedClueSet.has(clueObj.clue));
+    // usedCluesInPhase now stores pool indices, not strings
+    const usedIndicesSet = new Set(latestGame.usedCluesInPhase || []);
+    const availableCluesWithIndices = latestGame.cluePool
+      .map((clueObj, index) => ({
+        clue: clueObj.clue,
+        submittedBy: clueObj.submittedBy,
+        submittedByName: clueObj.submittedByName,
+        poolIndex: index
+      }))
+      .filter(item => !usedIndicesSet.has(item.poolIndex));
     
-    console.log(`📦 Clues available for phase ${latestGame.currentGamePhase}: ${availableClues.length}`);
+    console.log(`📦 Clues available for phase ${latestGame.currentGamePhase}: ${availableCluesWithIndices.length}`);
     
-    if (availableClues.length === 0) {
+    if (availableCluesWithIndices.length === 0) {
       console.log('⚠️ No more clues available in this phase');
       return latestGame;
     }
     
     // Get more clues (up to requested count or remaining clues)
-    // Need to skip clues already in the queue
-    const currentQueueSet = new Set(latestGame.currentTurn.clueQueue || []);
-    const additionalClues = availableClues
-      .filter(clueObj => !currentQueueSet.has(clueObj.clue))
-      .slice(0, count)
-      .map(clueObj => clueObj.clue);
+    // Need to skip clues already in the queue (by pool index)
+    const currentQueueIndicesSet = new Set(latestGame.currentTurn.clueQueueIndices || []);
+    const additionalCluesWithIndices = availableCluesWithIndices
+      .filter(item => !currentQueueIndicesSet.has(item.poolIndex))
+      .slice(0, count);
+    
+    const additionalClues = additionalCluesWithIndices.map(item => item.clue);
+    const additionalIndices = additionalCluesWithIndices.map(item => item.poolIndex);
     
     const oldQueueLength = latestGame.currentTurn.clueQueue.length;
     console.log(`➕ Adding ${additionalClues.length} clues to queue (old length: ${oldQueueLength})`);
     console.log(`   New clues:`, additionalClues.slice(0, 3), '...');
     
-    // Append to existing queue
+    // Append to existing queues (both clues and their indices)
     const newQueue = latestGame.currentTurn.clueQueue.concat(additionalClues);
+    const newQueueIndices = (latestGame.currentTurn.clueQueueIndices || []).concat(additionalIndices);
     
-    // Update the clue queue
+    // Update both queues
     latestGame.currentTurn.clueQueue = newQueue;
+    latestGame.currentTurn.clueQueueIndices = newQueueIndices;
     latestGame.markModified('currentTurn.clueQueue');
+    latestGame.markModified('currentTurn.clueQueueIndices');
     
     console.log(`✅ New queue length: ${newQueue.length} (added ${newQueue.length - oldQueueLength} clues)`);
     
@@ -71,7 +84,9 @@ async function handleRequestMoreClues(game, { count = 10 }) {
           const retryGame = await Game.findOne({ id: game.id });
           if (retryGame) {
             retryGame.currentTurn.clueQueue = newQueue;
+            retryGame.currentTurn.clueQueueIndices = newQueueIndices;
             retryGame.markModified('currentTurn.clueQueue');
+            retryGame.markModified('currentTurn.clueQueueIndices');
             Object.assign(latestGame, retryGame);
           }
         } else {

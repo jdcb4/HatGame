@@ -235,16 +235,21 @@ const LobbyScreen = ({ playerId, playerName }) => {
                   
                   {/* Players in team */}
                   <div className="space-y-1 mb-4">
-                    {team.players ? Object.entries(team.players).map(([playerId, playerName]) => (
+                    {team.players ? Object.entries(team.players).map(([pid, pname]) => (
                       <div
-                        key={playerId}
-                        className={`px-2 py-1 rounded text-sm ${
-                          playerId === playerId
+                        key={pid}
+                        className={`px-2 py-1 rounded text-sm flex items-center justify-between ${
+                          pid === playerId
                             ? 'bg-indigo-100 text-indigo-800'
                             : 'bg-slate-100 text-slate-700'
                         }`}
                       >
-                        {playerName} {playerId === game.hostId && '(Host)'}
+                        <span>
+                          {pname} {pid === game.hostId && '(Host)'}
+                        </span>
+                        {game.clueSubmissions && game.clueSubmissions[pid]?.hasSubmitted && (
+                          <span className="text-emerald-600 font-bold text-base">✓</span>
+                        )}
                       </div>
                     )) : (
                       <div className="text-slate-500 text-sm">No players yet</div>

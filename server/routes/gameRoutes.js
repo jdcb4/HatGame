@@ -308,20 +308,40 @@ router.patch('/:id/start', async (req, res) => {
       });
     }
     
+    // Note: The actual game start logic (validation, clue pool setup, etc.)
+    // is handled by handleStartGame in lobbyHandlers.js via socket action
+    // This REST endpoint is kept for backward compatibility but delegates to the handler
+    
     game.status = 'in-progress';
+    game.currentPhase = 'ready';
+    game.currentGamePhase = 1;
     game.currentRound = 1;
     game.currentTeamIndex = 0;
     
-    // Initialize game words
-    const wordsByCategory = require('../data/words');
-    game.wordsByCategoryForGame = {};
+    // Validate all players have submitted clues
+    const allPlayerIds = new Set();
+    game.teams.forEach(team => {
+      if (team.players) {
+        Object.keys(team.players).forEach(pid => allPlayerIds.add(pid));
+      }
+    });
     
-    // Copy and shuffle words in each category
-    for (const [category, words] of Object.entries(wordsByCategory)) {
-      const shuffledWords = [...words];
-      shuffleArray(shuffledWords);
-      game.wordsByCategoryForGame[category] = shuffledWords;
+    const submittedPlayerIds = Object.keys(game.clueSubmissions || {}).filter(
+      pid => game.clueSubmissions[pid]?.hasSubmitted
+    );
+    
+    if (submittedPlayerIds.length < allPlayerIds.size) {
+      return res.status(400).json({
+        success: false,
+        message: `All players must submit clues before starting. ${submittedPlayerIds.length}/${allPlayerIds.size} submitted.`
+      });
     }
+    
+    // Shuffle the clue pool
+    shuffleArray(game.cluePool);
+    game.usedCluesInPhase = [];
+    game.markModified('cluePool');
+    game.markModified('usedCluesInPhase');
     
     await game.save();
     

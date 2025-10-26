@@ -1,9 +1,9 @@
 # Code Conventions
 
-> **Purpose:** Establish consistent coding patterns for AI agents and developers working on BackEndTicky.
+> **Purpose:** Establish consistent coding patterns for AI agents and developers working on The Hat Game.
 
-**Last Updated:** October 19, 2025  
-**Project:** BackEndTicky (Multiplayer Word Guessing Game)  
+**Last Updated:** October 26, 2025  
+**Project:** The Hat Game (Multiplayer Guessing Game with Three Phases)  
 **Author:** @jdcb4
 
 ---

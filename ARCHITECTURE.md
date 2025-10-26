@@ -1,9 +1,9 @@
-# BackEndTicky - Architecture Documentation
+# The Hat Game - Architecture Documentation
 
 > **Purpose:** Help AI agents and developers quickly understand the codebase structure, key patterns, and design decisions.
 
-**Last Updated:** October 19, 2025  
-**Project:** Multiplayer Word Guessing Game (similar to Catchphrase)  
+**Last Updated:** October 26, 2025  
+**Project:** The Hat Game - Three-phase multiplayer guessing game (Describe, One Word, Charades)  
 **Author:** @jdcb4
 
 ---
@@ -27,16 +27,28 @@
 
 ## 🎯 High-Level Overview
 
-**BackEndTicky** is a real-time multiplayer word guessing game where:
-- Teams take turns describing and guessing words
-- One player (the "describer") sees a word and describes it without saying the word
-- Teammates try to guess the word before time runs out
-- Teams rotate turns, and the highest score after all rounds wins
+**The Hat Game** is a real-time multiplayer guessing game played in three distinct phases:
+1. **Phase 1: Describe** - Use as many words as you want to describe the person
+2. **Phase 2: One Word** - Say exactly ONE WORD only to give a clue
+3. **Phase 3: Charades** - Act it out silently - no words or sounds allowed
+
+### How It Works
+- Players submit person names (real or fictional) as clues during setup
+- Teams take turns with one "describer" and the rest guessing
+- Same pool of clues used in all three phases
+- Each phase continues until all clues are guessed, then advances to next phase
+- Skip system: Can skip one clue per turn, but must answer it before skipping again
+- Teams rotate turns, highest score after Phase 3 wins
 
 ### Key Features
 - ✅ Real-time multiplayer using WebSockets (Socket.IO)
+- ✅ Three distinct game phases with different rules
+- ✅ Player-submitted clues (person names)
 - ✅ Team-based gameplay with customizable team names
 - ✅ Role-based views (describer vs guesser vs spectator)
+- ✅ Smart skip system with return logic
+- ✅ Phase transition announcements
+- ✅ Auto-end turn when phase completes
 - ✅ Timer-based rounds with scoring system
 - ✅ Live leaderboard updates
 - ✅ Mobile-responsive design
@@ -46,7 +58,7 @@
 
 ## 🛠️ Tech Stack
 
-### Backend
+### Backend  
 - **Node.js** + **Express.js** - REST API server
 - **Socket.IO** - Real-time bidirectional communication
 - **MongoDB** + **Mongoose** - NoSQL database with ODM

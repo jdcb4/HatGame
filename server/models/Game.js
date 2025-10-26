@@ -83,7 +83,7 @@ const gameSchema = new mongoose.Schema({
     submittedByName: String
   }],
   usedCluesInPhase: [{
-    type: String
+    type: Number  // Store indices of clue pool items, not strings (handles duplicates)
   }],
   clueSubmissions: {
     type: Object,
@@ -92,6 +92,7 @@ const gameSchema = new mongoose.Schema({
   currentTurn: {
     clue: String,
     clueQueue: [String],  // Preloaded clues for optimistic client updates
+    clueQueueIndices: [Number],  // Pool indices corresponding to clueQueue items
     queueIndex: {         // Current position in clue queue
       type: Number,
       default: 0
@@ -104,7 +105,8 @@ const gameSchema = new mongoose.Schema({
         type: String,
         enum: ['correct', 'skipped']
       },
-      timestamp: Date
+      timestamp: Date,
+      poolIndex: Number  // Track which pool item this was (for phase completion)
     }],
     skipsRemaining: Number,
     skippedClueThisTurn: String,  // Track the one skipped clue that must be answered
@@ -124,7 +126,8 @@ const gameSchema = new mongoose.Schema({
         type: String,
         enum: ['correct', 'skipped']
       },
-      timestamp: Date
+      timestamp: Date,
+      poolIndex: Number  // Track which pool item this was
     }],
     phaseCompleted: Boolean,    // True if this turn completed a phase
     completedPhase: Number       // Which phase was completed (1, 2, or 3)

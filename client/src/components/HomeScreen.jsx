@@ -90,10 +90,10 @@ const HomeScreen = ({ playerId, playerName, setPlayerName }) => {
       <div className="w-full max-w-md">
         <div className="bg-white p-8 rounded-2xl shadow-lg">
           <h1 className="text-4xl font-bold mb-2 text-center text-slate-900">
-            Word Guesser
+            The Hat Game
           </h1>
           <p className="text-slate-500 mb-8 text-center">
-            Multiplayer word description game
+            Three phases, one pool of clues!
           </p>
 
           {/* Player Name Input */}

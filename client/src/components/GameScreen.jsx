@@ -201,10 +201,15 @@ const GameScreen = ({ playerId, playerName }) => {
       setIsProcessingAction(true);
       
       const currentClue = localClueQueue[localClueIndex] || game.currentTurn.clue;
-      const nextIndex = localClueIndex + 1;
       
-      // INSTANT: Move to next clue locally (0ms delay!)
-      setLocalClueIndex(nextIndex);
+      // Move the skipped clue to the end of the local queue (matches server behavior)
+      const updatedQueue = [...localClueQueue];
+      updatedQueue.splice(localClueIndex, 1); // Remove from current position
+      updatedQueue.push(currentClue); // Add to end
+      setLocalClueQueue(updatedQueue);
+      
+      // Index stays the same (next clue is now at current index)
+      // No need to change localClueIndex
       
       // Background: Send action to server for scoring/validation
       emitGameAction('word-skip', { 
@@ -217,11 +222,10 @@ const GameScreen = ({ playerId, playerName }) => {
       
       console.log('⏭️ Optimistic skip:', { 
         clue: currentClue, 
-        oldIndex: localClueIndex,
-        newIndex: nextIndex,
-        nextClue: localClueQueue[nextIndex],
-        queueLength: localClueQueue.length,
-        remaining: localClueQueue.length - nextIndex
+        indexStaysAt: localClueIndex,
+        movedToEnd: currentClue,
+        nextClue: updatedQueue[localClueIndex],
+        queueLength: updatedQueue.length
       });
     }
   };
