@@ -1,5 +1,6 @@
 const express = require('express');
 const Game = require('../models/Game');
+const { shuffleArray } = require('../utils/arrayUtils');
 const router = express.Router();
 
 // Import the handleStartTurn function from the main server
@@ -346,13 +347,5 @@ router.patch('/:id/start', async (req, res) => {
     });
   }
 });
-
-// Utility function to shuffle array
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
 
 module.exports = { router, setSocketIO, setHandleStartTurn };

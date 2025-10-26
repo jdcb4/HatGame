@@ -11,6 +11,9 @@ const { v4: uuidv4 } = require('uuid');
 // Import routes
 const gameRoutes = require('./routes/gameRoutes');
 
+// Import utilities
+const { shuffleArray } = require('./utils/arrayUtils');
+
 const app = express();
 const server = http.createServer(app);
 
@@ -315,14 +318,6 @@ async function handleCreateRematch(oldGame) {
   console.log('   Teams:', newGame.teams.map(t => `${t.name} (${Object.keys(t.players).length} players)`));
   
   return newGame;
-}
-
-// Utility function to shuffle array
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
 }
 
 // Global flags to prevent concurrent calls
@@ -965,14 +960,6 @@ async function handleNextTurn(game) {
   // The team advancement and phase change now happen in handleEndTurn
   // This function just starts the turn for the current team
   return await handleStartTurn(game);
-}
-
-// Utility function to shuffle array
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
 }
 
 // Catch-all route to serve React app (must be after API routes)
