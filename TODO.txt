@@ -4,7 +4,7 @@ Last Updated: October 26, 2025
 
 ACTIVE TASKS:
 -------------
-- Workshop: Reduce Lag When Answering Words
+- Further optimize lag reduction (Optional)
   → Goal: Investigate and improve perceived lag between clicking Correct/Skip and seeing next word
   → Current State: 
     * Word preloading system already implemented (should be ~0ms delay)
@@ -253,6 +253,17 @@ ACTIVE TASKS:
 
 COMPLETED TASKS:
 ----------------
+[DONE - Oct 26, 2025] Reduce lag for guessers (Broadcast First, Save Later)
+  → Implemented Option 1: Broadcast game updates immediately, save to database in background
+  → Created fast versions of handlers: handleWordCorrectFast, handleWordSkipFast, handleUseHintFast
+  → Word actions (correct/skip/hint) now broadcast immediately without waiting for MongoDB save
+  → Database save happens in background (fire-and-forget with error logging)
+  → Expected lag reduction: ~100-500ms → ~10-50ms for guessers
+  → Trade-off: Tiny risk of data loss if server crashes between broadcast and save (acceptable)
+  → Original handlers kept for reference (not currently used)
+  → Files changed: server/index.js
+  → Result: All players should now see updates much faster (closer to describer's instant experience)
+
 [DONE - Oct 26, 2025] Auto-save settings when starting game
   → Implemented Option B: Auto-save settings on "Start Game" click
   → If host has settings panel open in edit mode, settings are saved before game starts
