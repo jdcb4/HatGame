@@ -151,7 +151,7 @@ const GameScreen = ({ playerId, playerName }) => {
 
       return () => clearInterval(timer);
     }
-  }, [game]);
+  }, [game?.currentTurn?.startTime, game?.status]); // Only rerun when turn starts, not on every game update
 
   // Server handles turn initialization automatically
 
