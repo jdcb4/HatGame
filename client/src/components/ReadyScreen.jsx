@@ -282,8 +282,7 @@ function ReadyScreen({ playerId, playerName }) {
           {/* Game Info */}
           {game.status !== 'finished' && (
             <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200 text-center text-xs sm:text-sm text-slate-500">
-              <p>Round {game.currentRound} of {game.gameSettings?.totalRounds || 3}</p>
-              <p className="mt-1">
+              <p>
                 Phase {game.currentGamePhase} of 3
               </p>
             </div>

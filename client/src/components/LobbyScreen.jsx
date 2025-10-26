@@ -10,7 +10,6 @@ const LobbyScreen = ({ playerId, playerName }) => {
   const [editingSettings, setEditingSettings] = useState(false);
   const [settingsForm, setSettingsForm] = useState({
     turnDuration: 45,
-    totalRounds: 3,
     skipsPerTurn: 1,
     cluesPerPlayer: 6
   });
@@ -41,7 +40,6 @@ const LobbyScreen = ({ playerId, playerName }) => {
     if (game && game.gameSettings) {
       setSettingsForm({
         turnDuration: game.gameSettings.turnDuration || 45,
-        totalRounds: game.gameSettings.totalRounds || 3,
         skipsPerTurn: game.gameSettings.skipsPerTurn || 1,
         cluesPerPlayer: game.gameSettings.cluesPerPlayer || 6
       });
@@ -168,7 +166,6 @@ const LobbyScreen = ({ playerId, playerName }) => {
     if (game && game.gameSettings) {
       setSettingsForm({
         turnDuration: game.gameSettings.turnDuration || 45,
-        totalRounds: game.gameSettings.totalRounds || 3,
         skipsPerTurn: game.gameSettings.skipsPerTurn || 1,
         cluesPerPlayer: game.gameSettings.cluesPerPlayer || 6
       });
@@ -374,18 +371,6 @@ const LobbyScreen = ({ playerId, playerName }) => {
                   </div>
 
                   <div>
-                    <label className="block text-xs text-slate-600 mb-1">Total Rounds</label>
-                    <input
-                      type="number"
-                      min="1"
-                      max="10"
-                      value={settingsForm.totalRounds}
-                      onChange={(e) => handleSettingsChange('totalRounds', parseInt(e.target.value))}
-                      className="w-full border border-slate-300 rounded px-2 py-1.5 text-sm"
-                    />
-                  </div>
-
-                  <div>
                     <label className="block text-xs text-slate-600 mb-1">Skips per Turn (with return)</label>
                     <select
                       value={settingsForm.skipsPerTurn}
@@ -441,10 +426,6 @@ const LobbyScreen = ({ playerId, playerName }) => {
                 <div>
                   <span className="text-slate-600">Turn Duration (all phases):</span>
                   <span className="font-semibold ml-2">{game.gameSettings.turnDuration}s</span>
-                </div>
-                <div>
-                  <span className="text-slate-600">Total Rounds:</span>
-                  <span className="font-semibold ml-2">{game.gameSettings.totalRounds}</span>
                 </div>
                 <div>
                   <span className="text-slate-600">Skips per Turn:</span>

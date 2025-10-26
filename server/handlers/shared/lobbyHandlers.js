@@ -100,7 +100,6 @@ async function handleUpdateGameSettings(game, settings) {
   // Validate settings values
   const validatedSettings = {
     turnDuration: Math.max(15, Math.min(120, parseInt(settings.turnDuration) || 45)),
-    totalRounds: Math.max(1, Math.min(10, parseInt(settings.totalRounds) || 3)),
     skipsPerTurn: Math.max(0, Math.min(5, parseInt(settings.skipsPerTurn) || 1)),
     cluesPerPlayer: Math.max(3, Math.min(10, parseInt(settings.cluesPerPlayer) || 6))
   };

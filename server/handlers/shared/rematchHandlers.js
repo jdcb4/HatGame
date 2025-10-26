@@ -20,10 +20,8 @@ async function handleCreateRematch(oldGame) {
     teams: newTeams,
     gameSettings: {
       turnDuration: oldGame.gameSettings.turnDuration,
-      totalRounds: oldGame.gameSettings.totalRounds,
       skipsPerTurn: oldGame.gameSettings.skipsPerTurn,
-      penaltyForExtraSkip: oldGame.gameSettings.penaltyForExtraSkip,
-      hintsPerTurn: oldGame.gameSettings.hintsPerTurn
+      cluesPerPlayer: oldGame.gameSettings.cluesPerPlayer
     }
   });
   

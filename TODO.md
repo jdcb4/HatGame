@@ -10,6 +10,8 @@
 ### Medium Priority
 - [ ] **Premade Clues Dataset**: Add dataset of premade clues users can load instead of making their own (user has list ready)
 - [ ] **Remove Round Counter**: Remove "Round x of y" text from the UI
+- [ ] **Remove Total Rounds from Settings**: Remove Total Rounds from Game Settings UI in lobby
+- [ ] **Audit Total Rounds Usage**: Check if Total Rounds needs to be removed or modified elsewhere in the codebase
 
 ### Low Priority / Nice-to-Have
 *Optional improvements and feature ideas*

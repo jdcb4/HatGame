@@ -340,9 +340,6 @@ const GameScreen = ({ playerId, playerName }) => {
           <div className="flex justify-between items-start border-b pb-3 mb-3 relative">
             <div className="text-left">
               <p className="font-bold text-lg sm:text-xl text-slate-800">{currentTeam.name}</p>
-              <p className="text-xs sm:text-sm text-slate-500">
-                Round {game.currentRound || 1} of {game.gameSettings?.totalRounds || 3}
-              </p>
               <p className="text-xs sm:text-sm font-bold text-indigo-600 mt-1">
                 {game.currentGamePhase === 1 && 'Phase 1: Describe'}
                 {game.currentGamePhase === 2 && 'Phase 2: One Word'}

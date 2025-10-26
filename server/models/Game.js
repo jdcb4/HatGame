@@ -40,10 +40,6 @@ const gameSchema = new mongoose.Schema({
       type: Number,
       default: 45
     },
-    totalRounds: {
-      type: Number,
-      default: 3
-    },
     skipsPerTurn: {
       type: Number,
       default: 1

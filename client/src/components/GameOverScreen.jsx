@@ -104,10 +104,6 @@ const GameOverScreen = ({ playerId, playerName }) => {
             <h3 className="font-semibold text-slate-700 mb-3">Game Statistics</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-600">Total Rounds:</span>
-                <span className="font-semibold">{game.gameSettings.totalRounds}</span>
-              </div>
-              <div className="flex justify-between">
                 <span className="text-slate-600">Turn Duration:</span>
                 <span className="font-semibold">{game.gameSettings.turnDuration}s</span>
               </div>

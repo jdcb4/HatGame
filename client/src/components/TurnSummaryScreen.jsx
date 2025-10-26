@@ -24,8 +24,8 @@ const TurnSummaryScreen = ({ playerId, playerName }) => {
   const handleNextTurn = () => {
     emitGameAction('next-turn', {});
     
-    // Check if game is finished
-    if (game && game.currentRound > game.gameSettings.totalRounds) {
+    // Check if game is finished (based on status, not rounds)
+    if (game && game.status === 'finished') {
       navigate(`/gameover/${gameId}`);
     } else {
       navigate(`/game/${gameId}`);
