@@ -1,6 +1,7 @@
 const express = require('express');
 const Game = require('../models/Game');
 const { shuffleArray } = require('../utils/arrayUtils');
+const { getRandomSuggestions } = require('../utils/cluesSuggestions');
 const router = express.Router();
 
 // Import the handleStartTurn function from the main server
@@ -364,6 +365,31 @@ router.patch('/:id/start', async (req, res) => {
     res.status(500).json({
       success: false,
       message: 'Failed to start game'
+    });
+  }
+});
+
+// Get random clue suggestions
+router.get('/suggestions/:count', async (req, res) => {
+  try {
+    const count = parseInt(req.params.count) || 6;
+    
+    // Limit to reasonable number
+    const requestedCount = Math.min(Math.max(count, 1), 20);
+    
+    const suggestions = getRandomSuggestions(requestedCount);
+    
+    res.json({
+      success: true,
+      suggestions: suggestions,
+      count: suggestions.length
+    });
+    
+  } catch (error) {
+    console.error('❌ Error getting clue suggestions:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to get suggestions'
     });
   }
 });

@@ -5,9 +5,10 @@ import { useGame } from '../context/GameContext';
 const LobbyScreen = ({ playerId, playerName }) => {
   const { gameId } = useParams();
   const navigate = useNavigate();
-  const { game, fetchGame, joinTeam, startGame, submitClues, emitGameAction, loading, error, setError } = useGame();
+  const { game, fetchGame, joinTeam, startGame, submitClues, emitGameAction, getClueSuggestions, loading, error, setError } = useGame();
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [editingSettings, setEditingSettings] = useState(false);
+  const [loadingSuggestions, setLoadingSuggestions] = useState(false);
   const [settingsForm, setSettingsForm] = useState({
     turnDuration: 45,
     skipsPerTurn: 1,
@@ -121,6 +122,40 @@ const LobbyScreen = ({ playerId, playerName }) => {
     console.log('📝 Submitting clues:', clues);
     submitClues(playerId, playerName, clues);
     setHasSubmitted(true);
+  };
+
+  const handleGetSuggestions = async () => {
+    setLoadingSuggestions(true);
+    
+    // Count how many empty fields we have
+    const emptyIndices = [];
+    clues.forEach((clue, index) => {
+      if (!clue || clue.trim().length === 0) {
+        emptyIndices.push(index);
+      }
+    });
+    
+    if (emptyIndices.length === 0) {
+      setError('All clue fields are already filled!');
+      setLoadingSuggestions(false);
+      return;
+    }
+    
+    // Get suggestions for empty fields
+    const suggestions = await getClueSuggestions(emptyIndices.length);
+    
+    if (suggestions && suggestions.length > 0) {
+      const newClues = [...clues];
+      emptyIndices.forEach((index, i) => {
+        if (suggestions[i]) {
+          newClues[index] = suggestions[i];
+        }
+      });
+      setClues(newClues);
+      console.log(`✅ Filled ${suggestions.length} empty clue fields with suggestions`);
+    }
+    
+    setLoadingSuggestions(false);
   };
   
   const canStartGame = () => {
@@ -305,10 +340,20 @@ const LobbyScreen = ({ playerId, playerName }) => {
                       />
                     </div>
                   ))}
+                  <div className="flex gap-2 mt-4">
+                    <button
+                      onClick={handleGetSuggestions}
+                      disabled={loadingSuggestions || clues.every(c => c.trim().length > 0)}
+                      className="bg-slate-500 text-white text-sm font-semibold py-2 px-3 rounded-lg hover:bg-slate-600 transition-colors disabled:bg-slate-300 disabled:cursor-not-allowed"
+                      title="Fill empty fields with random suggestions"
+                    >
+                      {loadingSuggestions ? '...' : '💡 Get some suggestions'}
+                    </button>
+                  </div>
                   <button
                     onClick={handleSubmitClues}
                     disabled={!clues.every(c => c.trim().length > 0)}
-                    className="w-full mt-4 bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition-colors disabled:bg-slate-400 disabled:cursor-not-allowed"
+                    className="w-full mt-2 bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition-colors disabled:bg-slate-400 disabled:cursor-not-allowed"
                   >
                     Submit Clues
                   </button>

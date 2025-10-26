@@ -233,6 +233,24 @@ export const GameProvider = ({ children }) => {
     emitGameAction('submit-clues', { playerId, playerName, clues });
   };
 
+  // Get random clue suggestions from the server
+  const getClueSuggestions = async (count) => {
+    try {
+      const response = await axios.get(`/api/games/suggestions/${count}`);
+      
+      if (response.data.success) {
+        console.log('✅ Got clue suggestions:', response.data.suggestions.length);
+        return response.data.suggestions;
+      } else {
+        throw new Error(response.data.message);
+      }
+    } catch (err) {
+      console.error('❌ Error fetching clue suggestions:', err);
+      setError(err.response?.data?.message || 'Failed to get suggestions');
+      return [];
+    }
+  };
+
   const value = {
     game,
     socket,
@@ -245,7 +263,8 @@ export const GameProvider = ({ children }) => {
     startGame,
     fetchGame,
     emitGameAction,
-    submitClues
+    submitClues,
+    getClueSuggestions
   };
 
   return (
