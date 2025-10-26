@@ -116,12 +116,10 @@ const GameScreen = ({ playerId, playerName }) => {
         timeLeft: game.currentTurn?.timeLeft
       });
 
-      // Calculate time left based on server time
-      const startTime = new Date(game.currentTurn?.startTime);
-      const elapsed = Math.floor((Date.now() - startTime.getTime()) / 1000);
-      const timeLeft = game.currentTurn?.timeLeft || game.gameSettings?.turnDuration || 30;
-      const remaining = Math.max(0, timeLeft - elapsed);
-      setTimeLeft(isNaN(remaining) ? 0 : remaining);
+      // Use client-side timer only (don't rely on server timestamps to avoid clock skew)
+      // Just use the duration from settings
+      const turnDuration = game.gameSettings?.turnDuration || 30;
+      setTimeLeft(turnDuration);
 
       // Determine player role
       const currentTeam = game.teams[game.currentTeamIndex];
@@ -139,17 +137,16 @@ const GameScreen = ({ playerId, playerName }) => {
         describerPlayerId: game.currentTurn?.describerPlayerId
       });
 
-      // Start timer countdown
+      // Start timer countdown (client-side only, no server timestamp dependency)
       const timer = setInterval(() => {
-        const newElapsed = Math.floor((Date.now() - startTime.getTime()) / 1000);
-        const turnTimeLeft = game.currentTurn.timeLeft || game.gameSettings?.turnDuration || 30;
-        const newRemaining = Math.max(0, turnTimeLeft - newElapsed);
-        setTimeLeft(isNaN(newRemaining) ? 0 : newRemaining);
-        
-        if (newRemaining <= 0) {
-          clearInterval(timer);
-          handleEndTurn();
-        }
+        setTimeLeft(prev => {
+          const newTime = Math.max(0, prev - 1);
+          if (newTime <= 0) {
+            clearInterval(timer);
+            handleEndTurn();
+          }
+          return newTime;
+        });
       }, 1000);
 
       return () => clearInterval(timer);

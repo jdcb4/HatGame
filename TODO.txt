@@ -253,6 +253,20 @@ ACTIVE TASKS:
 
 COMPLETED TASKS:
 ----------------
+[DONE - Oct 26, 2025] Fix timer duration on Railway (clock skew issue)
+  → Bug: Timers were showing incorrect duration on Railway (15s → 20s, 45s → 48s)
+  → Root cause: Clock synchronization issue between Railway server and client browsers
+    * Server sent absolute timestamp (startTime)
+    * Client calculated elapsed time using its own clock
+    * If client clock was behind server clock, elapsed would be negative
+    * Result: Timer showed more time than configured
+  → Solution: Use purely client-side timer
+    * Initialize timer with turnDuration from settings
+    * Count down using setTimeLeft(prev => prev - 1)
+    * No dependency on server timestamps (avoids clock skew)
+  → File changed: client/src/components/GameScreen.jsx
+  → Result: Timer now shows exact configured duration (15s, 30s, 45s, etc.)
+
 [DONE - Oct 26, 2025] Reduce lag for guessers (Broadcast First, Save Later)
   → Implemented Option 1: Broadcast game updates immediately, save to database in background
   → Created fast versions of handlers: handleWordCorrectFast, handleWordSkipFast, handleUseHintFast
