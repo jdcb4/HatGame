@@ -57,13 +57,13 @@ The following has been configured for you:
 
 4. **Create a new repository on GitHub**:
    - Go to https://github.com/new
-   - Name it something like `word-guesser-game`
+   - Name it something like `HatGame`
    - Don't initialize with README (you already have files)
    - Click "Create repository"
 
 5. **Push to GitHub**:
    ```bash
-   git remote add origin https://github.com/jdcb4/YOUR-REPO-NAME.git
+   git remote add origin https://github.com/jdcb4/HatGame.git
    git branch -M main
    git push -u origin main
    ```
@@ -95,9 +95,9 @@ The following has been configured for you:
    | `NODE_ENV` | `production` |
    | `CLIENT_URL` | Leave blank for now (will set after deployment) |
 
-   Your MongoDB URI from `env.example`:
+   Example MongoDB URI format:
    ```
-   mongodb+srv://TickyTestUser:kGg2Wm9B4W5yvGU1@jdtickytest.uybysp2.mongodb.net/word-guesser?retryWrites=true&w=majority
+   mongodb+srv://username:password@cluster.mongodb.net/thehatgame_db?retryWrites=true&w=majority
    ```
 
 7. Click **"Deploy"**
@@ -203,7 +203,7 @@ The following has been configured for you:
 Make sure these are set in Vercel:
 
 ```
-MONGODB_URI=mongodb+srv://TickyTestUser:kGg2Wm9B4W5yvGU1@jdtickytest.uybysp2.mongodb.net/word-guesser?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/thehatgame_db?retryWrites=true&w=majority
 NODE_ENV=production
 CLIENT_URL=https://your-project-name.vercel.app
 ```

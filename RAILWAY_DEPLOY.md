@@ -1,4 +1,4 @@
-# Railway Deployment Guide (Better for Socket.IO!)
+# Railway Deployment Guide for The Hat Game
 
 Railway provides **persistent servers** which work perfectly with Socket.IO, unlike Vercel's serverless functions.
 
@@ -27,7 +27,7 @@ Railway provides **persistent servers** which work perfectly with Socket.IO, unl
 1. On Railway dashboard, click **"New Project"**
 2. Click **"Deploy from GitHub repo"**
 3. Grant Railway access to your GitHub if prompted
-4. Select **"WordGuesser"** repository
+4. Select **"HatGame"** repository
 5. Railway will automatically detect your Node.js app
 6. Click **"Deploy Now"**
 
@@ -45,9 +45,14 @@ Railway provides **persistent servers** which work perfectly with Socket.IO, unl
 3. Click **"New Variable"** and add these:
 
 ```
-MONGODB_URI=mongodb+srv://TickyTestUser:kGg2Wm9B4W5yvGU1@jdtickytest.uybysp2.mongodb.net/word-guesser?retryWrites=true&w=majority
+MONGODB_URI=your_mongodb_atlas_connection_string_with_thehatgame_db
 NODE_ENV=production
 PORT=3002
+```
+
+**Example MongoDB URI format:**
+```
+mongodb+srv://username:password@cluster.mongodb.net/thehatgame_db?retryWrites=true&w=majority
 ```
 
 4. Click **"Add"** for each variable
@@ -73,7 +78,7 @@ PORT=3002
 2. Click **"New Variable"**
 3. Add:
    - **Name**: `CLIENT_URL`
-   - **Value**: Your Railway URL (e.g., `https://word-guesser-production.up.railway.app`)
+   - **Value**: Your Railway URL (e.g., `https://thehatgame-production.up.railway.app`)
 4. Click **"Add"**
 5. Railway will automatically redeploy with the new variable
 
