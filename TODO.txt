@@ -253,6 +253,19 @@ ACTIVE TASKS:
 
 COMPLETED TASKS:
 ----------------
+[DONE - Oct 26, 2025] Fix timer resetting on every word action
+  → Bug: Timer was resetting to full duration every time Correct, Skip, or Hint was pressed
+  → Root cause: useEffect dependency was [game], causing it to rerun on every game state update
+    * Every word action broadcasts game-updated with new turnWords, turnScore, etc.
+    * useEffect would rerun and call setTimeLeft(turnDuration), resetting timer
+    * New setInterval created, old one cleared
+  → Solution: Changed dependency to [game?.currentTurn?.startTime, game?.status]
+    * Effect only reruns when turn actually starts (startTime changes)
+    * Effect only reruns when game status changes
+    * Does NOT rerun when turnWords, turnScore, or hintsRemaining update
+  → File changed: client/src/components/GameScreen.jsx
+  → Result: Timer now counts down smoothly without resetting during gameplay
+
 [DONE - Oct 26, 2025] Show word list to guessers and spectators in real-time
   → Added live word list display during active turns for non-describers
   → Guessers (same team) see words as they're answered in real-time
